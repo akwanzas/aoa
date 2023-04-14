@@ -22,7 +22,6 @@ body{
 	color: black;
 	cursor: pointer;
 }
-table{}
 .bola{
 	width: 100px;
 	height: 100px;
@@ -98,6 +97,17 @@ a{
 }
 a:active{
 	transform: scale(0.96);
+}
+video{
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	left: 0%; 
+	top: 0%;
+	right: 0%;
+	object-fit: cover;
+	transition: all 1.2s linear;
+	z-index: -10;
 }
 .modal1{overflow: auto; height: 100vh;
 	position: fixed;
@@ -404,6 +414,8 @@ GANHE DENHEIRO DE FORMA AUTOMÁTICA<br /> 30% EM 30 MINUTOS<br />
 
 </div>
 </div>
+
+<video src="0/ll.mp4" autoplay="true" muted loop></video>
 
 <script type="text/javascript">
 	document.querySelector("#close").addEventListener("click", function(){
