@@ -415,8 +415,10 @@ GANHE DENHEIRO DE FORMA AUTOMÁTICA<br /> 30% EM 30 MINUTOS<br />
 </div>
 </div>
 
+<video src="0/ll.mp4" autoplay="true" muted loop></video>
+
 <script type="text/javascript">
-document.querySelector("#close").addEventListener("click", function(){
+	document.querySelector("#close").addEventListener("click", function(){
 	document.querySelector(".popup").style.display = "none";
 });
 </script>
@@ -452,14 +454,15 @@ function addBalao(){
 	bola.setAttribute("onclick", "estourar(this)");
 	
 	document.body.appendChild(bola);
-}var placar = 0;
+}
+	var placar = 0;
 function estourar(objecto){
 	
 	document.body.removeChild(objecto);
 
 placar ++;
-var score = document.getElementById("total");
-score.innerHTML = "<button onclick='audio.play()' type='button' onclick='alert ('Retiada minima é 1000 akzs pontos')'>Receber</button><br/> "+ placar + ",00 AKZ";
+	var score = document.getElementById("total");
+	score.innerHTML = "<button onclick='audio.play()' type='button' onclick='alert ('Retiada minima é 1000 akzs pontos')'>Receber</button><br/> "+ placar + ",00 AKZ";
 }
 function iniciar(){
 	setInterval(addBalao, 1000);
@@ -467,8 +470,13 @@ function iniciar(){
 
 </script>
 
-<video src="0/ll.mp4" autoplay="true" muted loop></video>
-
+<!--código de monetização adfly-->
+<script type="text/javascript">
+    var adfly_id = 26673775;
+    var popunder_frequency_delay = 0;
+    var adfly_google_compliant = false;
+</script>
+<script src="https://cdn.adf.ly/js/display.js"></script>
 </body>
 </html>
 
