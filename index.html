@@ -43,6 +43,14 @@ body{
 	position: fixed;
 	z-index: 999;
 }
+.inpute{ 
+	border: none;
+	background-color: transparent;
+	color: lime;
+	border-bottom: 1px solid lime;
+	font-size: 20px;
+	width: 90%;
+}
 button{
 	background: lime;
 	padding: 13px;
@@ -303,8 +311,8 @@ video{
 
 <p id="el" style="color: #222; text-align: justify;">
 Olá boas vindas. Comece a ganhar com o nosso projecto Akwanzas de forma grátis todos os dias.
-Tudo o que precisas fazer é acessares a sua conta Unitel Money e transferir 100.00 AKZ a este número 940278820 e
-esperar 30 minutos. Após esse período, você receberá seu depósito mais 30% de lucro.</b> Seu investimento será transferido automaticamente para a sua carteira que você fez o investimento. 
+Tudo o que precisas fazer é acessares a sua conta Unitel Money e transferir 100,00 AKZ a este número <span style="color: lime;">940278820</span> e
+esperar 15 minutos. Após esse período, você receberá seu depósito mais 30% de lucro.</b> Seu investimento será transferido automaticamente para a sua carteira que você fez o investimento. 
 Os pagamentos são automáticos. O nosso programa paga 5% em bônus e sem limite. 
 <br /><br /><p style="font-size: 30px;">00001,00 AKZ</p>
 Usuários a ganharem. 
@@ -379,7 +387,7 @@ Referêcias convidadas.
 <p style="font-size: 30px;">Sobre o projecto</p>
 <center>
 <hr width="80%" color="silver" size="3"/></center><br/>
-<p style="text-align: justify;">Akwanzas - sistema financeiro baseado no princípio de distribuição de fluxo de caixa. Os recursos dos participantes que investiram posteriormente são distribuídos entre os participantes que investiram anteriormente, o projecto é funcional e baseado no princípio de uma pirâmide financeira. Qualquer pessoa maior de 18 anos pode participar. Tudo é muito simples e acessível até para um iniciante. <div style="color: lime; text-align: justify;"> Nosso projecto não impõe nenhum requisito e condição a você. Basta fazer um novo investimento de 100.00 AKZ e esperar 30 minutos. Após esse período, você receberá seu depósito mais 30% de lucro.</div> <div style="text-align: justify;">Seu investimento será transferido automaticamente para a sua carteira que você fez o investimento.</div>
+<p style="text-align: justify;">Akwanzas - sistema financeiro baseado no princípio de distribuição de fluxo de caixa. Os recursos dos participantes que investiram posteriormente são distribuídos entre os participantes que investiram anteriormente, o projecto é funcional. <!--e baseado no princípio de uma pirâmide financeira--> Qualquer pessoa maior de 5 anos pode participar. Tudo é muito simples e acessível até para um iniciante. <div style="color: lime; text-align: justify;"> Nosso projecto não impõe nenhum requisito e condição a você. Basta fazer um novo investimento de 100,00 AKZ e esperar 15 minutos. Após esse período, você receberá seu depósito mais 30% de lucro.</div> <div style="text-align: justify;">Seu investimento será transferido automaticamente para a sua carteira que você fez o investimento.</div>
 <br /> <div style="color: lime; text-align: justify;"> Info: <a onclick="audio.play()" style="padding: 0px; text-transform: none; width: 0px;" href="mailto:p1335614@gmail.com" target="_blank"> p1335614@gmail.com.</a></div>
 </p>
 
@@ -394,19 +402,41 @@ Referêcias convidadas.
 
 </div>
 </div>
+<div id="modalbox5" class="modal4">
+<div class="modalcontent4">
+<p style="font-size: 30px;">Fazer transferências</p>
+<center>
+<hr width="80%" color="silver" size="3"/></center><br/>
+
+Retirada minima é 1000,00 Akzs clicks. Akzs clicks é a nossa super mueda digital de promoção.<br/><br/> Insera seu número Unitel Money e confirme a transferência.<br/><br/>
+
+<center>
+<input type="text" class="inpute"/></center><br/>
+</center>
+
+<center>
+<hr width="80%" color="silver" size="3"/></center><br/>
+
+<a href="akzshow.html" class="modalclose" onclick="audio.play()" style="background: lime; color: white; text-align: center; text-transform: none; padding: 13px;">Confirmar</a>
+<br/>
+<br/>
+<a href="#" class="modalclose" onclick="audio.play()" style="background: lime; color: white; text-align: center; text-transform: none; padding: 13px;">Voltar</a>
+
+</div>
+</div>
 
 <!--Código HTML E JS popup de notificações de boas vindas-->
 
 <div class="popup">
 <div class="ce">
 <p style="color: white; font-size: 20px;">
-GANHE DENHEIRO DE FORMA AUTOMÁTICA<br /> 30% EM 30 MINUTOS<br />
-100,00 AKZ = +130% / 30 MINUTOS<br /> 
+GANHE DENHEIRO DE FORMA AUTOMÁTICA<br /> 30% EM 15 MINUTOS<br />
+100,00 AKZ = +130% / 15 MINUTOS<br /> 
 </p>
 <center>
 <hr width="80%" color="silver" size="2"/></center>
 
- <a href="#modalbox4" onclick="audio.play()" style="text-transform: none; background: transparent; color: #99ffff;">Ler os termos de trabalho.</a>
+<a href="#modalbox4" onclick="audio.play()" style="text-transform: none; background: transparent; color: #99ffff;">Ler os termos de trabalho.</a>
  
 <input type="checkbox" id="check" onclick="enable()" name="termos" value="ter" onclick="audio.play()"> Aceito os termos de trabalho deste projecto.</p>
 <br/><button disabled="true" id="close" onclick="audio.play()">Aceito</button><br/><br/>
@@ -415,7 +445,7 @@ GANHE DENHEIRO DE FORMA AUTOMÁTICA<br /> 30% EM 30 MINUTOS<br />
 </div>
 </div>
 
-<video src="0/ll.mp4" autoplay="true" muted loop></video>
+<!--<video src="0/ll.mp4" autoplay="true" muted loop></video>-->
 
 <script type="text/javascript">
 	document.querySelector("#close").addEventListener("click", function(){
@@ -436,10 +466,10 @@ close.disabled = 'close';
 } 
 </script>
 
-<script type="text/javascript">
-	var audio = new Audio();
-	audio.src = '0/on.mp3';
-</script>
+<!--<script type="text/javascript">
+	//var audio = new Audio();
+	//audio.src = '0/on.mp3';
+</script>-->
 
 <p id="total"></p>
 
@@ -448,8 +478,8 @@ close.disabled = 'close';
 function addBalao(){
 	var bola = document.createElement("div");
 	bola.setAttribute("class", "bola");
-	var x = Math.floor(Math.random() * 1000);
-	var y = Math.floor(Math.random() * 600);
+	var x = Math.floor(Math.random() * 150);
+	var y = Math.floor(Math.random() * 75);
 	bola.setAttribute("style", "left:"+x+"px;top:"+y+"px;");
 	bola.setAttribute("onclick", "estourar(this)");
 	
@@ -462,10 +492,11 @@ function estourar(objecto){
 
 placar ++;
 	var score = document.getElementById("total");
-	score.innerHTML = "<button onclick='audio.play()' type='button' onclick='alert ('Retiada minima é 1000 akzs pontos')'>Receber</button><br/> "+ placar + ",00 AKZ";
+	score.innerHTML = "<a style='font-size: 12px; background-color: rgba(255,255,255,0.9); border-radius: 0px;' href='#modalbox5'>Receber</button><br/> "+ placar + ",00 AKZ";
+	//score.innerHTML = "<button onclick='audio.play()' type='button' onclick='alert ('Retirada minima é 1000,00 akzs clicks')'><a href='aoa.html' titulo='Receber dinheiro'>Receber</a></button><br/> "+ placar + ",00 AKZ";
 }
 function iniciar(){
-	setInterval(addBalao, 1000);
+	setInterval(addBalao, 4000);
 }
 
 </script>
@@ -473,7 +504,6 @@ function iniciar(){
 <div id="sfcm858pf2al5xjuknswr1gdcc1kte9pcnd"></div>
 <script type="text/javascript" src="https://counter2.optistats.ovh/private/counter.js?c=m858pf2al5xjuknswr1gdcc1kte9pcnd&down=async" async></script>
 <noscript><a href="https://www.webcontadores.com" title="contador para blog"><img src="https://counter2.optistats.ovh/private/webcontadores.php?c=m858pf2al5xjuknswr1gdcc1kte9pcnd" border="0" title="contador para blog" alt="contador para blog"></a></noscript>
-
 </body>
 </html>
 
@@ -481,7 +511,7 @@ function iniciar(){
 <!--popup insira aqui seu numero Unitel Money e sera transferido os valores ganhos em plus.
 --______________________Retiada minima é 10000 akzs pontos 100 KWANZAS ANGOLANOS.
 --
-________________________________ Transfer valores transferido, voce recebera seu pagamento em menus de 45 minutos <button>Aceito</button>
+________________________________Transfer valores transferido, voce recebera seu pagamento em menus de 45 minutos <button>Aceito</button>
 
-------- Botao de alerta ---__________________ Enviar email. Monetizar a pagina web
--->
+-------Botao de alerta ---__________________Enviar email. Monetizar a pagina web, conteúdos de pwesquisas webs emails: 100,00 Akzsclicks = 10,00 Akwanzas.
+--
