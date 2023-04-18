@@ -1,0 +1,170 @@
+<!doctype html>
+<html dir="ltr" lang="pt"> 
+<head> 
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>♡AOA♡</title>
+<link rel="shortcut icon" href="0.jpg"/>
+<style type="text/css">
+*{
+	margin: 0; 
+	padding: 0;
+	box-sizing: border-box;
+	font-family: ocr a; 
+	color: yellow;
+}
+body{
+	background: url(0.jpg);
+	background-size: cover;
+	background-position: center;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	backdrop-filter: blur(30px);
+}
+.box{
+	position: relative;
+	width: 50%;
+	height: 100vh;
+	background: orangered;/*rgba(255,255,255,0.2);*/
+	backdrop-filter: blur(10px);
+	box-shadow: 0 25px 25px yellow;
+	overflow: hidden;
+	box-shadow: 0 0px 1px white;
+		border: 10px solid yellow;
+	box-shadow: 0 0px 18px 0 yellow, 0 36px 20px 0 rgba(0,0,0,0.19);
+	
+}
+#content{
+	width: 80%;
+	margin: 0px auto;
+	border: 10px solid yellow;
+	height: 88vh;
+	overflow: auto;
+	margin-top: 0px;
+	box-shadow: 0 0px 18px 0 yellow, 0 36px 20px 0 rgba(0,0,0,0.19);
+}
+input{
+	border: none;
+	background-color: transparent;
+	border-bottom: 2px solid yellow;
+	border-top: 2px solid yellow;
+	font-size: 1rem;
+	padding: .3rem;
+	outline: none;
+	color: #fff;
+	width: 44%;
+	background: rgba(255,255,255,0.2);
+	box-shadow: 0 0px 2px white;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+.bi0{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	backdrop-filter: blur(15px);
+	box-shadow: 0 0px 1px white;
+	overflow: hidden; 
+}
+.bi1{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	backdrop-filter: blur(15px);
+	box-shadow: 0 0px 1px white;
+	overflow: hidden;
+	font-size: 15px;
+	font-weight: bold;
+}
+::-webkit-scrollbar{
+	width: 15px;
+}
+::-webkit-scrollbar-thumb{
+	background: WHITE;
+	border: 1px solid rgba(255,255,255,0.1);
+	box-shadow: 09px 9px 18px #ffffff,
+			-09px -9px 18px #ffffff;
+	border-radius: 15px;
+}
+@media(max-width: 600px){
+.box{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: orangered;/*rgba(255,255,255,0.2);*/
+	backdrop-filter: blur(10px);
+	box-shadow: 0 25px 25px yellow;
+	overflow: hidden;
+	box-shadow: 0 0px 1px white;
+		border: 2px solid yellow;
+	box-shadow: 0 0px 18px 0 yellow, 0 36px 20px 0 rgba(0,0,0,0.19);
+}
+#content{
+	width: 90%;
+	margin: 0px auto;
+	border: 2px solid yellow;
+	height: 88vh;
+	overflow: auto;
+	margin-top: 0px;
+	box-shadow: 0 0px 18px 0 yellow, 0 36px 20px 0 rgba(0,0,0,0.19);
+}
+}
+</style> 
+</head> 
+<body>
+<div class="box">
+
+<div>
+
+<center>
+<input id="userBox" type="text" placeholder="" onkeydown="if(event.keyCode == 13){ talk() }" autocomplete="off" required/>
+</center>
+<div id="content">
+<div class="menu" id="chatLog">
+<br/><h1>Nossos serviços AKWANZA</h1><br/><h3>Ecolha uma opção de serviço:</h3>
+<div style="font-size: 20px;">
+<br />1) Começar a ganhar
+</br />2) Ganhos por referências
+</br />3) Históricos de ganhos
+</br />4) Sobre o projecto
+</br />5) Menu
+</div>
+<br /><center><hr width='80%' color='yellow' size='1'></center>
+</div>
+</div>
+
+
+
+<script type="text/javascript">
+var know = {
+"5" : "<br/><h1>Nossos serviços AKWANZA</h1><br/><h3>Ecolha uma opção de serviço:</h3><div style='font-size: 20px;'><br />1) Começar a ganhar</br />2) Ganhos por referências</br />3) Históricos de ganhos</br />4) Sobre o projecto</br />5) Menu</div><br /><hr width='80%' color='yellow' size='1'>",
+"1" : "<h1>Começar a ganhar</h1><br /><p style='color: yellow; font-size: 20px;'> Olá boas vindas. Comece a ganhar com o nosso projeccto Akwanzas de forma grátis todos os dias. Tudo que precisas fazer para começar a ganhar é acessar a sua conta Unitel Money e enviar 100,00 AKZ a este número <b style="color: white;">940278820</b>. Após 15 minutos receberas de volta 130,00 AKZ direito na sua conta Unitel Money. Os pagamentos são automaticos e o nosso programa de bonus paga 5% e sem limite.<br /><br />Usuários a ganharem <h1>00001,00 AKZ</h1><br />Valores a ganharem <h1>00001,00 AKZ</h1></p><br /><hr width='80%' color='yellow' size='1'>",
+"2" : "<h1>Ganhos por referências</h1><br /><p style='color: yellow; font-size: 20px;'>Sim, o nosso projecto Akwanza paga mais 5% por cada referência. Sempre que convidares uma pessoa e ela fazer um investimento, indique ela a colocar o seu numero Unitel Money na opção de transferência, assim quando ela, a pessoa que indicaste, receber os seus ganhos investidos, será creditado em sua conta os 5% por indicares ela. Convide seus familiares e comecem a ganhar dinheiro <i>aqui</i> todos os dias de forma grátis. <br /><br />Referêcias convidadas <h1>00001,00 AKZ</h1> <br />Referêcias ganhando <h1>00001,00 AKZ</h1></p><br /><hr width='80%' color='yellow' size='1'>",
+"3" : "<h1>Históricos de ganhos</h1><br /><center><table style='font-size: 20px; width: 99%; border-collapse: collapse;'><tr><td style='border: 2px solid yellow;'>Últimos pagamentos +1000,00 AKZ</td><td style='border: 2px solid yellow;'>Últimos depósitos +7000,00 AKZ</td></tr></table></center><br /><h1>1000000.00 AKZ</h1><p style='color: yellow; font-size: 20px;'>Gerando ganhos dos nossos clientes<br /><br />Tempo de trabalho do projecto<br /><h1>01:35:50</h1></p><br /><hr width='80%' color='yellow' size='1'>",
+"4" : "<h1>Sobre o projecto</h1><br /><p style='color: yellow; font-size: 20px;'>Akwanza Sistema financeiro baseado no princípio de distribuição de fluxo de caixa. Os recursos dos participantes que investiram posteriormente são distribuídos entre os participantes que investiram anteriormente, o projecto é funcional e baseado no princípio de uma pirâmide financeira. Qualquer pessoa maior de 18 anos pode participar. <!--<b style='color: white;'>A essência do programa é simples e reside no facto de que hoje você ajudou e amanhã eles o ajudarão.</b>--> Tudo é muito simples e acessível até para um iniciante. Nosso projecto não impõe nenhum requisito e condição a você. Basta fazer um novo investimento de 100,00 AKZ e esperar 15 minutos. Após esse período, você receberá seu depósito mais 30% de lucro. Seu investimento será transferido automaticamente para a sua carteira que você fez o investimento. <b style='color: white'><br />Você precisa entender como funciona o sistema e não se esquecer dos riscos do mercado de investimentos! Sim, há uma chance mínima de você não receber um pagamento, por isso recomendamos investir com sabedoria!</b>;<br /><br />Ao transferir os valores, você aceitas os termos de trabalho sobre o projecto. <b style='color: white;'>Apoiar o projecto: <a href='mailto:p1335614@gmail.com' target='_blank' style='padding: 0px; text-decoration: none;'>p1335614@gmail.com.</a></b></p><br /><h1>1000000,00 AKZ</h1> <b style='font-size: 20px;'>Bonus dos usuaários mais activos</b><br/><br/><b style='font-size: 20px;'>Pagamentos de bonus </b><h1>10000,00 AKZ</h1><br><hr width='80%' color='yellow' size='1'>",
+};
+function talk(){
+var user = document.getElementById("userBox").value;
+document.getElementById("chatLog").innerHTML = user + "<br/>";
+if (user in know){
+document.getElementById("chatLog").innerHTML = know[user] + "<br/>";
+}else{
+document.getElementById("chatLog").innerHTML = "<h1>Responda correctamente!</h1> <br /><br /><a href='aoa.html' style='text-decoration: none;'><h3>Voltar</h3></a>";
+}
+}
+</script>	
+	<script type="text/javascript">
+	window.onload=function(){userBox.focus()}
+	</script>
+
+</body> 
+</html>
