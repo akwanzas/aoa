@@ -54,7 +54,7 @@ body{
 	width: 90%;
 }
 button{
-	background: lime;
+	background: rgba(8,255,255,0.9);
 	padding: 20px;
 	width: 100%;
 	color: white;
@@ -83,8 +83,8 @@ button:active{
 	justify-content: center;
 }
 .ce{
-	background-color: rgba(255,255,255,0.5);
-	color: aqua;
+	border: 22px solid rgba(8,255,255,0.7);
+	color: white;
 	border-radius: 5px;
 	position: relative;
 	padding: 35px;	
@@ -228,6 +228,9 @@ a:active{
 td{
 	font-size: 30px;
 }
+.h1{
+	font-size: 30px; 
+}
 @media only screen and (max-width: 800px){
 .modalcontent1{
 	overflow: auto;
@@ -279,6 +282,10 @@ td{
 }
 td{
 	font-size: 20px;
+}
+.h1{
+	font-size: 25px; 
+	font-weight: bold;
 }
 }
 </style>
@@ -388,18 +395,17 @@ Referêcias convidadas.
 
 <div class="popup">
 <div class="ce">
-<p style="color: aqua; font-size: 15px;">
+<p class="h1" style="color: white;">
 GANHE DENHEIRO ONLINE<br /> 30% EM 5 MINUTOS<br />
 100,00 AKZ = +130% / 5 MINUTOS<br /> 
 </p>
 <center>
 <hr width="80%" color="silver" size="2"/></center>
 
-<a href="#modalbox4" onclick="audio.play()" style="text-transform: none; background: transparent; color: #99ffff;">Ler os termos de trabalho.</a>
+<a href="#modalbox4" onclick="audio.play()" style="text-transform: none; background: transparent; color: #fff555; font-weight: bold;">Ler os termos de trabalho.</a>
  
-<input type="checkbox" id="check" onclick="enable()" name="termos" value="ter" onclick="audio.play()"> Aceito os termos de trabalho deste projecto.</p>
-<br/><button disabled="true" id="close" onclick="audio.play()">Aceito</button><br/><br/>
-<p style="color: #999fff; font-size: 10px;">© 2023.<!--01-04-2023--></p>
+<p style="font-weight: bold;"><input type="checkbox" id="check" onclick="enable()" name="termos" value="ter" onclick="audio.play()"> Aceito os termos de trabalho deste projecto.</p>
+<br/><button disabled="true" id="close" onclick="audio.play()" style="font-weight: bold;">Aceito</button><br/><br/>
 
 </div>
 </div>
