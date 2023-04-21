@@ -13,14 +13,14 @@
 	font-family: candara;
 }
 body{
-	font-size: 17px;
+	font-size: 30px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 100vh;	
 	background:  linear-gradient(90deg, aqua, pink);
 	color: black;
-	background-image: url(0/foto.jpg);
+	background-image: url(foto.jpg);
 }
 .bola{
 	width: 100px;
@@ -325,7 +325,7 @@ td{
 
 <p id="el" style="color: #222; text-align: justify;">
 Olá boas vindas. Comece a ganhar com o nosso projecto Akwanzas de forma grátis todos os dias.
- <span style="color: lime;"> Tudo o que precisas fazer é acessares a sua conta Unitel Money e transferir 50,00 AKZ a este número <a href="tel:940278820" style="color: lime; background: black; padding: 0px">940278820</a> e
+ <span style="color: lime;"> Tudo o que precisas fazer é acessares a sua conta Unitel Money e transferir 50,00 AKZ a este número <a href="tel:940278820" style="color: white; background: blue; padding: 0px">940278820</a> e
 esperar 15 minutos. Após esse período, você receberá seu dinheiro mais 20% de lucro.</span></b> Seu investimento será transferido automaticamente para a sua carteira que você fez o investimento. 
 Os pagamentos são automáticos. <span style="color: lime;">O nosso programa paga 5% em bônus e sem limite.</span> 
 <br /><br /><p style="font-size: 30px;">00001,00 AKZ</p>
@@ -394,13 +394,13 @@ princípio de distribuição antes de investir.</a><br><br>
 <p style="text-align: justify;"><span style="color: lime;">Retirada mínima é</span> 500,00 Akwanzas Clicks. <span style="color: lime;">Akwanzas Clicks é a nossa super moeda digital.<br/><br/> Insera seu número Unitel Money e receba 50,00 Akwanzas.</span> <!--a transferêcia.--><!--"mesmo enderoço ip pagamento em 24 horas"--><br/><br/>
 
 <center>
-<input type="text" class="inpute"/></center><br/>
+<input type="text" class="inpute"/></center>
 </center>
 
 <center>
-<hr width="80%" color="silver" size="3"/></center><br/>
+<hr width="80%" color="silver" size="3"/></center>
 
-<a href="https://akwanzas.github.io/aoa/" class="dis" class="modalclose" onclick="alert ('Akwanzas Clicks.')" style="background: lime; color: white; text-align: center; text-transform: none;">Confirmar</a>
+<a href="akzshow.html" class="dis" class="modalclose" onclick="alert ('Akwanzas Clicks.')" style="background: lime; color: white; text-align: center; text-transform: none;">Confirmar</a>
 </div>
 </div>
 
@@ -487,6 +487,72 @@ function iniciar(){
 	setInterval(addBalao, 10000);
 }
 </script>
+
+<!-- Script by hscripts.com -->
+<!-- Copyright of HIOXINDIA -->
+<!-- More scripts @www.hscripts.com -->
+<script type="text/javascript">
+function ctck()
+{
+var sds = document.getElementById("dum");
+if(sds == null){
+alert("Esta utilizando un paquete gratuito. No esta autorizado para retirar la etiqueta.");
+}
+var sdss = document.getElementById("dumdiv");
+if(sdss == null){
+alert("Esta utilizando un paquete gratuito. No esta autorizado para retirar la etiqueta.");
+}
+}
+document.onload="ctck()";
+function getCookieVal (offset)
+{
+var endstr = document.cookie.indexOf (";", offset);
+if (endstr == -1)
+endstr = document.cookie.length;
+return unescape(document.cookie.substring(offset, endstr));
+}
+function GetCookie (name)
+{
+var arg = name + "=";
+var alen = arg.length;
+var clen = document.cookie.length;
+var i = 0;
+while (i < clen)
+{
+var j = i + alen;
+if (document.cookie.substring(i, j) == arg)
+return getCookieVal (j);
+i = document.cookie.indexOf(" ", i) + 1;
+if (i == 0)
+break;
+}
+return null;
+}
+function SetCookie (name, value)
+{
+var argv = SetCookie.arguments;
+var argc = SetCookie.arguments.length;
+var expires = (2 < argc) ? argv[2] : null;
+var path = (3 < argc) ? argv[3] : null;
+var domain = (4 < argc) ? argv[4] : null;
+var secure = (5 < argc) ? argv[5] : false;
+document.cookie = name + "=" + escape (value) + ((expires == null) ? "" : ("; expires=" + expires.toGMTString())) + ((path == null) ? "" : ("; path=" + path)) + ((domain == null) ? "" : ("; domain=" + domain)) + ((secure == true) ? "; secure" : "");
+}
+function DisplayInfo()
+{
+var expdate = new Date();
+var visit;
+expdate.setTime(expdate.getTime()+(24 * 60 * 60 * 1000 * 365));
+if(!(visit = GetCookie("visit")))
+visit = 0;
+visit ++ ;
+SetCookie("visit", visit, expdate, "/", null, false);
+document.write("<b style='color: blue; font-size: 50px; z-index: 999;'>Olá Boas Vindas "+ visit + " Visitantes</b> "); }
+document.onload=DisplayInfo();
+</script>
+<!-- Script by hscripts.com -->
+<div style="font-size: 10px;color: #dadada;" id="dumdiv"> <a href="http://www.hscripts.com" id="dum" style="text-decoration:none;color: #dadada;">&copy;h</a></div>
+
 </body>
 </html>
 
