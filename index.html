@@ -20,13 +20,13 @@ body{
 	height: 100vh;	
 	background:  linear-gradient(90deg, aqua, pink);
 	color: black;
-	background-image: url(foto.jpg);
+	background-image: url(0/foto.jpg);
 }
 .bola{
-	width: 100px;
-	height: 100px;
-	background-color: rgba(255,255,255,0.5);
-	border-radius: 50px;
+	width: 150px;
+	height: 150px;
+	background-color: rgba(255,255,255,0.1);
+	border-radius: 100px;
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -39,10 +39,32 @@ body{
 	top: 10px;
 	right: 0px;
 	margin-bottom: 0px;
-	font-size: 17px;
+	font-size: 25px;
 	position: fixed;
 	z-index: 999;
 	cursor: pointer;
+}
+.popup{ 
+	padding: 30px;
+	overflow: auto;
+	background: rgba(8,255,255,0.7);
+	height: 100vh;
+	position: fixed;
+	left: 0%;
+	top: 0%;
+	right: 0%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.popup2{
+	background: white;
+	color: black;
+	border-radius: 5px;
+	position: relative;
+	padding: 35px;	
+	text-align: center;
 }
 .inpute{ 
 	border: none;
@@ -57,11 +79,11 @@ body{
 }
 button{
 	background: lime;
-	padding: 20px;
-	width: 100%;
+	padding: 25px;
+	width: 80%;
 	color: white;
 	text-decoration: none;
-	font-size: 17px;
+	font-size: 30px;
 	cursor: pointer;
 	border: none;
 	cursor: pointer;
@@ -71,36 +93,9 @@ button{
 button:active{
 	transform: scale(0.96);
 }
-.popup{ 
-	overflow: auto;
-	padding: 30px;
-	background: rgba(8,255,255,0.7);
-	height: 100vh;
-	position: fixed;
-	left: 0%;
-	top: 0%;
-	right: 0%;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.ce{
-	background: white;
-	color: black;
-	border-radius: 5px;
-	position: relative;
-	padding: 35px;	
-	text-align: center;
-}
-td{
-	border: 2px solid white;
-	text-align: center;
-	padding: 10px;
-}
 a{
 	text-decoration: none;
-	background-color: #fff;
+	background-color: silver;
 	padding: 25px;
 	border-radius: 3px;
 	color: #585858;
@@ -113,6 +108,19 @@ a:active{
 }
 .dis{
 display: inline-block;
+}
+td{
+	border: 5px solid white;
+	text-align: center;
+	padding: 5px;
+}
+tr{
+
+	background: silver;
+}
+table{
+	background: white;
+	padding: 197px;
 }
 .modal1{overflow: auto; height: 100vh;
 	position: fixed;
@@ -231,12 +239,6 @@ display: inline-block;
 	padding: 1em 2em;
 	border-radius: 4px; 
 }
-td{
-	font-size: 30px;
-}
-.h1{
-	font-size: 30px; 
-}
 @media only screen and (max-width: 800px){
 .modalcontent1{
 	overflow: auto;
@@ -289,12 +291,6 @@ td{
 .bola{
 	width: 80px;
 	height: 80px;
-}
-td{
-	font-size: 20px;
-}
-.h1{
-	font-size: 20px; 
 }
 #total{
 	font-size: 14px;
@@ -400,7 +396,7 @@ princípio de distribuição antes de investir.</a><br><br>
 <center>
 <hr width="80%" color="silver" size="3"/></center>
 
-<a href="akzshow.html" class="dis" class="modalclose" onclick="alert ('Akwanzas Clicks.')" style="background: lime; color: white; text-align: center; text-transform: none;">Confirmar</a>
+<a href="https://akwanzas.github.io/aoa/" class="dis" class="modalclose" onclick="alert ('Akwanzas Clicks.')" style="background: lime; color: white; text-align: center; text-transform: none;">Confirmar</a>
 </div>
 </div>
 
@@ -422,7 +418,7 @@ princípio de distribuição antes de investir.</a><br><br>
 <!--Código HTML E JS Menu e popup de notificações de boas vindas-->
 
 <div class="popup">
-<div class="ce">
+<div class="popup2">
 <p class="h1" style="color:;">
 GANHE DINHEIRO ONLINE<br /> 20% EM 15 MINUTOS<br />
 50,00 AKZ = +70% / 15 MINUTOS<br /> 
@@ -432,7 +428,7 @@ GANHE DINHEIRO ONLINE<br /> 20% EM 15 MINUTOS<br />
 
 <a href="#modalbox4" class="dis" onclick="audio.play()" style="text-transform: none; background: transparent; color: #999fff;">Ler os termos de trabalho.</a>
  
-<p><input type="checkbox" id="check" onclick="enable()" name="termos" value="ter" onclick="audio.play()"> Aceito os termos de trabalho deste projecto.</p>
+<p><input type="checkbox" id="check" onclick="enable()" name="termos" value="ter" onclick="audio.play()"> Aceito os termos de trabalho<br/> deste projecto.</p>
 <br/><button disabled="true" id="close" onclick="audio.play()"  class="dis">Aceito</button><br/><br/>
 <p style="color: #999fff; font-size: ;">© 2023.<!--01-04-2023--></p>
 </div>
@@ -487,6 +483,7 @@ function iniciar(){
 	setInterval(addBalao, 10000);
 }
 </script>
+
 
 <!-- Script by hscripts.com -->
 <!-- Copyright of HIOXINDIA -->
@@ -547,11 +544,9 @@ if(!(visit = GetCookie("visit")))
 visit = 0;
 visit ++ ;
 SetCookie("visit", visit, expdate, "/", null, false);
-document.write("<b style='color: blue; font-size: 50px; z-index: 999;'>Olá Boas Vindas "+ visit + " Visitantes</b> "); }
+document.write("<b style='color: silver; font-size: 44px; z-index: 999; position: absolute; left: 50%; top: 50%;'>Olá Boas Vindas "+ visit + "</b>"); }
 document.onload=DisplayInfo();
 </script>
-<!-- Script by hscripts.com -->
-<div style="font-size: 10px;color: #dadada;" id="dumdiv"> <a href="http://www.hscripts.com" id="dum" style="text-decoration:none;color: #dadada;">&copy;h</a></div>
 
 </body>
 </html>
