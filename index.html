@@ -20,20 +20,21 @@ body{
 	height: 100vh;	
 	background:  linear-gradient(90deg, aqua, pink);
 	color: black;
-	background-image: url(0/foto.jpg);
+	background-image: url(0/i.jpg);
 }
 .bola{
-	width: 150px;
-	height: 150px;
+	width: 100px;
+	height: 100px;
 	background-color: rgba(255,255,255,0.1);
 	border-radius: 100px;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	right: 0px;
+	position: absolute; margin-top: 5%;
 	z-index: 999;
 	cursor: pointer;
 	border: 1px solid white;
+	align-items: center;
+	justify-content: center;
+	margin-left: 900px;
+	top: 300px;
 }
 #total{
 	top: 10px;
@@ -47,7 +48,7 @@ body{
 .popup{ 
 	padding: 30px;
 	overflow: auto;
-	background: rgba(8,255,255,0.7);
+	background-image: url(0/i.jpg);
 	height: 100vh;
 	position: fixed;
 	left: 0%;
@@ -65,15 +66,15 @@ body{
 	position: relative;
 	padding: 35px;	
 	text-align: center;
+	width: 470px; font-size: 35px;
 }
 .inpute{ 
 	border: none;
-	background-color: transparent;
 	color: lime;
 	border: 2px solid black;
 	border-radius: 5px;
-	font-size: 25px;
-	padding: 17px;
+	font-size: 29px;
+	padding: 25px;
 	width: 90%;
 	outline: none;
 }
@@ -110,17 +111,20 @@ a:active{
 display: inline-block;
 }
 td{
-	border: 5px solid white;
+	background-image: url(0/i.jpg); 
+	border: 30px solid white;
 	text-align: center;
-	padding: 5px;
+	padding: 15px;
+	border: 5px;
 }
 tr{
-
-	background: silver;
+	background-image: url(0/i.jpg); 
 }
 table{
-	background: white;
-	padding: 197px;
+	background-image: url(0/i.jpg);
+	padding: 100px;
+	border: 5px;
+	border-radius: 5px;
 }
 .modal1{overflow: auto; height: 100vh;
 	position: fixed;
@@ -291,9 +295,10 @@ table{
 .bola{
 	width: 80px;
 	height: 80px;
+	margin-left: 150px;
 }
 #total{
-	font-size: 14px;
+	font-size: 20px;
 	top: 5px;
 }
 }
@@ -307,9 +312,6 @@ table{
 	<tr>
 	<td><a href="#modalbox2" class="dis" onclick="audio.play()">Ganhos por referências</a></td>
 	</tr>
-	<tr>
-	<td><a href="#modalbox4" class="dis" onclick="audio.play()">Sobre o projecto</a></td>
-	</tr>
 </table>
 
 <div id="modalbox1" class="modal1">
@@ -321,7 +323,7 @@ table{
 
 <p id="el" style="color: #222; text-align: justify;">
 Olá boas vindas. Comece a ganhar com o nosso projecto Akwanzas de forma grátis todos os dias.
- <span style="color: lime;"> Tudo o que precisas fazer é acessares a sua conta Unitel Money e transferir 50,00 AKZ a este número <a href="tel:940278820" style="color: white; background: blue; padding: 0px">940278820</a> e
+ <span style="color: lime;"> Tudo o que precisas fazer é acessares a sua conta Unitel Money e transferir 50,00 AKZ a este número <a href="tel:940278820" style="background: silver; color: white; padding: 0px;">940278820</a> e
 esperar 15 minutos. Após esse período, você receberá seu dinheiro mais 20% de lucro.</span></b> Seu investimento será transferido automaticamente para a sua carteira que você fez o investimento. 
 Os pagamentos são automáticos. <span style="color: lime;">O nosso programa paga 5% em bônus e sem limite.</span> 
 <br /><br /><p style="font-size: 30px;">00001,00 AKZ</p>
@@ -390,7 +392,7 @@ princípio de distribuição antes de investir.</a><br><br>
 <p style="text-align: justify;"><span style="color: lime;">Retirada mínima é</span> 500,00 Akwanzas Clicks. <span style="color: lime;">Akwanzas Clicks é a nossa super moeda digital.<br/><br/> Insera seu número Unitel Money e receba 50,00 Akwanzas.</span> <!--a transferêcia.--><!--"mesmo enderoço ip pagamento em 24 horas"--><br/><br/>
 
 <center>
-<input type="text" class="inpute"/></center>
+<input type="text" id="userBox" class="inpute"/></center>
 </center>
 
 <center>
@@ -420,8 +422,8 @@ princípio de distribuição antes de investir.</a><br><br>
 <div class="popup">
 <div class="popup2">
 <p class="h1" style="color:;">
-GANHE DINHEIRO ONLINE<br /> 20% EM 15 MINUTOS<br />
-50,00 AKZ = +70% / 15 MINUTOS<br /> 
+Ganhe Dinheiro<br /> 20% Em 15 Minutos<br />
+50,00 Akzs = +70% / 15 Minutos<br /> 
 </p>
 <center>
 <hr width="80%" color="aqua" size="2"/></center>
@@ -454,6 +456,10 @@ close.disabled = 'close';
 <!--<script type="text/javascript">
 	var audio = new Audio();
 	audio.src = '0/on.mp3';
+</script>--><!--
+</script>	
+	<script type="text/javascript">
+	window.onload=function(){userBox.focus()}
 </script>-->
 
 <p id="total"></p>
@@ -463,8 +469,8 @@ close.disabled = 'close';
 function addBalao(){
 	var bola = document.createElement("div");
 	bola.setAttribute("class", "bola");
-	var x = Math.floor(Math.random() * 150);
-	var y = Math.floor(Math.random() * 75);
+	var x = Math.floor(Math.random() * 100);
+	var y = Math.floor(Math.random() * 300);
 	bola.setAttribute("style", "left:"+x+"px;top:"+y+"px;");
 	bola.setAttribute("onclick", "estourar(this)");
 	
@@ -477,7 +483,7 @@ function estourar(objecto){
 
 placar ++;
 	var score = document.getElementById("total");
-	score.innerHTML = "<a class='dis' style='padding: 10px; background: rgba(255,255,255,0.9); border-radius: 5px;' href='#modalbox5'>Receber</button><br/> "+ placar + ",00 AKZ";
+	score.innerHTML = "<a class='dis' style='padding: 10px; background: rgba(255,255,255,0.9); border-radius: 5px;' href='#modalbox5'></button> "+ placar + ",00 AKZ <br/>Receber";
 }
 function iniciar(){
 	setInterval(addBalao, 10000);
@@ -544,7 +550,7 @@ if(!(visit = GetCookie("visit")))
 visit = 0;
 visit ++ ;
 SetCookie("visit", visit, expdate, "/", null, false);
-document.write("<b style='color: silver; font-size: 44px; z-index: 999; position: absolute; left: 50%; top: 50%;'>Olá Boas Vindas "+ visit + "</b>"); }
+document.write("<i><b style='color: silver; font-size: 44px; z-index: 999; position: fixed; top: 40%; left: 10%; right: 85%;'>Olá Boas Vindas "+ visit + "</b></i>"); }
 document.onload=DisplayInfo();
 </script>
 
