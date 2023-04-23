@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt"> 
+<head> 
+<meta charset="utf-8"/>
+<!--<meta http-equiv="refresh" content="500"/>-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>$$$$A1 Lista de trabalho. Hoje, dia 17 04 2023$$$$</title>
+<link rel="shortcut icon" href="0.png"/>
+</head> 
+<body bgcolor="orange">
+
+<center>
+<div class="container">   
+<input id="search" onkeyup="filter()" autocomplete="off" type="text" placeholder="Search" /> 
+<input id="search" onkeyup="filter()" autocomplete="off" type="text" placeholder="Public" /> 
+<ul id="menu"> 
+
+
+
+
+
+<li><p>llllllll</p></li>
+<li><p>kkkkkkkk </p></li>
+
+
+
+
+
+</ul> 
+</div>
+
+</center>
+<script type="text/javascript">
+function filter(){ var filterValue, input, ul,li,p,i; input = document.getElementById("search"); filterValue = input.value.toUpperCase(); ul = document.getElementById("menu"); li = ul.getElementsByTagName("li"); for (i = 0 ; i < li.length ; i++){ p = li[i].getElementsByTagName("p")[0]; if(p.innerHTML.toUpperCase().indexOf(filterValue) > -1){ li[i].style.display = ""; }else{ li[i].style.display = "none"; } } }
+</script> 
+
+<style type="text/css">
+*{
+	margin: 0; 
+	padding: 0; 
+	font-family: ocr a;
+	color: yellow;
+}
+.container{ 
+	border: 1px solid #333;
+	position: center;
+	padding: 15px; 
+	border-radius: 10px; 
+	width: 80%;  
+}
+input{ 
+	text-align:center; 
+	margin-bottom: 10px;  
+	font-size: 15px; 
+	background: transparent;
+	border: 1px solid #333;
+	width: 50%;
+	padding: 5px;
+	transition: box-shadow: 0.5s ease;
+	color: #fff;
+} 
+.container ul li{ 
+	list-style-type: none; 
+	padding: 14px; 
+	transition: .4s; 
+	border: 1px solid #333;
+	cursor: pointer;
+	margin-bottom: 1px; 
+	width: 80%;
+}
+.container ul b{ 
+	color: #555; 
+	text-decoration: none; 
+	font-size: 15px;
+}
+</style> 
+</body> 
+</html>
