@@ -20,13 +20,13 @@ body{
 	height: 100vh;	
 	background:  linear-gradient(90deg, aqua, pink);
 	color: black;
-	background-image: url(0/i.jpg);
+	/*background-image: url(0/i.jpg);*/
 }
 .bola{
 	width: 100px;
 	height: 100px;
-	/*background:  linear-gradient(130deg, yellow, red, orange);*/
-	background: rgba(255,255,255,0.5);
+	background:  linear-gradient(130deg, yellow, red, orange);
+	/*background: rgba(255,255,255,0.5);*/
 	border-radius: 100px;
 	position: absolute; margin-top: 5%;
 	z-index: 999;
@@ -538,7 +538,7 @@ placar ++;
 	score.innerHTML = "<a class='dis' style='padding: 10px; background: rgba(255,255,255,0.9); border-radius: 5px; border: 5px solid white;} ' href='#modalbox5'></button> "+ placar + ",00 AKZS <br/>Receber";
 }
 function iniciar(){
-	setInterval(addBalao, 1000);
+	setInterval(addBalao, 2000);
 }
 </script>
 
