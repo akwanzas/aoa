@@ -13,12 +13,12 @@
 	font-family: candara;
 }
 body{
-	font-size: 30px;
+	font-size: 27px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 100vh;	
-	/*background:  linear-gradient(90deg, aqua, pink);*/
+	background:  linear-gradient(90deg, aqua, pink);
 	color: black;
 	background-image: url(0/i.jpg);
 }
@@ -26,12 +26,10 @@ body{
 	width: 100px;
 	height: 100px;
 	background:  linear-gradient(130deg, yellow, red, orange);
-	/*background: rgba(255,255,255,0.5);*/
 	border-radius: 100px;
 	position: absolute; margin-top: 5%;
 	z-index: 999;
 	cursor: pointer;
-	border: 0px solid white;
 	align-items: center;
 	justify-content: center;
 	margin-left: 900px;
@@ -45,28 +43,6 @@ body{
 	position: fixed;
 	z-index: 999;
 	cursor: pointer;
-}
-.popup{ 
-	padding: 30px;
-	overflow: auto;
-	background-image: url(0/i.jpg);
-	height: 100vh;
-	position: fixed;
-	left: 0%;
-	top: 0%;
-	right: 0%;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.popup2{
-	background: white;
-	color: black;
-	border-radius: 5px;
-	position: relative;
-	padding: 35px;	
-	text-align: center;
 }
 .inpute{ 
 	border: none;
@@ -114,22 +90,6 @@ a:active{
 .dis{
 display: inline-block;
 }
-td{
-	background-image: url(0/i.jpg);
-	border: 30px solid white;
-	text-align: center;
-	padding: 15px;
-	border: 5px;
-}
-tr{
-	background-image: url(0/i.jpg);
-}
-table{
-	background-image: url(0/i.jpg);
-	padding: 80px;
-	border: 5px;
-	border-radius: 5px;
-}
 .modal1{overflow: auto; height: 100vh;
 	position: fixed;
 	top: 0px;
@@ -139,10 +99,10 @@ table{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: rgba(8,255,255,0.7);
+	background: rgba(8,255,255,0.1);
 	transition: all 0.4s;
-	visibility: hidden;
-	opacity: 0;
+	opacity: 1;
+	z-index: 9;
 }
 .modal2{overflow: auto; height: 100vh;
 	position: fixed;
@@ -186,6 +146,34 @@ table{
 	visibility: hidden;
 	opacity: 0;
 }
+.modal5{overflow: auto; height: 100vh;
+	position: fixed;
+	top: 0px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(8,255,255,0.7);
+	transition: all 0.4s;
+	visibility: hidden;
+	opacity: 0;
+}
+.modal6{overflow: auto; height: 100vh;
+	position: fixed;
+	top: 0px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(8,255,255,0.7);
+	transition: all 0.4s;
+	visibility: hidden;
+	opacity: 0;
+}
 .modal1:target{
 	visibility: visible;
 	opacity: 1;
@@ -199,8 +187,19 @@ table{
 .modal3:target{
 	visibility: visible;
 	opacity: 1;
+	z-index: 500;
 }
 .modal4:target{
+	visibility: visible;
+	opacity: 1;
+	z-index: 500;
+}
+.modal5:target{
+	visibility: visible;
+	opacity: 1;
+	z-index: 500;
+}
+.modal6:target{
 	visibility: visible;
 	opacity: 1;
 	z-index: 500;
@@ -239,6 +238,28 @@ table{
 	border-radius: 4px;
 }
 .modalcontent4{
+	overflow: auto;
+	position: fixed;
+	top: 0px;
+	position: relative;
+	background: #fff;
+	width: 500px;
+	max-width: 90%;
+	padding: 1em 2em;
+	border-radius: 4px; 
+}
+.modalcontent5{
+	overflow: auto;
+	position: fixed;
+	top: 0px;
+	position: relative;
+	background: #fff;
+	width: 500px;
+	max-width: 90%;
+	padding: 1em 2em;
+	border-radius: 4px; 
+}
+.modalcontent6{
 	overflow: auto;
 	position: fixed;
 	top: 0px;
@@ -303,6 +324,30 @@ table{
 	padding: 1em 2em;
 	border-radius: 4px; 
 }
+.modalcontent5{
+	overflow: auto;
+	 height: 100vh;
+	position: fixed;
+	top: 0px;
+	position: relative;
+	background: #fff;
+	width: 500px;
+	max-width: 90%;
+	padding: 1em 2em;
+	border-radius: 4px; 
+}
+.modalcontent6{
+	overflow: auto;
+	 height: 100vh;
+	position: fixed;
+	top: 0px;
+	position: relative;
+	background: #fff;
+	width: 500px;
+	max-width: 90%;
+	padding: 1em 2em;
+	border-radius: 4px; 
+}
 .bola{
 	width: 80px;
 	height: 80px;
@@ -312,7 +357,8 @@ table{
 }
 #total{
 	font-size: 20px;
-	top: 25px;
+	top: 25%;
+	left: 10px;
 }
 .class{
 	text-transform: none; background: transparent; color: #999fff; padding: 0px;
@@ -328,21 +374,10 @@ table{
 </style>
 </head>
 <body onload="iniciar()">
-<table>
-	<tr>
-	<td><a href="#modalbox1" class="dis" onclick="audio.play()">Começar a ganhar</a></td>
-	</tr>
-	<tr>
-	<td><a href="#modalbox2" class="dis" onclick="audio.play()">Ganhos por referências</a></td>
-	</tr>
-	<tr>
-	<td><a href="#modalbox4" class="dis" onclick="audio.play()">Sobre o projecto</a></td>
-	</tr>
-</table>
 
 <div id="modalbox1" class="modal1">
 <div class="modalcontent1">
-<p style="font-size: 30px;"><a href="#" class="class">Começar a ganhar</a></p>
+<p style="font-size: 30px;"><a href="#modalbox1" class="class">Começar a ganhar</a></p>
 
 <center>
 <hr width="80%" color="silver" size="3"/></center><br/>
@@ -350,23 +385,24 @@ table{
 <p id="el" style="color: #222; text-align: justify;">
 <span style="color: #999fff;">Olá boas vindas. Comece a ganhar com o nosso projecto Akwanzas de forma grátis todos os dias.</span>
  <span style="color: lime;"> Tudo o que precisas fazer é acessares a sua conta Unitel Money e transferir 50,00 AKZ a este número <a href="tel:940278820" style="background: white; color: lime; padding: 0px;">940278820</a> e
-esperar 10 minutos. Após esse período, você receberá seu dinheiro mais 10% de lucro.</span> <span style="color: #999fff;">Seu investimento será transferido automaticamente para a carteira que você fez o investimento. 
+esperar 5 minutos. Após esse período, você receberá seu dinheiro mais 10% de lucro.</span> <span style="color: #999fff;">Seu investimento será transferido automaticamente para a carteira que você fez o investimento. 
 Os pagamentos são automáticos.</span> <span style="color: lime;">O nosso programa paga 5% em bônus e sem limite.</span> 
 <br /><br /><a href="#" class="class"><p style="font-size: 30px;">00001,00 AKZS</p>
 Usuários a ganharem.</a>
 <br /><br /><a href="#" class="class">Valores a ganharem.<p style="font-size: 30px;">00001,00 AKZS</p></a>
-</p>
 	
 <center>
 <hr width="80%" color="silver" size="3"/></center><br/>
 
-<a href="#" class="dis" class="modalclose" onclick="audio.play()" style="background: lime; color: white; text-align: center; text-transform: none;">Voltar</a>
+<a href="#modalbox2" class="dis" class="modalclose" onclick="audio.play()" style="background: lime; color: white; text-align: center; text-transform: none;">Ganhos por referências</a>
+<a href="#modalbox3" class="dis" class="modalclose" onclick="audio.play()" style="background: lime; color: white; text-align: center; text-transform: none;">Sobre o projecto</a>
+</div>
 </div>
 </div>
 
 <div id="modalbox2" class="modal2">
-<div class="modalcontent3">
-<p style="font-size: 30px;"><a href="#" class="class">Ganhos por referências</a><br/></p>
+<div class="modalcontent2">
+<p style="font-size: 30px;"><a href="#modalbox2" class="class">Ganhos por referências</a><br/></p>
 
 <center>
 <hr width="80%" color="silver" size="3"/></center><br/>
@@ -381,16 +417,18 @@ Referêcias convidadas.</a>
 <center>
 <hr width="80%" color="silver" size="3"/></center><br/>
 
-<a href="#" class="dis" class="modalclose" onclick="audio.play()" style="background: lime; color: white; text-align: center; text-transform: none;">Voltar</a>
+<a href="#modalbox3" class="dis" class="modalclose" onclick="audio.play()" style="background: lime; color: white; text-align: center; text-transform: none;">Sobre o projecto</a>
+<a href="#modalbox1" class="dis" class="modalclose" onclick="audio.play()" style="background: lime; color: white; text-align: center; text-transform: none;">Começar a ganhar</a>
 </div>
 </div>
 
-<div id="modalbox4" class="modal4">
-<div class="modalcontent4">
-<p style="font-size: 30px;"><a href="#" class="class">Sobre o projecto</a></p>
+
+<div id="modalbox3" class="modal3">
+<div class="modalcontent3">
+<p style="font-size: 30px;"><a href="#modalbox3" class="class">Sobre o projecto</a></p>
 <center>
 <hr width="80%" color="silver" size="3"/></center><br/>
-<p style="text-align: justify;"><span style="color: #999fff;">Akwanzas - Sistema financeiro baseado no princípio de distribuição de fluxo de caixa. Os recursos dos participantes que investiram posteriormente são distribuídos entre os participantes que investiram anteriormente, o projecto é funcional <!--e baseado no princípio de uma pirâmide financeira--> e qualquer Pessoa pode participar. Tudo é muito simples. <span style="color: lime; text-align: justify;"> Nosso projecto não impõe nenhum requisito e condição a você. Basta fazer um novo investimento de 50,00 AKZ e esperar 10 minutos. Após esse período, você receberá seu investimento mais 10% de lucro.</span> <span style="text-align: justify; color: #999fff;">Seu investimento será transferido automaticamente para a sua carteira que você fez o investimento.</span>
+<p style="text-align: justify;"><span style="color: #999fff;">Akwanzas - Sistema financeiro baseado no princípio de distribuição de fluxo de caixa. Os recursos dos participantes que investiram posteriormente são distribuídos entre os participantes que investiram anteriormente, o projecto é funcional <!--e baseado no princípio de uma pirâmide financeira-->e todos podem participar. Tudo é muito simples. <span style="color: lime; text-align: justify;"> Nosso projecto não impõe nenhum requisito e condição a você. Basta fazer um novo investimento de 50,00 AKZ e esperar 10 minutos. Após esse período, você receberá seu investimento mais 10% de lucro.</span> <span style="text-align: justify; color: #999fff;">Seu investimento será transferido automaticamente para a sua carteira que você fez o investimento.</span>
 <br /> 
 <a href="#modalbox6" class="dis">Clica aqui e saiba mais como funciona o
 princípio de distribuição antes de investir.</a><br><br>
@@ -405,17 +443,19 @@ princípio de distribuição antes de investir.</a><br><br>
 	 <center>
 <hr width="80%" color="silver" size="3"/></center><br/>
 
-<a href="#" class="dis" class="modalclose" onclick="audio.play()" style="padding: 15px; background: lime; color: white; text-align: center; text-transform: none;" class="dis">Voltar</a>
+<a href="#modalbox1" class="dis" class="modalclose" onclick="audio.play()" style="background: lime; color: white; text-align: center; text-transform: none;">Começar a ganhar</a>
+<a href="#modalbox2" class="dis" class="modalclose" onclick="audio.play()" style="background: lime; color: white; text-align: center; text-transform: none;">Ganhos por referências</a>
 </div>
 </div>
 
-<div id="modalbox5" class="modal4">
+
+<div id="modalbox4" class="modal4">
 <div class="modalcontent4">
-<p style="font-size: 30px;"><a href="#" class="class">Fazer transferências</a></p>
+<p style="font-size: 30px;"><a href="modalbox4" class="class">Fazer transferências</a></p>
 <center>
 <hr width="80%" color="silver" size="3"/></center><br/>
 
-<p style="text-align: justify;"><span style="color: lime;">Retirada mínima é</span> <a href="#" class="class">50,00 Akwanzas Clicks.</a> <span style="color: lime;">Akwanzas Clicks é a nossa super moeda digital.<br/><br/> Insera seu número Unitel Money e receba 5,00 Akwanzas.</span> <!--a transferêcia.--><!--"mesmo enderoço ip pagamento em 24 horas"--><br/><br/>
+<p style="text-align: justify;"><span style="color: lime;">Retirada mínima é</span> <a href="#modalbox5" class="class">50,00 Akwanzas Clicks.</a> <span style="color: lime;">Akwanzas Clicks é a nossa super moeda digital.<br/><br/> Insera seu número Unitel Money e receba +5,00 Akwanzas.</span> <!--a transferêcia.--><!--"mesmo enderoço ip pagamento em 24 horas"--><br/><br/>
 
 <center>
 <input type="text" id="userBox" class="inpute"/></center>
@@ -424,57 +464,45 @@ princípio de distribuição antes de investir.</a><br><br>
 <center>
 <hr width="80%" color="silver" size="3"/></center>
 
-<a href="https://akwanzas.github.io/aoa/" class="dis" class="modalclose" onclick="alert ('Número enviado. Por favor, agora envie 50,00 Akzs a este número 940278820 e em 1 minuto receberas devolta seus 50,00 Akzs e mais o dinheiro que ganhaste e um bonus de 10%.')" style="background: lime; color: white; text-align: center; text-transform: none;">Confirmar</a>
-</div>
-</div>
-
-<div id="modalbox6" class="modal4">
-<div class="modalcontent4">
-<p style="font-size: 30px;"><a href="#" class="class">Nosso sistema</a></p>
-<center>
-<hr width="80%" color="silver" size="3"/></center><br/>
-
-<p style="text-align: justify;"><a href="#" class="class">O nosso sistema paga com base na orde dos investimemtos.</a></p>
-<center>
-<hr width="80%" color="silver" size="3"/></center><br/>
-
-<center><a href="#" class="dis" style="background: lime; color: white;">Voltar</a>
-</center>
+<a href="https://akwanzas.github.io/aoa/" class="dis" class="modalclose" onclick="alert ('Agora, acessa a sua conta Unitel Money e envie 50,00 AKZS a este número 940278820 e em 1 minuto receberas devolta seus 50,00 AKZS e mais o dinheiro que ganhaste e um bônus de 10% directo na sua conta Unitel Money.')" style="background: lime; color: white; text-align: center; text-transform: none;">Confirmar</a>
 </div>
 </div>
 
 <!--Código HTML E JS Menu e popup de notificações de boas vindas-->
 
-<div class="popup">
-<div class="popup2">
-<p class="h1" style="color:;"><!--ganhar com o nosso projecto Akwanzas de forma grátis todos os dias.-->
-<span class="color" style="color: #999fff">EM 10 MINUTOS<br/> GANHE +60% AKZS<br /></span>
-</p>
+<div id="modalbox5" class="modal5">
+<div class="modalcontent5">
+<p style="font-size: 30px;"><a href="#" class="class">Nosso sistema</a></p>
 <center>
-<hr width="80%" color="aqua" size="2"/></center>
+<hr width="80%" color="silver" size="3"/></center><br/>
 
-<a href="#modalbox1" class="dis" onclick="audio.play()" style="padding: 0px; background: transparent; color: #999fff;">Começar a ganhar.</a>
- <!--<a href="#modalbox4" class="dis" onclick="audio.play()" style="padding: 0px; background: transparent; color: #999fff;">Ganhos por referências.</a>
- <a href="#modalbox4" class="dis" onclick="audio.play()" style="padding: 0px; background: transparent; color: #999fff;">Ler os termos de trabalho.</a>
- -->
-<p><input type="checkbox" id="check" onclick="enable()" name="termos" value="ter" onclick="audio.play()"><a href="#modalbox4" style="background: none; color: black; padding: 0px;"> Aceito os termos de trabalho<br/> deste projecto.</a></p>
-<br/><button disabled="true" id="close" onclick="audio.play()"  class="dis" style="
-	background: lime;
-	padding: 25px;
-	width: 80%;
-	color: white;
-	text-decoration: none;
-	font-size: 30px;
-	cursor: pointer;
-	border: none;
-	cursor: pointer;
-	border-radius: 5px;
-	transition: all 0s ease;">Aceito</button><br/><br/>
-<p style="color: #999fff; font-size: ;">© 2023.<!--01-04-2023--></p>
+<p style="text-align: justify;"><span class="class" style="color: lime;">O nosso sistema paga com base na orde dos investimemtos.<br/> Por tanto, <a href="#" class="class">receitamos</a> os valores dos investimentos e <a href="#" class="class">distribuimos.</a> Em compensação garantimos que você ganhe sempre.<br/><br/>
+Ao trabalhar em nosso website, ao investir, você aceitas estes termos de trabalho.</span></p>
+<center>
+<hr width="80%" color="silver" size="3"/></center><br/>
+<center><a href="#modalbox3" class="dis" style="background: lime; color: white;">Aceito</a>
 </div>
 </div>
 
-<script type="text/javascript">	document.querySelector("#close").addEventListener("click", function(){	document.querySelector(".popup").style.display = "none";
+
+<div id="modalbox6" class="modal6">
+<div class="modalcontent6">
+<p style="font-size: 30px;"><a href="#modalbox6" class="class">Sistema de distribuição</a></p>
+<center>
+<hr width="80%" color="silver" size="3"/></center><br/>
+
+<p style="text-align: justify;"><span class="class" style="color: lime;"> Os recursos dos participantes que investiram posteriormente são distribuídos entre os participantes que investiram anteriormente.<br/>
+Qualquer pessoa maior de 5 anos pode participar. A essência do programa é simples e reside no fato de que hoje você ajudou e amanhã eles o ajudarão.<br/>
+Você precisa entender como funciona o sistema e não se esquecer dos riscos do mercado de investimentos! Sim, há uma chance mínima de você não receber um pagamento, por isso recomendamos investir com sabedoria!<br/></br>
+Ao trabalhar em nosso website, ao investir, você aceitas estes termos de trabalho.</p>
+<center>
+<hr width="80%" color="silver" size="3"/></center><br/>
+<center><a href="#modalbox3" class="dis" style="background: lime; color: white;">Aceito</a>
+</center>
+</div>
+</div>
+
+<script type="text/javascript">	document.querySelector("#close").addEventListener("click", function(){	document.querySelector("#window").style.display = "none";
 });
 </script>
 
@@ -507,8 +535,8 @@ close.disabled = 'close';
 function addBalao(){
 	var bola = document.createElement("div");
 	bola.setAttribute("class", "bola");
-	var x = Math.floor(Math.random() * 150);
-	var y = Math.floor(Math.random() * 400);
+	var x = Math.floor(Math.random() * 100);
+	var y = Math.floor(Math.random() * 300);
 	bola.setAttribute("style", "left:"+x+"px;top:"+y+"px;");
 	bola.setAttribute("onclick", "estourar(this)");
 	
@@ -521,10 +549,10 @@ function estourar(objecto){
 
 placar ++;
 	var score = document.getElementById("total");
-	score.innerHTML = "<a class='dis' style='padding: 11px; background: rgba(255,255,255,0.9); border-radius: 5px; border: 5px solid white;} ' href='#modalbox5'></button> "+ placar + ",00 AKZS <br/>Receber";
+	score.innerHTML = "<a class='dis' style='padding: 15px; background: rgba(255,255,255,0.9); border-radius: 5px;' href='#modalbox4'></button> "+ placar + ",00 AKZ <br/>Receber";
 }
 function iniciar(){
-	setInterval(addBalao, 2000);
+	setInterval(addBalao, 1000);
 }
 </script>
 </body>
