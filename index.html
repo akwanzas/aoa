@@ -25,9 +25,10 @@ body{
 .bola{
 	width: 100px;
 	height: 100px;
-	background:  linear-gradient(130deg, yellow, red, orange); 
+	background:  rgba(255,255,255,0.5);
 	border-radius: 100px;
-	position: absolute; margin-top: 5%;
+	position: absolute; 
+	margin-top: 5%;
 	z-index: 999;
 	cursor: pointer;
 	align-items: center;
@@ -394,7 +395,7 @@ Usuários a ganharem.</a>
 <center>
 <hr width="80%" color="silver" size="3"/></center><br/>
 
-<a href="#modalbox2" class="dis" class="modalclose" onclick="audio.play()" style="background: lime; color: white; text-align: center; text-transform: none; margin-bottom: 5px;">Ganhos por referências</a>
+<a href="#modalbox2" class="dis" class="modalclose" onclick="audio.play()" style="background: lime; color: white; text-align: center; text-transform: none; margin-bottom: 1px;">Ganhos por referências</a>
 <a href="#modalbox3" class="dis" class="modalclose" onclick="audio.play()" style="background: lime; color: white; text-align: center; text-transform: none;">Sobre o projecto</a>
 </div>
 </div>
@@ -417,7 +418,7 @@ Referêcias convidadas.</a>
 <center>
 <hr width="80%" color="silver" size="3"/></center><br/>
 
-<a href="#modalbox3" class="dis" class="modalclose" onclick="audio.play()" style="background: lime; color: white; text-align: center; text-transform: none margin-bottom: 5px;">Sobre o projecto</a>
+<a href="#modalbox3" class="dis" class="modalclose" onclick="audio.play()" style="background: lime; color: white; text-align: center; text-transform: none margin-bottom: 1px;">Sobre o projecto</a>
 <a href="#modalbox1" class="dis" class="modalclose" onclick="audio.play()" style="background: lime; color: white; text-align: center; text-transform: none;">Começar a ganhar</a>
 </div>
 </div>
@@ -443,7 +444,7 @@ princípio de distribuição antes de investir.</a><br><br>
 	 <center>
 <hr width="80%" color="silver" size="3"/></center><br/>
 
-<a href="#modalbox1" class="dis" class="modalclose" onclick="audio.play()" style="background: lime; color: white; text-align: center; text-transform: none; margin-bottom: 5px;">Começar a ganhar</a>
+<a href="#modalbox1" class="dis" class="modalclose" onclick="audio.play()" style="background: lime; color: white; text-align: center; text-transform: none; margin-bottom: 1px;">Começar a ganhar</a>
 <a href="#modalbox2" class="dis" class="modalclose" onclick="audio.play()" style="background: lime; color: white; text-align: center; text-transform: none;">Ganhos por referências</a>
 </div>
 </div>
@@ -552,7 +553,7 @@ placar ++;
 	score.innerHTML = "<a class='dis' style='padding: 15px; background: rgba(255,255,255,0.9); border-radius: 5px;' href='#modalbox4'></button> "+ placar + ",00 AKZ <br/>Receber";
 }
 function iniciar(){
-	setInterval(addBalao, 2000);
+	setInterval(addBalao,1000);
 }
 </script>
 </body>
