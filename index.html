@@ -13,7 +13,7 @@
 	font-family: candara;
 }
 body{
-	font-size: 30px;
+	font-size: 44px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -44,13 +44,12 @@ background: linear-gradient(30deg,
 	justify-content: center;
 	margin-left: 900px;
 	top: 300px;
-	z-index: 99999999;
 }
 #total{
 	top: 10px;
 	right: 0px;
 	margin-bottom: 0px;
-	font-size: 25px;
+	font-size: 44px;
 	position: fixed;
 	z-index: 999;
 	cursor: pointer;
@@ -109,7 +108,7 @@ display: inline-block;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	/*background: rgba(8,255,255,0.3);*/
+	background: rgba(8,255,255,0.7);
 	transition: all 0.4s;
 	visibility: none;
 	opacity: 1;
@@ -123,7 +122,7 @@ display: inline-block;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	/*background: rgba(8,255,255,0.3);*/
+	background: rgba(8,255,255,0.7);
 	transition: all 0.4s;
 	visibility: hidden;
 	opacity: 0;
@@ -167,6 +166,7 @@ display: inline-block;
 }
 @media only screen and (max-width: 800px){
 body{
+	font-size: 30px;
 background: linear-gradient( to bottom,
 	#fd004c 20%,
 	#fe9000 20%,
@@ -182,6 +182,9 @@ background: linear-gradient( to bottom,
 	background: rgba(255,255,255,0.2);
 }
 .modal2{
+	background: rgba(255,255,255,0.2);
+}
+.modal3{
 	background: rgba(255,255,255,0.2);
 }
 .modalcontent1{
@@ -208,30 +211,6 @@ background: linear-gradient( to bottom,
 	padding: 1em 2em;
 	border-radius: 4px;
 }
-.modalcontent3{
-	overflow: auto;
-	height: 100vh;
-	position: fixed;
-	top: 0px;
-	position: relative;
-	background: #fff;
-	width: 500px;
-	max-width: 90%;
-	padding: 1em 2em;
-	border-radius: 4px;
-}
-.modalcontent4{
-	overflow: auto;
-	 height: 100vh;
-	position: fixed;
-	top: 0px;
-	position: relative;
-	background: #fff;
-	width: 500px;
-	max-width: 90%;
-	padding: 1em 2em;
-	border-radius: 4px; 
-}
 .bola{
 	width: 80px;
 	height: 80px;
@@ -253,26 +232,28 @@ background: linear-gradient( to bottom,
 </head>
 <body onload="iniciar()">
 
+<script type="text/javascript">alert('Ganhe dinheiros de forma grátis. Tudo que precisas fazer é enviar 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 60,00 AKZS e mais 100% por visitares a página online.');</script>
+
 <div id="modalbox1" class="modal1">
 <div class="modalcontent1">
-<p style="font-size: 30px;"><a href="#" class="class">Fazer transferências</a></p>
+<p style="font-size: 30px;"><a href="#modalbox1" class="class" onclick="alert('Ganhe dinheiros de forma grátis. Tudo que precisas fazer é enviar 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 60,00 AKZS e mais 100% por visitares a página online.');">Fazer transferências</a></p>
 <center>
 <hr width="80%" color="silver" size="3"/></center><br/>
 
-<p style="text-align: justify;"><span style="color: lime;">Retirada mínima é</span> <a href="#modalbox2" class="class">50,00 Akwanzas Clicks.</a> <span style="color: lime;">Akwanzas Clicks é a nossa super moeda digital.<br/><br/> Insera seu número Unitel Money e receba 5,00 Akwanzas.</span> </p>
+<p style="text-align: justify;"><span style="color: lime;">Retirada mínima é</span> <a href="#modalbox2" class="class">50,00 Akwanzas Clicks.</a> <span style="color: lime;">Akwanzas Clicks é a nossa super moeda digital.<br/><br/> Insera seu número Unitel money e receba 5,00 Akwanzas.</span> </p>
 
 <center>
 <hr width="80%" color="silver" size="3"/></center>
 
 <br/>
 <center>
-<input type="text" id="userBox" class="inpute"/></center>
+<input type="number" id="userBox" class="inpute" autocomplete="off" maxlenght="9" required/></center>
 </center>
 
 <center>
 <hr width="80%" color="silver" size="3"/></center>
 
-<a href="https://akwanzas.github.io/aoa/" class="dis" class="modalclose" onclick="alert ('Agora envie 50,00 AKZS a este número 940278820 Unitel Money e em 1 minuto receberás seus 50,00 AKZS e mais o dinheiro que ganhaste e mais 10%.')" style="background: lime; color: white; text-align: center; padding: 25px; font-size: 30px; text-transform: none;">Transferir</a>
+<a href="akzshow.html" class="dis" class="modalclose" onclick="alert('Mensagem enviada. Agora envie 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás devolta seus 50,00 AKZS e mais o dinheiro que você ganhou e mais 100%.')" style="background: lime; color: white; text-align: center; padding: 25px; font-size: 30px; text-transform: none;">Receber</a>
 </div>
 </div>
 
@@ -280,14 +261,14 @@ background: linear-gradient( to bottom,
 
 <div id="modalbox2" class="modal2">
 <div class="modalcontent2">
-<p style="font-size: 30px;"><a href="#" class="class">Nosso sistema</a></p>
+<p style="font-size: 30px;"><a href="#modalbox2" class="class" onclick="alert('Ganhe dinheiros de forma grátis. Tudo que precisas fazer é enviar 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 60,00 AKZS e mais 100% por visitares a página online.');">Nosso sistema</a></p>
 <center>
 <hr width="80%" color="silver" size="3"/></center><br/>
 
 <p style="text-align: justify;"><span class="class" style="color: lime;">O nosso sistema paga com base na orde dos investimemtos.<br/> Por tanto, <a href="#" class="class">receitamos</a> os valores dos investimentos e <a href="#" class="class">distribuimos</a> entre os participantes. Em compensação garantimos que você ganhe sempre. <i>Invista com responsabilidade.</i></span></p>
 
-<br /><a href="#" class="class"><p style="font-size: 30px;">+00001,00 AKZS</p>Novos ganhos.</a>
-<br /><br /><a href="#" class="class">+00001,00 AKZS<p style="font-size: 30px;">Novos depósitos.</p></a>
+<br /><a href="#" class="class"><p style="font-size: 30px;">Novos ganhos.</p>+00001,00 AKZS</a>
+<br /><br /><a href="#" class="class">+00001,00 AKZS<p style="font-size: 30px;">Novos depositos.</p></a>
 
 <center><hr width="80%" color="silver" size="3"/></center><br/>
 
@@ -296,9 +277,33 @@ background: linear-gradient( to bottom,
 </div>
 </div>
 
-<script type="text/javascript">	
-alert('Ganhe dinheirOS de forma grátis. Tudo que precisas fazer é enviar 50,00 AKZS a este número 940278820 Unitel Money e em 1 minuto receberás 60,00 AKZS.');
-</script>
+<!--
+<div id="modalbox" class="modal">
+<div class="modalcontent">
+<p style="font-size: 30px;"><a href="#" class="class">azer transferências</a></p>
+<center>
+<hr width="80%" color="silver" size="3"/></center><br/>
+
+<br/>
+</div>
+</div>-->
+<!--estes 2 modal trabalham juntos editado as as posições das escritas em background, por enquanto inativo-->
+<!--<div id="modalbox0" class="modal0">
+<div class="modalcontent0">
+<p style="font-size: 30px;"><a href="#modalbox3" class="class">azer transferências</a></p>
+<center>
+<hr width="80%" color="silver" size="3"/></center><br/>
+
+<p style="text-align: justify;"><span style="color: lime;">Retirada mínima é</span> <a href="#modalbox2" class="class">50,00 Akwanzas Clicks.</a> <span style="color: lime;">Akwanzas Clicks é a nossa super moeda digital.<br/><br/> Insera seu número Unitel money e receba 5,00 Akwanzas.</span> </p>
+
+<center>
+<hr width="80%" color="silver" size="3"/></center>
+
+<br/>
+</div>
+</div>-->
+
+
 <script type="text/javascript">	document.querySelector("#close").addEventListener("click", function(){	document.querySelector(".popup").style.display = "none";
 });
 </script>
@@ -346,7 +351,7 @@ function estourar(objecto){
 
 placar ++;
 	var score = document.getElementById("total");
-	score.innerHTML = "<a class='dis' style='padding: 15px; background: rgba(255,255,255,0.9); border-radius: 5px;' href='#modalbox1'></button> "+ placar + ",00 AKZ <br/>Receber";
+	score.innerHTML = "<a class='dis' style='padding: 15px; background: rgba(255,255,255,0.9); border-radius: 5px;' href='#modalbox1'></button> "+ placar + ",00 AKZS <br/>Receber";
 }
 function iniciar(){
 	setInterval(addBalao, 4000);
@@ -360,4 +365,4 @@ function iniciar(){
 
 <!--
 _______________________________Transfer valores transferido, voce recebera seu pagamento em menus de 45 minutos <button>Aceito</button>
--------Botao de alerta ---__________________Enviar email. Monetizar a pagina web, conteúdos de pwesquisas webs emails: 100,00 Akzsclicks = 10,00 Akwanza-->
+-------Botao de alerta ---__________________Enviar email. Monetizar a pagina web, conteúdos de pwesquisas webs emails: 100,00 Akzsclicks = 10,00 Akwanza____-->
