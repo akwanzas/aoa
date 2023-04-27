@@ -1,0 +1,464 @@
+
+<!Doctype html>
+<html lang="pt"> 
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>$$$$Ganhar dinheiro$$$$</title>
+<link rel="shortcut icon" href="0/0.png"/>
+<style type="text/css">
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: forte;
+}
+body{
+	font-size: 44px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;	/*
+	background:  linear-gradient(90deg, aqua, pink);
+	color: black;
+	background-image: url(i.jpg);*/
+background: linear-gradient(30deg,
+	#fd004c 20%,
+	#fe9000 20%,
+	#ff9000 40%,
+	#fff020 40%,
+	#fff020 60%,
+	#3edf4b 60%,
+	#3edf4b 80%,
+	#3363ff 80%
+);
+}
+.bola{
+	width: 100px;
+	height: 100px;
+	background:  linear-gradient(130deg, yellow, red, orange);
+	border-radius: 100px;
+	position: absolute; margin-top: 5%;
+	z-index: 999;
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+	margin-left: 900px;
+	top: 300px;
+	z-index: 9999999999999999;
+}
+#total{
+	top: 10px;
+	right: 0px;
+	margin-bottom: 0px;
+	font-size: 44px;
+	position: fixed;
+	cursor: pointer;
+	z-index: 99999999;
+}
+.inpute{ 
+	border: none;
+	color: lime;
+	border: 2px solid #999;
+	border-radius: 5px;
+	font-size: 66px;
+	width: 90%;
+	outline: none;
+}
+a{
+	text-decoration: none;
+	background: silver;
+	padding: 25px;
+	border-radius: 3px;
+	color: #585858;
+	width: 90%;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+a:active{
+	transform: scale(0.96);
+}
+.class{
+	text-transform: none; background: transparent; color: #999fff; padding: 0px;
+	}
+}
+button{
+	background: lime;
+	padding: 25px;
+	width: 80%;
+	color: white;
+	text-decoration: none;
+	font-size: 30px;
+	cursor: pointer;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: all 0s ease;
+}
+button:active{
+	transform: scale(0.96);
+}
+.fort{
+	background: transparent;}
+.fort:hover{ 
+	border: 2px solid aqua;
+	background: rgba(255,255,255,0.9);
+}
+.dis{
+display: inline-block;
+}
+.modal1{overflow: auto; height: 100vh;
+	position: fixed;
+	top: 0px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(8,255,255,0.7);
+	transition: all 0.4s;
+	visibility: none;
+	opacity: 1;
+}
+.modal2{overflow: auto; height: 100vh;
+	position: fixed;
+	top: 0px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(8,255,255,0.7);
+	transition: all 0.4s;
+	visibility: hidden;
+	opacity: 0;
+}
+.modal3{overflow: auto; height: 100vh;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: transparent;
+	transition: all 0.9s;
+	visibility: hidden;
+	opacity: 0;
+}
+.modal1:target{
+	visibility: visible;
+	opacity: 1;
+	z-index: 500;
+}
+.modal2:target{
+	visibility: visible;
+	opacity: 1;
+	z-index: 500;
+}
+.modal3:target{
+	visibility: visible;
+	opacity: 1;
+	z-index: 9999900;
+}
+.modalcontent1{
+	overflow: auto;
+	position: fixed;
+	top: 0px;
+	position: relative;
+	background: #fff;
+	width: 500px;
+	max-width: 90%;
+	padding: 1em 2em;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.modalcontent2{
+	overflow: auto;
+	position: fixed;
+	top: 0px;
+	position: relative;
+	background: #fff;
+	width: 500px;
+	max-width: 90%;
+	padding: 1em 2em;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.modalcontent3{
+	cursor: pointer;
+}
+.color{
+	background-clip: text;
+	-webkit-background-clip: text;
+	animation: jump 1s ease-in-out infinite;
+}
+@media only screen and (max-width: 800px){
+body{
+	font-size: 30px;
+background: linear-gradient( to bottom,
+	#fd004c 20%,
+	#fe9000 20%,
+	#ff9000 40%,
+	#fff020 40%,
+	#fff020 60%,
+	#3edf4b 60%,
+	#3edf4b 80%,
+	#3363ff 80%
+);
+}
+.modal1{
+	background: rgba(255,255,255,0.2);
+}
+.modal2{
+	background: rgba(255,255,255,0.2);
+}
+.modal3{
+	background: rgba(255,255,255,0.2);
+}
+.modalcontent1{
+	overflow: auto;
+	height: 100vh;
+	position: fixed;
+	top: 0px;
+	position: relative;
+	background: #fff;
+	width: 500px;
+	max-width: 90%;
+	padding: 1em 2em;
+	border-radius: 4px;
+}
+.modalcontent2{
+	overflow: auto;
+	height: 100vh;
+	position: fixed;
+	top: 0px;
+	position: relative;
+	background: #fff;
+	width: 500px;
+	max-width: 90%;
+	padding: 1em 2em;
+	border-radius: 4px;
+}
+.bola{
+	width: 80px;
+	height: 80px;
+	margin-left: 90px;
+	top: 300px;
+	position: fixed;
+}
+#total{
+	font-size: 30px;
+	top: 5px;
+}
+.class{
+	text-transform: none; background: transparent; color: #999fff; padding: 0px;
+	}
+table{
+	background-image: url(i.jpg);
+	padding: 20px;
+	border: 5px;
+	border-radius: 5px;
+}/*
+.bola{
+	width: 80px;
+	height: 80px;
+	margin-left: 90px;
+	top: 300px;
+	position: fixed;
+}
+#total{
+	font-size: 20px;
+	top: 25%;
+	left: 10px;
+}
+.class{
+	text-transform: none; background: transparent; color: #999fff; padding: 0px;
+	}
+}
+
+</style>
+</head>
+<body onload="iniciar()">
+<!--
+<script type="text/javascript">alert('Ganhe dinheiros de forma grátis. Tudo que precisas fazer é enviar 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 60,00 AKZS e mais 100% por visitares a página online.');</script>
+-->
+<div id="modalbox1" class="modal1">
+<div class="modalcontent1">
+<p style="font-size: 30px;"><a href="#modalbox2" title="Acessar menu 2." class="class" onclick="alert('Ganhe dinheiros de forma grátis. Tudo que precisas fazer é enviar 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 60,00 AKZS e mais 100% por visitares a página online.');">Fazer transferências</a></p>
+<center>
+<hr width="80%" color="silver" size="3"/></center><br/>
+
+<p style="text-align: justify;"><span style="color: lime;">Retirada mínima é</span> <a href="#modalbox1" title="Akwanzas Clicks é a nossa super moeda digital." class="class">50,00 Akwanzas Clicks.</a> <span style="color: lime;">Akwanzas Clicks é a nossa super moeda digital.<br/><br/> Insira seu número Unitel money e receba 5,00 Akwanzas.</span> </p>
+
+<center>
+<hr width="80%" color="silver" size="3"/></center>
+
+<br/>
+<center>
+<input type="number" id="userBox" class="inpute" autocomplete="off" style="pointer-events: none; opacity: 0.5; text-decoration: none; background: silver;"/></center>
+</center>
+
+<center>
+<hr width="80%" color="silver" size="3"/></center>
+
+<a href="akzshow.html" class="dis" class="modalclose" tyle="background: silver; color: yellow; font-family: forte; text-align: center; padding: 15px; font-size: 45px; border: 2px solid aqua; color: red; solid red; text-transform: none; pointer-events: none; opacity: 0.5; text-decoration: none;">Payeer</a>
+</div>
+</div>
+
+<!--Código HTML E JS Menu e popup de notificações de boas vindas-->
+
+<div id="modalbox2" class="modal2">
+<div class="modalcontent2">
+<p style="font-size: 30px;"><a href="#modalbox1" title="Acessar menu 1." class="class" onclick="alert('Ganhe dinheiros de forma grátis. Tudo que precisas fazer é enviar 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 60,00 AKZS e mais 100% por visitares a página online.');">Nosso sistema</a></p>
+<center>
+<hr width="80%" color="silver" size="3"/></center><br/>
+
+<p style="text-align: justify;"><span class="class" style="color: lime;">O nosso sistema paga com base na orde dos investimemtos.<br/> Por tanto, <a href="#modalbox2" title="Receitamos, organizamos e distribuimos." class="class">receitamos</a> os valores dos investimentos e <a href="#modalbox2"  title="Distribuimos em bem de todos." class="class">distribuimos</a> entre os participantes. Em compensação garantimos que você ganhe sempre. <i>Invista com responsabilidade.</i></span></p>
+
+<br /><a href="#" class="class"><p style="font-size: 30px;">Novos ganhos.</p>+00001,00 AKZS</a>
+<br /><br /><a href="#" class="class">+00001,00 AKZS<p style="font-size: 30px;">Novos depositos.</p></a>
+
+<center><hr width="80%" color="silver" size="3"/></center><br/>
+
+<center><a href="#modalbox1" class="dis" style="background: lime; color: white;">Voltar</a>
+</center>
+</div>
+</div>
+
+<!--
+<div id="modalbox" class="modal">
+<div class="modalcontent">
+<p style="font-size: 30px;"><a href="#" class="class">azer transferências</a></p>
+<center>
+<hr width="80%" color="silver" size="3"/></center><br/>
+
+<br/>
+</div>
+</div>-->
+<!--estes 2 modal trabalham juntos editado as as posições das escritas em background, por enquanto inativo-->
+<!--<div id="modalbox0" class="modal0">
+<div class="modalcontent0">
+<p style="font-size: 30px;"><a href="#modalbox3" class="class">azer transferências</a></p>
+<center>
+<hr width="80%" color="silver" size="3"/></center><br/>
+
+<p style="text-align: justify;"><span style="color: lime;">Retirada mínima é</span> <a href="#modalbox2" class="class">50,00 Akwanzas Clicks.</a> <span style="color: lime;">Akwanzas Clicks é a nossa super moeda digital.<br/><br/> Insera seu número Unitel money e receba 5,00 Akwanzas.</span> </p>
+
+<center>
+<hr width="80%" color="silver" size="3"/></center>
+
+<br/>
+</div>
+</div>-->
+<a href="#modalbox3" class="fort" style="width: 1%;  height: 1vh; font-size: 15px; right: 0px; bottom: 0px; color: yellow; position: fixed; z-index: 99999;">
+</a><br/>
+<a href="#" class="fort" style="width: 1%;  height: 1vh; font-size: 15px; right: 0px; bottom: 50px; color: white; position: fixed; z-index: 99999;">
+</a>
+
+<div id="modalbox3" class="modal3">
+<div class="modalcontent3">
+
+<center style="padding: 20px; font-size: 17px; right: 25px; bottom: 10px; background: rgba(255,255,255,0.9); color: lime; border-radius: 5px; position: fixed; z-index: 99999;">
+<center>
+<b style="color: white;"><img src="0/wii.png" width="50px;"><br/><b style=" color: lime;">Inteligência Artificial.</b><br/>
+<input id="userBoxe" type="text"  style="color: #999; background: transparent; border: 1px solid #999; padding: 5px; font-family: 15px; border-radius: 5px;" placeholder="Repita as palavras" onkeydown="if(event.keyCode == 13){ talk() }" autocomplete="off" required style="width: 80%;"/></b><br/>
+</center>
+<center>
+<b id="chatLog" style="color: lime;  margin-top: 1px;">Inicie uma conversa! olá.</b>
+</center>
+</center>
+
+</div>
+</div>
+
+
+
+
+<script type="text/javascript">
+var know = {
+"olá" : "boas vindas",
+"boas vindas" : "tudo bem",
+"tudo bem" : "seus comandos"
+};
+function talk(){
+var user = document.getElementById("userBoxe").value;
+document.getElementById("chatLog").innerHTML = user + "<br/>";
+if (user in know){
+document.getElementById("chatLog").innerHTML = know[user] + "<br/>";
+}else{
+document.getElementById("chatLog").innerHTML = "Responda correctamente! olá<br/>";
+}
+}
+</script>	
+	<!--<script type="text/javascript">
+	window.onload=function(){userBoxe.focus()}
+	</script>-->
+
+
+
+
+<!--<script type="text/javascript">	document.querySelector("#close").addEventListener("click", function(){	document.querySelector(".popup").style.display = "none";
+});
+</script>
+
+<script type="text/javascript">
+function enable(){
+var check = document.getElementById('check');
+var close = document.getElementById('close');
+
+if (check.checked){
+close.removeAttribute('disabled');
+}else{
+close.disabled = 'close';
+}
+} 
+</script>-->
+
+<!--<script type="text/javascript">
+	var audio = new Audio();
+	audio.src = '0/on.mp3';
+</script>--><!--
+</script>	
+	<script type="text/javascript">
+	window.onload=function(){userBox.focus()}
+</script>-->
+
+<p id="total"></p>
+
+<script type="text/javascript">
+
+function addBalao(){
+	var bola = document.createElement("div");
+	bola.setAttribute("class", "bola");
+	var x = Math.floor(Math.random() * 100);
+	var y = Math.floor(Math.random() * 300);
+	bola.setAttribute("style", "left:"+x+"px;top:"+y+"px;");
+	bola.setAttribute("onclick", "estourar(this)");
+	
+	document.body.appendChild(bola);
+}
+	var placar = 0;
+function estourar(objecto){
+	
+	document.body.removeChild(objecto);
+
+placar ++;
+	var score = document.getElementById("total");
+	score.innerHTML = "<a href='#' class='dis' onclick='alert('Mensagem enviada. Agora envie 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás devolta seus 50,00 AKZS e mais o dinheiro que você ganhou e mais 100%.');' style='padding: 15px; background: rgba(255,255,255,0.9); border-radius: 5px;'></button> "+ placar + ",00 AKZS <br/> Receber";
+}
+function iniciar(){
+	setInterval(addBalao, 4000);
+}
+</script><!--MUDAR PARA POSITION LEFT POIS O right JA TEM 5 FUNCTIONS-->
+<div id="sfchfw8qk22pna9lbkgxshxknpj9cjju23h"></div>
+<script type="text/javascript" src="https://counter2.optistats.ovh/private/counter.js?c=hfw8qk22pna9lbkgxshxknpj9cjju23h&down=async" async></script>
+<noscript><a href="https://www.webcontadores.com" title="contador de visita"><img src="https://counter2.optistats.ovh/private/webcontadores.php?c=hfw8qk22pna9lbkgxshxknpj9cjju23h" border="0" title="contador de visita" alt="contador de visita"></a></noscript>
+
+</body>
+</html>
+
+<!--
+_______________________________Transfer valores transferido, voce recebera seu pagamento em menus de 45 minutos <button>Aceito</button>
+-------Botao de alerta ---__________________Enviar email. Monetizar a pagina web, conteúdos de pwesquisas webs emails: 100,00 Akzsclicks = 10,00 Akwanza____-->
