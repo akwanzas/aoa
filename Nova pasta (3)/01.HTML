@@ -1,0 +1,67 @@
+<!doctype html>
+
+<script type="text/javascript">
+var know = {
+"i" : "Olá",
+"1" : "10%",
+"2" : "20%",
+"3" : "30%",
+"4" : "40%",
+"5" : "50%",
+"6" : "60%",
+"7" : "70%",
+"8" : "80%",
+"9" : "90%",
+"10" : "100%",
+"bom dia" : "bom dia",
+"boa tarde" : "boa tarde",
+"boa noite" : "boa noite",
+"boa madrugada" : "boa madrugada",
+};
+function talk(){
+var user = document.getElementById("userBox").value;
+document.getElementById("chatLog").innerHTML = user + "<br/>";
+if (user in know){
+document.getElementById("chatLog").innerHTML = know[user] + "<br/>";
+}else{
+document.getElementById("chatLog").innerHTML = "Responda correctamente!<br/>";
+}
+}
+</script>	
+	<script type="text/javascript">
+	window.onload=function(){userBoxe.focus()}
+	</script>
+
+<center>
+<b style="color: white;"><b style="background: #00dddd; color: #fff; box-shadow: 0 4px 8px 0 lightskyblue, 0 6px 20px 0 rgba(0,0,0,0.19);">Inteligência Artificial</b>
+<input id="userBox" type="text" placeholder="i" onkeydown="if(event.keyCode == 13){ talk() }" autocomplete="off" required/></b><br/> <br/> 
+</center>
+<center>
+<b id="chatLog" style="color: white; box-shadow: 0 4px 8px 0 lightskyblue, 0 6px 20px 0 rgba(0,0,0,0.19);  margin-top: 1px; background: #00dddd;">Inicie uma conversa!</b>
+</center>
+
+<style type="text/css">
+	body{
+	font-family: arial;
+	font-size: 80%;
+	}
+	input{
+	font-size: 100%;
+	font-family: arial;
+	width: 30%;
+	background: #00dddd;
+	color: #fff;
+	font-size: 100%;
+	border-radius: 10px;
+	border: 15px solid white;
+	border: 10px solid white;
+	box-shadow: 0 4px 8px 0 lightskyblue, 0 6px 20px 0 rgba(0,0,0,0.19);
+	font-weight: bold;
+	}
+	::-webkit-input-placeholder{
+	color: white;
+	font-weight: bold;
+	}
+</style>
+
+</!doctype>
