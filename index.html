@@ -158,8 +158,9 @@ display: inline-block;
 	justify-content: center;
 	background: transparent;
 	transition: all 0.9s;
-	visibility: hidden;
-	opacity: 0;
+	visibility: none;
+	opacity: 1;
+	z-index: 999999999;
 }
 .modal4{overflow: auto; height: 100vh;
 	position: fixed;
@@ -186,7 +187,7 @@ display: inline-block;
 .modal3:target{
 	visibility: visible;
 	opacity: 1;
-	z-index: 999999999;
+	z-index: -999999999;
 }
 .modal4:target{
 	visibility: visible;
