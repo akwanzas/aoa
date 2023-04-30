@@ -13,7 +13,7 @@
 	font-family: forte;
 }
 body{
-	zoom: 175%;
+	zoom: 100%;
 	font-size: 44px;
 	display: flex;
 	align-items: center;
@@ -256,10 +256,10 @@ button:active{
 	border-radius: 8px;
 }
 #notification-area .notification{
-text-align: left;
+	text-align: center;
 	border-radius: 8px;
-	color: aqua;
-	padding: 17px;
+	color: #666;
+	padding: 18px;
 	font-size: 15px;
 	margin: 5px;
 	animation: showNotification 500ms ease-in-out forwards;
@@ -270,16 +270,13 @@ text-align: left;
 	}
 }
 #notification-area .notification.success{
-	background: rgba(255,255,255,0.8);
-	/*background: #7fff00;*/
+	background: rgba(255,255,255,0.9);
 }
 #notification-area .notification.error{
-	background: rgba(255,255,255,0.8);
-	/*background: #7fff00;*/
+	background: rgba(255,255,255,0.9);
 }
 #notification-area .notification.info{
-	background: rgba(255,255,255,0.8);
-	/*background: #7fff00;*/
+	background: rgba(255,255,255,0.9);
 }
 @media only screen and (max-width: 800px){
 body{
@@ -558,13 +555,13 @@ function notify(type,mensage){
 	})();
 }
 function notifySuccess(){
-	notify("success", "921286356 60,00 AKZS 11:15");
+	notify("success", "921286356 | 60,00 AKZS | 11:15");
 }
 function notifyError(){
-	notify("error", "921286356 60,00 AKZS 13:20");
+	notify("error", "921286356 | 60,00 AKZS | 11:15");
 }
 function notifyInfo(){
-	notify("info", "921286356 60,00 AKZS 15:45");
+	notify("info", "921286356 | 60,00 AKZS | 11:15");
 }
 </script>-->
 <!--Script comercial-->
