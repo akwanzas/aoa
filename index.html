@@ -182,8 +182,8 @@ button:active{
 	justify-content: center;
 	background: rgba(8,255,255,0.7);
 	transition: all 0.4s;
-	visibility: hidden;
-	opacity: 0;
+	visibility: none;
+	opacity: 1;
 }
 .modal9{overflow: auto; height: 100vh;
 	position: fixed;
@@ -196,9 +196,8 @@ button:active{
 	justify-content: center;
 	background: rgba(8,255,255,0.7);
 	transition: all 0.4s;
-	visibility: none;
-	opacity: 1;
-	z-index: 9999999;
+	visibility: hidden;
+	opacity: 0;
 }
 .modal1:target{
 	visibility: visible;
@@ -218,7 +217,12 @@ button:active{
 .modal7:target{
 	visibility: visible;
 	opacity: 1;
-	z-index: 999999999;
+	z-index: 9999;
+}
+.modal9:target{
+	visibility: visible;
+	opacity: 1;
+	z-index: 9999;
 }
 .modalcontent1{
 	overflow: auto;
@@ -341,7 +345,7 @@ body{
 	cursor: pointer;
 }
 .textos{
-	font-size: 25px;
+	font-size: 20px;
 }
 .bola{
 	width: 80px;
@@ -562,7 +566,7 @@ function estourar(objecto){
 
 placar ++;
 	var score = document.getElementById("total");
-	score.innerHTML = "<a href='#modalbox1' onclick='mybutton();' class='dis' style='padding: 15px; background: rgba(255,255,255,0.9); border-radius: 5px;'></button> "+ placar + ",00 AKZS <br/> Receber";
+	score.innerHTML = "<a href='#modalbox9' onclick='mybutton();' class='dis' style='padding: 15px; background: rgba(255,255,255,0.9); border-radius: 5px;'></button> "+ placar + ",00 AKZS <br/> Receber";
 }
 function iniciar(){
 	setInterval(addBalao, 4000);
