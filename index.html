@@ -54,7 +54,7 @@ body{
 	font-size: 44px;
 	position: fixed;
 	cursor: pointer;
-	z-index: 999999999
+	z-index: 9999999999999
 }
 .inpute{ 
 	border: none;
@@ -143,6 +143,7 @@ button:active{
 	transition: all 0.4s;
 	visibility: none;
 	opacity: 1;
+	z-index: 99999;
 }
 .modal2{overflow: auto; height: 100vh;
 	position: fixed;
@@ -169,7 +170,7 @@ button:active{
 	transition: all 0.9s;
 	visibility: none;
 	opacity:1;
-	z-index: 99999999;
+	z-index: 999999;
 }
 .modal7{overflow: auto; height: 100vh;
 	position: fixed;
@@ -212,17 +213,17 @@ button:active{
 .modal3:target{
 	visibility: visible;
 	opacity: 1;
-	z-index: 999999;
+	z-index: -999999;
 }
 .modal7:target{
 	visibility: visible;
 	opacity: 1;
-	z-index: 9999;
+	z-index: 9999999999;
 }
 .modal9:target{
 	visibility: visible;
 	opacity: 1;
-	z-index: 9999;
+	z-index: 9999999999;
 }
 .modalcontent1{
 	overflow: auto;
@@ -332,13 +333,19 @@ body{
 );
 }
 .modal1{
-	background: rgba(8,255,255,0.8);
+	background: rgba(255,255,255,0.2);
 }
 .modal2{
-	background: rgba(8,255,255,0.8);
+	background: rgba(255,255,255,0.2);
 }
 .modal3{
-	background: rgba(8,255,255,0.8);
+	background: rgba(255,255,255,0.2);
+}
+.modal7{
+	background: rgba(255,255,255,0.2);
+}
+.modal9{
+	background: rgba(255,255,255,0.2);
 }
 #notification-area{
 	width: 50%;
