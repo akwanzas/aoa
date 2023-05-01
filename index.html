@@ -54,7 +54,7 @@ body{
 	font-size: 44px;
 	position: fixed;
 	cursor: pointer;
-	z-index: 9999999999999
+	z-index: 999999999
 }
 .inpute{ 
 	border: none;
@@ -99,7 +99,7 @@ button:active{
 	transform: scale(0.96);
 }
 .textos{
-	font-size: 15px;
+	font-size: 20px;
 }
 .fort{
 	background: transparent;
@@ -115,19 +115,13 @@ button:active{
 #modalbox1:active{
 	transform: scale(0.99);
 }
-.modalcontent1:active{
-	transform: scale(-1);
-}
 #modalbox2:active{
 	transform: scale(0.99);
 }
-.modalcontent2:active{
-	transform: scale(-1);
-}
-#modalbox4:active{
+#modalbox7:active{
 	transform: scale(0.99);
 }
-#modalbox5:active{
+#modalbox9:active{
 	transform: scale(0.99);
 }
 .modal1{overflow: auto; height: 100vh;
@@ -143,7 +137,6 @@ button:active{
 	transition: all 0.4s;
 	visibility: none;
 	opacity: 1;
-	z-index: 99999;
 }
 .modal2{overflow: auto; height: 100vh;
 	position: fixed;
@@ -170,7 +163,7 @@ button:active{
 	transition: all 0.9s;
 	visibility: none;
 	opacity:1;
-	z-index: 999999;
+	z-index: -999999999;
 }
 .modal7{overflow: auto; height: 100vh;
 	position: fixed;
@@ -183,8 +176,8 @@ button:active{
 	justify-content: center;
 	background: rgba(8,255,255,0.7);
 	transition: all 0.4s;
-	visibility: none;
-	opacity: 1;
+	visibility: hidden;
+	opacity: 0;
 }
 .modal9{overflow: auto; height: 100vh;
 	position: fixed;
@@ -197,8 +190,9 @@ button:active{
 	justify-content: center;
 	background: rgba(8,255,255,0.7);
 	transition: all 0.4s;
-	visibility: hidden;
-	opacity: 0;
+	visibility: none;
+	opacity: 1;
+	z-index: 9999999;
 }
 .modal1:target{
 	visibility: visible;
@@ -213,17 +207,12 @@ button:active{
 .modal3:target{
 	visibility: visible;
 	opacity: 1;
-	z-index: -999999;
+	z-index: 99999999;
 }
 .modal7:target{
 	visibility: visible;
 	opacity: 1;
-	z-index: 9999999999;
-}
-.modal9:target{
-	visibility: visible;
-	opacity: 1;
-	z-index: 9999999999;
+	z-index: 999999999;
 }
 .modalcontent1{
 	overflow: auto;
@@ -333,26 +322,20 @@ body{
 );
 }
 .modal1{
-	background: rgba(8,255,255,0.7);
+	background: rgba(8,255,255,0.8);
 }
 .modal2{
-	background: rgba(8,255,255,0.7);
+	background: rgba(8,255,255,0.8);
 }
 .modal3{
-	background: rgba(8,255,255,0.7);
-}
-.modal7{
-	background: rgba(8,255,255,0.7);
-}
-.modal9{
-	background: rgba(8,255,255,0.7);
+	background: rgba(8,255,255,0.8);
 }
 #notification-area{
 	width: 50%;
 	cursor: pointer;
 }
 .textos{
-	font-size: 20px;
+	font-size: 25px;
 }
 .bola{
 	width: 80px;
@@ -363,8 +346,8 @@ body{
 }
 #total{
 	font-size: 23px;
-	top: 25%;
-	left: 10px;
+	top: 5%;
+	right: 10px;
 }
 .class{
 	text-transform: none; background: transparent; color: #999fff; padding: 0px;
@@ -380,17 +363,17 @@ body{
 <!--DivsdeNotificações 1/4-->
 <div id="modalbox1" class="modal1">
 <div class="modalcontent1">
-<p style="font-size: 30px;"><a href="#modalbox1" title="Acessar menu 2." class="class" onclick="alert('Ganhe dinheiros de forma grátis. Tudo que precisas fazer é enviar 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 60,00 AKZS e mais 100% por visitares a página online. Você podes repetir este processo sempre e ganhar sempre.');">Fazer transferências</a></p>
+<p style="font-size: 30px;"><a href="#modalbox2" title="Acessar menu 2." class="class" onclick="alert('Info: p1335614@gmail.com.');">Fazer transferências</a></p>
 <center>
 <hr width="80%" color="silver" size="3"/></center><br/>
-<p class="textos" style="text-align: justify;"><span style="color: lime;">Retirada mínima é</span> <a href="0/Akwanzas clicks documentação.txt" target="_blank" title="Akwanzas Clicks é a nossa super moeda digital." class="class">50,00 Akwanzas Clicks.</a> <span style="color: lime;">Akwanzas Clicks é a nossa super moeda digital.<br/><br/> Insira seu número Unitel money ou a sua carteira Payeer e receba 5,00 Akwanzas.</span></p>
+<p class="textos" style="text-align: justify;"><span style="color: lime;">Retirada mínima é</span> <a href="0/Akwanzas clicks documentação.txt" target="_blank" title="Akwanzas Clicks é a nossa super moeda digital." class="class">5,00 Akwanzas Clicks.</a><!--Akwanzas Clicks é a nossa super moeda digital.<br/><br/> Insira seu número Unitel money ou--> <span style="color: lime;">Insira a sua carteira Payeer e receba 5,00 Akwanzas em 1 minuto e mais 10%.</span></p>
 <center><hr width="80%" color="silver" size="3"/></center><br/>
 <center>
 <input type="number" id="userBox" class="inpute" autocomplete="off" style="pointer-events: none; opacity: 0.5; text-decoration: none; background: silver;"/></center>
 </center>
 <center><hr width="80%" color="silver" size="3"/></center>
 <center>
-<a href="#modalbox7" class="dis" class="" onclick="alert('Mensagem enviada, agora, clique em Ok e a seguir confirme a transferência.');"><!-- style="background: lime; color: white; font-size: 30px;-->Transferir</a>
+<a href="#modalbox7" class="dis" class="modalclose"><!-- style="background: lime; color: white; font-size: 30px;-->Transferir</a>
 </center>
 </div>
 </div>
@@ -413,10 +396,10 @@ body{
 <!--DivsdeNotificações 1/2-->
 <div id="modalbox7" class="modal7">
 <div class="modalcontent7">
-<p style="font-size: 30px;"><a href="#" class="class" onclick="alert('Ganhe dinheiros de forma grátis. Tudo que precisas fazer é enviar 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 60,00 AKZS e mais 100% por visitares a página online. Você podes repetir este processo sempre e ganhar sempre.');">Receber dinheiro</a></p>
+<p style="font-size: 30px;"><a href="#" class="class" onclick="alert('Info: p1335614@gmail.com.');">Receber dinheiro</a></p>
 <center>
 <hr width="80%" color="silver" size="3"/></center><br/>
-<p class="textos" style="text-align: justify; color: lime;">Transfira <span style="color: #999fff;">1 Rub a este endereço P1823647</span>  e insira o ID da transação no input e clique em confirmar e <span style="color: #999fff;">em 1 minuto receberás 10%.</span> </p>
+<p class="textos" style="text-align: justify; color: #555;">Transfira 1 Rub a este endereço P1823647 e insira o ID da transação no input e clique em enviar e em 1 minuto receberás 10%.</p>
 <center>
 <hr width="80%" color="silver" size="3"/></center><br/>
 <center>
@@ -430,13 +413,13 @@ body{
 <!--DivsdeNotificações 1/00000000-->
 <div id="modalbox9" class="modal9">
 <div class="modalcontent9">
-<p style="font-size: 30px;"><a href="#" class="class" onclick="alert('Ganhe dinheiros de forma grátis. Tudo que precisas fazer é enviar 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 60,00 AKZS e mais 100% por visitares a página online. Você podes repetir este processo sempre e ganhar sempre.');">Retirar dinheiro</a></p><!--confirmar & cancelar-->
+<p style="font-size: 30px;"><a href="#modalbox9" class="class" onclick="alert('Info: p1335614@gmail.com.');">Retirar dinheiro</a></p><!--confirmar & cancelar-->
 <center>
 <hr width="80%" color="silver" size="3"/></center><br/>
-<p class="textos" style="text-align: justify; color: lime;">Transfira <span style="color: #999fff;">50,00 AKZS</span> a este <span style="color: #999fff;">número 940278820 Unitel money</span> e em 1 minuto receberás devolta seus 50,00 AKZS e mais o dinheiro que você ganhou e mais 100%.</p>
+<p class="textos" style="text-align: justify; color: #555;">Transfira 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás devolta seus 50,00 AKZS e mais o dinheiro que você ganhou e mais 100%.</p>
 <center>
 <hr width="80%" color="silver" size="3"/></center><br/>
-<center><a href="akzshow.html" onclick="alert('Mensagem enviada. Se já transferiste os 50,00 AKZS, confira o pagamento na sua conta Unitel money.')" class="dis" style="background: lime; color: white;">Sim</a></center>
+<center><a href="#" onclick="alert('Mensagem enviada. Se já transferiste os 50,00 AKZS, confira o pagamento na sua conta Unitel money.')" class="dis" style="background: lime; color: white;">Sim</a></center>
 </div>
 </div>
 
@@ -465,8 +448,7 @@ body{
 
 <!--Chates-->
 <!--<form>
-<input type="text" placeholder="Publicar" width="20%"; style="background: gba(255,255,255,0.8); color: aqua; position: fixed; z-index: 99999999999999; top: 60px; left: 40px; border: none; border-radius: 8px; padding: 35px; font-size: 20px;">
-<input type="text" placeholder="Publicar" width="20%"; style="background: gba(255,255,255,0.8); color: aqua; position: fixed; z-index: 99999999999999; top: 160px; left: 40px; height: 69vh; border: none; border-radius: 8px; padding: 35px; font-size: 20px;">
+<input type="text" placeholder="Publicar" width="20%"; style="background: gba(255,255,255,0.8); color: aqua; position: fixed; z-index: 99999999999999; top: 5px; left: 5px; border: none; border-radius: 8px; padding: 35px; font-size: 20px;">
 </form>-->
 	
 <script type="text/javascript">
@@ -552,7 +534,7 @@ function = mybutton(){
 }
 </script>
 
-<!--Script AKWANZASCLICKS  <a href='#modalbox1'  onclick="alert('M');"></a>-->
+<!--Script AKWANZASCLICKS-->
 <p id="total" onclick='mybutton();' onclick="alert('Mensagem enviada. Agora envie 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás devolta seus 50,00 AKZS e mais o dinheiro que você ganhou e mais 100%.');"><!--<p onclick='window.location.reload();'></p>--></p>
 <script type="text/javascript">
 
@@ -573,10 +555,10 @@ function estourar(objecto){
 
 placar ++;
 	var score = document.getElementById("total");
-	score.innerHTML = "<a href='#modalbox9' onclick='mybutton();' class='dis' style='padding: 15px; background: rgba(255,255,255,0.9); border-radius: 5px;'></button> "+ placar + ",00 AKZS <br/> Receber";
+	score.innerHTML = "<a href='#modalbox1' class='dis' style='padding: 15px; background: rgba(255,255,255,0.9); border-radius: 5px;'></button> "+ placar + ",00 AKZS <br/> Receber";
 }
 function iniciar(){
-	setInterval(addBalao, 4000);
+	setInterval(addBalao, 10000);
 }
 </script>
 
@@ -617,7 +599,7 @@ function notify(type,mensage){
 	})();
 }
 function notifySuccess(){
-	notify("success", "921286356 | 60,00 AKZS | 11:15");
+	notify("success", "921286356 | 1500,00 AKZS | 01/05/2023");
 }
 function notifyError(){
 	notify("error", "921286356 | 60,00 AKZS | 11:15");
