@@ -157,6 +157,19 @@ button:active{
 	opacity: 1;
 	z-index: 999999999;
 }
+.modal4{overflow: auto; height: 100vh;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: transparent;
+	transition: all 0.9s;
+	visibility: none;
+	opacity: 1;
+	z-index: 999999999;
+}
 .modal9{overflow: auto; height: 100vh;
 	position: fixed;
 	top: 0px;
@@ -182,6 +195,11 @@ button:active{
 	z-index: -9999999;
 }
 .modal3:target{
+	visibility: visible;
+	opacity: 1;
+	z-index: -999999999;
+}
+.modal4:target{
 	visibility: visible;
 	opacity: 1;
 	z-index: -999999999;
@@ -365,8 +383,8 @@ table{
 
 <!--HTML E JS notificações-->
 
-<div id="modalbox4" class="modal2">
-<div class="modalcontent2">
+<div id="modalbox4" class="modal4">
+<div class="modalcontent4">
 <p style="font-size: 30px;"><a href="#" class="class">Receber dinheiro</a></p>
 <center>
 <hr width="80%" color="silver" size="3"/></center><br/>
