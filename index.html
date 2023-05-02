@@ -21,7 +21,7 @@ body{
 	background:  linear-gradient(90deg, aqua, pink);
 	color: black;
 	background-image: url(i.jpg);*/
-	background: linear-gradient(30deg,
+background: linear-gradient(30deg,
 	#fd004c 20%,
 	#fe9000 20%,
 	#ff9000 40%,
@@ -142,22 +142,9 @@ button:active{
 	transition: all 0.4s;
 	visibility: none;
 	opacity: 1;
-	z-index: -9999999;
+	z-index: 9999999;
 }
 .modal3{overflow: auto; height: 100vh;
-	position: fixed;
-	bottom: 0;
-	right: 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background: transparent;
-	transition: all 0.9s;
-	visibility: none;
-	opacity: 1;
-	z-index: 999999999;
-}
-.modal4{overflow: auto; height: 100vh;
 	position: fixed;
 	bottom: 0;
 	right: 0;
@@ -192,14 +179,9 @@ button:active{
 .modal2:target{
 	visibility: visible;
 	opacity: 1;
-	z-index: -9999999;
+	z-index: -99999;
 }
 .modal3:target{
-	visibility: visible;
-	opacity: 1;
-	z-index: -999999999;
-}
-.modal4:target{
 	visibility: visible;
 	opacity: 1;
 	z-index: -999999999;
@@ -223,19 +205,6 @@ button:active{
 	z-index: 999999;
 	}
 .modalcontent2{
-	overflow: auto;
-	position: fixed;
-	top: 0px;
-	position: relative;
-	background: #fff;
-	width: 500px;
-	max-width: 90%;
-	padding: 1em 2em;
-	border-radius: 4px;
-	cursor: pointer;
-	z-index: 9999999;
-}
-.modalcontent4{
 	overflow: auto;
 	position: fixed;
 	top: 0px;
@@ -396,8 +365,8 @@ table{
 
 <!--HTML E JS notificações-->
 
-<div id="modalbox4" class="modal4">
-<div class="modalcontent4">
+<div id="modalbox4" class="modal2">
+<div class="modalcontent2">
 <p style="font-size: 30px;"><a href="#" class="class">Receber dinheiro</a></p>
 <center>
 <hr width="80%" color="silver" size="3"/></center><br/>
@@ -589,7 +558,7 @@ function notify(type,mensage){
 	})();
 }
 function notifySuccess(){
-	notify("success", "921286356 | 1500,00 AKZS | 01/05/2023");
+	notify("success", "921286356 | 150,00 AKZS | 11:05");
 }
 function notifyError(){
 	notify("error", "921286356 | 60,00 AKZS | 11:15");
@@ -605,4 +574,4 @@ function notifyInfo(){
 </div>
 <!--Body e html tags close HTML--><!--///////////ACONSELHAMOS A VER O CODIGO FOTE DA PAGINA E LER AS BIBLIOTECAS DA INTELIGENCIA ARTIFICIAL E CONVERSAR E AUMENTAR O ZOOM AO BROWSER///////////-->
 </body>
-</html>
+</html> 
