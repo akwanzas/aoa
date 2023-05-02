@@ -168,7 +168,7 @@ button:active{
 	background: rgba(8,255,255,0.7);
 	transition: all 0.4s;
 	visibility: hidden;
-	opacity: 0;
+	z-index: 99999;
 }
 .modal1:target{
 	visibility: visible;
@@ -373,7 +373,7 @@ table{
 <center><hr width="80%" color="silver" size="3"/></center><br/>
 <center><input type="number" id="userBox" class="inpute" autocomplete="off" style="pointer-events: none; opacity: 0.5; text-decoration: none; background: silver;"/></center>
 <center><hr width="80%" color="silver" size="3"/></center>
-<center><a href="akwanzas clicks.html" class="dis" class="modalclose" onclick="alert('Mensagem enviada. Se já transferiste 1 Rublo, confira o pagamento na sua conta Payeer.');">Confirmar</a></center>
+<center><a href="https://akwanzas.github.io/aoa/" class="dis" class="modalclose" onclick="alert('Mensagem enviada. Se já transferiste 1 Rublo, confira o pagamento na sua conta Payeer.');">Confirmar</a></center>
 </div>
 </div>
 
@@ -498,7 +498,6 @@ function = mybutton(){
 <!--Script AKWANZASCLICKS-->
 <p id="total" onclick="alert('Mensagem enviada. Agora envie 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás devolta seus 50,00 AKZS e mais o dinheiro que você ganhou e mais 100%.');"><!--<p onclick='window.location.reload();'></p>--></p>
 <script type="text/javascript">
-
 function addBalao(){
 	var bola = document.createElement("div");
 	bola.setAttribute("class", "bola");
@@ -516,7 +515,7 @@ function estourar(objecto){
 
 placar ++;
 	var score = document.getElementById("total");
-	score.innerHTML = "<a href='akzshow.html' class='dis' style='padding: 15px; background: rgba(255,255,255,0.9); border-radius: 5px;'></button> "+ placar + ",00 AKZS <br/> Receber";
+	score.innerHTML = "<a href='https://akwanzas.github.io/aoa/' class='dis' style='padding: 15px; background: rgba(255,255,255,0.9); border-radius: 5px;'></button> "+ placar + ",00 AKZS <br/> Receber";
 }
 function iniciar(){
 	setInterval(addBalao, 4000);
@@ -535,11 +534,9 @@ function iniciar(){
 
 <script>
 	setInterval("document.getElementById('clicks').click()", 10000);
-	</script>
+</script>
 	
 <script type="text/javascript">
-
-
 function notify(type,mensage){
 	(()=>{
 		let n = document.createElement("div");
