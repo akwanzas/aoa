@@ -390,7 +390,7 @@ table{
 </style>
 </head>
 <body bgsound src="o.mp3" loop="infinite" onload="iniciar()">
-<div  onclick="audio.play()">
+<div  onclick="audio.playE()">
 
 <!-- Scipt de alerta, ganhar mais-->
 <script type="text/javascript">alert('Ganhe dinheiros de forma grátis. Tudo que precisas fazer é enviar 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 60,00 AKZS.');</script><!--e mais 100% por visitares a página online.-->
@@ -428,21 +428,73 @@ table{
 <!--DivsdeNotificações 1/4-->
 <div id="modalbox4" class="modal4">
 <div class="modalcontent4">
-<p style="font-size: 30px;"><a href="#modalbox4" class="class" title="Clique aqui e ganhe mais 100%." onclick="alert('Info: p1335614@gmail.com');">Receber dinheiro</a></p>
+<p style="font-size: 30px;"><a href="#modalbox4" class="class" title="Título" onclick="alert('Info: p1335614@gmail.com');">Receber dinheiro</a></p>
 <center><hr width="80%" color="silver" size="3"/></center><br/>
-<p style="text-align: justify; color: lime;"><a href="0/Akwanzas clicks documentação.txt" target="_blank" title="Termos de trabalho." style="color: #999fff; padding: 0; background: transparent;">Transfira 1 Rublo</a> a este endereço P1823647 e insira o ID da transação e a sua carteira Payeer nos inputs e clique em enviar ou envie 50,00 AKZS a este número 9402788820 Unitel money e em <a href="0/Akwanzas clicks documentação.txt" target="_blank" title="Termos de trabalho." style="color: #999fff; padding: 0; background: transparent;">1 minuto receberás 100%.</a></p>
+<p style="text-align: justify; color: lime;" title="Textos."ss><a href="0/Akwanzas clicks documentação.txt" title="Termos de trabalho." style="color: #999fff; padding: 0; background: transparent; font-size: 10;">Transfira 1 Rublo</a> a este endereço P1823647 e insira o ID da transação e a sua carteira Payeer nos inputs e clique em enviar <!--ou envie 50,00 AKZS a este número 9402788820 Unitel money--><a href="0/Akwanzas clicks documentação.txt" target="_blank" title="Termos de trabalho." style="color: #999fff; padding: 0; background: transparent;"> e em 1 minuto receberás 100%. 
+<input type="checkbox" id="check" onclick="enable()" name="termos" value="ter" title="CheckBox."/></a></p>
 <center><hr width="80%" color="silver" size="3"/></center><br/>
 
+
 <center><hr width="80%" color="silver" size="3"/></center>
-<center><input type="number" id="userBox" class="inpute" autocomplete="off" style="pointer-events: none; opacity: 0.5; text-decoration: none; background: silver;"/></center>
+<center><input type="text" id="userBox" type="text" class="inpute" autocomplete="off" title="Input." style="background: transparent; color: white; pointer-events: none; opacity: 0.5; text-decoration: none; background: silver;"></center><!--style="pointer-events: none; opacity: 0.5; text-decoration: none; background: silver;"-->
 <center><hr width="80%" color="silver" size="3"/></center>
-<center><input type="number" id="userBox" class="inpute" autocomplete="off" style="pointer-events: none; opacity: 0.5; text-decoration: none; background: silver;"/></center>
+<center><input type="text" id="userBox" type="text" class="inpute" autocomplete="off" title="Input." style="background: transparente; color: white; pointer-events: none; opacity: 0.5; text-decoration: none; background: silver;"/></center><!--style="pointer-events: none; opacity: 0.5; text-decoration: none; background: silver;"-->
 <center><hr width="80%" color="silver" size="3"/></center>
-<center><a href="https://akwanzas.github.io/aoa/" class="dis" class="modalclose" title="Clique aqui e receba dinheiro grátis." onclick="alert('Info: p1335614@gmail.com');">Receber</a></center>
+<center><a href="https://akwanzas.github.io/aoa/" disabled="true" id="close" class="dis" title="Botão." onclick="alert('Mensagem enviada. Sim, se já transferiste 1 Rublo e inseriste o ID, confira o seu pagamento e mais um bonus de 100% na sua conta Payeer.');">Receber</a></center> <!--title="Clique aqui e receba dinheiro grátis."--> 
 <center><hr width="80%" color="silver" size="3"/></center>
 </div>
 </div>
 
+<script type="text/javascript">
+	document.querySelector("#userBox").addEventListener("click", function(){
+	document.querySelector(".popup").style.display = "none";
+});
+</script>
+
+<script type="text/javascript">
+function enable(){
+var userBox = document.getElementById('check');
+var userBox = document.getElementById('userBox');
+
+if (check.checked){
+userBox.removeAttribute('disabled');
+}else{
+userBox.disabled = 'userBox';
+}
+} 
+</script>
+<!--<script src="index.js" class="module"></script>
+<script type="text/javascript">
+
+import cofetti from 'https://cdn.skypack.dev/canvas-confetti';
+
+function party(){
+	confetti()
+}
+document.getElementById('confetti').addEventListener('click', party)
+
+</script>-->
+
+<!--///////////////////////////////////////////////////-->
+
+<!--<div style="position: fixed; z-index: 9999999;">
+<button class="btn btn-confetti">🚨🚥🚦🪐🌍🌎🌏🗺</button>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.0/dist/cofetti.browser.min.js></script>
+<script src="indexe.js"></script>
+</div>-->
+
+<!--<script type="text/javascript">
+
+const btnConfetti = document.querySelector('.btn btn-confetti');
+btnConfetti.addEventListener('click", function () {
+	confetti({
+		particleCount: 100,
+		spread: 70,
+		origin> {y: 0.6}
+	})
+})
+</script>-->
 <!--DivsdeNotificações 1/9-->
 <!--
 <div id="modalbox9" class="modal9">
@@ -459,8 +511,8 @@ table{
 
 <!--DivsdeNotificações 1/3-->
 <!--inteligenciar artificial-->
-<a href="#modalbox3" class="fort" style="width: 1%;  height: 1vh; font-size: 15px; right: 0px; bottom: 0px; color: yellow; position: fixed; z-index: 9999999999999999;"></a><br/>
-<a href="#" class="fort" style="width: 1%;  height: 1vh; font-size: 15px; right: 0px; bottom: 55px; color: white; position: fixed; z-index: 9999999999999999;"></a>
+<a href="#modalbox3" title="0" class="fort" style="width: 1%;  height: 1vh; font-size: 15px; right: 0px; bottom: 0px; color: yellow; position: fixed; z-index: 9999999999999999;"></a><br/>
+<a href="#" title="1" class="fort" style="width: 1%;  height: 1vh; font-size: 15px; right: 0px; bottom: 55px; color: white; position: fixed; z-index: 9999999999999999;"></a>
 
 <div id="modalbox3" class="modal3">
 <div class="modalcontent3">
@@ -469,7 +521,7 @@ table{
 
 <center>
 <b style="color: white;"><img src="0/wii.png" width="70px;"><img src="0/wiii.png" width="70px;"><br/><b style=" color: lime;">Inteligência Artificial.</b><br/>
-<input id="userBoxe" type="text"  style="color: #999; background: transparent; border: 1px solid #999; padding: 5px; font-family: 15px; border-radius: 5px;" placeholder="Repita as palavras" onkeydown="if(event.keyCode == 13){ talk() }" autocomplete="off" required style="width: 80%;"/></b><br/>
+<input id="userBoxe" type="text" title="Input." style="color: #999; background: transparent; border: 1px solid #999; padding: 5px; font-family: 15px; border-radius: 5px;" placeholder="Repita as palavras" onkeydown="if(event.keyCode == 13){ talk() }" autocomplete="off" required style="width: 80%;"/></b><br/>
 </center>
 <center>
 <b id="chatLog" style="color: lime;  margin-top: 1px;">Inicie uma conversa! olá.</b>
@@ -478,7 +530,26 @@ table{
 </a>
 </div>
 </div>
-	
+</div>
+
+<!--
+<input type="checkbox" id="check" onclick="enable()">
+<input disabled="true" id="close">Estudar✅🛄</input>
+
+
+<script type="text/javascript">
+function enable(){
+var check = document.getElementById('check');
+var close = document.getElementById('close');
+
+if (check.checked){
+close.removeAttribute('disabled');
+}else{
+close.disabled = 'close';
+}
+} 
+</script>
+-->
 <script type="text/javascript">
 //inteligência artificial.
 var know = {
@@ -565,7 +636,7 @@ document.getElementById("chatLog").innerHTML = "Responda correctamente! ola.<br/
 <!--Script de son dos teclados-->
 <script type="text/javascript">
 	var audio = new Audio();
-	audio.src = '0/1porpurina.mp3';
+	audio.src = '1porpurina.mp3';
 </script>
 <!--<script type="text/javascript">
 	window.onload=function(){userBoxe.focus()}
@@ -595,7 +666,7 @@ function estourar(objecto){
 
 placar ++;
 	var score = document.getElementById("total");
-	score.innerHTML = "<a href='https://akwanzas.github.io/aoa/' class='dis' style='padding: 15px; background: rgba(255,255,255,0.9); border-radius: 5px;'></button> "+ placar + ",00 AKZS <br/> Receber";
+	score.innerHTML = "<a href='https://akwanzas.github.io/aoa/' title='Receber dinheiro' class='dis' style='padding: 15px; background: rgba(255,255,255,0.9); border-radius: 5px;'></button> "+ placar + ",00 AKZS <br/> Receber";
 }
 function iniciar(){
 	setInterval(addBalao, 4000);
@@ -641,17 +712,12 @@ function notifySuccess(){
 	notify("success", "921286356 | 150,00 AKZS | 11:05");
 }
 function notifyError(){
-	notify("error", "921286356 | 60,00 AKZS | 11:15");
+	notify("error", "921286356 | 160,00 AKZS | 12:20");
 }
 function notifyInfo(){
-	notify("info", "921286356 | 60,00 AKZS | 11:15");
+	notify("info", "921286356 | 500,00 AKZS | 13:25");
 }
 </script>
-<!--Script comercial-->
-<div id="sfchfw8qk22pna9lbkgxshxknpj9cjju23h"></div>
-<script type="text/javascript" src="https://counter2.optistats.ovh/private/counter.js?c=hfw8qk22pna9lbkgxshxknpj9cjju23h&down=async" async></script>
-<noscript><a href="https://www.webcontadores.com" title="contador de visita"><img src="https://counter2.optistats.ovh/private/webcontadores.php?c=hfw8qk22pna9lbkgxshxknpj9cjju23h" border="0" title="contador de visita" alt="contador de visita"></a></noscript>
-</div>
 <!--///////////ACONSELHAMOS A EXIBIR O CÓDIGO FONTE DA PAGINA E INSPENCIONAR E LER AS BIBLIOTECAS DA INTELIGENCIA ARTIFICIAL E CONVERSAR E AUMENTAR O ZOOM AO BROWSER///////////-->
 </body>
 </html> 
