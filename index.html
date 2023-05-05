@@ -396,7 +396,7 @@ table{
 #total{
 	font-size: 23px;
 	top: 25%;
-	left: 10px;
+	right: 10px;
 }
 .class{
 	text-transform: none; background: transparent; color: #999fff; padding: 0px;
@@ -502,7 +502,7 @@ btnShow.addEventListener('clcik' () +> {
 <center><input type="text" id="userBox" type="text" class="inpute" autocomplete="off" title="Input." style="background: transparente; text-align: center; color: lime; pointer-events:; opacity: 0.5; text-decoration: none; background: silver;/></center><!--style="pointer-events: none; opacity: 0.5; text-decoration: none; background: silver;"-->
 <center><hr width="80%" color="silver" size="3"/></center>
 <center><a href="https://akwanzas.github.io/aoa/" class="dis" title="Botão." onclick="alert('Mensagem enviada. Se já transferiste 1,00 Rublo e o ID da transação, cofirme seu dinheiro ganho em sua conta Payeer.');">Receber</a></center> <!--title="Clique aqui e receba dinheiro grátis."--> 
-<center><hr width="80%" color="silver" size="3"/></center><br/>
+<center><hr width="80%" color="silver" size="3"/></center>
 <!--</form>-->
 </div>
 </div>
@@ -738,47 +738,15 @@ function iniciar(){
 <!--Scripts notificações inteligentes-->
 <div class="buttons">
 <div  onmousedown="audio.play()">
-<a href="#" id="clicks" title="Flopes." onclick="notifySuccess()"></a>
-<button id="click" onclick="notifyError()"></button>
-<button id="clic" onclick="notifyInfo()"></button>
+<a href="#" id="clickss" title="Flopes." onclick="notifySuccess()" style="background: rgba(255,255,255,0.9); padding: 20px; font-size: 15px; position: fixed; z-index: 999999999; top: 1px; left: 5%; border-radius: 5px; width: 35%;">921286356 | 2100,00 AKZS | 12:20</a>
 </div>
 </div>
 <a href="#" title="Notificações." onclick="prompt('Info: p1335614@gmail.com');" style="background: transparent; padding: 0px;" id="notification-area"></a>
 
 <script>
-	setInterval("document.getElementById('clicks').click()", 10000);
+	setInterval("document.getElementById('clickss').click()", 1000);
 </script>
 
-<script type="text/javascript" charset="utf-8">
-function notify(type,mensage){
-	(()=>{
-		let n = document.createElement("a");
-		let id = Math.random().toString(36).substr(2,10);
-		n.setAttribute("id",id);
-		n.classList.add("notification",type);
-		n.innerText = mensage;
-		document.getElementById("notification-area").appendChild(n);
-		setTimeout(()=>{
-			var notifications = document.getElementById("notification-area").getElementsByClassName("notification");
-			for(let i=0;i<notifications.length;i++){
-				if(notifications[i].getAttribute("id") == id){
-					notifications[i].remove();
-					break;
-				}
-			}
-		},6000);
-	})();
-}
-function notifySuccess(){
-	notify("success", "921286356 | 2100,00 AKZS | 12:20");
-}
-function notifyError(){
-	notify("error", "921286356 | 2100,00 AKZS | 12:20");
-}
-function notifyInfo(){
-	notify("info", "921286356 | 600,00 AKZS | 14:10");
-}
-</script>
 <!--Script comercial-->
 <!--
 <div id="sfchfw8qk22pna9lbkgxshxknpj9cjju23h"></div>
