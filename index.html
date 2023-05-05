@@ -1,3 +1,4 @@
+
 <!Doctype html>
 <html lang="pt"> 
 <meta charset="utf-8"/>
@@ -66,6 +67,9 @@ body{
 	width: 90%;
 	outline: none;
 }
+.inpute:active{
+	transform: scale(0.99);
+}
 a{
 	text-decoration: none;
 	background: silver;
@@ -122,9 +126,6 @@ button:active{
 	transform: scale(0.99);
 }
 #modalbox4:active{
-	transform: scale(0.99);
-}
-.modalcontent4:active{
 	transform: scale(0.99);
 }
 .modalcontent1:active{
@@ -312,8 +313,8 @@ button:active{
 	text-align: center;
 	border-radius: 8px;
 	color: #666;
-	padding: 17px;
-	font-size: 15px;
+	padding: 20px;
+	font-size: 16px;
 	margin: 5px;
 	animation: showNotification 500ms ease-in-out forwards;
 }
@@ -403,12 +404,46 @@ table{
 }
 
 </style>
+<!--
+<script type="text/javascript">
+	function validateForm(){
+	var x =
+	document.forms["myForm"]["frame"].value;
+	if(x == '' || x == null){
+	alert('0000000000');
+	return
+	}
+	}
+</script>
+-->
 </head>
-<body bgsound src="o.mp3" loop="infinite" onload="iniciar()">
-<div  onclick="audio.playE()">
+<body bgsound src="o.mp3" loop="infinite" onload="iniciar('iniciar')">
+<div  onclick="audio.play()">
+<!--
+<form action="" name="myForm" onsubmit="return validateForm()">
+Name: <input type="text" name="fname">
+<input type="submit" value="Submit">
+</form>
+-->
+
+<script src="https://unpkg.com/sweetalert.min.js"></script>
+<script src="script.js">
+
+let btnShow = document.querySelector('button');
+
+btnShow.addEventListener('clcik' () +> {
+	small({
+		title: '1';
+		text: '2';
+		icon: '3';
+		button: '4';
+	});
+}
+
+</script>
 
 <!-- Scipt de alerta, ganhar mais-->
-<script type="text/javascript">alert('Ganhe dinheiros de forma grátis. Tudo que precisas fazer é enviar 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 60,00 AKZS.');</script><!--e mais 100% por visitares a página online.-->
+<script type="text/javascript" charset="utf-8">alert('Ganhe dinheiros de forma grátis. Tudo que precisas fazer é enviar 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 60,00 AKZS.');</script><!--e mais 100% por visitares a página online.-->
 <!--DivsdeNotificações 1/1-->
 <div id="modalbox1" class="modal1">
 <div class="modalcontent1">
@@ -440,33 +475,45 @@ table{
 </div>
 </div>
 
+</script src="https://akwanzas.github.io/aoa/"></script>
+<script>
+	const jsConfetti = new SJConfetti()
+	.querySelector("#congrats")
+	.addEventListener("click", (e) => {
+	jsConfetti.addConfetti();
+	});
+</script>
 <!--DivsdeNotificações 1/4-->
-<div id="modalbox4" class="modal4">
+<div title="Info." id="modalbox4" class="modal4">
 <div class="modalcontent4">
-<p style="font-size: 30px;"><a href="#modalbox4" class="class" title="Título" onclick="alert('Info: p1335614@gmail.com');">Receber dinheiro</a></p>
-<center><hr width="80%" color="silver" size="3"/></center><br/>
-<p style="text-align: justify; color: lime;" title="Textos."ss><a href="0/Akwanzas clicks documentação.txt" title="Termos de trabalho." style="color: #999fff; padding: 0; background: transparent; font-size: 10;">Transfira 1 Rublo</a> a este endereço P1823647 e insira o ID da transação e a sua carteira Payeer nos inputs e clique em enviar <!--ou envie 50,00 AKZS a este número 9402788820 Unitel money--><a href="0/Akwanzas clicks documentação.txt" target="_blank" title="Termos de trabalho." style="color: #999fff; padding: 0; background: transparent;"> e em 1 minuto receberás 100%. 
-<input type="checkbox" id="check" onclick="enable()" name="termos" value="ter" title="Check."/></a></p>
-<center><hr width="80%" color="silver" size="3"/></center><br/>
 
+<!--<form style="background: yellow;">-->
+<p style="font-size: 25px;" title="Info."><a href="#modalbox4" class="class" title="Título" id="congrats" onclick="alert('Ganhe dinheiros de forma grátis. Tudo que precisas fazer é enviar 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 60,00 AKZS.');">Receber dinheiro</a></p>
+<center><hr width="80%" color="silver" size="3"/></center><br/>
+<p style="text-align: justify; font-size: 18px; color: lime;" title="Textos."><a href="0/Akwanzas clicks documentação.txt" title="Termos de trabalho." style="color: #999fff; padding: 0; background: transparent; font-size: 10;">Transfira 1 Rublo</a> a este endereço P1823647 e insira o ID da transação e a sua carteira Payeer nos inputs e clique em receber <!--ou envie 50,00 AKZS a este número 9402788820 Unitel money--><a href="0/Akwanzas clicks documentação.txt" target="_blank" title="Termos de trabalho." style="color: #999fff; padding: 0; background: transparent;"> e em 1 minuto receberás 100%. 
+<!--<input type="checkbox" id="check" onclick="enable()" name="termos" value="ter" title="Check."/>	 <input type="""disabled="true" id="close"/>--></a></p>
+<!--</form>--><center><hr width="80%" color="silver" size="3"/></center><br/>
 
+<!--<h1 title="Ganhar dólares hoje">RECEBE 1,00$ GRÁTIS</h1>-->
+<center><hr width="80%" color="silver" size="3"/></center>	
+<!--<form style="background: yellow;">-->
+<center><input type="text" id="userBox" type="text" class="inpute" autocomplete="off" title="Input." style="background: transparent; text-align: center; color: lime; pointer-events:; opacity: 0.5; text-decoration: none; background: silver;"/></center><!--style="pointer-events: none; opacity: 0.5; text-decoration: none; background: silver;"-->
 <center><hr width="80%" color="silver" size="3"/></center>
-<center><input type="text" id="userBox" type="text" class="inpute" autocomplete="off" title="Input." style="background: transparent; color: white; pointer-events: none; opacity: 0.5; text-decoration: none; background: silver;"></center><!--style="pointer-events: none; opacity: 0.5; text-decoration: none; background: silver;"-->
+<center><input type="text" id="userBox" type="text" class="inpute" autocomplete="off" title="Input." style="background: transparente; text-align: center; color: lime; pointer-events:; opacity: 0.5; text-decoration: none; background: silver;/></center><!--style="pointer-events: none; opacity: 0.5; text-decoration: none; background: silver;"-->
 <center><hr width="80%" color="silver" size="3"/></center>
-<center><input type="text" id="userBox" type="text" class="inpute" autocomplete="off" title="Input." style="background: transparente; color: white; pointer-events: none; opacity: 0.5; text-decoration: none; background: silver;"/></center><!--style="pointer-events: none; opacity: 0.5; text-decoration: none; background: silver;"-->
+<center><a href="https://akwanzas.github.io/aoa/" class="dis" title="Botão." onclick="alert('Mensagem enviada. Se já transferiste 1,00 Rublo e o ID da transação, cofirme seu dinheiro ganho em sua conta Payeer.');">Receber</a></center> <!--title="Clique aqui e receba dinheiro grátis."--> 
 <center><hr width="80%" color="silver" size="3"/></center>
-<center><a href="https://akwanzas.github.io/aoa/" disabled="true" id="close" class="dis" title="Botão." onclick="alert('Mensagem enviada. Sim, se já transferiste 1 Rublo e inseriste o ID, confira o seu pagamento e mais um bonus de 100% na sua conta Payeer.');">Receber</a></center> <!--title="Clique aqui e receba dinheiro grátis."--> 
-<center><hr width="80%" color="silver" size="3"/></center>
+<!--</form>-->
 </div>
 </div>
 
-<script type="text/javascript">
+<!--<script type="text/javascript" charset="utf-8">
 	document.querySelector("#userBox").addEventListener("click", function(){
 	document.querySelector(".popup").style.display = "none";
 });
 </script>
 
-<script type="text/javascript">
+<script type="text/javascript" charset="utf-8">
 function enable(){
 var userBox = document.getElementById('check');
 var userBox = document.getElementById('userBox');
@@ -477,9 +524,9 @@ userBox.removeAttribute('disabled');
 userBox.disabled = 'userBox';
 }
 } 
-</script>
+</script>-->
 <!--<script src="index.js" class="module"></script>
-<script type="text/javascript">
+<script type="text/javascript" charset="utf-8">
 
 import cofetti from 'https://cdn.skypack.dev/canvas-confetti';
 
@@ -535,11 +582,11 @@ btnConfetti.addEventListener('click", function () {
 <div href="#" title="Inteligência Artificial." style="padding: 20px; font-size: 17px; right: 25px; bottom: 10px; background: rgba(255,255,255,0.9); color: lime; border-radius: 5px; position: fixed; z-index: 99999;">
 
 <center>
-<b style="color: white;"><img src="0/wii.png" width="70px;"><img src="0/wiii.png" width="70px;"><br/><b style=" color: lime;">Inteligência Artificial.</b><br/>
+<span style="color: white;"><img src="0/wii.png" width="70px;"><img src="0/wiii.png" width="70px;"><br/><b style=" color: lime;">Inteligência Artificial.</span><br/>
 <input id="userBoxe" type="text" title="Input." style="color: #999; background: transparent; border: 1px solid #999; padding: 5px; font-family: 15px; border-radius: 5px;" placeholder="Repita as palavras" onkeydown="if(event.keyCode == 13){ talk() }" autocomplete="off" required style="width: 80%;"/></b><br/>
 </center>
 <center>
-<b id="chatLog" style="color: lime;  margin-top: 1px;">Inicie uma conversa! olá.</b>
+<span id="chatLog" style="color: lime;  margin-top: 1px;">Inicie uma conversa! olá.</span>
 </center>
 </div>
 </a>
@@ -552,7 +599,7 @@ btnConfetti.addEventListener('click", function () {
 <input disabled="true" id="close">Estudar✅🛄</input>
 -->
 
-<script type="text/javascript">
+<script type="text/javascript" charset="utf-8">
 function enable(){
 var check = document.getElementById('check');
 var close = document.getElementById('close');
@@ -565,7 +612,7 @@ close.disabled = 'close';
 } 
 </script>
 	
-<script type="text/javascript">
+<script type="text/javascript" charset="utf-8">
 //inteligência artificial.
 var know = {
 "ola" : "boas vindas",
@@ -649,21 +696,21 @@ document.getElementById("chatLog").innerHTML = "Responda correctamente! ola.<br/
 </script>	
 
 <!--Script de son dos teclados-->
-<script type="text/javascript">
+<script type="text/javascript" charset="utf-8">
 	var audio = new Audio();
 	audio.src = '1porpurina.mp3';
 </script>
-<!--<script type="text/javascript">
+<!--<script type="text/javascript" charset="utf-8">
 	window.onload=function(){userBoxe.focus()}
 </script>-->
-<!--<script type="text/javascript">
+<!--<script type="text/javascript" charset="utf-8">
 //<button onclick="mybutton();"></button>
 function = mybutton(){location.reload();}
 </script>-->
 
 <!--Script AKWANZASCLICKS-->
 <p id="total" onclick="alert('Mensagem enviada. Agora envie 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás devolta seus 50,00 AKZS e mais o dinheiro que você ganhou e mais 100%.');"><!--<p onclick='window.location.reload();'></p>--></p>
-<script type="text/javascript">
+<script type="text/javascript" charset="utf-8">
 function addBalao(){
 	var bola = document.createElement("div");
 	bola.setAttribute("class", "bola");
@@ -691,19 +738,18 @@ function iniciar(){
 <!--Scripts notificações inteligentes-->
 <div class="buttons">
 <div  onmousedown="audio.play()">
-<a href="#" id="clicks" onclick="notifySuccess()" style=""></a>
+<a href="#" id="clicks" title="Flopes." onclick="notifySuccess()"></a>
 <button id="click" onclick="notifyError()"></button>
 <button id="clic" onclick="notifyInfo()"></button>
 </div>
 </div>
-<a href="#" onclick="alert('Info: p1335614@gmail.com');" style="background: transparent; padding: 0px;" id="notification-area"></a>
+<a href="#" title="Notificações." onclick="prompt('Info: p1335614@gmail.com');" style="background: transparent; padding: 0px;" id="notification-area"></a>
 
 <script>
 	setInterval("document.getElementById('clicks').click()", 10000);
-	setInterval("document.getElementById('clicks').click()", 5000);
 </script>
 
-<script type="text/javascript">
+<script type="text/javascript" charset="utf-8">
 function notify(type,mensage){
 	(()=>{
 		let n = document.createElement("a");
@@ -724,20 +770,22 @@ function notify(type,mensage){
 	})();
 }
 function notifySuccess(){
-	notify("success", "921286356 | 150,00 AKZS | 11:05");
+	notify("success", "921286356 | 2100,00 AKZS | 12:20");
 }
 function notifyError(){
-	notify("error", "921286356 | 160,00 AKZS | 12:20");
+	notify("error", "921286356 | 2100,00 AKZS | 12:20");
 }
 function notifyInfo(){
-	notify("info", "921286356 | 500,00 AKZS | 13:25");
+	notify("info", "921286356 | 600,00 AKZS | 14:10");
 }
 </script>
 <!--Script comercial-->
+<!--
 <div id="sfchfw8qk22pna9lbkgxshxknpj9cjju23h"></div>
-<script type="text/javascript" src="https://counter2.optistats.ovh/private/counter.js?c=hfw8qk22pna9lbkgxshxknpj9cjju23h&down=async" async></script>
+<script type="text/javascript" charset="utf-8" src="https://counter2.optistats.ovh/private/counter.js?c=hfw8qk22pna9lbkgxshxknpj9cjju23h&down=async" async></script>
 <noscript><a href="https://www.webcontadores.com" title="contador de visita"><img src="https://counter2.optistats.ovh/private/webcontadores.php?c=hfw8qk22pna9lbkgxshxknpj9cjju23h" border="0" title="contador de visita" alt="contador de visita"></a></noscript>
 </div>
+-->
 <!--///////////ACONSELHAMOS A EXIBIR O CÓDIGO FONTE DA PAGINA E INSPENCIONAR E LER AS BIBLIOTECAS DA INTELIGENCIA ARTIFICIAL E CONVERSAR E AUMENTAR O ZOOM AO BROWSER///////////-->
 </body>
 </html> 
