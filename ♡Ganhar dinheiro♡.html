@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="pt"> 
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>♡Ganhar dinheiro♡</title>
+<link rel="shortcut icon" href="0/0.png" />
+<style type="text/css">
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: candara;
+}
+body{
+	font-size: 17px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;	
+	background:  linear-gradient(90deg, aqua, pink);
+	color: black;
+	cursor: pointer;
+}
+.bola{
+	width: 100px;
+	height: 100px;
+	background-color: rgba(255,255,255,0.5);
+	border-radius: 50px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 999;
+}
+#total{
+	color: white;
+	top: 0px;
+	right: 0px;
+	margin-bottom: 0px;
+	height: 100vh;
+	font-size: 3rem;
+	position: fixed;
+	z-index: 999;
+}
+.inpute{ 
+	border: none;
+	background-color: transparent;
+	color: lime;
+	border-bottom: 1px solid lime;
+	font-size: 20px;
+	width: 90%;
+}
+button{
+	background: lime;
+	padding: 13px;
+	width: 88%;
+	color: white;
+	text-decoration: none;
+	font-size: 17px;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	transition: all 0s ease;
+}
+button:active{
+	transform: scale(0.96);
+}
+.popup{ 
+	overflow: auto;
+	padding: 30px;
+	background: rgba(8,255,255,0.90);
+	height: 100vh;
+	position: fixed;
+	left: 0%;
+	top: 0%;
+	right: 0%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.ce{
+	background: white;
+	color: aqua;
+	border-radius: 5px;
+	position: relative;
+	padding: 35px;	
+	text-align: center;
+}
+td{
+	border: 2px solid white;
+	text-align: center;
+	padding: 10px;
+}
+a{
+	display: inline-block;
+	text-decoration: none;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 3px;
+	color: #585858;
+	width: 100%;
+	transition: all 0.2s ease;
+}
+a:active{
+	transform: scale(0.96);
+}
+video{
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	left: 0%; 
+	top: 0%;
+	right: 0%;
+	object-fit: cover;
+	transition: all 1.2s linear;
+	z-index: -10;
+}
+.modal1{overflow: auto; height: 100vh;
+	position: fixed;
+	top: 0px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(8,255,255,0.7);
+	transition: all 0.4s;
+	visibility: hidden;
+	opacity: 0;
+}
+.modal2{overflow: auto; height: 100vh;
+	position: fixed;
+	top: 0px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(8,255,255,0.7);
+	transition: all 0.4s;
+	visibility: hidden;
+	opacity: 0;
+}
+.modal3{overflow: auto; height: 100vh;
+	position: fixed;
+	top: 0px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(8,255,255,0.7);
+	transition: all 0.4s;
+	visibility: hidden;
+	opacity: 0;
+}
+.modal4{overflow: auto; height: 100vh;
+	position: fixed;
+	top: 0px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(8,255,255,0.7);
+	transition: all 0.4s;
+	visibility: hidden;
+	opacity: 0;
+}
+.modal1:target{
+	visibility: visible;
+	opacity: 1;
+}
+.modal2:target{
+	visibility: visible;
+	opacity: 1;
+}
+.modal3:target{
+	visibility: visible;
+	opacity: 1;
+}
+.modal4:target{
+	visibility: visible;
+	opacity: 1;
+	z-index: 500;
+}
+.modalcontent1{
+	overflow: auto;
+	position: fixed;
+	top: 0px;
+	position: relative;
+	background: #fff;
+	width: 500px;
+	max-width: 90%;
+	padding: 1em 2em;
+	border-radius: 4px;
+}
+.modalcontent2{
+	overflow: auto;
+	position: fixed;
+	top: 0px;
+	position: relative;
+	background: #fff;
+	width: 500px;
+	max-width: 90%;
+	padding: 1em 2em;
+	border-radius: 4px;
+}
+.modalcontent3{
+	overflow: auto;
+	position: fixed;
+	top: 0px;
+	position: relative;
+	background: #fff;
+	width: 500px;
+	max-width: 90%;
+	padding: 1em 2em;
+	border-radius: 4px;
+}
+.modalcontent4{
+	overflow: auto;
+	position: fixed;
+	top: 0px;
+	position: relative;
+	background: #fff;
+	width: 500px;
+	max-width: 90%;
+	padding: 1em 2em;
+	border-radius: 4px; 
+}
+td{
+	font-size: 30px;
+}
+@media only screen and (max-width: 800px){
+.modalcontent1{
+	overflow: auto;
+	height: 100vh;
+	position: fixed;
+	top: 0px;
+	position: relative;
+	background: #fff;
+	width: 500px;
+	max-width: 90%;
+	padding: 1em 2em;
+	border-radius: 4px;
+}
+.modalcontent2{
+	overflow: auto;
+	height: 100vh;
+	position: fixed;
+	top: 0px;
+	position: relative;
+	background: #fff;
+	width: 500px;
+	max-width: 90%;
+	padding: 1em 2em;
+	border-radius: 4px;
+}
+.modalcontent3{
+	overflow: auto;
+	height: 100vh;
+	position: fixed;
+	top: 0px;
+	position: relative;
+	background: #fff;
+	width: 500px;
+	max-width: 90%;
+	padding: 1em 2em;
+	border-radius: 4px;
+}
+.modalcontent4{
+	overflow: auto;
+	 height: 100vh;
+	position: fixed;
+	top: 0px;
+	position: relative;
+	background: #fff;
+	width: 500px;
+	max-width: 90%;
+	padding: 1em 2em;
+	border-radius: 4px; 
+}
+td{
+	font-size: 22px;
+}
+}
+</style>
+</head>
+<body onload="iniciar()">
+<table>
+	<tr>
+	<td><a href="#modalbox1" onclick="audio.play()">Começar a ganhar</a></td>
+	</tr>
+	<tr>
+	<td><a href="#modalbox2" onclick="audio.play()">Ganhos por referências</a></td>
+	</tr>
+	<tr>
+	<td><a href="#modalbox3" onclick="audio.play()">Históricos de ganhos</a></td>
+	</tr>
+	<tr>
+	<td><a href="#modalbox4" onclick="audio.play()">Sobre o projecto</a></td>
+	</tr>
+</table>
+
+<div id="modalbox1" class="modal1">
+<div class="modalcontent1">
+<p style="font-size: 30px;">Começar a ganhar</p>
+
+<center>
+<hr width="80%" color="silver" size="3"/></center><br/>
+
+<p id="el" style="color: #222; text-align: justify;">
+Olá boas vindas. Comece a ganhar com o nosso projecto Akwanzas de forma grátis todos os dias.
+Tudo o que precisas fazer é acessares a sua conta Unitel Money e transferir 100,00 AKZ a este número <span style="color: lime;">940278820</span> e
+esperar 15 minutos. Após esse período, você receberá seu depósito mais 30% de lucro.</b> Seu investimento será transferido automaticamente para a sua carteira que você fez o investimento. 
+Os pagamentos são automáticos. O nosso programa paga 5% em bônus e sem limite. 
+<br /><br /><p style="font-size: 30px;">00001,00 AKZ</p>
+Usuários a ganharem. 
+<br /><br />Valores a ganharem. <p style="font-size: 30px;">00001,00 AKZ</p>
+</p>
+	
+<center>
+<hr width="80%" color="silver" size="3"/></center><br/>
+
+<a href="#" class="modalclose" onclick="audio.play()" style="background: lime; color: white; text-align: center; text-transform: none; padding: 13px;">Voltar</a>
+
+</div>
+</div>
+
+<div id="modalbox2" class="modal2">
+<div class="modalcontent3">
+<p style="font-size: 30px;"> Ganhos por referências</p>
+
+<center>
+<hr width="80%" color="silver" size="3"/></center><br/>
+
+<p style="text-align: justify;">Sim, o nosso projecto Akwanzas paga mais 5% por cada referência. Sempre que convidares uma pessoa e ela fazer um investimento,
+indique ela a inserir o seu número Unitel Money na opção de comentários, assim quando ela, a pessoa que indicaste, receber os seus ganhos investidos, será creditado em sua conta 5% por indicares ela.
+Convide seus familiares e comecem a ganhar dinheiro <i>aqui</i> todos os dias de forma grátis. 
+<br /><br /><p style="font-size: 30px;">00001,00 AKZ</p>
+Referêcias convidadas.
+<br /><br />Referêcias ganhando. <p style="font-size: 30px;">00001,00 AKZ</p>
+</p>
+
+<center>
+<hr width="80%" color="silver" size="3"/></center><br/>
+
+<a href="#" class="modalclose" onclick="audio.play()" style="background: lime; color: white; text-align: center; text-transform: none; padding: 13px;">Voltar</a>
+
+</div>
+</div>
+
+<div id="modalbox3" class="modal3">
+<div class="modalcontent2">
+<p style="font-size: 30px;">Históricos de ganhos</p>
+
+<center>
+<hr width="80%" color="silver" size="3"/></center><br/>
+
+<p style="text-align: justify;">
+<table style="width: 100%; border-collapse: collapse; color: black;">
+	<tr>
+	<td style="border: 1px solid black; padding: 10px;">+1000,00 AKZ<br />Últimos pagamentos.</td>
+	</tr>
+	<tr>
+	<td style="border: 1px solid black; padding: 10px;"> Últimos depósitos.<br/> +7000,00 AKZ</td>
+	</tr>
+	</table>
+
+	<br /><p style="font-size: 30px;">1000000,00 AKZ</p>
+	Gerando ganhos dos nossos clientes.
+	
+	<br /><br />Tempo de trabalho do projecto.
+	<br /><p style="font-size: 30px;">01:35:50</p>
+	
+	 <center>
+<hr width="80%" color="silver" size="3"/></center><br/>
+</p>
+	
+<a href="#" class="modalclose" onclick="audio.play()" style="background: lime; color: white; text-align: center; text-transform: none; padding: 13px;">Voltar</a>
+
+</div>
+</div>
+
+<div id="modalbox4" class="modal4">
+<div class="modalcontent4">
+<p style="font-size: 30px;">Sobre o projecto</p>
+<center>
+<hr width="80%" color="silver" size="3"/></center><br/>
+<p style="text-align: justify;">Akwanzas - sistema financeiro baseado no princípio de distribuição de fluxo de caixa. Os recursos dos participantes que investiram posteriormente são distribuídos entre os participantes que investiram anteriormente, o projecto é funcional. <!--e baseado no princípio de uma pirâmide financeira--> Qualquer pessoa maior de 5 anos pode participar. Tudo é muito simples e acessível até para um iniciante. <div style="color: lime; text-align: justify;"> Nosso projecto não impõe nenhum requisito e condição a você. Basta fazer um novo investimento de 100,00 AKZ e esperar 15 minutos. Após esse período, você receberá seu depósito mais 30% de lucro.</div> <div style="text-align: justify;">Seu investimento será transferido automaticamente para a sua carteira que você fez o investimento.</div>
+<br /> <div style="color: lime; text-align: justify;"> Info: <a onclick="audio.play()" style="padding: 0px; text-transform: none; width: 0px;" href="mailto:p1335614@gmail.com" target="_blank"> p1335614@gmail.com.</a></div>
+</p>
+
+	<br /><p style="font-size: 30px;">1000000,00 AKZ</p> Bonus dos usuários mais activos. 
+	
+	<br /><br />Pagamentos de bonus. <p style="font-size: 30px;">10000,00 AKZ</p>
+	
+	 <center>
+<hr width="80%" color="silver" size="3"/></center><br/>
+
+<a href="#" class="modalclose" onclick="audio.play()" style="background: lime; color: white; text-align: center; text-transform: none; padding: 13px;">Voltar</a>
+
+</div>
+</div>
+<div id="modalbox5" class="modal4">
+<div class="modalcontent4">
+<p style="font-size: 30px;">Fazer transferências</p>
+<center>
+<hr width="80%" color="silver" size="3"/></center><br/>
+
+Retirada minima é 500,00 Akzs clicks. Akzs clicks é a nossa super moeda digital.<br/><br/> Insera seu número Unitel Money e confirme.<br/><br/>
+
+<center>
+<input type="text" class="inpute"/></center><br/>
+</center>
+
+<center>
+<hr width="80%" color="silver" size="3"/></center><br/>
+
+<a href="akzshow.html" class="modalclose" onclick="audio.play()" style="background: lime; color: white; text-align: center; text-transform: none; padding: 13px;">Confirmar</a>
+
+</div>
+</div>
+
+<!--Código HTML E JS popup de notificações de boas vindas-->
+
+<div class="popup">
+<div class="ce">
+<p style="color: aqua; font-size: 15px;">
+GANHE DENHEIRO ONLINE<br /> 30% EM 15 MINUTOS<br />
+100,00 AKZ = +130% / 15 MINUTOS<br /> 
+</p>
+<center>
+<hr width="80%" color="silver" size="2"/></center>
+
+<a href="#modalbox4" onclick="audio.play()" style="text-transform: none; background: transparent; color: #99ffff;">Ler os termos de trabalho.</a>
+ 
+<input type="checkbox" id="check" onclick="enable()" name="termos" value="ter" onclick="audio.play()"> Aceito os termos de trabalho deste projecto.</p>
+<br/><button disabled="true" id="close" onclick="audio.play()">Aceito</button><br/><br/>
+<p style="color: #999fff; font-size: 10px;">© 2023.<!--01-04-2023--></p>
+
+</div>
+</div>
+
+<!--<video src="0/ll.mp4" autoplay="true" muted loop></video>-->
+
+<script type="text/javascript">
+	document.querySelector("#close").addEventListener("click", function(){
+	document.querySelector(".popup").style.display = "none";
+});
+</script>
+
+<script type="text/javascript">
+function enable(){
+var check = document.getElementById('check');
+var close = document.getElementById('close');
+
+if (check.checked){
+close.removeAttribute('disabled');
+}else{
+close.disabled = 'close';
+}
+} 
+</script>
+
+<!--<script type="text/javascript">
+	var audio = new Audio();
+	audio.src = '0/on.mp3';
+</script>-->
+
+<p id="total"></p>
+
+<script type="text/javascript">
+
+function addBalao(){
+	var bola = document.createElement("div");
+	bola.setAttribute("class", "bola");
+	var x = Math.floor(Math.random() * 150);
+	var y = Math.floor(Math.random() * 75);
+	bola.setAttribute("style", "left:"+x+"px;top:"+y+"px;");
+	bola.setAttribute("onclick", "estourar(this)");
+	
+	document.body.appendChild(bola);
+}
+	var placar = 0;
+function estourar(objecto){
+	
+	document.body.removeChild(objecto);
+
+placar ++;
+	var score = document.getElementById("total");
+	score.innerHTML = "<a style='font-size: 12px; background-color: rgba(255,255,255,0.9); border-radius: 0px;' href='#modalbox5'>Receber</button><br/> "+ placar + ",00 AKZ";
+	//score.innerHTML = "<button onclick='audio.play()' type='button' onclick='alert ('Retirada minima é 1000,00 akzs clicks')'><a href='aoa.html' titulo='Receber dinheiro'>Receber</a></button><br/> "+ placar + ",00 AKZ";
+}
+function iniciar(){
+	setInterval(addBalao, 10000);
+}
+
+</script>
+
+<!--<div id="sfcm858pf2al5xjuknswr1gdcc1kte9pcnd"></div>
+<script type="text/javascript" src="https://counter2.optistats.ovh/private/counter.js?c=m858pf2al5xjuknswr1gdcc1kte9pcnd&down=async" async></script>
+<noscript><a href="https://www.webcontadores.com" title="contador para blog"><img src="https://counter2.optistats.ovh/private/webcontadores.php?c=m858pf2al5xjuknswr1gdcc1kte9pcnd" border="0" title="contador para blog" alt="contador para blog"></a></noscript>-->
+</body>
+</html>
+
+
+<!--popup insira aqui seu numero Unitel Money e sera transferido os valores ganhos em plus.
+--______________________Retiada minima é 10000 akzs pontos 100 KWANZAS ANGOLANOS.
+--
+________________________________Transfer valores transferido, voce recebera seu pagamento em menus de 45 minutos <button>Aceito</button>
+
+-------Botao de alerta ---__________________Enviar email. Monetizar a pagina web, conteúdos de pwesquisas webs emails: 100,00 Akzsclicks = 10,00 Akwanzas.
+--
