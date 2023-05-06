@@ -15,7 +15,7 @@
 	zoom: 100%;
 }
 body{
-	font-size: 25px;
+	font-size: 22px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -62,7 +62,8 @@ body{
 	color: lime;
 	border: 2px solid #999;
 	border-radius: 5px;
-	font-size: 66px;
+	font-size: 25px;
+	padding: 30px;
 	width: 90%;
 	outline: none;
 }
@@ -72,7 +73,7 @@ body{
 a{
 	text-decoration: none;
 	background: silver;
-	padding: 20px;
+	padding: 30px;
 	border-radius: 5px;
 	color: #585858;
 	width: 90%;
@@ -88,7 +89,7 @@ a:active{
 }
 button{
 	background: lime;
-	padding: 20px;
+	padding: 30px;
 	width: 80%;
 	color: white;
 	text-decoration: none;
@@ -114,6 +115,23 @@ button:active{
 .dis{
 	display: inline-block;
 	font-size: 40px;
+}
+.diss{
+	background: silver;
+	padding: 30px;
+	width: 90%;
+	color: #585858;
+	text-decoration: none;
+	font-size: 30px;
+	cursor: pointer;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: all 0s ease;
+	border: none;
+}
+.diss:active{
+	transform: scale(0.96);
 }
 #modalbox1:active{
 	transform: scale(0.99);
@@ -403,43 +421,9 @@ table{
 }
 
 </style>
-<!--
-<script type="text/javascript">
-	function validateForm(){
-	var x =
-	document.forms["myForm"]["frame"].value;
-	if(x == '' || x == null){
-	alert('0000000000');
-	return
-	}
-	}
-</script>
--->
 </head>
 <body bgsound src="0/1porpurina.mp3" loop="infinite" onload="iniciar('iniciar')">
 <div  onclick="audio.play()">
-<!--
-<form action="" name="myForm" onsubmit="return validateForm()">
-Name: <input type="text" name="fname">
-<input type="submit" value="Submit">
-</form>
--->
-
-<script src="https://unpkg.com/sweetalert.min.js"></script>
-<script src="script.js">
-
-let btnShow = document.querySelector('button');
-
-btnShow.addEventListener('clcik' () +> {
-	small({
-		title: '1';
-		text: '2';
-		icon: '3';
-		button: '4';
-	});
-}
-
-</script>
 
 <!-- Scipt de alerta, ganhar mais-->
 <script type="text/javascript" charset="utf-8">alert('Ganhe dinheiros de forma grátis. Tudo que precisas fazer é enviar 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 60,00 AKZS.');</script><!--e mais 100% por visitares a página online.-->
@@ -454,9 +438,9 @@ btnShow.addEventListener('clcik' () +> {
 <hr width="80%" color="silver" size="3"/></center>
 <br/>
 <center>
-<input type="number" id="userBox" class="inpute" autocomplete="off" style="pointer-events: none; opacity: 0.5; text-decoration: none; background: silver;"/></center>
+<input type="number" maxlength="1" id="userBox" class="inpute" autocomplete="off" style="pointer-events: none; opacity: 0.5; text-decoration: none; background: silver;"/></center>
 </center>
-<center><hr width="80%" color="silver" size="3"/></center>
+<center><hr width="80%" color="silver" size="3" title="Linhas hrs."/></center>
 <center><a href="#modalbox4" class="dis" class="modalclose">Transferir</a></center>
 </div>
 </div>
@@ -474,37 +458,45 @@ btnShow.addEventListener('clcik' () +> {
 </div>
 </div>
 
-</script src="https://akwanzas.github.io/aoa/"></script>
-<script>
-	const jsConfetti = new SJConfetti()
-	.querySelector("#congrats")
-	.addEventListener("click", (e) => {
-	jsConfetti.addConfetti();
-	});
-</script>
 <!--DivsdeNotificações 1/4-->
 <div title="Info." id="modalbox4" class="modal4">
 <div class="modalcontent4">
 
 <!--<form style="background: yellow;">-->
 <p style="font-size: 25px;" title="Info."><a href="#modalbox4" class="class" title="Título" id="congrats" onclick="alert('Ganhe dinheiros de forma grátis. Tudo que precisas fazer é enviar 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 60,00 AKZS.');">Receber dinheiro</a></p>
-<center><hr width="80%" color="silver" size="3"/></center><br/>
-<p style="text-align: justify; font-size: 18px; color: lime;" title="Textos."><a href="0/Akwanzas clicks documentação.txt" title="Termos de trabalho." style="color: #999fff; padding: 0; background: transparent; font-size: 10;">Transfira 1 Rublo</a> a este endereço P1823647 e insira o ID da transação e a sua carteira Payeer nos inputs e clique em receber <!--ou envie 50,00 AKZS a este número 9402788820 Unitel money--><a href="0/Akwanzas clicks documentação.txt" target="_blank" title="Termos de trabalho." style="color: #999fff; padding: 0; background: transparent;"> e em 1 minuto receberás 100%. 
+<center><hr title="Linhas hr." width="80%" color="silver" size="3"/></center><br/>
+<p style="text-align: justify; font-size: 18px; color: lime;" title="Textos."><a href="0/Akwanzas clicks documentação.txt" target="_blank" title="Termos de trabalho." style="color: #999fff; padding: 0; background: transparent; font-size: 10;">Transfira 1 Rublo</a> <a href="https://payeer.com/?session=17442490/" target="_blank" title="Criar uma conta bancaria online Payeer." style="color: lime; padding: 0; background: white;"> a este endereço P1823647 e insira o ID da transação e a sua carteira Payeer nos inputs e clique em receber</a> <!--ou envie 50,00 AKZS a este número 9402788820 Unitel money--><a href="0/Criar conta offline e online a qualquer telefone.txt" target="_blank" title="0/Criar uma conta bancaria OFFLINE E ONLINE." target="_blank" style="color: #999fff; padding: 0; background: transparent;"> e em 1 minuto receberás 100%. 
 <!--<input type="checkbox" id="check" onclick="enable()" name="termos" value="ter" title="Check."/>	 <input type="""disabled="true" id="close"/>--></a></p>
-<!--</form>--><center><hr width="80%" color="silver" size="3"/></center><br/>
+<!--</form>--><center><hr title="Linhas hr." width="80%" color="silver" size="3"/></center><br/>
 
 <!--<h1 title="Ganhar dólares hoje">RECEBE 1,00$ GRÁTIS</h1>-->
-<center><hr width="80%" color="silver" size="3"/></center>	
-<form type="submit" method="post" value="educação" style="background: white;">
-<center><input type="text" id="userBox" type="text" class="inpute" autocomplete="off" title="Input." style="background: transparent; text-align: center; color: #333; pointer-events:; opacity: 0.5; text-decoration: none; background: silver;"/></center><!--style="pointer-events: none; opacity: 0.5; text-decoration: none; background: silver;"-->
-<center><hr width="80%" color="silver" size="3"/></center>
-<center><input type="text" id="userBox" type="text" class="inpute" autocomplete="off" title="Input." style="background: transparente; text-align: center; color: #333; pointer-events:; opacity: 0.5; text-decoration: none; background: silver;/></center><!--style="pointer-events: none; opacity: 0.5; text-decoration: none; background: silver;"-->
-<center><hr width="80%" color="silver" size="3"/></center>
-<center><a href="#" type="submit" class="dis" title="Botão." onclick="alert('Mensagem enviada. Se já transferiste 1,00 Rublo e o ID da transação, cofirme seu dinheiro ganho em sua conta Payeer.');">Receber</a></center> <!--title="Clique aqui e receba dinheiro grátis."--> 
-<center><hr width="80%" color="silver" size="3"/></center>
+<center><hr title="Linhas hr." width="80%" color="silver" size="3"/></center>	
+<form name="form" onsubmit="return validate()">
+<center><input type="text" name="name" maxlength="5" id="userBox" class="inpute" autocomplete="off" title="Input." required style="background: transparent; padding: 25px; text-align: center; color: #333; pointer-events:; opacity: 0.5; text-decoration: none; background: silver;"/></center><!--style="pointer-events: none; opacity: 0.5; text-decoration: none; background: silver;"-->
+<center><hr title="Linhas hr."width="80%" color="silver" size="3"/></center>
+<center><input type="text" name="password" maxlength="5" id="userBox" class="inpute" autocomplete="off" title="Input." required style="background: transparente; padding: 25px; text-align: center; color: #333; pointer-events:; opacity: 0.5; text-decoration: none; background: silver;"/></center><!--style="pointer-events: none; opacity: 0.5; text-decoration: none; background: silver;"-->
+<center><hr title="Linhas hr."width="80%" color="silver" size="3"/></center>
+<center><input type="submit" class="diss" title="Botão." value="Receber" onclick="alert('Mensagem enviada.');/><!--onclick="alert('Mensagem enviada. Se já transferiste 1,00 Rublo e o ID da transação, cofirme seu dinheiro ganho em sua conta Payeer.');"--></center> <!--title="Clique aqui e receba dinheiro grátis."--> 
+<center><hr title="Linhas hr." width="80%" color="silver" size="3"/></center>
 </form>
 </div>
 </div>
+
+<!--Javascript de confirmação de envios de formulários. Script conectado com modalbox4-->
+<script type="text/javascript">
+	function validate(){
+	var name = document.form.name.value;
+	var password = document.form.password.value;
+	
+	if(name ==null || name ==""){
+		alert("Insira o id.");
+		return false;
+	}else if(password.length<1){
+	alert("Insira a sua carteira Payeer.");
+	return false;
+	}
+	}
+</script>
 
 <!--<script type="text/javascript" charset="utf-8">
 	document.querySelector("#userBox").addEventListener("click", function(){
@@ -573,15 +565,15 @@ btnConfetti.addEventListener('click", function () {
 <!--DivsdeNotificações 1/3-->
 <!--inteligenciar artificial-->
 <a href="#modalbox3" title="0" class="fort" style="width: 1%;  height: 1vh; font-size: 15px; right: 0px; bottom: 0px; color: yellow; position: fixed; z-index: 9999999999999999;"></a><br/>
-<a href="#" title="1" class="fort" style="width: 1%;  height: 1vh; font-size: 15px; right: 0px; bottom: 55px; color: white; position: fixed; z-index: 9999999999999999;"></a>
+<a href="#" title="1" class="fort" style="width: 1%;  height: 1vh; font-size: 15px; right: 0px; bottom: 66px; color: white; position: fixed; z-index: 9999999999999999;"></a>
 
 <div id="modalbox3" class="modal3">
 <div class="modalcontent3">
-<a href="#" class="" title="Inteligência Artificial." style="padding: 0px; font-size: 17px; right: 25px; bottom: 10px; transparent; color: lime; border-radius: 5px; position: fixed; z-index: 99999;">
-<div href="#" title="Inteligência Artificial." style="padding: 20px; font-size: 17px; right: 25px; bottom: 10px; background: rgba(255,255,255,0.9); color: lime; border-radius: 5px; position: fixed; z-index: 99999;">
 
+<a href="#" class="" title="Inteligência Artificial. Aumentar o zoom e conversar com a inteligencia artificial." style="padding: 0px; font-size: 17px; right: 25px; bottom: 10px; transparent; color: lime; border-radius: 5px; position: fixed; z-index: 99999;">
+<div href="#" title="Inteligência Artificial. Aumentar o zoom e conversar com a inteligencia artificial." style="padding: 20px; font-size: 17px; right: 25px; bottom: 10px; background: rgba(255,255,255,0.9); color: lime; border-radius: 5px; position: fixed; z-index: 99999;">
 <center>
-<span style="color: lime;"><img src="0/wii.png" width="70px;"><img src="0/wiii.png" width="70px;"><br/><!--<b style=" color: lime;">-->Inteligência Artificial.</span><br/>
+<span style="color: lime;"><img src="0/wii.png" width="70px;"><img src="0/wiii.png" width="70px;"><br/><b style=" color: lime;">Inteligência Artificial.</span><br/>
 <input id="userBoxe" type="text" title="Input." style="color: #999; background: transparent; border: 1px solid #999; padding: 5px; font-family: 15px; border-radius: 5px;" placeholder="Repita as palavras" onkeydown="if(event.keyCode == 13){ talk() }" autocomplete="off" required style="width: 80%;"/></b><br/>
 </center>
 <center>
@@ -591,25 +583,6 @@ btnConfetti.addEventListener('click", function () {
 </a>
 </div>
 </div>
-</div>
-
-<!--
-<input type="checkbox" id="check" onclick="enable()">
-<input disabled="true" id="close">Estudar✅🛄</input>
--->
-
-<script type="text/javascript" charset="utf-8">
-function enable(){
-var check = document.getElementById('check');
-var close = document.getElementById('close');
-
-if (check.checked){
-close.removeAttribute('disabled');
-}else{
-close.disabled = 'close';
-}
-} 
-</script>
 	
 <script type="text/javascript" charset="utf-8">
 //inteligência artificial.
@@ -737,13 +710,22 @@ function iniciar(){
 <!--Scripts notificações inteligentes-->
 <div class="buttons">
 <div  onmousedown="audio.play()">
-<a href="#" id="clicks" title="Flopes." onclick="notifySuccess()"></a>
+<button href="#" id="clicks" title="Flopes." onclick="notifySuccess()"></button>
 <button id="click" onclick="notifyError()"></button>
 <button id="clic" onclick="notifyInfo()"></button>
 </div>
 </div>
-<a href="#" title="Notificações." onclick="prompt('Info: p1335614@gmail.com');" style="background: transparent; padding: 0px;" id="notification-area"></a>
 
+
+<script>
+	const jsConfetti = new SJConfetti()
+	.querySelector("#congrats")
+	.addEventListener("click", (e) => {
+	jsConfetti.addConfetti();
+	});
+</script>
+
+<a href="#" title="Notificações." onclick="prompt('Info: p1335614@gmail.com');" style="background: transparent; padding: 0px;" id="notification-area"></a>
 <script>
 	setInterval("document.getElementById('clicks').click()", 10000);
 </script>
