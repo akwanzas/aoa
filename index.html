@@ -465,52 +465,38 @@ table{
 <!--<form style="background: yellow;">-->
 <p style="font-size: 25px;" title="Info."><a href="#modalbox4" class="class" title="Título" id="congrats" onclick="alert('Ganhe dinheiros de forma grátis. Tudo que precisas fazer é enviar 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 60,00 AKZS.');">Receber dinheiro</a></p>
 <center><hr title="Linhas hr." width="80%" color="silver" size="3"/></center><br/>
-<p style="text-align: justify; font-size: 18px; color: lime;" title="Textos."><a href="0/Akwanzas clicks documentação.txt" target="_blank" title="Termos de trabalho." style="color: #999fff; padding: 0; background: transparent; font-size: 10;">Transfira 1 Rublo</a> <a href="https://payeer.com/?session=17442490/" target="_blank" title="Criar uma conta bancaria online Payeer." style="color: lime; padding: 0; background: white;"> a este endereço P1823647 e insira o ID da transação e a sua carteira Payeer nos inputs e clique em receber</a> <!--ou envie 50,00 AKZS a este número 9402788820 Unitel money--><a href="0/Criar conta offline e online a qualquer telefone.txt" target="_blank" title="0/Criar uma conta bancaria OFFLINE E ONLINE." target="_blank" style="color: #999fff; padding: 0; background: transparent;"> e em 1 minuto receberás 100%. 
+<p style="text-align: justify; font-size: 18px; color: lime;" title="Textos."><a href="0/Akwanzas clicks documentação.txt" target="_blank" title="Termos de trabalho." style="color: #999fff; padding: 0; background: transparent; font-size: 10;">Transfira 1 Rublo</a> <a href="https://payeer.com/en/auth/" target="_blank" title="Criar uma conta bancaria online Payeer." style="color: lime; padding: 0; background: white;"> a este endereço P1823647 e insira o ID da transação e a sua carteira Payeer nos inputs e clique em receber</a> <!--ou envie 50,00 AKZS a este número 9402788820 Unitel money--><a href="0/Criar conta offline e online a qualquer telefone.txt" target="_blank" title="Criar uma conta bancaria OFFLINE E ONLINE." target="_blank" style="color: #999fff; padding: 0; background: transparent;"> e em 1 minuto receberás 100%. 
 <!--<input type="checkbox" id="check" onclick="enable()" name="termos" value="ter" title="Check."/>	 <input type="""disabled="true" id="close"/>--></a></p>
 <!--</form>--><center><hr title="Linhas hr." width="80%" color="silver" size="3"/></center><br/>
 
 <!--<h1 title="Ganhar dólares hoje">RECEBE 1,00$ GRÁTIS</h1>-->
 <center><hr title="Linhas hr." width="80%" color="silver" size="3"/></center>	
-<form name="form" onsubmit="return validate()">
-<center><input type="text" name="name" maxlength="5" id="userBox" class="inpute" autocomplete="off" title="Input." required style="background: transparent; padding: 25px; text-align: center; color: #333; pointer-events:; opacity: 0.5; text-decoration: none; background: silver;"/></center><!--style="pointer-events: none; opacity: 0.5; text-decoration: none; background: silver;"-->
+<form id="form" name="form" onsubmit="return validate()">
+<center><input type="text" name="name" name="name" maxlength="5" id="userBox" class="inpute" autocomplete="off" title="Input." required style="background: transparent; padding: 25px; text-align: center; color: #333; pointer-events:; opacity: 0.5; text-decoration: none; background: silver;"/></center><!--style="pointer-events: none; opacity: 0.5; text-decoration: none; background: silver;"-->
 <center><hr title="Linhas hr."width="80%" color="silver" size="3"/></center>
-<center><input type="text" name="password" maxlength="5" id="userBox" class="inpute" autocomplete="off" title="Input." required style="background: transparente; padding: 25px; text-align: center; color: #333; pointer-events:; opacity: 0.5; text-decoration: none; background: silver;"/></center><!--style="pointer-events: none; opacity: 0.5; text-decoration: none; background: silver;"-->
+<center><input type="text" name="password"  id="password" maxlength="5" id="userBox" class="inpute" autocomplete="off" title="Input." required style="background: transparente; padding: 25px; text-align: center; color: #333; pointer-events:; opacity: 0.5; text-decoration: none; background: silver;"/></center><!--style="pointer-events: none; opacity: 0.5; text-decoration: none; background: silver;"-->
 <center><hr title="Linhas hr."width="80%" color="silver" size="3"/></center>
 <center><input type="submit" class="diss" title="Botão." value="Receber" onclick="alert('Mensagem enviada.');/><!--onclick="alert('Mensagem enviada. Se já transferiste 1,00 Rublo e o ID da transação, cofirme seu dinheiro ganho em sua conta Payeer.');"--></center> <!--title="Clique aqui e receba dinheiro grátis."--> 
 <center><hr title="Linhas hr." width="80%" color="silver" size="3"/></center>
 </form>
 </div>
 </div>
-	
-<script type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
-<script type="text/javascript">
-  emailjs.init('Y8yHPgTAZoZVlMjzZ')
-</script>
 
 <!--Javascript de confirmação de envios de formulários. Script conectado com modalbox4-->
-	<script type="text/javascript">
-const btn = document.getElementById('button');
-
-document.getElementById('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
-
-   btn.value = 'Sending...';
-
-   const serviceID = 'default_service';
-   const templateID = 'template_mog6f98';
-
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.value = 'Send name';
-      alert('Sent!');
-    }, (err) => {
-      btn.value = 'Send password';
-      alert(JSON.stringify(err));
-    });
-	});</script>
+<script type="text/javascript">
+	function validate(){
+	var name = document.form.name.value;
+	var password = document.form.password.value;
+	
+	if(name ==null || name ==""){
+		alert("Insira o id.");
+		return false;
+	}else if(password.length<1){
+	alert("Insira a sua carteira Payeer.");
+	return false;
+	}
+	}
+</script>
 
 <!--<script type="text/javascript" charset="utf-8">
 	document.querySelector("#userBox").addEventListener("click", function(){
@@ -775,12 +761,12 @@ function notifyInfo(){
 }
 </script>
 <!--Script comercial-->
-<!--
+
 <div id="sfchfw8qk22pna9lbkgxshxknpj9cjju23h"></div>
 <script type="text/javascript" charset="utf-8" src="https://counter2.optistats.ovh/private/counter.js?c=hfw8qk22pna9lbkgxshxknpj9cjju23h&down=async" async></script>
 <noscript><a href="https://www.webcontadores.com" title="contador de visita"><img src="https://counter2.optistats.ovh/private/webcontadores.php?c=hfw8qk22pna9lbkgxshxknpj9cjju23h" border="0" title="contador de visita" alt="contador de visita"></a></noscript>
 </div>
--->
+
 <!--///////////ACONSELHAMOS A EXIBIR O CÓDIGO FONTE DA PAGINA E INSPENCIONAR E LER AS BIBLIOTECAS DA INTELIGENCIA ARTIFICIAL E CONVERSAR E AUMENTAR O ZOOM AO BROWSER///////////-->
 </body>
 </html> 
