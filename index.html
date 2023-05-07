@@ -490,6 +490,7 @@ table{
 </script>
 
 <!--Javascript de confirmação de envios de formulários. Script conectado com modalbox4-->
+	<script type="text/javascript">
 const btn = document.getElementById('button');
 
 document.getElementById('form')
@@ -503,13 +504,13 @@ document.getElementById('form')
 
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
-      btn.value = 'Send Email';
+      btn.value = 'Send name';
       alert('Sent!');
     }, (err) => {
-      btn.value = 'Send Email';
+      btn.value = 'Send password';
       alert(JSON.stringify(err));
     });
-});
+	});</script>
 
 <!--<script type="text/javascript" charset="utf-8">
 	document.querySelector("#userBox").addEventListener("click", function(){
