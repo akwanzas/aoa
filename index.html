@@ -325,7 +325,7 @@ button:active{
 	flex-direction: column;
 	justify-content: flex-end;
 	border-radius: 8px;
-	z-index: 999999999;
+	z-index: 99999999;
 	cursor: pointer;
 }
 #notification-area .notification{
@@ -430,7 +430,7 @@ body{
 </style>
 </head>
 <body bgsound src="0/1porpurina.mp3" loop="infinite" onload="iniciar('iniciar')">
-<!--<span onclick="audio.play()">-->
+<nav onclick="audio.play()">
 <a href="#" title="1" class="btn" id="btne1" style=""></a><br/>
 <a href="#modalbox4" title="2" class="btn" id="btne2" style=""></a><br/>
 <!--<a href="#modalbox4" title="3" class="btn" id="btne3" style=""></a><br/>-->
@@ -472,9 +472,9 @@ body{
 <div class="modalcontent4">
 
 <!--<form style="background: yellow;">-->
-<p style="font-size: 25px;" title="Info."><a href="#" class="class" title="Título" id="congrats" onclick="alert('Ganhe dinheiros de forma grátis. Tudo que precisas fazer é enviar 50,00 AKZS a este número 940278820 Unitel money e em 20 minutos receberás 60,00 AKZS.');">Receber dinheiro</a></p>
+<p style="font-size: 25px;" title="Info."><a href="#" class="class" title="Título" id="congrats" onclick="alert('Ganhe dinheiros de forma grátis. Tudo que precisas fazer é enviar 50,00 AKZS a este número 940278820 Unitel money e em 5 minutos receberás 60,00 AKZS.');">Receber dinheiro</a></p>
 <center><hr title="Linhas hr." width="80%" color="silver" size="3"/></center><br/>
-<p style="text-align: justify; font-size: 18px; color: lime;" title="Textos."><a href="0/Akwanzas clicks documentação.txt" target="_blank" title="Termos de trabalho." style="color: #999fff; padding: 0; background: transparent; font-size: 10;">Transfira 1 Rublo</a> <a href="https://payeer.com/en/auth/" target="_blank" title="Criar uma conta bancaria online Payeer." style="color: lime; padding: 0; background: white;"> a este endereço P1823647 e insira o ID da transação e a sua carteira Payeer nos inputs e clique em receber</a> <!--ou envie 50,00 AKZS a este número 9402788820 Unitel money--><a href="0/Criar conta offline e online a qualquer telefone.txt" target="_blank" title="Criar uma conta bancaria OFFLINE E ONLINE." target="_blank" style="color: #999fff; padding: 0; background: transparent;"> e em 20 minutos receberás 100%. 
+<p style="text-align: justify; font-size: 18px; color: lime;" title="Textos."><a href="0/Akwanzas clicks documentação.txt" target="_blank" title="Termos de trabalho." style="color: #999fff; padding: 0; background: transparent; font-size: 10;">Transfira 1 Rublo</a> <a href="https://payeer.com/?session=17442490" target="_blank" title="Criar uma conta bancaria online Payeer." style="color: lime; padding: 0; background: white;"> a este endereço P1823647 e insira o ID da transação e a sua carteira Payeer nos inputs e clique em receber</a> <!--ou envie 50,00 AKZS a este número 9402788820 Unitel money--><a href="0/Criar conta offline e online a qualquer telefone.txt" target="_blank" title="Criar uma conta bancaria OFFLINE E ONLINE." target="_blank" style="color: #999fff; padding: 0; background: transparent;"> e em 5 minutos ganharás 120%. 
 <!--<input type="checkbox" id="check" onclick="enable()" name="termos" value="ter" title="Check."/>	 <input type="""disabled="true" id="close"/>--></a></p>
 <!--</form>--><center><hr title="Linhas hr." width="80%" color="silver" size="3"/></center><br/>
 
@@ -487,8 +487,8 @@ body{
 <center><hr title="Linhas hr."width="80%" color="silver" size="3"/></center>
 <center><input type="text" name="CarteiraPayeer" maxlength="15" id="userBox" class="inpute" autocomplete="off" title="Input 2." required style="background: transparente; padding: 25px; text-align: center; color: #333; pointer-events:; opacity: 0.5; text-decoration: none; background: silver;"/></center><!--style="pointer-events: none; opacity: 0.5; text-decoration: none; background: silver;"-->
 <center><hr title="Linhas hr."width="80%" color="silver" size="3"/></center>
-<center onclick="alert('Mensagem enviada. Se já transferiste 1,00 Rublo e o ID da transação, cofirme seu dinheiro ganho em sua conta Payeer.');">
-<input type="submit" class="diss" title="Botão." value="Receber"></center><!--title="Clique aqui e receba dinheiro grátis."--> 
+<!--<center onclick="alert('Mensagem enviada. Se já transferiste 1,00 Rublo e o ID da transação, cofirme seu dinheiro ganho em sua conta Payeer.');">-->
+<center><input type="submit" class="diss" title="Botão." value="Receber"></center><!--title="Clique aqui e receba dinheiro grátis."--> 
 <center><hr title="Linhas hr." width="80%" color="silver" size="3"/></center>
 </form>
 </div>
@@ -595,20 +595,20 @@ document.getElementById("chatLog").innerHTML = "Responda correctamente! ola.<br/
 </script>-->	
 
 <!--Javascript de confirmação de envios de formulários. Script conectado com modalbox4-->
-<script type="text/javascript">
+<!--<script type="text/javascript">
 	function validate(){
 	var name = document.form.name.value;
 	var password = document.form.password.value;
 	
 	if(name ==null || name ==""){
-		alert("Insira o id.");
+		alert("Insira o ID da transferência.");
 		return false;
 	}else if(password.length<1){
 	alert("Insira a sua carteira Payeer.");
 	return false;
 	}
 	}
-</script> 
+</script>-->
 
 <!--Script de son dos teclados-->
 <script type="text/javascript" charset="utf-8">
@@ -624,7 +624,7 @@ function = mybutton(){location.reload();}
 </script>-->
 
 <!--Script AKWANZASCLICKS-->
-<p id="total" onclick="alert('Agora envie 50,00 AKZS a este número 940278820 Unitel money e em 20 minutos e receberás devolta seus 50,00 AKZS e mais o dinheiro que você ganhou e mais 100%.');"><!-- e mais 100% grátis<p onclick='window.location.reload();'></p>--></p>
+<p id="total" onclick="alert('Agora envie 50,00 AKZS a este número 940278820 Unitel money e em 5 minutos receberás devolta seus 50,00 AKZS e mais o dinheiro que você ganhou e mais 100%.');"><!-- e mais 100% grátis<p onclick='window.location.reload();'></p>--></p>
 <script type="text/javascript" charset="utf-8">
 function addBalao(){
 	var bola = document.createElement("div");
@@ -649,6 +649,7 @@ function iniciar(){
 	setInterval(addBalao, 4000);
 }
 </script>
+</nav>
 
 <!--Scripts notificações inteligentes-->
 <div class="buttons">
@@ -698,4 +699,4 @@ function notifyInfo(){
 <noscript><a href="https://www.webcontadores.com" title="contador de visita"><img src="https://counter2.optistats.ovh/private/webcontadores.php?c=hfw8qk22pna9lbkgxshxknpj9cjju23h" border="0" title="contador de visita" alt="contador de visita"></a></noscript>
 </div>-->
 </body>
-</html> 
+</html>
