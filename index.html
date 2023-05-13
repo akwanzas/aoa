@@ -10,154 +10,113 @@
 *{
 	margin: 0;
 	padding: 0;
-	cursor: pointer;
 	box-sizing: border-box;
-	font-family: forte;
-	zoom: 100%;
+	font-family: candara;
 }
 body{
-	font-size: 22px;
+	font-size: 17px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 100vh;	
-	/*background:  linear-gradient(90deg, aqua, pink);
+	background:  linear-gradient(90deg, aqua, pink);
 	color: black;
-	background-image: url(i.jpg);*/
-	background: linear-gradient(30deg,
-	#fd004c 20%,
-	#fe9000 20%,
-	#ff9000 40%,
-	#fff020 40%,
-	#fff020 60%,
-	#3edf4b 60%,
-	#3edf4b 80%,
-	#3363ff 80%
-);
+	cursor: pointer;
 }
 .bola{
 	width: 100px;
 	height: 100px;
-	background:  linear-gradient(130deg, yellow, red, orange);
-	border-radius: 100px;
-	position: absolute; margin-top: 5%;
+	background-color: rgba(255,255,255,0.5);
+	border-radius: 50px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
 	z-index: 999;
-	cursor: pointer;
-	align-items: center;
-	justify-content: center;
-	margin-left: 900px;
-	top: 300px;
-	z-index: 99999999;
 }
 #total{
-	top: 10px;
+	color: white;
+	top: 0px;
 	right: 0px;
 	margin-bottom: 0px;
-	font-size: 44px;
+	height: 100vh;
+	font-size: 3rem;
 	position: fixed;
-	cursor: pointer;
-	z-index: 99999999;
+	z-index: 999;
 }
 .inpute{ 
 	border: none;
+	background-color: transparent;
 	color: lime;
-	border: 2px solid #999;
-	border-radius: 5px;
-	font-size: 25px;
-	padding: 30px;
+	border-bottom: 1px solid lime;
+	font-size: 20px;
 	width: 90%;
-	outline: none;
 }
-.inpute:active{
-	transform: scale(0.99);
+button{
+	background: lime;
+	padding: 13px;
+	width: 88%;
+	color: white;
+	text-decoration: none;
+	font-size: 17px;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	transition: all 0s ease;
+}
+button:active{
+	transform: scale(0.96);
+}
+.popup{ 
+	overflow: auto;
+	padding: 30px;
+	background: rgba(8,255,255,0.90);
+	height: 100vh;
+	position: fixed;
+	left: 0%;
+	top: 0%;
+	right: 0%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.ce{
+	background: white;
+	color: aqua;
+	border-radius: 5px;
+	position: relative;
+	padding: 35px;	
+	text-align: center;
+}
+td{
+	border: 2px solid white;
+	text-align: center;
+	padding: 10px;
 }
 a{
+	display: inline-block;
 	text-decoration: none;
-	background: silver;
-	padding: 30px;
-	border-radius: 5px;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 3px;
 	color: #585858;
-	width: 90%;
-	cursor: pointer;
+	width: 100%;
 	transition: all 0.2s ease;
 }
 a:active{
 	transform: scale(0.96);
 }
-.class{
-	text-transform: none; background: transparent; color: #999fff; padding: 0px;
-}
-#btne1{width: 1%;  height: 1vh; font-size: 15px; left: 3px; bottom: 69px; color: white; position: fixed; z-index: 9999999999999;}
-#btne2{width: 1%;  height: 1vh; font-size: 15px; left: 3px; bottom: 3px; color: yellow; position: fixed; z-index: 9999999999999;}
-#btne3{width: 1%;  height: 1vh; font-size: 15px; left: 68px; bottom: 3px; color: yellow; position: fixed; z-index: 9999999999999;}
-button{
-	background: none;
-	padding: 30px;
-	width: 80%;
-	color: transparent;
-	text-decoration: none;
-	font-size: 30px;
-	cursor: none;
-	border: none;
-	border-radius: none;
-	transition: all 0s ease;
-}
-button:active{
-	transform: scale(0.96);
-	border: 2px solid aqua;
-}
-.btn{
-	background: transparent;
-	border: 2px solid transparent;
-}
-.active, .btn:hover{
-	border: 2px solid aqua;
-	background: rgba(255,255,255,0.9);
-}
-.dis{
-	display: inline-block;
-	font-size: 40px;
-}
-.diss{
-	background: silver;
-	padding: 30px;
-	width: 90%;
-	color: #585858;
-	text-decoration: none;
-	font-size: 30px;
-	cursor: pointer;
-	border: none;
-	cursor: pointer;
-	border-radius: 5px;
-	transition: all 0s ease;
-	border: none;
-}
-.diss:active{
-	transform: scale(0.96);
-}
-#modalbox1:active{
-	transform: scale(0.99);
-}
-#modalbox2:active{
-	transform: scale(0.99);
-}
-#modalbox3:active{
-	transform: scale(0.99);
-}
-#modalbox4:active{
-	transform: scale(0.99);
-}
-.modalcontent1:active{
-	transform: scale(0.99);
-}
-.modalcontent2:active{
-	transform: scale(0.99);
-}
-.modalcontent7:active{
-	transform: scale(0.99);
-}
-.modalcontent9:active{
-	transform: scale(0.99);
+video{
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	left: 0%; 
+	top: 0%;
+	right: 0%;
+	object-fit: cover;
+	transition: all 1.2s linear;
+	z-index: -10;
 }
 .modal1{overflow: auto; height: 100vh;
 	position: fixed;
@@ -170,9 +129,8 @@ button:active{
 	justify-content: center;
 	background: rgba(8,255,255,0.7);
 	transition: all 0.4s;
-	visibility: none;
-	opacity: 1;
-	z-index: 99999;
+	visibility: hidden;
+	opacity: 0;
 }
 .modal2{overflow: auto; height: 100vh;
 	position: fixed;
@@ -187,37 +145,8 @@ button:active{
 	transition: all 0.4s;
 	visibility: hidden;
 	opacity: 0;
-	z-index: 9999999;
 }
 .modal3{overflow: auto; height: 100vh;
-	position: fixed;
-	bottom: 0;
-	right: 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background: transparent;
-	transition: all 0.4s;
-	visibility: none;
-	opacity: 1;
-	z-index: 999999999;
-}
-.modal4{overflow: auto; height: 100vh;
-	position: fixed;
-	top: 0px;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background: rgba(8,255,255,0.7);
-	transition: all 0.4s;
-	visibility: none;
-	opacity: 1;
-	z-index: 99999999;
-}
-.modal9{overflow: auto; height: 100vh;
 	position: fixed;
 	top: 0px;
 	bottom: 0;
@@ -230,32 +159,37 @@ button:active{
 	transition: all 0.4s;
 	visibility: hidden;
 	opacity: 0;
-	z-index: 99999;
+}
+.modal4{overflow: auto; height: 100vh;
+	position: fixed;
+	top: 0px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(8,255,255,0.7);
+	transition: all 0.4s;
+	visibility: hidden;
+	opacity: 0;
 }
 .modal1:target{
 	visibility: visible;
 	opacity: 1;
-	z-index: 500;
-	}
+}
 .modal2:target{
 	visibility: visible;
 	opacity: 1;
-	z-index: -99999999999;
 }
 .modal3:target{
 	visibility: visible;
 	opacity: 1;
-	z-index: 999999;
 }
 .modal4:target{
 	visibility: visible;
 	opacity: 1;
-	z-index: 999999999;
-}
-.modal9:target{
-	visibility: visible;
-	opacity: 1;
-	z-index: 99999;
+	z-index: 500;
 }
 .modalcontent1{
 	overflow: auto;
@@ -267,9 +201,7 @@ button:active{
 	max-width: 90%;
 	padding: 1em 2em;
 	border-radius: 4px;
-	cursor: pointer;
-	z-index: 999999;
-	}
+}
 .modalcontent2{
 	overflow: auto;
 	position: fixed;
@@ -280,8 +212,17 @@ button:active{
 	max-width: 90%;
 	padding: 1em 2em;
 	border-radius: 4px;
-	cursor: pointer;
-	z-index: 9999999;
+}
+.modalcontent3{
+	overflow: auto;
+	position: fixed;
+	top: 0px;
+	position: relative;
+	background: #fff;
+	width: 500px;
+	max-width: 90%;
+	padding: 1em 2em;
+	border-radius: 4px;
 }
 .modalcontent4{
 	overflow: auto;
@@ -292,12 +233,15 @@ button:active{
 	width: 500px;
 	max-width: 90%;
 	padding: 1em 2em;
-	border-radius: 4px;
-	cursor: pointer;
-	z-index: 9999999;
+	border-radius: 4px; 
 }
-.modalcontent9{
+td{
+	font-size: 30px;
+}
+@media only screen and (max-width: 800px){
+.modalcontent1{
 	overflow: auto;
+	height: 100vh;
 	position: fixed;
 	top: 0px;
 	position: relative;
@@ -306,331 +250,245 @@ button:active{
 	max-width: 90%;
 	padding: 1em 2em;
 	border-radius: 4px;
-	cursor: pointer;
+}
+.modalcontent2{
+	overflow: auto;
+	height: 100vh;
+	position: fixed;
+	top: 0px;
+	position: relative;
+	background: #fff;
+	width: 500px;
+	max-width: 90%;
+	padding: 1em 2em;
+	border-radius: 4px;
 }
 .modalcontent3{
-	cursor: pointer;
-}
-.color{
-	background-clip: text;
-	-webkit-background-clip: text;
-	animation: jump 1s ease-in-out infinite;
-}
-#notification-area{
+	overflow: auto;
+	height: 100vh;
 	position: fixed;
-	top: 15px;
-	left: 10px;
-	width: 25%;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	border-radius: 8px;
-	z-index: 999999999;
-	cursor: pointer;
+	top: 0px;
+	position: relative;
+	background: #fff;
+	width: 500px;
+	max-width: 90%;
+	padding: 1em 2em;
+	border-radius: 4px;
 }
-#notification-area .notification{
-	text-align: center;
-	border-radius: 8px;
-	color: #666;
-	padding: 18px;
-	font-size: 15px;
-	margin: 5px;
-	animation: showNotification 500ms ease-in-out forwards;
-}
-como fazeeer o teu codigo script rodar em forma matrix em html
-@keyframes showNotification{
-	to{
-		opacity: 1;
-	}
-}
-#notification-area .notification.success{
-	background: rgba(255,255,255,0.9);
-}
-#notification-area .notification.error{
-	background: rgba(255,255,255,0.9);
-}
-#notification-area .notification.info{
-	background: rgba(255,255,255,0.9);
-}
-@media only screen and (max-width: 800px){
-body{
-	font-size: 15px;
-	background: linear-gradient( to bottom,
-	#fd004c 20%,
-	#fe9000 20%,
-	#ff9000 40%,
-	#fff020 40%,
-	#fff020 60%,
-	#3edf4b 60%,
-	#3edf4b 80%,
-	#3363ff 80%
-);
-}
-.modal1{
-	background: rgba(255,255,255,0.2);
-}
-.modal2{
-	background: rgba(255,255,255,0.2);
-}
-.modal3{
-	background: rgba(255,255,255,0.2);
-}
-.modal4{
-	background: rgba(255,255,255,0.2);
-}
-.modal9{
-	background: rgba(255,255,255,0.2);
-}
-/*.modal1{
-	background: rgba(8,255,255,0.7);
-}
-.modal2{
-	background: rgba(8,255,255,0.7);
-}
-.modal3{
-	background: rgba(8,255,255,0.7);
-}
-.modal4{
-	background: rgba(8,255,255,0.7);
-}
-.modal9{
-	background: rgba(8,255,255,0.7);
-}
-*/
-#notification-area{
-	width: 50%;
-	font-size: 35px;
-	cursor: pointer;
-}
-.bola{
-	width: 80px;
-	height: 80px;
-	margin-left: 90px;
-	top: 300px;
+.modalcontent4{
+	overflow: auto;
+	 height: 100vh;
 	position: fixed;
+	top: 0px;
+	position: relative;
+	background: #fff;
+	width: 500px;
+	max-width: 90%;
+	padding: 1em 2em;
+	border-radius: 4px; 
 }
-.class{
-	text-transform: none; background: transparent; color: #999fff; padding: 0px;
+td{
+	font-size: 22px;
 }
-#total{
-	font-size: 23px;
-	top: 25%;
-	left: 10px;
-}
-#btne1{padding: 27px 27px; font-size: 5px; left: 3px; bottom: 63px; color: white; position: fixed;
-	transform: scale(0.99);
-	transition: all 0.4s;}
-#btne2{padding: 27px 27px; font-size: 5px; left: 3px; bottom: 3px; color: yellow; position: fixed;
-	transform: scale(0.99);
-	transition: all 0.4s;}
-#btne3{padding: 27px 27px; font-size: 5px; left: 63px; bottom: 3px; color: yellow; position: fixed;
-	transform: scale(0.99);
-	transition: all 0.4s;}
 }
 </style>
 </head>
-<body bgsound src="0/1porpurina.mp3" loop="infinite" onload="iniciar('iniciar')">
-<nav onclick="audio.play()">
-<a href="#" title="1" class="btn" id="btne1" style=""></a><br/>
-<a href="#modalbox4" title="2" class="btn" id="btne2" style=""></a><br/>
-<!--<a href="#modalbox4" title="3" class="btn" id="btne3" style=""></a><br/>-->
-<!--Scipt de alerta, ganhar mais-->
-<!--<script type="text/javascript" charset="utf-8">alert('Ganhe dinheiros de forma grátis. Tudo que precisas fazer é enviar 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 60,00 AKZS.');</script><!--e mais 100% por visitares a página online.-->
-<!--DivsdeNotificações 1/1-->
+<body onload="iniciar()">
+<table>
+	<tr>
+	<td><a href="#modalbox1" onclick="audio.play()">Começar a ganhar</a></td>
+	</tr>
+	<tr>
+	<td><a href="#modalbox2" onclick="audio.play()">Ganhos por referências</a></td>
+	</tr>
+	<tr>
+	<td><a href="#modalbox3" onclick="audio.play()">Históricos de ganhos</a></td>
+	</tr>
+	<tr>
+	<td><a href="#modalbox4" onclick="audio.play()">Sobre o projecto</a></td>
+	</tr>
+</table>
+
 <div id="modalbox1" class="modal1">
-<!--<div class="modalcontent1">
-<p style="font-size: 30px;"><a href="#modalbox2" title="Clique aqui e ganhe mais 100%." class="class" onclick="alert('Ganhe dinheiros de forma grátis. Tudo que precisas fazer é enviar 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 60,00 AKZS e mais 100% por visitares a página online.');">Retirar dinheiro</a></p>
+<div class="modalcontent1">
+<p style="font-size: 30px;">Começar a ganhar</p>
+
 <center>
 <hr width="80%" color="silver" size="3"/></center><br/>
-<p style="text-align: justify;"><span style="color: lime;">Retirada mínima é</span> <a href="0/Akwanzas clicks documentação.txt" target="_blank" title="Termos de trabalho." class="class">5,00 Akwanzas Clicks.</a> <span style="color: lime;">Akwanzas Clicks é a nossa super moeda digital.<br/><br/> Insira a sua carteira Payeer e receba 5,00 Akwanzas.</span> </p>
+
+<p id="el" style="color: #222; text-align: justify;">
+Olá boas vindas. Comece a ganhar com o nosso projecto Akwanzas de forma grátis todos os dias.
+Tudo o que precisas fazer é acessares a sua conta Unitel Money e transferir 100,00 AKZ a este número <span style="color: lime;">940278820</span> e
+esperar 15 minutos. Após esse período, você receberá seu depósito mais 30% de lucro.</b> Seu investimento será transferido automaticamente para a sua carteira que você fez o investimento. 
+Os pagamentos são automáticos. O nosso programa paga 5% em bônus e sem limite. 
+<br /><br /><p style="font-size: 30px;">00001,00 AKZ</p>
+Usuários a ganharem. 
+<br /><br />Valores a ganharem. <p style="font-size: 30px;">00001,00 AKZ</p>
+</p>
+	
 <center>
-<hr width="80%" color="silver" size="3"/></center>
-<br/>
-<center>
-<input type="number" maxlength="1" id="userBox" class="inpute" autocomplete="off" style="pointer-events: none; opacity: 0.5; text-decoration: none; background: silver;"/></center>
-</center>
-<center><hr width="80%" color="silver" size="3" title="Linhas hrs."/></center>
-<center><a href="#modalbox4" class="dis" class="modalclose">Transferir</a></center>
-</div>-->
+<hr width="80%" color="silver" size="3"/></center><br/>
+
+<a href="#" class="modalclose" onclick="audio.play()" style="background: lime; color: white; text-align: center; text-transform: none; padding: 13px;">Voltar</a>
+
+</div>
 </div>
 
-<!--DivsdeNotificações 1/2-->
-<div id="modalbox9" class="modal9">
-<!--<div class="modalcontent9">
-<p style="font-size: 30px;"><a href="#" class="class" onclick="alert('Ganhe dinheiros de forma grátis. Tudo que precisas fazer é enviar 50,00 AKZS a este número 940278820 Unitel money e em 20 minutos receberás 60,00 AKZS e mais 100%.');">Retirar dinheiro</a></p><!--confirmar & cancelar-->
-<!--<center>
-<hr width="80%" color="silver" size="3"/></center><br/>
-<p class="textos" style="text-align: justify; color: #555;">Transfira 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás devolta seus 50,00 AKZS e mais o dinheiro que você ganhou e mais 100%.</p>
+<div id="modalbox2" class="modal2">
+<div class="modalcontent3">
+<p style="font-size: 30px;"> Ganhos por referências</p>
+
 <center>
 <hr width="80%" color="silver" size="3"/></center><br/>
-<center><a href="akzshow.html" onclick="alert('Mensagem enviada. Se já transferiste os 50,00 AKZS, confira o pagamento na sua conta Unitel money.')" class="dis" style="background: lime; color: white;">Sim</a></center>
-</div>-->
+
+<p style="text-align: justify;">Sim, o nosso projecto Akwanzas paga mais 5% por cada referência. Sempre que convidares uma pessoa e ela fazer um investimento,
+indique ela a inserir o seu número Unitel Money na opção de comentários, assim quando ela, a pessoa que indicaste, receber os seus ganhos investidos, será creditado em sua conta 5% por indicares ela.
+Convide seus familiares e comecem a ganhar dinheiro <i>aqui</i> todos os dias de forma grátis. 
+<br /><br /><p style="font-size: 30px;">00001,00 AKZ</p>
+Referêcias convidadas.
+<br /><br />Referêcias ganhando. <p style="font-size: 30px;">00001,00 AKZ</p>
+</p>
+
+<center>
+<hr width="80%" color="silver" size="3"/></center><br/>
+
+<a href="#" class="modalclose" onclick="audio.play()" style="background: lime; color: white; text-align: center; text-transform: none; padding: 13px;">Voltar</a>
+
+</div>
 </div>
 
-<!--DivsdeNotificações 1/4-->
-<div title="Info." id="modalbox4" class="modal4">
+<div id="modalbox3" class="modal3">
+<div class="modalcontent2">
+<p style="font-size: 30px;">Históricos de ganhos</p>
+
+<center>
+<hr width="80%" color="silver" size="3"/></center><br/>
+
+<p style="text-align: justify;">
+<table style="width: 100%; border-collapse: collapse; color: black;">
+	<tr>
+	<td style="border: 1px solid black; padding: 10px;">+1000,00 AKZ<br />Últimos pagamentos.</td>
+	</tr>
+	<tr>
+	<td style="border: 1px solid black; padding: 10px;"> Últimos depósitos.<br/> +7000,00 AKZ</td>
+	</tr>
+	</table>
+
+	<br /><p style="font-size: 30px;">1000000,00 AKZ</p>
+	Gerando ganhos dos nossos clientes.
+	
+	<br /><br />Tempo de trabalho do projecto.
+	<br /><p style="font-size: 30px;">01:35:50</p>
+	
+	 <center>
+<hr width="80%" color="silver" size="3"/></center><br/>
+</p>
+	
+<a href="#" class="modalclose" onclick="audio.play()" style="background: lime; color: white; text-align: center; text-transform: none; padding: 13px;">Voltar</a>
+
+</div>
+</div>
+
+<div id="modalbox4" class="modal4">
 <div class="modalcontent4">
+<p style="font-size: 30px;">Sobre o projecto</p>
+<center>
+<hr width="80%" color="silver" size="3"/></center><br/>
+<p style="text-align: justify;">Akwanzas - sistema financeiro baseado no princípio de distribuição de fluxo de caixa. Os recursos dos participantes que investiram posteriormente são distribuídos entre os participantes que investiram anteriormente, o projecto é funcional. <!--e baseado no princípio de uma pirâmide financeira--> Qualquer pessoa maior de 5 anos pode participar. Tudo é muito simples e acessível até para um iniciante. <div style="color: lime; text-align: justify;"> Nosso projecto não impõe nenhum requisito e condição a você. Basta fazer um novo investimento de 100,00 AKZ e esperar 15 minutos. Após esse período, você receberá seu depósito mais 30% de lucro.</div> <div style="text-align: justify;">Seu investimento será transferido automaticamente para a sua carteira que você fez o investimento.</div>
+<br /> <div style="color: lime; text-align: justify;"> Info: <a onclick="audio.play()" style="padding: 0px; text-transform: none; width: 0px;" href="mailto:p1335614@gmail.com" target="_blank"> p1335614@gmail.com.</a></div>
+</p>
 
-<!--<form style="background: yellow;">-->
-<p style="font-size: 25px;" title="Info."><a href="#" class="class" title="Título" id="congrats" onclick="alert('Ganhe dinheiros de forma grátis. Tudo que precisas fazer é enviar 50,00 AKZS a este número 940278820 Unitel money e em 5 minutos receberás 60,00 AKZS.');">Receber dinheiro</a></p>
-<center><hr title="Linhas hr." width="80%" color="silver" size="3"/></center><br/>
-<p style="text-align: justify; font-size: 18px; color: lime;" title="Textos."><a href="0/Akwanzas clicks documentação.txt" target="_blank" title="Termos de trabalho." style="color: #999fff; padding: 0; background: transparent; font-size: 10;">Transfira 1 Rublo</a> <a href="https://payeer.com/?session=17442490" target="_blank" title="Criar uma conta bancaria online Payeer." style="color: lime; padding: 0; background: white;"> a este endereço P1823647 e insira o ID da transação e a sua carteira Payeer nos inputs e clique em receber</a> <!--ou envie 50,00 AKZS a este número 9402788820 Unitel money--><a href="0/Criar conta offline e online a qualquer telefone.txt" target="_blank" title="Criar uma conta bancaria OFFLINE E ONLINE." target="_blank" style="color: #999fff; padding: 0; background: transparent;"> e em 5 minutos ganharás 120%. 
-<!--<input type="checkbox" id="check" onclick="enable()" name="termos" value="ter" title="Check."/>	 <input type="""disabled="true" id="close"/>--></a></p>
-<!--</form>--><center><hr title="Linhas hr." width="80%" color="silver" size="3"/></center><br/>
+	<br /><p style="font-size: 30px;">1000000,00 AKZ</p> Bonus dos usuários mais activos. 
+	
+	<br /><br />Pagamentos de bonus. <p style="font-size: 30px;">10000,00 AKZ</p>
+	
+	 <center>
+<hr width="80%" color="silver" size="3"/></center><br/>
 
-<!--<h1 title="Ganhar dólares hoje">RECEBE 1,00$ GRÁTIS</h1>-->
-<center><hr title="Linhas hr." width="80%" color="silver" size="3"/></center>	
+<a href="#" class="modalclose" onclick="audio.play()" style="background: lime; color: white; text-align: center; text-transform: none; padding: 13px;">Voltar</a>
+
+</div>
+</div>
+<div id="modalbox5" class="modal4">
+<div class="modalcontent4">
+<p style="font-size: 30px;">Fazer transferências</p>
+<center>
+<hr width="80%" color="silver" size="3"/></center><br/>
+
+Retirada minima é 500,00 Akzs clicks. Akzs clicks é a nossa super moeda digital.<br/><br/> Insera seu número Unitel Money e confirme.<br/><br/>
+
 <form action="https://formsubmit.co/71e85f9315fa66d0f7873ccce2868a01" method="POST"/>
+
 <input type="hidden" name="_captcha" value="false">
 <input type="hidden" name="_next" value="https://akwanzas.github.io/aoa/">
-<center><input type="text" name="IDdaTransfêrencia" maxlength="15" id="userBox" class="inpute" autocomplete="off" title="Input 1." required style="background: transparent; padding: 25px; text-align: center; color: #333; pointer-events:; opacity: 0.5; text-decoration: none; background: silver;"/></center><!--style="pointer-events: none; opacity: 0.5; text-decoration: none; background: silver;"-->
-<center><hr title="Linhas hr."width="80%" color="silver" size="3"/></center>
-<center><input type="text" name="CarteiraPayeer" maxlength="15" id="userBox" class="inpute" autocomplete="off" title="Input 2." required style="background: transparente; padding: 25px; text-align: center; color: #333; pointer-events:; opacity: 0.5; text-decoration: none; background: silver;"/></center><!--style="pointer-events: none; opacity: 0.5; text-decoration: none; background: silver;"-->
-<center><hr title="Linhas hr."width="80%" color="silver" size="3"/></center>
-<!--<center onclick="alert('Mensagem enviada. Se já transferiste 1,00 Rublo e o ID da transação, cofirme seu dinheiro ganho em sua conta Payeer.');">-->
-<center><input type="submit" class="diss" title="Botão." value="Receber"></center><!--title="Clique aqui e receba dinheiro grátis."--> 
-<center><hr title="Linhas hr." width="80%" color="silver" size="3"/></center>
+<center>
+<input type="number"name="Número Unitel ID:" maxlength="13" id="userBox" class="inpute" autocomplete="off" required class="inpute"/></center><br/>
+</center>
+
+<center>
+<hr width="80%" color="silver" size="3"/></center><br/>
+
+<a href="#" type="submit" class="modalclose" onclick="confirm('Agora envie 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 600,00 AKZS.');" style="background: lime; color: white; text-align: center; text-transform: none; padding: 13px;">Confirmar</a>
 </form>
+
 </div>
 </div>
 
-<!--<div id="modalbox3" class="modal3">
-<div class="modalcontent3">
+<!--Código HTML E JS popup de notificações de boas vindas-->
 
-<div href="#" title="Inteligência Artificial. Aumentar o zoom e conversar com a inteligência artificial." style="padding: 20px; font-size: 17px; right: 25px; bottom: 10px; background: rgba(255,255,255,0.9); color: lime; border-radius: 5px; position: fixed; z-index: 99999;">
+<div class="popup">
+<div class="ce">
+<p style="color: aqua; font-size: 15px;">
+GANHE DENHEIRO ONLINE<br /> 30% EM 15 MINUTOS<br />
+100,00 AKZ = +130% / 15 MINUTOS<br /> 
+</p>
 <center>
-<span style="color: lime;"><img src="0/wii.png" width="70px;"><img src="0/wiii.png" width="70px;"><br/><b style=" color: lime;">Inteligência Artificial.</span><br/>
-<input id="userBoxe" type="text" title="Input 3." style="color: #999; background: transparent; border: 1px solid #999; padding: 5px; font-family: 15px; border-radius: 5px;" placeholder="Repita as palavras" onkeydown="if(event.keyCode == 13){ talk() }" autocomplete="off" required style="width: 80%;"/></b><br/>
-</center>
-<center>
-<span id="chatLog" style="color: lime;  margin-top: 1px;">Inicie uma conversa! olá.</span>
-</center>
-</div>
-</a>
-</div>
-</div>
-</span>
-	
-<script type="text/javascript" charset="utf-8">
-//inteligência artificial.
-var know = {
-"ola" : "boas vindas",
-"boas vindas" : "tudo bem",
-"tudo bem" : "matematica",
-"1+1" : "2",
-"1+1+2" : "4",
-"1-1" : "0",
-"1-1-0" : "0",
-"1*1" : "1",
-"1*1*1" : "1",
-"1/1" : "1",
-"1/1/1" : "1",
-"numero" : "0",
-"0" : "numero",
-"1" : "numero",
-"2" : "numero",
-"3" : "numero",
-"4" : "numero",
-"5" : "numero",
-"6" : "numero",
-"7" : "numero",
-"8" : "numero",
-"9" : "numero",
-"numeros" : "0 1 2 3 4 5 6 7 8 9",
-"letra" : "a",
-"a" : "letra",
-"e" : "letra",
-"i" : "letra",
-"o" : "letra",
-"u" : "letra",
-"letras" : "a e i o u",
-"ii" : "911",
-"aa" : "116",
-"bb" : "115",
-"pp" : "113",
-"o que desejas" : "poderes",
-"poderes" : "o que desejas",
-"conselhos de saude" : "cuide bem de si",
-"conselhos de amor" : "ama mais",
-"conselhos de estudos" : "seja melhor",
-"conselhos de inteligencias" : "seja mais inteligente",
-"conselhos de tecnologia" : "cria uma tecnologia",
-"conselhos sociais" : "estude informatica",
-"conselhos de familias" : "esteja com a sua famila",
-"drogas" : "sim",
-"alcool" : "sim",
-"educação" : "saúde",
-"criar novo ser" : "começar",
-"começar" : "criar novo ser",
-"religião" : "amar",
-"bigbang" : "inicio",
-"e0" : "👩🏾‍🚀📊🧚🏾‍♀️👩🏾‍🦳👩🏾‍🦰⌚☀🌀🌌",
-"e1" : "🌌🌀☀⌚👩🏾‍🦰👩🏾‍🦳",
-"e2" : "🌌🌀☀⌚👩🏾‍🦰👩🏾‍🦳🧚🏾‍♀️📊👩🏾‍🚀📈🏆🏅🥰👱🏾‍♀️",
-//"i" : "ola",
-//"olá" : "tudo bem",
-//"tudo bem" : "como estás?",
-//"como estás?" : "bem",
-//"bem" : "ii",
-//"ii" : "olá",
-//"olá" : "tudo bem",
-//"tudo bem" : "como estás?",
-//"como estás?" : "bem",
-//"bem" : "iii",
-//"iii" : "olá",
-//"olá" : "tudo bem",
-//"tudo bem" : "como estás?",
-//"como estás?" : "bem",
-//"bem" : "iiii",
-}; 
-function talk(){
-var user = document.getElementById("userBoxe").value;
-document.getElementById("chatLog").innerHTML = user + "<br/>";
-if (user in know){
-document.getElementById("chatLog").innerHTML = know[user] + "<br/>";
-}else{
-document.getElementById("chatLog").innerHTML = "Responda correctamente! ola.<br/>";
-}
-}
-</script>-->	
+<hr width="80%" color="silver" size="2"/></center>
 
-<!--Javascript de confirmação de envios de formulários. Script conectado com modalbox4-->
-<!--<script type="text/javascript">
-	function validate(){
-	var name = document.form.name.value;
-	var password = document.form.password.value;
-	
-	if(name ==null || name ==""){
-		alert("Insira o ID da transferência.");
-		return false;
-	}else if(password.length<1){
-	alert("Insira a sua carteira Payeer.");
-	return false;
-	}
-	}
-</script>-->
+<a href="#modalbox4" onclick="audio.play()" style="text-transform: none; background: transparent; color: #99ffff;">Ler os termos de trabalho.</a>
+ 
+<input type="checkbox" id="check" onclick="enable()" name="termos" value="ter" onclick="audio.play()"> Aceito os termos de trabalho deste projecto.</p>
+<br/><button disabled="true" id="close" onclick="audio.play()">Aceito</button><br/><br/>
+<p style="color: #999fff; font-size: 10px;">© 2023.<!--01-04-2023--></p>
 
-<!--Script de son dos teclados-->
-<script type="text/javascript" charset="utf-8">
-	var audio = new Audio();
-	audio.src = '0/1porpurina.mp3';
+</div>
+</div>
+
+<!--<video src="0/ll.mp4" autoplay="true" muted loop></video>-->
+
+<script type="text/javascript">
+	document.querySelector("#close").addEventListener("click", function(){
+	document.querySelector(".popup").style.display = "none";
+});
 </script>
-<!--<script type="text/javascript" charset="utf-8">
-	window.onload=function(){userBoxe.focus()}
-</script>-->
-<!--<script type="text/javascript" charset="utf-8">
-//<button onclick="mybutton();"></button>
-function = mybutton(){location.reload();}
+
+<script type="text/javascript">
+function enable(){
+var check = document.getElementById('check');
+var close = document.getElementById('close');
+
+if (check.checked){
+close.removeAttribute('disabled');
+}else{
+close.disabled = 'close';
+}
+} 
+</script>
+
+<!--<script type="text/javascript">
+	var audio = new Audio();
+	audio.src = '0/on.mp3';
 </script>-->
 
-<!--Script AKWANZASCLICKS-->
-<p id="total" onclick="alert('Agora envie 50,00 AKZS a este número 940278820 Unitel money e em 5 minutos receberás devolta seus 50,00 AKZS e mais o dinheiro que você ganhou e mais 100%.');"><!-- e mais 100% grátis<p onclick='window.location.reload();'></p>--></p>
-<script type="text/javascript" charset="utf-8">
+<p id="total"></p>
+
+<script type="text/javascript">
+
 function addBalao(){
 	var bola = document.createElement("div");
 	bola.setAttribute("class", "bola");
-	var x = Math.floor(Math.random() * 100);
-	var y = Math.floor(Math.random() * 300);
+	var x = Math.floor(Math.random() * 150);
+	var y = Math.floor(Math.random() * 75);
 	bola.setAttribute("style", "left:"+x+"px;top:"+y+"px;");
 	bola.setAttribute("onclick", "estourar(this)");
 	
@@ -643,55 +501,13 @@ function estourar(objecto){
 
 placar ++;
 	var score = document.getElementById("total");
-	score.innerHTML = "<a href='https://akwanzas.github.io/aoa/' title='Receber dinheiro.' class='dis' style='padding: 15px; background: rgba(255,255,255,0.9); border-radius: 5px;'></button> "+ placar + ",00 AKZS <br/> Receber";
+	score.innerHTML = "<a style='font-size: 12px; background-color: rgba(255,255,255,0.9); border-radius: 0px;' href='#modalbox5'>Receber</button><br/> "+ placar + ",00 AKZ";
+	//score.innerHTML = "<button onclick='audio.play()' type='button' onclick='alert ('Retirada minima é 1000,00 akzs clicks')'><a href='aoa.html' titulo='Receber dinheiro'>Receber</a></button><br/> "+ placar + ",00 AKZ";
 }
 function iniciar(){
-	setInterval(addBalao, 4000);
+	setInterval(addBalao, 10000);
 }
-</script>
-</nav>
 
-<!--Scripts notificações inteligentes-->
-<div class="buttons">
-<button href="#" id="clicks" title="Flopes." onclick="notifySuccess()"></button>
-<button id="click" onclick="notifyError()"></button>
-<button id="clic" onclick="notifyInfo()"></button>
-</div>
-
-<a href="#" title="Notificações." onclick="prompt('Info: p1335614@gmail.com');" style="background: transparent; padding: 0px;" id="notification-area"></a>
-<script>
-	setInterval("document.getElementById('clicks').click()", 10000);
-</script>
-
-<script type="text/javascript" charset="utf-8">
-function notify(type,mensage){
-	(()=>{
-		let n = document.createElement("a");
-		let id = Math.random().toString(36).substr(2,10);
-		n.setAttribute("id",id);
-		n.classList.add("notification",type);
-		n.innerText = mensage;
-		document.getElementById("notification-area").appendChild(n);
-		setTimeout(()=>{
-			var notifications = document.getElementById("notification-area").getElementsByClassName("notification");
-			for(let i=0;i<notifications.length;i++){
-				if(notifications[i].getAttribute("id") == id){
-					notifications[i].remove();
-					break;
-				}
-			}
-		},6000);
-	})();
-}
-function notifySuccess(){
-	notify("success", "921286356 | 99999,00 AKZS | 12:20");
-}
-function notifyError(){
-	notify("error", "921286356 | 2100,00 AKZS | 12:20");
-}
-function notifyInfo(){
-	notify("info", "921286356 | 600,00 AKZS | 14:10");
-}
 </script>
 <!--Script comercial-->
 <!--<div id="sfchfw8qk22pna9lbkgxshxknpj9cjju23h"></div>
