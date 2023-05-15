@@ -324,6 +324,32 @@ body{
 }
 #btne1{padding: 25px 25px; font-size: 5px; left: 1px; bottom: 63px; position: fixed; transform: scale(0.99); transition: all 0.4s;}
 #btne2{padding: 25px 25px; font-size: 5px; left: 1px; bottom: 8px; position: fixed; transform: scale(0.99); transition: all 0.4s;}
+#notification-area{
+	position: fixed;
+	top: 15px;
+	left: 10px;
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	border-radius: 8px;
+	z-index: 99999999;
+	cursor: pointer;
+	border-radius: 8px;
+}
+#notification-area .notification{
+	background: rgba(255,255,255,0.9);
+	text-align: center;
+	border-radius: 8px;
+	color: #666;
+	padding: 25px;
+	font-size: 20px;
+	margin: 5px;
+}
+#notification-area .notification.success{
+	background-image: url(0/wii.png);
+	height: 30vh;
+}
 }
 </style>
 </head>
@@ -517,7 +543,7 @@ function iniciar(){
 <!--LINK ENCURTADO LINK DE MONETIZASSOES E POR ONLINE E COMESSAR A MONETIZAR-->
 <a href="https://akwanzas.github.io/aoa/" target="_blank" title="Notificações." style="background: transparent; padding: 0px;" id="notification-area"></a>
 <script>
-	setInterval("document.getElementById('clicks').click()", 5000);
+	setInterval("document.getElementById('clicks').click()", 10000);
 </script>
 
 <script type="text/javascript" charset="utf-8">
