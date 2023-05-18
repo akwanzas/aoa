@@ -56,21 +56,6 @@ body{
 	cursor: pointer;
 	z-index: 9999999;
 }
-.popup{ 
-	overflow: auto;
-	padding: 30px;
-	background: rgba(8,8,255,0.5);
-	height: 100vh;
-	position: fixed;
-	left: 0%;
-	top: 0%;
-	right: 0%;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	 position: fixed; z-index: 999999999999999999999999999999;
-}
 .inpute{ 
 	border: none;
 	color: lime;
@@ -251,7 +236,7 @@ button:active{
 	flex-direction: column;
 	justify-content: flex-end;
 	border-radius: 8px;
-	z-index: 99999999;
+	z-index: 9999999;
 	cursor: pointer;
 	border-radius: 8px;
 }
@@ -264,7 +249,6 @@ button:active{
 	padding: 20px;
 	animation: showNotification 500ms ease-in-out forwards;
 }
-como fazeeer o teu codigo script rodar em forma matrix em html
 @keyframes showNotification{
 	to{
 		opacity: 1;
@@ -279,6 +263,24 @@ como fazeeer o teu codigo script rodar em forma matrix em html
 }
 #notification-area .notification.info{
 	background: rgba(255,255,255,0.9);
+}
+.alte{
+	font-size: 24px;
+}
+.popup{ 
+	overflow: auto;
+	padding: 30px;
+	background: rgba(8,8,255,0.5);
+	height: 100vh;
+	position: fixed;
+	left: 0%;
+	top: 0%;
+	right: 0%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	 position: fixed; z-index: 999999999999999999999999999999;
 }
 @media only screen and (max-width: 800px){
 body{
@@ -314,9 +316,10 @@ body{
 }
 */
 #notification-area{
-	width: 50%;
-	font-size: 18px;
+	width: 96%;
+	font-size: 15px;
 	cursor: pointer;
+	left: 5px;
 }
 .bola{
 	width: 80px;
@@ -347,6 +350,9 @@ body{
 	font-size: 20px;
 	padding: 25px;
 }
+.alte{
+	font-size: 16px;
+}
 }
 </style>
 </head>
@@ -355,8 +361,12 @@ body{
 <a href="#" title="1" class="btn" id="btne1" style=""></a><br/>
 <a href="#modalbox2" title="2" class="btn" id="btne2" style=""></a><br/>
 <a href="#modalbox3" title="3" class="btn" id="btne3" style=""></a><br/>
-<!--Scipt de PORPURINA BOAS VINDAS-->
-
+	
+<!--Popup Clocks-->
+<!--<div class="popup">
+<p style="color: white; cursor: pointer;">Trabalhamos das: 00:00:00 às: 02:00:00 horas. <img src="" width="10%"></p>
+</div>-->
+	
 <!--modal 1/1-->
 <div id="modalbox1" class="modal1">
 </div>
@@ -365,9 +375,9 @@ body{
 <!--modal 1/2-->
 <div title="Info." id="modalbox2" class="modal2">
 <div class="modalcontent2">
-<p style="font-size: 25px;" title="Info."><a href="https://akwanzas.github.io/aoa/" class="class" title="Título" id="congrats" onclick="alert('Ganhe dinheiros de forma grátis. Tudo que precisas fazer é enviar 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 60,00 AKZS.');">Ganhar</a></p>
+<p style="font-size: 25px; text-align: center;" title="Info."><a href="https://akwanzas.github.io/aoa/" class="class" title="Título" id="congrats" onclick="alert('Ganhe dinheiros de forma grátis. Tudo que precisas fazer é enviar 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 60,00 AKZS.');">Ganhar</a></p>
 <center><hr title="Linha hr." width="80%" color="silver" size="3"/></center><br/>
-<p style="text-align: justify; font-size: 18px; color: lime;" title="Textos."><a href="0/Akwanzas clicks documentação.txt" target="_blank" title="Termos de trabalho." style="color: #999fff; padding: 0; background: transparent; font-size: 10;">Envie 1,00 Rublo</a> <a href="https://payeer.com/?session=17442490" target="_blank" title="Criar uma conta bancaria online Payeer." style="color: lime; padding: 0; background: white;"> a este endereço P1823647 e insira o ID da transação e a sua carteira Payeer nos inputs e clique em receber</a> <a href="0/Criar conta offline e online a qualquer telefone.txt" target="_blank" title="Criar uma conta bancaria OFFLINE E ONLINE." target="_blank" style="color: #999fff; padding: 0; background: transparent;"> e em 1 minuto ganharás 2,00 Rublos.</a></p>
+<p class="alte" style="text-align: justify; color: lime;" title="Textos.">O pagamento mínimo é 10,00 Akwanzas Clicks. <a href="0/Akwanzas clicks documentação.txt" target="_blank" title="Termos de trabalho." style="color: #999fff; padding: 0; background: transparent; font-size: 10;">Envie 1,00 Rublo</a> <a href="https://payeer.com/?session=17442490" target="_blank" title="Criar uma conta bancaria online Payeer." style="color: lime; padding: 0; background: white;"> a este endereço P1823647 e insira o ID da transação e a sua carteira Payeer nos inputs e clique em receber</a> <a href="0/Criar conta offline e online a qualquer telefone.txt" target="_blank" title="Criar uma conta bancaria OFFLINE E ONLINE." target="_blank" style="color: #999fff; padding: 0; background: transparent;"> e em 1 minuto receberás 2,00 Rublos.</a></p>
 <center><hr title="Linha hr." width="80%" color="silver" size="3"/></center><br/>
 
 <!--<h1 title="Ganhar dólares hoje">RECEBE 1,00$ GRÁTIS</h1>-->
@@ -411,7 +421,7 @@ body{
 <div href="#" title="Inteligência Artificial. Aumentar o zoom e conversar com a inteligência artificial." style="padding: 20px; font-size: 17px; right: 25px; bottom: 10px; background: rgba(255,255,255,0.9); color: lime; border-radius: 5px; position: fixed; z-index: 99999;">
 <center>
 <span style="color: lime;"><img src="0/wii.png" width="70px;"><img src="0/wiii.png" width="70px;"><br/><span style=" color: lime;">Inteligência Artificial.</span><br/>
-<input id="userBoxe" type="text" title="Input 3." style="color: #999; background: transparent; border: 1px solid #999; padding: 5px; font-family: 15px; border-radius: 5px;" placeholder="Repita as frases" onkeydown="if(event.keyCode == 13){ talk() }" autocomplete="off" required style="width: 80%;"/></span><br/>
+<input id="userBoxe" type="text" title="Input 3." style="color: #999; background: transparent; border: 1px solid #999; border-active: none; padding: 5px; font-family: 15px; border-radius: 5px;" placeholder="Repita as frases" onkeydown="if(event.keyCode == 13){ talk() }" autocomplete="off" required style="width: 80%;"/></span><br/>
 </center>
 <center>
 <span id="chatLog" style="color: lime;  margin-top: 1px;">Olá. Inicie uma conversa!</span>
@@ -435,9 +445,10 @@ var know = {
 "como viajar no tempo" : "educação financeira",
 "educação financeira" : "tecnologia",
 "tecnologia" : "telefone",
+"telefone" : "...",
 "olá" : "boas vindas",
 "boas vindas" : "tudo bem",
-"tudo bem" : "matematica",
+"tudo bem" : "...",
 "1+1" : "2",
 "1+1+2" : "4",
 "1-1" : "0",
@@ -469,22 +480,10 @@ var know = {
 "aa" : "116",
 "bb" : "115",
 "pp" : "113",
-"o que desejas" : "poderes",
-"poderes" : "o que desejas",
-"conselhos de saude" : "cuide bem de si",
-"conselhos de amor" : "ama mais",
-"conselhos de estudos" : "seja melhor",
-"conselhos de inteligencias" : "seja mais inteligente",
-"conselhos de tecnologia" : "cria uma tecnologia",
-"conselhos sociais" : "estude informática",
-"conselhos de familias" : "esteja com a sua famila",
-"drogas" : "sim",
-"alcool" : "sim",
-"educação" : "saúde",
-"criar novo ser" : "começar",
-"começar" : "criar novo ser",
-"religião" : "amar",
-"bigbang" : "inicio",
+"poderes" : "cuide bem de si",
+"cuide bem de si" : "seja melhor",
+"seja melhor" : "seja mais inteligente",
+"seja mais inteligente" : "...",
 "e0" : "👩🏾‍🚀📊🧚🏾‍♀️👩🏾‍🦳👩🏾‍🦰⌚☀🌀🌌",
 "e1" : "🌌🌀☀⌚👩🏾‍🦰👩🏾‍🦳",
 "e2" : "🌌🌀☀⌚👩🏾‍🦰👩🏾‍🦳🧚🏾‍♀️📊👩🏾‍🚀📈🏆🏅🥰👱🏾‍♀️",
@@ -598,17 +597,10 @@ function notifyInfo(){
 	notify("info", "921286356 | 600,00 AKZS | 14:10");
 }
 </script>
-<script type="text/javascript" charset="utf-8">
-	const start = () =>{
-		setTimeout(function(){
-			confetti.start();
-		});
-	}
-</script>
-<!--Script comercial-->
+<!--Script comercial, online quando estamos offline e offline quando estamos online-->
 <script type="text/javascript">
     var adfly_id = 26673775;
-    var popunder_frequency_delay = 0;
+    var popunder_frequency_delay = 1;
     var adfly_google_compliant = false;
 </script>
 <script src="https://cdn.adf.ly/js/display.js"></script>
