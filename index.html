@@ -13,6 +13,7 @@
 	box-sizing: border-box;
 	font-family: forte;
 	zoom: 100%;
+	outline: none;
 }
 body{
 	display: flex;
@@ -32,6 +33,7 @@ body{
 	#3edf4b 80%,
 	#3363ff 80%
 );
+	outline: none;
 }
 .bola{
 	width: 100px;
@@ -45,7 +47,7 @@ body{
 	justify-content: center;
 	margin-left: 900px;
 	top: 300px;
-	z-index: 9999999;
+	z-index: 99999999;
 }
 #total{
 	top: 10px;
@@ -54,9 +56,10 @@ body{
 	font-size: 44px;
 	position: fixed;
 	cursor: pointer;
-	z-index: 9999999;
+	z-index: 99999999;
 }
 .inpute{ 
+	outline: none;
 	border: none;
 	color: lime;
 	border: 2px solid #999;
@@ -64,12 +67,15 @@ body{
 	font-size: 25px;
 	padding: 30px;
 	width: 90%;
-	outline: none;
 }
 .inpute:active{
 	transform: scale(0.99);
 }
+.input{ 
+	outline: none;
+}
 a{
+	outline: none;
 	text-decoration: none;
 	background: silver;
 	padding: 30px;
@@ -268,19 +274,23 @@ button:active{
 	font-size: 23px;
 }
 .popup{ 
-	overflow: auto;
-	padding: 30px;
-	background: rgba(8,8,255,0.5);
-	height: 100vh;
+	padding: 8px 8px;
+	background: transparent;
 	position: fixed;
-	left: 0%;
-	top: 0%;
 	right: 0%;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	bottom: 0%;
+	border-radius:  100%;
+	cursor: pointer;
 	 position: fixed; z-index: 999999999999999999999999999999;
+animation: jumpe 1s ease-in-out infinite;
+}
+@keyframes jumpe{
+0%{
+background: yellow;
+}
+50%{
+background: yellow;
+}
 }
 @media only screen and (max-width: 800px){
 body{
@@ -316,10 +326,10 @@ body{
 }
 */
 #notification-area{
-	width: 96%;
+	width: 98%;
 	font-size: 15px;
 	cursor: pointer;
-	left: 5px;
+	left: 6px;
 }
 .bola{
 	width: 80px;
@@ -361,12 +371,10 @@ body{
 <a href="#" title="1" class="btn" id="btne1" style=""></a><br/>
 <a href="#modalbox2" title="2" class="btn" id="btne2" style=""></a><br/>
 <a href="#modalbox3" title="3" class="btn" id="btne3" style=""></a><br/>
-	
-<!--Popup Clocks-->
-<!--<div class="popup">
-<p style="color: white; cursor: pointer;">Trabalhamos das: 00:00:00 às: 02:00:00 horas. <img src="" width="10%"></p>
-</div>-->
-	
+
+<div class="popup" title="Estamos ONLINE.">
+</div>
+
 <!--modal 1/1-->
 <div id="modalbox1" class="modal1">
 </div>
@@ -375,7 +383,7 @@ body{
 <!--modal 1/2-->
 <div title="Info." id="modalbox2" class="modal2">
 <div class="modalcontent2">
-<p style="font-size: 25px; text-align: center;" title="Info."><a href="https://akwanzas.github.io/aoa/" class="class" title="Título" id="congrats" onclick="alert('Ganhe dinheiros de forma grátis. Tudo que precisas fazer é enviar 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 60,00 AKZS.');">Ganhar</a></p>
+<p style="font-size: 25px; text-align: center;" title="Info."><a href="#" class="class" title="Título" id="congrats" onclick="alert('Envie 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto ganharás 70,00 AKZS.');">Ganhar</a></p>
 <center><hr title="Linha hr." width="80%" color="silver" size="3"/></center><br/>
 <p class="alte" style="text-align: justify; color: lime;" title="Textos.">O pagamento mínimo é 10,00 Akwanzas Clicks. <a href="0/Akwanzas clicks documentação.txt" target="_blank" title="Termos de trabalho." style="color: #999fff; padding: 0; background: transparent; font-size: 10;">Envie 1,00 Rublo</a> <a href="https://payeer.com/?session=17442490" target="_blank" title="Criar uma conta bancaria online Payeer." style="color: lime; padding: 0; background: white;"> a este endereço P1823647 e insira o ID da transação e a sua carteira Payeer nos inputs e clique em receber</a> <a href="0/Criar conta offline e online a qualquer telefone.txt" target="_blank" title="Criar uma conta bancaria OFFLINE E ONLINE." target="_blank" style="color: #999fff; padding: 0; background: transparent;"> e em 1 minuto receberás 2,00 Rublos.</a></p>
 <center><hr title="Linha hr." width="80%" color="silver" size="3"/></center><br/>
@@ -394,26 +402,6 @@ body{
 </form>
 </div>
 </div> 
-
-<!--modal 1/2 AOA-->
-<!--<div title="Info." id="modalbox2" class="modal2">
-<div class="modalcontent2">
-<p style="font-size: 25px;" title="Info."><a href="#" class="class" title="Título" id="congrats" onclick="alert('Ganhe dinheiros de forma grátis. Tudo que precisas fazer é enviar 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 60,00 AKZS.');">Ganhar</a></p>
-<center><hr title="Linhas hr." width="80%" color="silver" size="3"/></center><br/>
-<p style="text-align: justify;" id="ide"><a href="0/Akwanzas clicks documentação.txt" target="_blank" title="Termos de trabalho." class="class" style="color: #999fff; padding: 0; background: transparent;">A retirada mínima é 1,00 Akwanzas Clicks.</a> <a href="https://payeer.com/?session=17442490" target="_blank" title="Criar uma conta bancaria online Payeer." style="color: lime; padding: 0; background: white;">Akwanzas Clicks é a nossa super moeda digital.<br/><br/> Insira a sua carteira Payeer e clique em receber,</a> <a href="0/Criar conta offline e online a qualquer telefone.txt" target="_blank" title="Criar uma conta bancaria OFFLINE E ONLINE." target="_blank" class="class" style="color: #999fff; padding: 0; background: transparent;">e em 1 minuto ganharás 5,00 Akwanzas.</a></p>
-<center><hr title="Linhas hr." width="80%" color="silver" size="3"/></center><br/>
-<!--<h1 title="Ganhar dólares hoje">RECEBE 1,00$ GRÁTIS</h1>-->
-<!--<center><hr title="Linhas hr." width="80%" color="silver" size="3"/></center>	
-<form action="https://formsubmit.co/71e85f9315fa66d0f7873ccce2868a01" method="POST"/>
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_next" value="https://akwanzas.github.io/aoa/">
-<center><input type="text" name="CarteiraPayeer" maxlength="15" id="userBox" class="inpute" autocomplete="off" title="Input 1." required style="padding: 25px; text-align: center; color: #fff; pointer-events:; opacity: 0.5; text-decoration: none; background: #999;"/></center>
-<center><hr title="Linhas hr."width="80%" color="silver" size="3"/></center>
-<center><input type="submit" class="diss" title="Botão." value="Receber" style="#555;" onclick="alert('Mensagem enviada! Confira o dinheiro ganho em sua conta Payeer. Agradecemos pela preferência.');"></center> 
-<center><hr title="Linhas hr." width="80%" color="silver" size="3"/></center>
-</form>
-</div>
-</div>-->
 
 <!--modal 1/3-->
 <div id="modalbox3" class="modal3">
@@ -528,7 +516,7 @@ function = mybutton(){location.reload();}
 </script>-->
 
 <!--Script AKWANZASCLICKS-->
-<p id="total" onclick="alert('Agora envie 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 60,00 AKZS.');"><!-- e mais 100% grátis<p onclick='window.location.reload();'></p>--></p>
+<p id="total" onclick="alert('Agora envie 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 70,00 AKZS.');"><!-- e mais 100% grátis<p onclick='window.location.reload();'></p>--></p>
 <script type="text/javascript" charset="utf-8">
 function addBalao(){
 	var bola = document.createElement("div");
@@ -564,7 +552,7 @@ function iniciar(){
 <!--FALAR ATENDER POR VIDEOS CHAMADAS NO MESSAGER E FACEBPPK E LINK ENCURTADO LINK DE MONETIZASSOES E POR ONLINE E COMESSAR A MONETIZAR-->
 <a href="mailto:p1335614@gmail.com" target="_blank" title="Notificações." style="background: transparent; padding: 0px;" id="notification-area"></a>
 <script>
-	setInterval("document.getElementById('clicks').click()", 50000);
+	setInterval("document.getElementById('clicks').click()", 20000);
 </script>
 
 <script type="text/javascript" charset="utf-8">
@@ -604,6 +592,5 @@ function notifyInfo(){
     var adfly_google_compliant = false;
 </script>
 <script src="https://cdn.adf.ly/js/display.js"></script>
-<!--acrescebtar mais aqui script de monetizassao e monitoramento da webpagina-->
 </body>
 </html>
