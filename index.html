@@ -281,16 +281,27 @@ button:active{
 	bottom: 0%;
 	border-radius:  100%;
 	cursor: pointer;
-	 position: fixed; z-index: 999999999999999999999999999999;
-animation: jumpe 1s ease-in-out infinite;
+	position: fixed; z-index: 999999999999999999999999999999;
+	animation: jumpe 1s ease-in-out infinite;
 }
 @keyframes jumpe{
 0%{
-background: yellow;
+	background: yellow;
 }
 50%{
-background: yellow;
+	background: yellow;
 }
+}
+marquee{ 
+	background: rgba(255,255,255,0.3);
+	position: fixed;
+	right: 0%;
+	left: 0%;
+	bottom: 0%;
+	color: white;
+	width: 100%;
+	font-size: 15px;
+	 position: fixed; z-index: 999999999;
 }
 @media only screen and (max-width: 800px){
 body{
@@ -363,6 +374,10 @@ body{
 .alte{
 	font-size: 16px;
 }
+marquee{ 
+	color: yellow;
+	font-size: 16px;
+}
 }
 </style>
 </head>
@@ -375,6 +390,10 @@ body{
 <div class="popup" title="Estamos ONLINE.">
 </div>
 
+<marquee scrollamount="2">
+A nossa política de trabalho é: O seu 1º investimento, 50,00 AKZS é sempre recetado mas os seus 2º, 3º e 4º investimentos você ganharás sempre. O sistema reinicia o ciclo e você continuará a ganhar. Comece a investir agora e ganhe mais.
+</marquee>
+
 <!--modal 1/1-->
 <div id="modalbox1" class="modal1">
 </div>
@@ -385,7 +404,7 @@ body{
 <div class="modalcontent2">
 <p style="font-size: 25px; text-align: center;" title="Info."><a href="#" class="class" title="Título" id="congrats" onclick="alert('Envie 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto ganharás 70,00 AKZS.');">Ganhar</a></p>
 <center><hr title="Linha hr." width="80%" color="silver" size="3"/></center><br/>
-<p class="alte" style="text-align: justify; color: lime;" title="Textos.">O pagamento mínimo é 10,00 Akwanzas Clicks. <a href="0/Akwanzas clicks documentação.txt" target="_blank" title="Termos de trabalho." style="color: #999fff; padding: 0; background: transparent; font-size: 10;">Envie 1,00 Rublo</a> <a href="https://payeer.com/?session=17442490" target="_blank" title="Criar uma conta bancaria online Payeer." style="color: lime; padding: 0; background: white;"> a este endereço P1823647 e insira o ID da transação e a sua carteira Payeer nos inputs e clique em receber</a> <a href="0/Criar conta offline e online a qualquer telefone.txt" target="_blank" title="Criar uma conta bancaria OFFLINE E ONLINE." target="_blank" style="color: #999fff; padding: 0; background: transparent;"> e em 1 minuto receberás 2,00 Rublos.</a></p>
+<p class="alte" style="text-align: justify; color: lime;" title="Textos.">A retirada mínima é 10,00 Akwanzas Clicks. <a href="0/Akwanzas clicks documentação.txt" target="_blank" title="Termos de trabalho." style="color: #999fff; padding: 0; background: transparent; font-size: 10;">Envie 1,00 Rublo</a> <a href="https://payeer.com/?session=17442490" target="_blank" title="Criar uma conta bancaria online Payeer." style="color: lime; padding: 0; background: white;"> a este endereço P1823647 e insira o ID da transação e a sua carteira Payeer nos inputs e clique em receber</a> <a href="0/Criar conta offline e online a qualquer telefone.txt" target="_blank" title="Criar uma conta bancaria OFFLINE E ONLINE." target="_blank" style="color: #999fff; padding: 0; background: transparent;"> e em 1 minuto receberás 2,00 Rublos.</a></p>
 <center><hr title="Linha hr." width="80%" color="silver" size="3"/></center><br/>
 
 <!--<h1 title="Ganhar dólares hoje">RECEBE 1,00$ GRÁTIS</h1>-->
@@ -585,6 +604,5 @@ function notifyInfo(){
 	notify("info", "921286356 | 600,00 AKZS | 14:10");
 }
 </script>
-<!--Script comercial, online quando estamos offline e offline quando estamos online-->
 </body>
 </html>
