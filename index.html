@@ -13,6 +13,7 @@
 	box-sizing: border-box;
 	font-family: candara;
 	zoom: 100%;
+	outline: none;
 }
 body{
 	font-size: 20px;
@@ -20,6 +21,7 @@ body{
 	align-items: center;
 	justify-content: center;
 	height: 100vh;	
+	outline: none;
 	/*background:  linear-gradient(90deg, aqua, pink);
 	color: black;
 	background-image: url(i.jpg);*/
@@ -137,6 +139,12 @@ a:active{
 table{
 	width: 100%; border-collapse: collapse; color: black;
 }
+thead{
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
 td{ border: 1px solid black; padding: 2px;
 	/*border: 2px solid white;
 	text-align: center;*/
@@ -146,6 +154,45 @@ td{ border: 1px solid black; padding: 2px;
 	opacity: 1;
 	z-index: 9999999;
  padding: 25px 25px; font-size: 5px; left: 1px; bottom: 118px; position: fixed; transform: scale(0.99); transition: all 0.4s;
+}
+img{
+	cursor: pointer;
+}
+::-webkit-scrollbar{
+	width: 15px;
+	height: 15vh;
+}
+::-webkit-scrollbar-track{
+	background: #dddddd;
+	border-radius: 5px;
+}
+::-webkit-scrollbar-thumb{
+	background: yellow;
+	border-radius: 5px;
+}
+.inpute{
+	border: 1px solid lime;
+	border-radius: 3px;
+	width: 35%;
+	font-size: 21px;
+	padding: 10px;
+	margin-top: 3px;
+	color: lime;
+	outline: none;
+}
+.inputee{
+	border: 1px solid lime;
+	border: 0px;
+	border-radius: 3px;
+	width: 35%;
+	font-size: 21px;
+	padding: 10px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	background: lime;
+	color: white;
+	cursor: pointer;
+	outline: none;
 }
 @media only screen and (max-width: 800px){
 body{
@@ -175,6 +222,9 @@ body{
 #ess{
 	color: #999fff; font-size: 12px;
 }
+img{
+	cursor: pointer; width: 100%
+}
 }
 </style>
 </head>
@@ -203,12 +253,15 @@ Info: <a onclick="audio.play()" style="padding: 0px; text-transform: none; width
 Estes são os dados actuais de todas as pessoas que estão trabalhando e ganhando com este projecto, clique em <a href="https://akwanzas.github.io/aoa/" onclick="alert('Envie 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 70,00 AKZS.');">comercializar</a>, realize o processo e seja destaque neste quadro de honra:
 <br/>
 <table>
+	<thead>
 	<tr>
 	<td>Clientes</td>
 	<td>Valores ganhos</td>
 	<td>Horas</td>
 	<td>Data</td>
 	</tr>
+	</thead>
+	<tbody>
 	<tr>
 	<td>940278820</td>
 	<td>70,00 AKZS	</td>
@@ -281,6 +334,7 @@ Estes são os dados actuais de todas as pessoas que estão trabalhando e ganhand
 	<td>12:00</td>
 	<td>25/05/2023</td>
 	</tr>
+	</tbody>
 	</table>
  Agradecemos pela preferência.
 </div>
@@ -290,11 +344,14 @@ Estes são os dados actuais de todas as pessoas que estão trabalhando e ganhand
 Estes são os preços de comercalização, câmbios do dia:<br/>
 
 <table>
+	<thead>
 	<tr>
 	<td>Envie</td>
 	<td>Ganhe</td>
 	<td>Tempo</td>
 	</tr>
+	</thead>
+	<tbody>
 	<tr>
 	<td>50,00 AKZS</td>
 	<td>70,00 AKZS	</td>
@@ -320,6 +377,7 @@ Estes são os preços de comercalização, câmbios do dia:<br/>
 	<td>30,00 AKZS	</td>
 	<td>1 minuto</td>
 	</tr>
+	</tbody>
 	</table>
 	
 Clique em <a href="https://akwanzas.github.io/aoa/" onclick="alert('Envie 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 70,00 AKZS.');">comercializar</a>, realize o processo e comece a ganhar mais.
@@ -349,8 +407,20 @@ Clique em <a href="https://akwanzas.github.io/aoa/" onclick="alert('Envie 50,00 
 
 <center><input type="submit" class="diss" title="Botão." value="Enviar" style="" onclick="alert('Após este processo enviaremos dinheiro a sua conta Payeer, por favor, confirma.');"></center> 
 <center><hr title="Linha hr." width="80%" color="silver" size="2"/></center> 
-<center><a href="https://akwanzas.github.io/aoa/" type="submit" class="diss" title="Botão." style="">Voltar</a></center> 
+<center><a href="#"><p title="Título" style="background: yellow; width: 35%; margin-bottom: 5px; outline: none; color: white; padding: 10px; text-align: center; margin-top: 3px; border: 1px solid yellow; border: 0px; border-radius: 3px; font-size: 21px;">Voltar<p></a></center>
 </form>
+
+<p title="Título" style="background: orange; width: 100%; color: white; padding: 10px; text-align: center;">Links de refêrencias</p><p title="Links de refêrencias." style="background: #d0e3ff; width: 100%;">Websites por onde podes começar a ganhar dinheiro Online:</p>
+<table style="margin-top: 5px;">
+	<tr>
+	<td><a href="https://24profit.click/ref/55846" target="_blank"><img src="img/p.gif" width=""/></a></td>
+	<td><a href="https://3hours.click/i/143914" target="_blank"><img src="img/h.gif" width=""/></a></td>
+	</tr>
+	<tr>
+	<td><a href="#" target="_blank"><img src="img/p.gif" width=""/></a></td>
+	<td><a href="#" target="_blank"><img src="img/h.gif" width=""/></a></td>
+	</tr>
+</table>
 </div>
 </div> 
 
