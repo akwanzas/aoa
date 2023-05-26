@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="pt"> 
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Animações Luzes</title>
+<script type="text/javascript">
+	var audio = new Audio();
+	audio.src = "son.mp3";
+</script>
+<style type="text/css">
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: candara;
+}
+body{
+font-size: 100px;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+background-color: aqua;
+color: white;
+font-weight: bold;
+cursor: pointer;
+border: 55px solid red;
+animation: jumpe 1s ease-in-out infinite;
+}
+@keyframes jumpe{
+0%{
+border: red;
+}
+20%{
+border: red;
+}
+40%{
+border: blue;
+}
+}
+
+#color{
+text-shadow: 0 5px 0 #f00fff;
+}
+h1{
+background-clip: text;
+-webkit-background-clip: text;
+padding: 10px;
+animation: jump 1s ease-in-out infinite;
+}
+@keyframes jump{
+0%{
+transform: translateY(0);
+color: #00ffff;
+}
+50%{
+transform: translateY(-5px);
+color: yellow;
+}
+100%{
+transform: translateY(0);
+color: pink;
+}
+}
+
+.box nav{
+height: 60px;
+width: 60px;
+position: absolute;
+top: 10%;
+left: 10%;
+animation: animate 5s linear infinite;
+background: rgba(255,255,255,0.1);
+border-radius: 15px;
+}
+.box nav:nth-child(1){
+top: 20%;
+left: 20%;
+animation: animate 8s linear infinite;
+}
+.box nav:nth-child(2){
+top: 26%;
+left: 89%;
+animation: animate 10s linear infinite;
+}
+.box nav:nth-child(3){
+top: 80%;
+left: 90%;
+animation: animate 5s linear infinite;
+}
+.box nav:nth-child(4){
+top: 65%;
+left: 75%;
+animation: animate 7s linear infinite;
+}
+.box nav:nth-child(5){
+top: 90%;
+left: 10%;
+animation: animate 9s linear infinite;
+}
+.box nav:nth-child(6){
+top: 30%;
+left: 60%;
+animation: animate 5s linear infinite;
+}
+.box nav:nth-child(7){
+top: 70%;
+left: 20%;
+animation: animate 8s linear infinite;
+}
+.box nav:nth-child(8){
+top: 75%;
+left: 60%;
+animation: animate 10s linear infinite;
+}
+.box nav:nth-child(9){
+top: 23%;
+left: 50%;
+animation: animate 6s linear infinite;
+}
+.box nav:nth-child(10){
+top: 35%;
+left: 7%;
+animation: animate 10s linear infinite;
+}
+@keyframes animate{
+0%{
+transform: scale(0) translateY(0) rotate(50deg);
+}
+100%{
+transform: scale(1.6) translateY(-250px) rotate(360deg);
+}
+}
+@media only screen and (max-width: 800px){
+body{
+		font-size: 25px;
+	}
+.box nav:nth-child(1){
+top: 20%;
+left: 20%;
+animation: animate 8s linear infinite;
+}
+.box nav:nth-child(2){
+top: 26%;
+left: 55%;
+animation: animate 10s linear infinite;
+}
+.box nav:nth-child(3){
+top: 77%;
+left: 60%;
+animation: animate 5s linear infinite;
+}
+.box nav:nth-child(4){
+top: 65%;
+left: 66%;
+animation: animate 7s linear infinite;
+}
+.box nav:nth-child(5){
+top: 80%;
+left: 10%;
+animation: animate 9s linear infinite;
+}
+.box nav:nth-child(6){
+top: 30%;
+left: 60%;
+animation: animate 5s linear infinite;
+}
+.box nav:nth-child(7){
+top: 70%;
+left: 20%;
+animation: animate 8s linear infinite;
+}
+.box nav:nth-child(8){
+top: 75%;
+left: 60%;
+animation: animate 10s linear infinite;
+}
+.box nav:nth-child(9){
+top: 23%;
+left: 50%;
+animation: animate 6s linear infinite;
+}
+.box nav:nth-child(10){
+top: 35%;
+left: 7%;
+animation: animate 10s linear infinite;
+}
+@keyframes animate{
+0%{
+transform: scale(0) translateY(0) rotate(50deg);
+}
+100%{
+transform: scale(1.6) translateY(-250px) rotate(360deg);
+}
+}
+}
+</style>
+</head>
+<body>
+<div class="ss" onclick="audio.play()">
+	<h1 id="color">#e25cef</h1>
+	</div>
+	
+	<script type="text/javascript">
+	setInterval("document.getElementById('color').click()", 1000);
+	</script>
+<script type="text/javascript">
+function getRandomColor(){
+	var caracteres = [0,1,2,3,4,5,6,7,8,9,"a","b","c","d","e","f"];
+	var color = "#";
+	for(var i = 0; i<6; i++){
+		color +=caracteres[Math.floor(Math.random()*16)];
+	}
+	return color;
+}
+setInterval(function(){
+	document.getElementById("color").innerHTML = getRandomColor();
+	document.body.style.background = getRandomColor();
+	document.body.style.transition = "";
+},1000);
+</script>
+<!--[ amanha tocar um som vulume baixo e armoniozo no fl studio, som do novoouro. tempo minimo: 10000, a nao ser que aja divergencias de opinioes sobre a rapidez ou a demora do ttempo dos resultados] pode investir o quanto quiser mas sem martigal e cumprindo sempre com o investimento minimo do dia [tipo: se todos estiverem a investir 10 AOA por dia ou 20, ou 30, ou... ser]a o valor de todos a investir], todos, por motivos de control financeiro, e o que podemos pagar ao dia...-->
+<div class="box">
+	<nav></nav>
+	<nav></nav>
+	<nav></nav>
+	<nav></nav>
+	<nav></nav>
+	<nav></nav>
+	<nav></nav>
+	<nav></nav>
+	<nav></nav>
+	<nav></nav>
+</div>
+	<script type="text/javascript">
+	function playSound(audioName,loop){
+	let audio = new Audio(audioName);
+	audio.loop = loop;
+	audio.play();
+	}
+	playSound("_.mp3",true);
+	</script>
+</body>
+</html>
