@@ -13,7 +13,6 @@
 	box-sizing: border-box;
 	font-family: candara;
 	zoom: 100%;
-	outline: none;
 }
 body{
 	font-size: 20px;
@@ -22,9 +21,7 @@ body{
 	justify-content: center;
 	height: 100vh;	
 	outline: none;
-	/*background:  linear-gradient(90deg, aqua, pink);
 	color: black;
-	background-image: url(i.jpg);*/
 	background: linear-gradient(180deg,
 	#fd004c 20%,
 	#fe9000 20%,
@@ -36,8 +33,6 @@ body{
 	#3363ff 80%
 );
 }
-
-
 #togC{display: none;}
 #togL, #content{display: block;
 width: 100%; padding: 10px;}
@@ -92,9 +87,25 @@ width: 100%; padding: 10px;}
 	transition: all 0.4s;
 	visibility: none;
 	opacity: 1;
-	z-index:;
+}
+.modal3{overflow: auto; height: 100vh;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: transparent;
+	transition: all 0.4s;
+	visibility: hidden;
+	opacity: 0;
 }
 .modal1:target{
+	visibility: visible;
+	opacity: 1;
+	z-index: 999;
+}
+.modal3:target{
 	visibility: visible;
 	opacity: 1;
 	z-index: 9999;
@@ -103,7 +114,7 @@ width: 100%; padding: 10px;}
 	overflow: auto;
 	top: 0px;
 	position: relative;
-	background: #fff;
+	background: white;
 	width: 90%;
 	height: 93vh;
 	padding: 1em 2em;
@@ -113,18 +124,10 @@ width: 100%; padding: 10px;}
 	overflow: auto;
 	top: 0px;
 	position: relative;
-	background: #fff;
+	background: white;
 	width: 90%;
 	height: 93vh;
 	padding: 1em 2em;
-	border-radius: 5px;
-}
-.menu{
-	background: red;
-	width: 10%;
-	color: white;
-	top: 0;
-	text-align: center;
 	border-radius: 5px;
 }
 #ess{
@@ -137,26 +140,34 @@ a:active{
 	transform: scale(0.96);
 }
 table{
-	width: 100%; border-collapse: collapse; color: black;
+	width: 100%; border-collapse: collapse; color: black; background: #f5f5f5;
+}
+table tbody tr:nth-child(even){
+	background: #ffff99;
 }
 thead{
-  background-color: #333;
-  color: #fff;
+  background: darkblue;
+  color: white;
   font-weight: bold;
   text-align: center;
 }
-td{ border: 1px solid black; padding: 2px;
-	/*border: 2px solid white;
-	text-align: center;*/
+td:hover{
+  background: yellow;
+  color: white;
+  cursor: pointer;
 }
+td{border: 1px solid #dddddd; padding: 2px;}
 #alt{
 	visibility: visible;
 	opacity: 1;
 	z-index: 9999999;
- padding: 25px 25px; font-size: 5px; left: 1px; bottom: 118px; position: fixed; transform: scale(0.99); transition: all 0.4s;
+	padding: 25px 25px; font-size: 5px; left: 1px; bottom: 118px; position: fixed; transform: scale(0.99); transition: all 0.4s;
 }
 img{
 	cursor: pointer;
+}
+.ia{
+	width: 70px;
 }
 ::-webkit-scrollbar{
 	width: 15px;
@@ -193,13 +204,28 @@ img{
 	color: white;
 	cursor: pointer;
 	outline: none;
-}	
+}
 .inputeee{
 	background: yellow; width: 35%; margin-bottom: 5px; outline: none; color: white; padding: 10px; text-align: center; margin-top: 3px; border: 1px solid yellow; border: 0px; border-radius: 3px; font-size: 21px;
 }
+.in{
+	background: orange; width: 10%; outline: none; color: white; text-align: center; border: 1px solid orange; border: 0px; font-size: 21px; animation: ine 1s ease-in-out infinite;
+}
+@keyframes ine{0%{background: yellow;}20%{background: lime;}40%{background: white;}}
+#btne1{padding: 30px 30px; font-size: 15px; left: 1px; bottom: 69px; position: fixed; transition: all 0s ease; transform: scale(0.96); z-index: 999999;}
+#btne0{padding: 30px 30px; font-size: 15px; left: 1px; bottom: 3px; position: fixed; transition: all 0s ease; transform: scale(0.96); z-index: 999999;}
+.btn{
+	border: 2px solid transparent;
+	background: transparent;
+	border-radius: 5px;
+}
+.active, .btn:hover{
+	border: 2px solid aqua;
+	background: rgba(255,255,255,0.9);
+}
 @media only screen and (max-width: 800px){
 body{
-	font-size: 17px;
+	font-size: 15px;
 	background: linear-gradient( to bottom,
 	#fd004c 20%,
 	#fe9000 20%,
@@ -223,112 +249,133 @@ body{
 	width: 46%;
 }
 #ess{
-	color: #999fff; font-size: 12px;
+	color: #999fff; font-size: 13px;
 }
-.inpute{
-	width: 100%;
+img{
+	cursor: pointer; width: 100%; height: 45px;
 }
-.inputee{
-	width: 100%;
+.ia{
+	width: 30%;
 }
-.inputeee{
-	width: 100%;
+td{
+	display: block;
 }
+.inpute{width: 100%;}
+.inputee{width: 100%;}
+.inputeee{width: 100%;}
+#btne1{padding: 25px 25px; font-size: 5px; left: 1px; bottom: 63px; position: fixed; transform: scale(0.99); transition: all 0.4s;}
+#btne0{padding: 25px 25px; font-size: 5px; left: 1px; bottom: 8px; position: fixed; transform: scale(0.99); transition: all 0.4s;}
 }
 </style>
 </head>
 <body>
 <nav onclick="audio.play()">
 
+<a href="#modalbox3" title="1" class="btn" id="btne1" style=""></a><br/>
+<a href="#" title="0" class="btn" id="btne0" style=""></a><br/>
+
 <div title="Info." id="modalbox2" class="modal2">
 <div class="modalcontent2">
 
-<a href="https://akwanzas.github.io/aoa/" id="togL" for="togC" style="background-color: lime; color: white; text-align: center;" onclick="alert('Envie 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 70,00 AKZS.');">Comercializar</a>
+<a href="https://akwanzas.github.io/aoa/" id="togL" for="togC" style="background-color: lime; color: white; text-align: center;" onclick="alert('Envie 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 70,00 AKZS.');" title="Iniciar.">Comercializar</a>
 
 <br/>
-<label id="togL" for="togA" style="">FAQs</label>
+<label id="togL" for="togA"  title="Termos de trabalho.">FAQs</label>
 <input id="togA" type="checkbox">
-<div id="contente"><center style="background: orange; width: 100%; color: white; padding: 8px;">Termos de trabalho</center><br/>
-Os nossos termos de trabalho consistem em garantir que você ganhe sempre. Ao garantirmos que você ganhe sempre, estabelecemos a seguinte regra: A sua 1ª comercalização, 50,00 AKZS é sempre recetado mas a 2ª, 3ª e 4ª você ganhará sempre e a seguir, o sistema reinicia o ciclo e você continuará a ganhar. Este processo serve como base de uma boa educação financeira.<br/><br/> Ao trabalhar comnosco, você aceita estes termos, valorizar a educação financeira, criar uma carreira de trabalho digital, diversificar a economia, amar as novas tecnologias e respeitar este projecto. 
-<br/><br/>O nosso programa paga 5% por refêrencia. Se convidares alguém, indique que ela coloque o seu número U.M. na opção comentários e você ganhará sempre que ela ganhar. Clique em <a href="https://akwanzas.github.io/aoa/" onclick="alert('Envie 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 70,00 AKZS.');">comercializar</a> e comece a ganhar.
+<div id="contente"><center style="background: orange; width: 100%; color: white; padding: 8px;" title="Título.">Termos de trabalho</center><br/>
+<p title="Textos.">Os nossos termos de trabalho consistem em garantir que você ganhe sempre. Ao garantirmos que você ganhe sempre, estabelecemos a seguinte regra: A sua 1ª comercalização, 50,00 AKZS é sempre recetado mas a 2ª, 3ª e 4ª você ganhará sempre e a seguir, o sistema reinicia o ciclo e você continuará a ganhar. Este processo serve como base de uma boa educação financeira.<br/><br/> Ao trabalhar comnosco, você aceita estes termos, valorizar a educação financeira, criar uma carreira de trabalho digital, diversificar a economia, amar as novas tecnologias e respeitar este projecto. 
+<br/><br/>O nosso programa paga 5% por refêrencia. Se convidares alguém, indique que ela coloque o seu número U.M. na opção comentários e você ganhará sempre que ela ganhar. Clique em <a href="#" onclick="alert('Envie 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 70,00 AKZS.');">comercializar</a> e comece a ganhar.<p/>
 <br/></br>
 Info: <a onclick="audio.play()" style="padding: 0px; text-transform: none; width: 0px;" href="mailto:p1335614@gmail.com">p1335614@gmail.com.</a>
 </div>
 <br/>
 
-<label id="togL" for="togB" style="">Históricos</label>
+<label id="togL" for="togB"  title="Históricos de ganhos.">Históricos</label>
 <input id="togB" type="checkbox">
-<div id="contentee"><center style="background: orange; width: 100%; color: white; padding: 8px;">Históricos de ganhos</center><br/>
-Estes são os dados actuais de todas as pessoas que estão trabalhando e ganhando com este projecto, clique em <a href="https://akwanzas.github.io/aoa/" onclick="alert('Envie 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 70,00 AKZS.');">comercializar</a>, realize o processo e seja destaque neste quadro de honra:
+<div id="contentee"><center style="background: orange; width: 100%; color: white; padding: 8px;" title="Título.">Históricos de ganhos</center><br/>
+<p title="Textos.">Estes são os dados actuais de todas as pessoas que estão trabalhando e ganhando com este projecto, clique em <a href="#" onclick="alert('Envie 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 70,00 AKZS.');">comercializar</a>, realize o processo e seja destaque neste quadro de honra:</p>
 <br/>
-<table>
+<table title="Tabela de dados.">
 	<thead>
 	<tr>
 	<td>Clientes</td>
-	<td>Ganhos</td>
-	<td>Datas</td>
+	<td>Valores ganhos</td>
+	<td>Horas</td>
+	<td>Data</td>
 	</tr>
 	</thead>
 	<tbody>
 	<tr>
 	<td>940278820</td>
-	<td>70,00 AKZS</td>
-	<td>27/05/2023</td>
+	<td>70,00 AKZS	</td>
+	<td>12:00</td>
+	<td>25/05/2023</td>
 	</tr>
 	<tr>
 	<td>940278820</td>
-	<td>70,00 AKZS</td>
-	<td>27/05/2023</td>
+	<td>70,00 AKZS	</td>
+	<td>12:00</td>
+	<td>25/05/2023</td>
 	</tr>
 	<tr>
 	<td>940278820</td>
-	<td>70,00 AKZS</td>
-	<td>27/05/2023</td>
+	<td>70,00 AKZS	</td>
+	<td>12:00</td>
+	<td>25/05/2023</td>
 	</tr>
 	<tr>
 	<td>940278820</td>
-	<td>70,00 AKZS</td>
-	<td>27/05/2023</td>
+	<td>70,00 AKZS	</td>
+	<td>12:00</td>
+	<td>25/05/2023</td>
 	</tr>
 	<tr>
 	<td>940278820</td>
-	<td>70,00 AKZS</td>
-	<td>27/05/2023</td>
+	<td>70,00 AKZS	</td>
+	<td>12:00</td>
+	<td>25/05/2023</td>
 	</tr>
 	<tr>
 	<td>940278820</td>
-	<td>70,00 AKZS</td>
-	<td>27/05/2023</td>
+	<td>70,00 AKZS	</td>
+	<td>12:00</td>
+	<td>25/05/2023</td>
 	</tr>
 	<tr>
 	<td>940278820</td>
-	<td>70,00 AKZS</td>
-	<td>27/05/2023</td>
+	<td>70,00 AKZS	</td>
+	<td>12:00</td>
+	<td>25/05/2023</td>
 	</tr>
 	<tr>
 	<td>940278820</td>
-	<td>70,00 AKZS</td>
-	<td>27/05/2023</td>
+	<td>70,00 AKZS	</td>
+	<td>12:00</td>
+	<td>25/05/2023</td>
 	</tr>
 	<tr>
 	<td>940278820</td>
-	<td>70,00 AKZS</td>
-	<td>27/05/2023</td>
+	<td>70,00 AKZS	</td>
+	<td>12:00</td>
+	<td>25/05/2023</td>
 	</tr>
 	<tr>
 	<td>940278820</td>
-	<td>70,00 AKZS</td>
-	<td>27/05/2023</td>
+	<td>70,00 AKZS	</td>
+	<td>12:00</td>
+	<td>25/05/2023</td>
 	</tr>
 	<tr>
 	<td>940278820</td>
-	<td>70,00 AKZS</td>
-	<td>27/05/2023</td>
+	<td>70,00 AKZS	</td>
+	<td>12:00</td>
+	<td>25/05/2023</td>
 	</tr>
 	<tr>
 	<td>940278820</td>
-	<td>70,00 AKZS</td>
-	<td>27/05/2023</td>
+	<td>70,00 AKZS	</td>
+	<td>12:00</td>
+	<td>25/05/2023</td>
 	</tr>
 	</tbody>
 	</table>
@@ -336,10 +383,10 @@ Estes são os dados actuais de todas as pessoas que estão trabalhando e ganhand
 </div>
 
 <br/>
-<div id="es"><center style="background: orange; width: 100%; color: white; padding: 10px;">Câmbios</center><br/>
-Câmbios do dia:<br/>
+<div id="es"><center style="background: orange; width: 100%; color: white; padding: 10px;" title="Título.">Câmbios</center><br/>
+<p title="Textos.">Câmbios do dia:</p><br/>
 
-<table>
+<table title="Tabela de preços.">
 	<thead>
 	<tr>
 	<td>Envie</td>
@@ -376,12 +423,12 @@ Câmbios do dia:<br/>
 	</tbody>
 	</table>
 	
-Clique em <a href="https://akwanzas.github.io/aoa/" onclick="alert('Envie 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 70,00 AKZS.');">comercializar</a>, realize o processo e comece a ganhar mais.
-<br/>Se queres começar a ganhar com a sua conta  <a href="https://payeer.com/?session=17442490" target="_blank" title="Payeer.">Payeer</a> clique <a href="#modalbox1">aqui.</a>
+<p title="Textos.">Clique em <a href="#" onclick="alert('Envie 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 70,00 AKZS.');">comercializar</a>, realize o processo e comece a ganhar mais.
+<br/>Se queres começar a ganhar com a sua conta  <a href="https://payeer.com/?session=17442490" target="_blank" title="Payeer.">Payeer</a> clique <a href="#modalbox1" title="Ganhar mais."><b class="in">aqui.</b></a></p>
 </div>
 
 <br/>
-<center><hr width="80%" color="silver" size="2"/><p  id="ess" style="">© 2023.<!--16-05-2023--></p></center>
+<center><hr width="80%" color="silver" size="2"/><p id="ess">© 2023.<!--16-05-2023--></p></center>
 <br/>
 </div>
 </div>
@@ -401,13 +448,13 @@ Clique em <a href="https://akwanzas.github.io/aoa/" onclick="alert('Envie 50,00 
 <center><input type="text" name="ID" maxlength="20" id="userBox" class="inpute" autocomplete="off" title="Input 1." required/></center>
 <center><input type="text" name="CP" maxlength="20" id="userBox" class="inpute" autocomplete="off" title="Input 2." required/></center>
 
-<center><input type="submit" class="inputee" title="Botão." value="Enviar" style="" onclick="alert('Após este processo enviaremos dinheiro a sua conta Payeer, por favor, confirma.');"></center> 
+<center><input type="submit" class="inputee" title="Botão 1." value="Enviar" style="" onclick="alert('Após este processo enviaremos dinheiro a sua conta Payeer, por favor, confirma.');"></center> 
 <center><hr title="Linha hr." width="80%" color="silver" size="2"/></center> 
-<center><a href="#"><p title="Título" class="inputeee">Voltar<p></a></center>
+<center><a href="#"><p title="Botão 2" class="inputeee">Voltar<p></a></center>
 </form>
 
-<p title="Título" style="background: orange; width: 100%; color: white; padding: 10px; text-align: center;">Links de refêrencias</p><p title="Links de refêrencias." style="background: #d0e3ff; width: 100%;">Websites por onde podes começar a ganhar dinheiro Online:</p>
-<table style="margin-top: 5px;">
+<p title="Título" style="background: orange; width: 100%; color: white; padding: 10px; text-align: center;">Links de refêrencias</p><p title="Textos." style="background: #d0e3ff; width: 100%;">Websites por onde podes começar a ganhar dinheiro Online:</p>
+<table title="Tabela de links refêrencias." style="text-align: center; margin-top: 5px;">
 	<tr>
 	<td><a href="https://24profit.click/ref/55846" target="_blank"><img src="img/p.gif" width=""/></a></td>
 	<td><a href="https://3hours.click/i/143914" target="_blank"><img src="img/h.gif" width=""/></a></td>
@@ -420,14 +467,97 @@ Clique em <a href="https://akwanzas.github.io/aoa/" onclick="alert('Envie 50,00 
 </div>
 </div> 
 
-
+<!--modal 1/3-->
+<div id="modalbox3" class="modal3">
+<div class="modalcontent3">
+<div href="#" title="Inteligência Artificial. Aumentar o zoom e conversar com a inteligência artificial." style="padding: 20px; font-size: 17px; right: 25px; bottom: 10px; background: rgba(255,255,255,0.9); color: lime; border-radius: 5px; position: fixed; z-index: 99999;">
+<center>
+<span style="color: lime;"><img src="img/i.png" class="ia"/><img src="img/ii.png" class="ia"/><br/><span style=" color: lime;">Inteligência Artificial.</span><br/>
+<input id="userBoxe" type="text" title="Input 3." style="color: #999; background: transparent; border: 1px solid #999; border-active: none; padding: 5px; font-family: 15px; border-radius: 5px;" placeholder="Repita as frases" onkeydown="if(event.keyCode == 13){ talk() }" autocomplete="off" required style="width: 80%;"/></span><br/>
+</center>
+<center>
+<span id="chatLog" style="color: lime;  margin-top: 1px;">Olá. Inicie uma conversa!</span>
+</center>
+</div>
+</a>
+</div>
+</div>
+</span>
 
 </nav>
+<script type="text/javascript" charset="utf-8">
+//inteligência artificial.
+var know = {
+"boa tarde" : "estudas",
+"estudas" : "matemática",
+"matemática" : "física",
+"física" : "quântica",
+"quântica" : "astrologia",
+"astrologia" : "bom dia",
+"bom dia" : "como viajar no tempo",
+"como viajar no tempo" : "educação financeira",
+"educação financeira" : "tecnologia",
+"tecnologia" : "telefone",
+"telefone" : "...",
+"Olá" : "boas vindas",
+"boas vindas" : "tudo bem",
+"tudo bem" : "...",
+"1+1" : "2",
+"1+1+2" : "4",
+"1-1" : "0",
+"1-1-0" : "0",
+"1*1" : "1",
+"1*1*1" : "1",
+"1/1" : "1",
+"1/1/1" : "1",
+"número" : "0",
+"0" : "número",
+"1" : "número",
+"2" : "número",
+"3" : "número",
+"4" : "número",
+"5" : "número",
+"6" : "número",
+"7" : "número",
+"8" : "número",
+"9" : "número",
+"números" : "0 1 2 3 4 5 6 7 8 9",
+"letra" : "a",
+"a" : "letra",
+"e" : "letra",
+"i" : "letra",
+"o" : "letra",
+"u" : "letra",
+"letras" : "a e i o u",
+"e0" : "👩🏾‍🚀📊🧚🏾‍♀️👩🏾‍🦳👩🏾‍🦰⌚☀🌀🌌",
+"e1" : "🌌🌀☀⌚👩🏾‍🦰👩🏾‍🦳",
+"e2" : "🌌🌀☀⌚👩🏾‍🦰👩🏾‍🦳🧚🏾‍♀️📊👩🏾‍🚀📈🏆🏅🥰👱🏾‍♀️",
+//"i" : "ola",
+//"olá" : "tudo bem",
+//"tudo bem" : "como estás?",
+//"como estás?" : "bem",
+//"bem" : "ii",
+//"ii" : "olá",
+//"olá" : "tudo bem",
+//"tudo bem" : "como estás?",
+//"como estás?" : "bem",
+//"bem" : "iii",
+}; 
+function talk(){
+var user = document.getElementById("userBoxe").value;
+document.getElementById("chatLog").innerHTML = user + "<br/>";
+if (user in know){
+document.getElementById("chatLog").innerHTML = know[user] + "<br/>";
+}else{
+document.getElementById("chatLog").innerHTML = "Olá. Responda correctamente!<br/>";
+}
+}
+</script>
 <!--Script de son de clicks-->
 <!--<script type="text/javascript" charset="utf-8">
 	var audio = new Audio();
 	audio.src = 'audio/a.mp3';
 </script>-->
-<!--<a href="https://www.webcontadores.com" id="alt" title="contador de visitas tumblr"><img src="https://counter10.optistats.ovh/private/webcontadores.php?c=8t3zb7hqsthz6tdz8lnp4tkrw8htkc2n" border="0" title="contador de visitas tumblr" alt="contador de visitas tumblr"></a>
---></body>
+<a href="https://www.webcontadores.com" id="alt" title="contador de visitas tumblr"><img src="https://counter10.optistats.ovh/private/webcontadores.php?c=8t3zb7hqsthz6tdz8lnp4tkrw8htkc2n" border="0" title="contador de visitas tumblr" alt="contador de visitas tumblr"></a>
+</body>
 </html>
