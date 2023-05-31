@@ -1,0 +1,334 @@
+<!--A nossa politica de trabalho é: 1º seu investimento 50,00 akz é recetado, mas o 2º, 3º e 4º investimento você ganhará sempre. Comece a investir agora e ganhe mais.-->
+
+<!Doctype html>
+<html lang="pt"> 
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Akwanzas</title>
+<link rel="shortcut icon" href="img/iic.png"/>
+<script src="https://code.tidio.co/bt8gb3tl5htqwxjou6dkskzri4yvp0u8.js" async></script>
+<style>
+*{
+	margin: 0;
+	padding: 0;
+	font-family: candara;
+	font-size: 18px;
+	color: yellow;
+	outline: none;
+}
+body{
+	background: black;
+}
+#togC{display: none;}
+#togL, #content{display: block;
+width: 90%; padding: 10px;}
+#togL{background: orange; cursor: pointer; text-decoration: none; outline: none; color: #000; border-radius: 0px; transition: all 0.2s ease;}
+#togL:active{transform: scale(0.96);}
+#togL:hover{box-shadow: 0 0 35px orange;}
+#content{background: #ededed;}
+*{
+	font-family: candara;
+	box-sizing: border-box;
+}
+#content{display: none;}
+#togC:checked + #content{display: block;}
+
+#contente{display: none;}
+#togA:checked + #contente{display: block;}
+#contente{background: transparent;}
+#togA{display: none;}
+
+#contentee{display: none;}
+#togB:checked + #contentee{display: block;}
+#contentee{background: transparent;}
+#togB{display: none;}
+
+#contenteee{display: none;}
+#togC:checked + #contenteee{display: block;}
+#contenteee{background: transparent;}
+#togC{display: none;}
+
+.est{
+	text-decoration: none; cursor: pointer; border: none; border-radius: 5px; padding: 18px; background: yellow; color: black; margin-bottom: 1px;
+}
+.est:hover{
+		box-shadow: 0 0 55px yellow;
+}
+.iage{
+	width: 10%; 
+	border-radius: 100px;
+}
+.imge{
+	cursor: pointer; width: 100%; height: 45px; border-radius: 0px;
+}
+/*.cin{
+	box-shadow: 0 0 35px lime;
+}*/
+table{
+	width: 80%; border-collapse: collapse; color: black; background: #f5f5f5;
+}
+table tbody tr:nth-child(even){
+	background: #ffff99;
+}
+thead{
+  background: darkblue;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+td:hover{
+  background: yellow;
+  color: white;
+  cursor: pointer;
+}
+td{border: 1px solid #dddddd; padding: 2px;}
+::-webkit-scrollbar{
+	width: 15px;
+	height: 15vh;
+}
+::-webkit-scrollbar-track{
+	background: #dddddd;
+	border-radius: 5px;
+}
+::-webkit-scrollbar-thumb{
+	background: yellow;
+	border-radius: 5px;
+}
+a{
+	text-decoration: none; outline: none; transition: all 0.2s ease;
+}
+a:active{
+	transform: scale(0.96);
+}
+.hove:hover{
+	box-shadow: 0 0 35px yellow;
+}
+#ess{
+	color: #999fff; font-size: 15px;
+}
+.modal1{overflow: auto; height: 100vh;
+	position: fixed;
+	top: 0px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0,0,9,0.9);
+	transition: all 0.4s;
+	visibility: hidden;
+	opacity: 0;
+}
+.modal1:target{
+	visibility: visible;
+	opacity: 1;
+	z-index: 999;
+}
+.modalcontent1{
+	overflow: auto;
+	top: 0px;
+	position: relative;
+	background: black;
+	width: 50%;
+	height: 50vh;
+	padding: 1em 2em;
+	border-radius: 5px;
+	border: 1px solid white;
+	border-top: 15px solid white; 
+	border-bottom: 15px solid white;
+}
+@media only screen and (max-width: 800px){
+body{
+	font-size: 15px;
+	}
+.iage{
+	width: 10%; 
+	border-radius: 100px;
+}
+.imge{
+	cursor: pointer; width: 100%; height: 45px; border-radius: 0px;
+}
+td{
+	display: block;
+}
+table{
+	width: 60%; 
+}
+#ess{
+	color: #999fff; font-size: 13px;
+}
+}
+</style>
+</head>
+<body onload="initClock()">
+	<!--<img src="img/iic.png"/ width="100%">-->
+<nav onclick="audio.play()">
+<center><img class="iage" src="img/d.png" style="border-radius: 100px;">
+<p style="width: 80%;">Clique ao botão <span class="cin">ganhar</span> e em 1 minuto, <!--será enviado-->enviaremos dinheiro a sua conta Unitel Money. Por favor, confirme.<br/><br/><br/>Últimos ganhos: 111111,11 AKZS.<br/>Últimos depositos: 1333311,11 AKZS.</p>
+<input type="checkbox" id="check" onclick="enable()" title="Aceitar os termos de trabalho." style="cursor: pointer;"> <a href="#modalbox1" title="Ler os termos de trabalho." style=""><u>Ler.</u></a> Aceito os termos de trabalho deste WEBSITE.<br>
+<a href="#" onclick="alert('Agradecemos pela preferência. Aceite os termos de trabalho e comece a ganhar.');">
+<!--<a href="DitoPortifail.html" onclick="alert('Agradecemos pela preferência.');">-->
+<input type="submit" disabled="true" id="close" class="est" value="Ganhar" title="Começar a ganhar." style="" onclick="alert('Envie 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 70,00 AKZS.');"/>
+</a>
+<p><hr color="silver" size="1" width="55%" style="color: silver; background: silver;"/></p><br/><br/>
+
+<!--Dados JavaScript data e horas-->
+<div class="dados"><b class="datetime"><b class="date"><b class="time"><b id="daynum">00</b>/<b id="month">Month</b>/<b id="year">Year</b>/<b id="dayname">Day</b> <b id="hour">00</span></b>:<b id="minutes">00</span></b>:<b><span id="seconds">00</span></b><b><span id="period">AM</span></b></b></b></b></div>
+
+<br/>
+<label id="togL" for="togA"  title="Históricos de ganhos." style="width: 90%; color: white; padding: 8px;">Históricos de ganhos</label>
+<input id="togA" type="checkbox">
+<div id="contente"><br/>
+<p title="Textos.">Estes são os dados actuais de todas as pessoas que estão ganhando com este projecto:</p>
+<br/>
+
+<table title="Tabela de dados.">
+	<thead>
+	<tr>
+	<td>Clientes</td>
+	<td>Valores ganhos</td>
+	<td>Horas</td>
+	<td>Data</td>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td>940278820</td>
+	<td>70,00 AKZS	</td>
+	<td>12:00</td>
+	<td>25/05/2023</td>
+	</tr>
+	<tr>
+	<td>940278820</td>
+	<td>70,00 AKZS	</td>
+	<td>12:00</td>
+	<td>25/05/2023</td>
+	</tr>
+	</tbody>
+	</table>
+<p>Seja destaque neste quadro de honra.</p>
+
+
+
+</div>
+
+
+<br/>
+<label id="togL" for="togC" title="Links de refêrencias." style="width: 90%; color: white; padding: 8px;">Links de referências</label>
+<input id="togC" type="checkbox">
+<div id="contenteee"><br/><p title="Textos." style="width: 80%;">Websites por onde podes começar a ganhar dinheiro On-line:</p><br/>
+<table title="Tabela de links refêrencias." style="text-align: center; margin-top: 5px; width: 70%;">
+	<tr>
+	<td><a href="https://24profit.click/ref/55846" target="_blank"><img src="img/p.gif" class="imge"/></a></td>
+	<td><a href="https://3hours.click/i/143914" target="_blank"><img src="img/h.gif" class="imge"/></a></td>
+	</tr>
+	<tr>
+	<td><a href="https://24profit.click/ref/55846" target="_blank"><img src="img/p.gif" class="imge"/></a></td>
+	<td><a href="https://3hours.click/i/143914" target="_blank"><img src="img/h.gif" class="imge"/></a></td>
+	</tr>
+</table>
+<br/>
+Info: <a onclick="audio.play()" style="padding: 0px; text-transform: none; width: 0px;" href="mailto:p1335614@gmail.com">p1335614@gmail.com.</a>
+<br/>
+</div>
+
+
+
+
+
+<br/>
+<label id="togL" for="togB" title="Termos de trabalho." style="width: 90%; color: white; padding: 8px;">Termos de trabalho</label>
+<input id="togB" type="checkbox">
+<div id="contentee"><br/>
+<p title="Textos." style="width: 80%;">Os nossos termos de trabalho consistem em garantir que você ganhe sempre. A sua 1ª comercalização, 50,00 AKZS é sempre recetado mas a 2ª, 3ª e 4ª comercalização você ganhará sempre e a seguir, o sistema reinicia o ciclo e você continuará a ganhar.<br/><br/> Ao trabalhar connosco, você aceita estes termos; valorizar a educação financeira; criar uma carreira de trabalho digital; amar as novas tecnologias e respeitar este projecto. 
+<br/><br/>O nosso programa paga 5% por refêrencia. Se convidares alguém, indique ela a colocar o seu número U.M. na opção comentários e você ganhará 5% sempre que ela ganhar.Comece a ganhar agora.<p/>
+<br/>
+Info: <a onclick="audio.play()" style="padding: 0px; text-transform: none; width: 0px;" href="mailto:p1335614@gmail.com">p1335614@gmail.com.</a>
+</div>
+
+
+
+<!--modal 1/1-->
+<div id="modalbox1" class="modal1">
+<div class="modalcontent1">
+
+<center style="background: orange; width: 90%; color: white; padding: 8px;" title="Título.">Termos de trabalho</center><br/>
+<p title="Textos.">Os nossos termos de trabalho consistem em garantir que você ganhe sempre. A sua 1ª comercalização, 50,00 AKZS é sempre recetado mas a 2ª, 3ª e 4ª você ganhará sempre e a seguir, o sistema reinicia o ciclo e você continuará a ganhar.<br/><br/> Ao trabalhar connosco, você aceita estes termos, valorizar a educação financeira, criar uma carreira de trabalho digital, amar as novas tecnologias e respeitar este projecto. 
+<br/><br/>O nosso programa paga 5% por refêrencia. Se convidares alguém, indique ela a colocar o seu número U.M. na opção comentários e você ganhará 5% sempre que ela ganhar. Clique em <a href="#" onclick="alert('Envie 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 70,00 AKZS.');">comercializar</a> e comece a ganhar agora.<p/>
+<br/>
+Info: <a onclick="audio.play()" style="padding: 0px; text-transform: none; width: 0px;" href="mailto:p1335614@gmail.com">p1335614@gmail.com.</a>
+<br/><br/>
+<center><a href="#"><p title="Voltar a página inicial."  class="hove" style="background: yellow; width: 90%; color: white; padding: 8px;">Voltar<p></a></center>
+<br/>
+
+</div>
+</div>
+
+
+
+</center>
+
+<br/>
+<center><hr width="55%" color="silver" size="2"/><p id="ess">© 2023.<!--29-05-2023--></p><br/></center>
+</nav>
+
+
+<script type="text/javascript">
+function enable(){
+var check = document.getElementById('check');
+var close = document.getElementById('close');
+
+if (check.checked){
+close.removeAttribute('disabled');
+}else{
+close.disabled = 'close';
+}
+} 
+</script>
+
+<script type="text/javascript">
+function updateClock(){
+var now = new Date();
+var dname = now.getDay(),
+mo = now.getMonth(),
+dnum = now.getDate(),
+yr = now.getFullYear(),
+hou = now.getHours(),
+min = now.getMinutes(),
+sec = now.getSeconds(),
+pe = "";
+
+if(hou == 0){
+hou = 12
+}
+if(hou == 0){
+hou = hou - 12;
+pe = "";
+}
+
+Number.prototype.pad = function(digits){
+for(var n = this.toString(); n.length < digits; n = 0 + n);
+return n;
+}
+
+var months = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"];
+var week = ["DOM", "SEG", "TER", "QUA", "QUI", "SEX", "SÁB"];
+var ids = ["dayname", "month", "daynum", "year", "hour", "minutes", "seconds", "period"];
+var values =[week[dname], months[mo], dnum.pad(2), yr, hou.pad(2), min.pad(2), sec.pad(2), pe];
+for(var i = 0; i < ids.length; i++)
+document.getElementById(ids[i]).firstChild.nodeValue = values[i];
+}
+function initClock(){
+updateClock();
+window.setInterval("updateClock()", 1);
+}
+</script>
+<script type="text/javascript" charset="utf-8">
+	var audio = new Audio();
+	audio.src = 'audio/i.mp3';
+</script>
+<a href="https://www.webcontadores.com" id="alt" title="contador de visitas tumblr"><img src="https://counter10.optistats.ovh/private/webcontadores.php?c=8t3zb7hqsthz6tdz8lnp4tkrw8htkc2n" border="0" title="contador de visitas tumblr" alt="contador de visitas tumblr"></a>
+</body>
+</html>
