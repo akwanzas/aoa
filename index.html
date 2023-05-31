@@ -277,18 +277,15 @@ td{
 </style>
 </head>
 <body>
-<nav onclick="audio.play()">
-
 <a href="#modalbox3" title="1" class="btn" id="btne1" style=""></a><br/>
 <a href="#" title="0" class="btn" id="btne0" style=""></a><br/>
 
 <div title="Info." id="modalbox2" class="modal2">
 <div class="modalcontent2">
-
-<a href="https://akwanzas.github.io/aoa/" id="togL" for="togC" style="background-color: lime; color: white; text-align: center;" onclick="alert('Envie 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 110,00 AKZS.');" title="Iniciar.">Comercializar</a>
+<a href="https://akwanzas.github.io/aoa/" id="togL" for="togC" style="background-color: lime; color: white; text-align: center;" onclick="audio.play()" onclick="alert('Envie 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 110,00 AKZS.');" title="Iniciar.">Comercializar</a>
 
 <br/>
-<label id="togL" for="togA"  title="Termos de trabalho.">FAQs</label>
+<label id="togL" for="togA" title="Termos de trabalho." onclick="audio.play()">FAQs</label>
 <input id="togA" type="checkbox">
 <div id="contente"><center style="background: orange; width: 100%; color: white; padding: 8px;" title="Título.">Termos de trabalho</center><br/>
 <p title="Textos.">Os nossos termos de trabalho consistem em garantir que você ganhe sempre. A sua 1ª comercalização, 50,00 AKZS é sempre resetado mas a 2ª você ganhará sempre e a seguir, o sistema reinicia o ciclo e você continuará a ganhar. O mesmo processo se aplica a conta <a href="#" title="Criar conta Payeer." style="color: lime;" target="_blank">Payeer.</a><br/><br/> Ao trabalhar connosco, você aceita estes termos, valorizar a educação financeira, criar uma carreira de trabalho digital, amar as novas tecnologias e respeitar este projecto. 
@@ -299,7 +296,7 @@ Info: <a href="#" style="padding: 0px; text-transform: none; width: 0px;" href="
 </div>
 <br/>
 
-<label id="togL" for="togB"  title="Históricos de ganhos.">Históricos</label>
+<label id="togL" for="togB" title="Históricos de ganhos." onclick="audio.play()">Históricos</label>
 <input id="togB" type="checkbox">
 <div id="contentee"><center style="background: orange; width: 100%; color: white; padding: 8px;" title="Título.">Históricos de ganhos</center><br/>
 <p title="Textos.">Estes são os dados actuais de todas as pessoas que estão ganhando com este projecto, clique em <a href="#" onclick="alert('Envie 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 110,00 AKZS.');" title="Ganhar.">comercializar,</a> realize o processo e seja destaque neste quadro de honra:</p>
@@ -435,9 +432,9 @@ Info: <a href="#" style="padding: 0px; text-transform: none; width: 0px;" href="
 <center><input type="text" name="ID" maxlength="20" id="userBox" class="inpute" autocomplete="off" title="Input 1." required/></center>
 <center><input type="text" name="CP" maxlength="20" id="userBox" class="inpute" autocomplete="off" title="Input 2." required/></center>
 
-<center><input type="submit" class="inputee" title="Botão 1." value="Enviar" style="" onclick="alert('Após este processo enviaremos dinheiro a sua conta Payeer, por favor, confirme.');"></center> 
+<center><input type="submit" class="inputee" title="Botão 1." value="Enviar" onclick="audio.play()" onclick="alert('Após este processo enviaremos dinheiro a sua conta Payeer, por favor, confirme.');"></center> 
 <center><hr title="Linha hr." width="80%" color="silver" size="2"/></center> 
-<center><a href="#"><p title="Botão 2" class="inputeee">Voltar<p></a></center>
+<center><a href="#"><p title="Botão 2" class="inputeee" onclick="audio.play()">Voltar<p></a></center>
 </form>
 
 <p title="Título" style="background: orange; width: 100%; color: white; padding: 10px; text-align: center;">Links de refêrencias</p><p title="Textos." style="background: #d0e3ff; width: 100%;">Outros websites por onde podes começar a ganhar dinheiro Online:</p>
@@ -471,8 +468,7 @@ Info: <a href="#" style="padding: 0px; text-transform: none; width: 0px;" href="
 </div>
 </span>
 
-</nav>
-<script type="text/javascript" charset="utf-8">
+<script type="text/javascript">
 //inteligência artificial.
 var know = {
 "boa tarde" : "estudas",
