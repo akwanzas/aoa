@@ -217,7 +217,11 @@ img{
 	background: yellow; width: 35%; margin-bottom: 5px; outline: none; color: white; padding: 10px; text-align: center; margin-top: 3px; border: 1px solid yellow; border: 0px; border-radius: 3px; font-size: 21px;
 }
 .in{
-	background: orange; width: 10%; outline: none; color: white; text-align: center; border: 1px solid orange; border: 0px; font-size: 21px; animation: ine 1s ease-in-out infinite;
+	background: orange; width: 10%; outline: none; color: white; text-align: center; border: 1px solid orange; border: 0px; font-size: 21px; animation: ine 1s ease-in-out infinite; transition: all 0.2s ease;
+}
+.in:active{
+	transform: scale(0.96);
+}
 }
 @keyframes ine{0%{background: yellow;}20%{background: lime;}40%{background: white;}}
 #btne1{padding: 30px 30px; font-size: 15px; left: 1px; bottom: 69px; position: fixed; transition: all 0s ease; transform: scale(0.96); z-index: 999999;}
