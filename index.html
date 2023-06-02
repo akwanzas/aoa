@@ -228,8 +228,14 @@ img{
 	background: orange; width: 10%; outline: none; color: white; text-align: center; border: 1px solid orange; border: 0px; font-size: 21px; animation: ine 1s ease-in-out infinite;
 }
 @keyframes ine{0%{background: yellow;}20%{background: lime;}40%{background: white;}}
-#btne1{padding: 30px 30px; font-size: 15px; left: 1px; bottom: 69px; position: fixed; transition: all 0s ease; transform: scale(0.96); z-index: 999999;}
-#btne0{padding: 30px 30px; font-size: 15px; left: 1px; bottom: 3px; position: fixed; transition: all 0s ease; transform: scale(0.96); z-index: 999999;}
+#btne1{transition: all 0.4s; padding: 27px 27px; font-size: 15px; left: 1px; bottom: 60px; position: fixed; transition: all 0s ease; transform: scale(0.96); z-index: 999999;}
+#btne0{transition: all 0.4s; padding: 27px 27px; font-size: 15px; left: 1px; bottom: 3px; position: fixed; transition: all 0s ease; transform: scale(0.96); z-index: 999999;}
+#btne0:active{
+	transform: scale(0.50);
+}
+#btne1:active{
+	transform: scale(0.50);
+}
 .btn{
 	border: 2px solid transparent;
 	background: transparent;
