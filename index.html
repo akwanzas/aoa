@@ -15,7 +15,7 @@
 	outline: none;
 }
 body{
-	font-size: 23px;
+	font-size: 20px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -258,6 +258,21 @@ img{
 .efe:active{
 	transform: scale(0.80);
 }
+.pop{
+	background: rgba(255,255,255,0.8);
+	width: 260px;
+	color: #fff;
+	padding: 10px;
+	top: 15px;
+	position: fixed;
+	left: 5px;
+	border-radius: 5px; z-index: 999999;
+	display: none;
+	animation: ian 1s ease-in-out infinite;
+}
+#close{position: absolute; top: 0; background: transparent; border: none; outline: none; color: #777; font-size: 20px; cursor: pointer;}
+#close:hover{color: yellow;}
+@keyframes ian{0%{color: yellow;}20%{color: fuchsia;}40%{color: aqua;}50%{color: yellow;}}
 @media only screen and (max-width: 800px){
 body{
 	font-size: 18px;
@@ -291,6 +306,7 @@ img{
 td{
 	display: block;
 }
+.pop{width: 235px;}
 .efe{font-size: 18px;}
 .inpute{width: 100%;}
 .inputee{width: 100%;}
@@ -490,8 +506,12 @@ Info: <a href="mailto:p1335614@gmail.com" style="padding: 0px; text-transform: n
 <span id="chatLog" style="color: lime;  margin-top: 1px;">Olá. Inicie uma conversa!</span>
 </center>
 </div>
-
 </div>
+</div>
+	
+<div class="pop">
+<button id="close" style="right: 10px;">&times;</button>
+Olá visitante, boas vindas. 
 </div>
 
 <script type="text/javascript">
@@ -552,14 +572,24 @@ document.getElementById("chatLog").innerHTML = "Olá. Responda correctamente!<br
 }
 }
 </script>
+<script type="text/javascript">
+window.addEventListener("load", function(){
+	setTimeout(
+		function open(event){
+			document.querySelector(".pop").style.display = "block";
+		},
+		1000
+	)
+});
+document.querySelector("#close").addEventListener ("click", function(){
+	document.querySelector(".pop").style.display = "none";
+});
+</script>
 <!--Script audio clicks-->
 <script type="text/javascript" charset="utf-8">
 	var audio = new Audio();
 	audio.src = 'audio/i.mp3';
 </script>
 <a href="https://www.webcontadores.com" id="alt" title="Contador de visitantes."><img src="https://counter10.optistats.ovh/private/webcontadores.php?c=8t3zb7hqsthz6tdz8lnp4tkrw8htkc2n" border="0" title="contador de visitas tumblr" alt="contador de visitas tumblr"></a>
-<!--<div id="alte">
-<script type="text/javascript" src="https://www.usersonline.org/uo-A5WD4xD9YBbDc97c-9-0.js"></script><br><a href="https://www.usersonline.org/" target="_blank"></a>
-</div>-->
 </body>
 </html>
