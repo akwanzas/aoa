@@ -1,11 +1,3 @@
-<?php
-if (isset($_POST['upload'])){
-	$db = mysqli_connect("localhost", "root", "", "wbw");
-	$text = $_POST['text'];
-	$sql = "INSERT INTO wb (text) VALUES ('$text')";
-	mysqli_query($db, $sql);
-}	
-?>
 <!DOCTYPE html>
 <html lang="pt"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,8 +36,8 @@ body{
 #togC{display: none;}
 #togL, #content{display: block;
 width: 100%; padding: 10px;}
-#togL{background: #d0e3ff; cursor: pointer; text-decoration: none; outline: none; color: #000; border-radius: 5px; transition: all 0.2s ease;}
-#togL:active{transform: scale(0.96);}
+#togL{background: #d0e3ff; cursor: pointer; text-decoration: none; outline: none; color: #000; border-radius: 5px; transition: all 0.4s ease;}
+#togL:active{transform: scale(0.50);}
 #content{background: #ededed;}
 *{
 	font-family: candara;
@@ -93,7 +85,7 @@ width: 100%; padding: 10px;}
 	align-items: center;
 	justify-content: center;
 	background: rgba(255,255,8,0.7);
-	transition: all 0.4s;
+	transition: all 0.9s;
 	visibility: none;
 	opacity: 1;
 }
@@ -105,21 +97,7 @@ width: 100%; padding: 10px;}
 	align-items: center;
 	justify-content: center;
 	background: transparent;
-	transition: all 0.4s;
-	visibility: hidden;
-	opacity: 0;
-}
-.modal4{overflow: auto; height: 100vh;
-	position: fixed;
-	top: 0px;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background: rgba(8,255,9,0.9);
-	transition: all 0.4s;
+	transition: all 0.9s;
 	visibility: hidden;
 	opacity: 0;
 }
@@ -129,11 +107,6 @@ width: 100%; padding: 10px;}
 	z-index: 999;
 }
 .modal3:target{
-	visibility: visible;
-	opacity: 1;
-	z-index: 99999;
-}
-.modal4:target{
 	visibility: visible;
 	opacity: 1;
 	z-index: 99999;
@@ -164,27 +137,14 @@ width: 100%; padding: 10px;}
 	border-top: 15px solid white; 
 	border-bottom: 15px solid white;
 }
-.modalcontent4{
-	overflow: auto;
-	top: 0px;
-	position: relative;
-	background: white;
-	width: 90%;
-	height: 93vh;
-	padding: 1em 2em;
-	border-radius: 5px;
-	border: 1px solid white;
-	border-top: 15px solid white; 
-	border-bottom: 15px solid white;
-}
 #ess{
 	color: #999fff; font-size: 15px;
 }
 a{
-	text-decoration: none; color: lime; outline: none; transition: all 0.2s ease;
+	text-decoration: none; color: lime; outline: none; transition: all 0.4s ease;
 }
 a:active{
-	transform: scale(0.96);
+	transform: scale(0.50);
 }
 table{
 	width: 100%; border-collapse: collapse; color: black; background: #f5f5f5;
@@ -264,7 +224,7 @@ img{
 	transition: all 0.4s;
 }
 .inputee:active{
-	transform: scale(0.80);
+	transform: scale(0.50);
 }
 .inputeee{
 	transition: all 0.4s;
@@ -277,9 +237,8 @@ img{
 	background: orange; width: 10%; outline: none; color: white; text-align: center; border: 1px solid orange; border: 0px; font-size: 21px; animation: ine 1s ease-in-out infinite;
 }
 @keyframes ine{0%{background: yellow;}20%{background: lime;}40%{background: white;}}
-#btne2{transition: all 0.4s; padding: 27px 27px; font-size: 15px; right: 3px; bottom: 160px; position: fixed; transition: all 0s ease; transform: scale(0.96); z-index: 999999;}
-#btne1{transition: all 0.4s; padding: 27px 27px; font-size: 15px; left: 1px; bottom: 60px; position: fixed; transition: all 0s ease; transform: scale(0.96); z-index: 999999;}
-#btne0{transition: all 0.4s; padding: 27px 27px; font-size: 15px; left: 1px; bottom: 3px; position: fixed; transition: all 0s ease; transform: scale(0.96); z-index: 999999;}
+#btne1{transition: all 0.4s; padding: 27px 27px; font-size: 15px; left: 1px; bottom: 65px; position: fixed; transition: all 0s ease; transform: scale(0.96); z-index: 999999;}
+#btne0{transition: all 0.4s; padding: 27px 27px; font-size: 15px; left: 1px; bottom: 9px; position: fixed; transition: all 0s ease; transform: scale(0.96); z-index: 999999;}
 #btne0:active{
 	transform: scale(0.50);
 }
@@ -310,9 +269,20 @@ img{
 .efe:active{
 	transform: scale(0.80);
 }
+.pop{
+	background: rgba(255,255,255,0.8);
+	width: 150px;
+	color: orange;
+	padding: 15px;
+	bottom: 10px;
+	position: fixed;
+	left: 5px;
+	border-radius: 5px; z-index: 999999;
+	display: none;
+}
 @keyframes ian{0%{color: yellow;}20%{color: fuchsia;}40%{color: aqua;}50%{color: yellow;}}
-#close{position: absolute; top: 0; background: transparent; border: none; outline: none; color: white; font-size: 20px; cursor: pointer; transition: all 0.2s ease;}
-#close:hover{color: yellow;}
+#close{position: absolute; top: 0; background: transparent; border: none; outline: none; color: aqua; font-size: 25px; cursor: pointer; transition: all 0.2s ease;}
+#close:hover{color: fuchsia;}
 #close:active{transform: scale(0.50);}
 .bb{
 	border: none;
@@ -395,43 +365,47 @@ td{
 	display: block;
 }
 .chate{width:100%; argin-top: 10px;}
-.pop{width: 235px;}
+.pop{}
 .efe{font-size: 18px;}
 .inpute{width: 100%;}
 .inputee{width: 100%;}
 .inputeee{width: 100%;}
-#btne2{padding: 25px 25px; font-size: 5px; right: 1px; bottom: px; position: fixed; transform: scale(0.99); transition: all 0.4s;}
-#btne1{padding: 25px 25px; font-size: 5px; left: 1px; bottom: 63px; position: fixed; transform: scale(0.99); transition: all 0.4s;}
-#btne0{padding: 25px 25px; font-size: 5px; left: 1px; bottom: 8px; position: fixed; transform: scale(0.99); transition: all 0.4s;}
+#btne1{padding: 25px 25px; font-size: 5px; left: 1px; bottom: 62px; position: fixed; transform: scale(0.99); transition: all 0.4s;}
+#btne0{padding: 25px 25px; font-size: 5px; left: 1px; bottom: 9px; position: fixed; transform: scale(0.99); transition: all 0.4s;}
 }
 </style>
 </head>
 <body>
-<!--<a href="#modalbox4" title="Chate." class="btne2" id="btne2" onclick="audio.play()"><!--<img src="ori.png" class="chate">--><!--</a><br>-->
+<div class="pop">
+<button id="close" style="right: 10px;">&times;</button>
+Boas vindas.
+</div>
+
 <a href="#modalbox3" title="1" class="btn" id="btne1" onclick="audio.play()"></a><br>
 <a href="#" title="0" class="btn" id="btne0" onclick="audio.play()"></a><br>
 
 <!--modal 1/2-->
 <div title="Info." id="modalbox2" class="modal2">
 <div class="modalcontent2">
-<center onclick="audio.play()"><a href="https://akwanzas.github.io/aoa/#" id="togL" for="togC" style="background-color: lime; color: white; text-align: center;" onclick="alert('Envie 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 55,00 AKZS.');" title="Iniciar a ganhar.">Comercializar</a></center>
+<center onclick="audio.play()"><a href="https://akwanzas.github.io/aoa/#" id="togL" for="togC" style="background-color: lime; color: white; text-align: center;" onclick="alert('Envie 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 120,00 AKZS.');" title="Iniciar a ganhar.">Comercializar</a></center>
 
 <br>
 <label id="togL" for="togA" title="Termos de trabalho." onclick="audio.play()">FAQs</label>
 <input id="togA" type="checkbox">
 <div id="contente"><center style="background: orange; width: 100%; color: white; padding: 8px;" title="Título.">Termos de trabalho</center><br>
-<p title="Textos.">Os nossos termos de trabalho consistem em garantir que você ganhe sempre. Clique ao botão verde acima <a href="#" onclick="alert('Envie 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 55,00 AKZS.');" title="Ganhar mais." onclick="audio.play()"><button class="efe">e comece a ganhar.</button></a> Ganhe o quanto quiseres.<br/><br/> Ao ganhar dinheiro aqui, você aceitas respeitar este projecto, aceitas que todas as comercializações podem ser resetadas, aceitas amar as novas tecnologias, aceitas valorizar a educação financeira e aceitas criar uma carreira de trabalho Online. 
-<br><br>O nosso programa, paga 5% por refêrencia. Se convidares alguém, indique ela a colocar o seu número <a href="https://unitelmoney.ao/carteira/" title="Criar conta Unitel money." target="_blank" style="color: lime;" onclick="audio.play()"><button class="efe">Unitel money</button></a> na opção comentários e você ganharás 5% sempre que ela ganhar. Clique em <a href="#" onclick="alert('Envie 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 55,00 AKZS.');" title="Ganhar mais." onclick="audio.play()"><button class="efe">comercializar</button></a> e comece a ganhar agora.</p><p>
+<p title="Textos.">Os nossos termos de trabalho consistem em garantir que você ganhe sempre. Clique ao botão verde acima <a href="#" onclick="alert('Envie 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 120,00 AKZS.');" title="Ganhar mais." onclick="audio.play()"><button class="efe">e comece a ganhar.</button></a> Ganhe o quanto quiseres.<br/><br/> Ao ganhar dinheiro aqui, você aceitas respeitar este projecto, aceitas que todas as comercializações podem ser resetadas, aceitas amar as novas tecnologias, aceitas valorizar a educação financeira e aceitas criar uma carreira de trabalho Online. 
+<br><br>O nosso programa, paga 5% por refêrencia. Se convidares alguém, indique ela a colocar o seu número <a href="https://unitelmoney.ao/carteira/" title="Criar conta Unitel money." target="_blank" style="color: lime;" onclick="audio.play()"><button class="efe">Unitel money</button></a> na opção comentários e você ganharás 5% sempre que ela ganhar. Clique em <a href="#" onclick="alert('Envie 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 120,00 AKZS.');" title="Ganhar mais." onclick="audio.play()"><button class="efe">Comercializar</button></a> e comece a ganhar agora.</p></p>
 <br>
 Info: <a href="mailto:p1335614@gmail.com" style="padding: 0px; text-transform: none; width: 0px;" title="Gmail de contactos." onclick="audio.play()"><button class="efe">p1335614@gmail.com.</button></a>
-<br><br><p title="Textos." style="color: orangered;">Todos que estão a fazer os seus investimentos agora, receberão seus ganhos. Agradecemos pela compreensão.</p>
+<!--<br><br><p title="Textos." style="color: orangered;">Todos que estão a fazer os seus investimentos agora, receberão seus ganhos. Agradecemos pela compreensão.</p>-->
+<br><br><p title="Textos." style="color: orangered;">Pagamos as 2ªs comercializações. Agradecemos pela compreensão.</p>
 </div>
 <br>
 
 <label id="togL" for="togB" title="Históricos de ganhos." onclick="audio.play()">Históricos</label>
 <input id="togB" type="checkbox">
 <div id="contentee"><center style="background: orange; width: 100%; color: white; padding: 8px;" title="Título.">Históricos de ganhos</center><br>
-<p title="Textos.">Estes são os dados actuais de todas as pessoas que estão a ganhar com este projecto, clique em <a href="#" onclick="alert('Envie 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 55,00 AKZS.');" title="Ganhar mais." onclick="audio.play()"><button class="efe">comercializar,</button></a> realize o processo e seja destaque neste quadro de honra:</p>
+<p title="Textos.">Estes são os dados actuais de todas as pessoas que estão a ganhar com este projecto, clique em <a href="#" onclick="alert('Envie 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 120,00 AKZS.');" title="Ganhar mais." onclick="audio.play()"><button class="efe">Comercializar,</button></a> realize o processo e seja destaque neste quadro de honra:</p>
 <br>
 <table title="Tabela de dados.">
 	<thead>
@@ -445,73 +419,73 @@ Info: <a href="mailto:p1335614@gmail.com" style="padding: 0px; text-transform: n
 	<tbody>
 	<tr>
 	<td>940278820</td>
-	<td>55,00 AKZS</td>
-	<td>00:10</td>
+	<td>120,00 AKZS</td>
+	<td>01:33</td>
 	<td>09/06/2023</td>
 	</tr>
 	<tr>
 	<td>940278820</td>
-	<td>55,00 AKZS</td>
-	<td>00:10</td>
+	<td>120,00 AKZS</td>
+	<td>01:29</td>
 	<td>09/06/2023</td>
 	</tr>
 	<tr>
 	<td>P1044583141</td>
-	<td>2,00 Rublos</td>
+	<td>9,00 Rublos</td>
+	<td>01:17</td>
+	<td>09/06/2023</td>
+	</tr>
+	<tr>
+	<td>940278820</td>
+	<td>120,00 AKZS</td>
+	<td>01:03</td>
+	<td>09/06/2023</td>
+	</tr>
+	<tr>
+	<td>P1044583141</td>
+	<td>9,00 Rublos</td>
+	<td>00:59</td>
+	<td>09/06/2023</td>
+	</tr>
+	<tr>
+	<td>P1044583141</td>
+	<td>9,00 Rublos</td>
+	<td>00:36</td>
+	<td>09/06/2023</td>
+	</tr>
+	<tr>
+	<td>940278820</td>
+	<td>120,00 AKZS</td>
+	<td>00:35</td>
+	<td>09/06/2023</td>
+	</tr>
+	<tr>
+	<td>940278820</td>
+	<td>120,00 AKZS</td>
+	<td>00:31</td>
+	<td>09/06/2023</td>
+	</tr>
+	<tr>
+	<td>940278820</td>
+	<td>120,00 AKZS</td>
+	<td>00:27</td>
+	<td>09/06/2023</td>
+	</tr>
+	<tr>
+	<td>P1044583141</td>
+	<td>9,00 Rublos</td>
+	<td>00:19</td>
+	<td>09/06/2023</td>
+	</tr>
+	<tr>
+	<td>940278820</td>
+	<td>120,00 AKZS</td>
 	<td>00:15</td>
 	<td>09/06/2023</td>
 	</tr>
 	<tr>
 	<td>940278820</td>
-	<td>55,00 AKZS</td>
-	<td>00:10</td>
-	<td>09/06/2023</td>
-	</tr>
-	<tr>
-	<td>P1044583141</td>
-	<td>2,00 Rublos</td>
-	<td>00:15</td>
-	<td>09/06/2023</td>
-	</tr>
-	<tr>
-	<td>P1044583141</td>
-	<td>2,00 Rublos</td>
-	<td>00:15</td>
-	<td>09/06/2023</td>
-	</tr>
-	<tr>
-	<td>940278820</td>
-	<td>55,00 AKZS</td>
-	<td>00:10</td>
-	<td>09/06/2023</td>
-	</tr>
-	<tr>
-	<td>940278820</td>
-	<td>55,00 AKZS</td>
-	<td>00:10</td>
-	<td>09/06/2023</td>
-	</tr>
-	<tr>
-	<td>940278820</td>
-	<td>55,00 AKZS</td>
-	<td>00:10</td>
-	<td>09/06/2023</td>
-	</tr>
-	<tr>
-	<td>P1044583141</td>
-	<td>2,00 Rublos</td>
-	<td>00:15</td>
-	<td>09/06/2023</td>
-	</tr>
-	<tr>
-	<td>940278820</td>
-	<td>55,00 AKZS</td>
-	<td>00:10</td>
-	<td>09/06/2023</td>
-	</tr>
-	<tr>
-	<td>940278820</td>
-	<td>55,00 AKZS</td>
+	<td>120,00 AKZS</td>
 	<td>00:10</td>
 	<td>09/06/2023</td>
 	</tr>
@@ -535,22 +509,22 @@ Info: <a href="mailto:p1335614@gmail.com" style="padding: 0px; text-transform: n
 	<tbody>
 	<tr>
 	<td>50,00 AKZS</td>
-	<td>55,00 AKZS</td>
+	<td>120,00 AKZS</td>
 	<td>1 minuto</td>
 	</tr>
 	<tr>
-	<td>1,00 Rublo</td>
-	<td>2,00 Rublos</td>
+	<td>3,00 Rublos</td>
+	<td>9,00 Rublos</td>
 	<td>1 minuto</td>
 	</tr>
 	</tbody>
 	</table>
 	
-<p title="Textos.">Clique em <a href="#" onclick="alert('Envie 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 55,00 AKZS.');" title="Ganhar mais." onclick="audio.play()"><button class="efe">comercializar,</button></a> realize o processo e comece a ganhar mais.
+<p title="Textos.">Clique em <a href="#" onclick="alert('Envie 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 120,00 AKZS.');" title="Ganhar mais." onclick="audio.play()"><button class="efe">Comercializar,</button></a> realize o processo e comece a ganhar mais.
 <br>Se queres começar a ganhar com a sua conta <a href="https://payeer.com/?session=17442490" target="_blank" title="Criar conta Payeer." onclick="audio.play()"><button class="efe">Payeer</button></a> clique <a href="#modalbox1" title="Ganhar mais em sua conta Payeer."><button class="efe"><b class="in" onclick="audio.play()">aqui.</b></button></a></p>
 </div>
 <br>
-<center><hr width="80%" color="silver" size="2"><p id="ess">© 2023.<!--16-05-2023--></p></center>
+<center><hr width="80%" color="silver" size="2"><p id="ess" title="Copyright 2023 Akwanzas AO. Todos os direitos reservados.">© 2023.<!--16-05-2023--></p></center>
 </div>
 </div>
 
@@ -558,7 +532,7 @@ Info: <a href="mailto:p1335614@gmail.com" style="padding: 0px; text-transform: n
 <div title="Info." id="modalbox1" class="modal1">
 <div class="modalcontent1">
 <p title="Título" style="background: orange; width: 100%; color: white; padding: 10px; text-align: center;">Ganhar</p>
-<p class="alte" style="text-align: justify; background: #eaeaae" title="Textos.">Envie 1,00 Rublo a este endereço P1044583141 e insira o ID da transação e a sua carteira <a href="https://payeer.com/?session=17442490" target="_blank" title="Criar conta Payeer." onclick="audio.play()"><button class="efe">Payeer</button></a> nos inputs e clique em enviar e em 1 minuto receberás 2,00 Rublos.</p>
+<p class="alte" style="text-align: justify; background: #eaeaae" title="Textos.">Envie 3,00 Rublos a este endereço P1044583141 e insira o ID da transação e a sua carteira <a href="https://payeer.com/?session=17442490" target="_blank" title="Criar conta Payeer." onclick="audio.play()"><button class="efe">Payeer</button></a> nos inputs e clique em enviar e em 1 minuto receberás 9,00 Rublos.</p>
 
 <form action="https://formsubmit.co/71e85f9315fa66d0f7873ccce2868a01" method="POST">
 <input type="hidden" name="_captcha" value="false">
@@ -567,7 +541,7 @@ Info: <a href="mailto:p1335614@gmail.com" style="padding: 0px; text-transform: n
 <center><input type="text" name="ID" maxlength="20" id="userBox" class="inpute" autocomplete="off" title="Input 1." required="" onclick="audio.play()"></center>
 <center><input type="text" name="CP" maxlength="20" id="userBox" class="inpute" autocomplete="off" title="Input 2." required="" onclick="audio.play()"></center>
 
-<center onclick="audio.play()"><input type="submit" class="inputee" title="Botão 1." value="Enviar" onclick="alert(Após este processo enviaremos dinheiro a sua conta Payeer, por favor, confirme.);"></center> 
+<center onclick="audio.play()"><input type="submit" class="inputee" title="Botão 1." value="Enviar" onclick="alert('Após este processo enviaremos dinheiro a sua conta Payeer, por favor, confirme.');"></center> 
 <center><hr title="Linha hr." width="80%" color="silver" size="2"></center> 
 <center><a href="#"><p title="Botão 2" class="inputeee" onclick="audio.play()">Voltar<p></a></center>
 </form>
@@ -598,36 +572,6 @@ Info: <a href="mailto:p1335614@gmail.com" style="padding: 0px; text-transform: n
 <span id="chatLog" style="color: lime;  margin-top: 1px;">Olá. Inicie uma conversa!</span>
 </center>
 </div>
-</div>
-</div>
-
-<!--modal 1/4-->
-<div id="modalbox4" class="modal4">
-<div class="modalcontent4" style="background: #444;">
-<a href="#"><button id="close" style="right: 10px; font-size: 35px; margin-top: 10px; margin-right: 10px; font-weight: bold;">&times;</button></a>
-<center><p style="background: orange; width: 50%; color: white; padding: 8px;" title="Título.">Chat</p></center><br/>
-
-<center>
-<div class="box">
-<form method="post" action="Akwanzas.php#modalbox4" enctype="multipart/form-data">
-<input type="texto" placeholder="" id="text" name="text" autocomplete="off" maxlength="50" class="beb"/><button type="submit" name="upload" class="bb">Publicar</button>
-</form>
-<div id="contentl">
-		<?php
-		$db = mysqli_connect("localhost", "root", "", "wbw");
-		$sql = "SELECT * FROM wb ORDER BY id DESC";
-		$result = mysqli_query($db, $sql);
-		while ($row = mysqli_fetch_array($result)){
-			echo "<div id='img_div'>";
-			echo "<p style='text-align: center; color: white;'>".$row['text']."</p>";
-	
-			echo "</div>";
-		}
-		?>
-</div>
-</div>
-</center><br/>
-
 </div>
 </div>
 
@@ -689,6 +633,22 @@ document.getElementById("chatLog").innerHTML = "Olá. Responda correctamente!<br
 }
 }
 </script>
+
+<script>
+window.addEventListener("load", function(){
+	setTimeout(
+		function open(event){
+			document.querySelector(".pop").style.display = "block";
+		},
+		10000
+	)
+});
+document.querySelector("#close").addEventListener ("click", function(){
+	document.querySelector(".pop").style.display = "none";
+});
+</script>
+
+
 <!--Script audio clicks-->
 <script type="text/javascript" charset="utf-8">
 	var audio = new Audio();
@@ -696,4 +656,4 @@ document.getElementById("chatLog").innerHTML = "Olá. Responda correctamente!<br
 </script>
 <a href="https://www.webcontadores.com" id="alt" title="Contador de visitantes."><img src="https://counter10.optistats.ovh/private/webcontadores.php?c=8t3zb7hqsthz6tdz8lnp4tkrw8htkc2n" border="0" title="contador de visitas tumblr" alt="contador de visitas tumblr"></a>
 </body>
-</html>
+</ht
