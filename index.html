@@ -1,3 +1,11 @@
+<?php
+//if (isset($_POST['upload'])){
+	//$db = mysqli_connect("localhost", "root", "", "wbw");
+	//$text = $_POST['text'];
+	//$sql = "INSERT INTO wb (text) VALUES ('$text')";
+	//mysqli_query($db, $sql);
+//}	
+?>
 <!DOCTYPE html>
 <html lang="pt"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -101,12 +109,31 @@ width: 100%; padding: 10px;}
 	visibility: hidden;
 	opacity: 0;
 }
+.modal4{overflow: auto; height: 100vh;
+	position: fixed;
+	top: 0px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(8,255,9,0.9);
+	transition: all 0.9s;
+	visibility: hidden;
+	opacity: 0;
+}
 .modal1:target{
 	visibility: visible;
 	opacity: 1;
 	z-index: 999;
 }
 .modal3:target{
+	visibility: visible;
+	opacity: 1;
+	z-index: 99999;
+}
+.modal4:target{
 	visibility: visible;
 	opacity: 1;
 	z-index: 99999;
@@ -125,6 +152,19 @@ width: 100%; padding: 10px;}
 	border-bottom: 15px solid white;
 }
 .modalcontent2{
+	overflow: auto;
+	top: 0px;
+	position: relative;
+	background: white;
+	width: 90%;
+	height: 93vh;
+	padding: 1em 2em;
+	border-radius: 5px;
+	border: 1px solid white;
+	border-top: 15px solid white; 
+	border-bottom: 15px solid white;
+}
+.modalcontent4{
 	overflow: auto;
 	top: 0px;
 	position: relative;
@@ -237,6 +277,7 @@ img{
 	background: orange; width: 10%; outline: none; color: white; text-align: center; border: 1px solid orange; border: 0px; font-size: 21px; animation: ine 1s ease-in-out infinite;
 }
 @keyframes ine{0%{background: yellow;}20%{background: lime;}40%{background: white;}}
+#btne2{transition: all 0.4s; padding: 27px 27px; font-size: 15px; right: 3px; bottom: 160px; position: fixed; transition: all 0s ease; transform: scale(0.96); z-index: 999999;}
 #btne1{transition: all 0.4s; padding: 27px 27px; font-size: 15px; left: 1px; bottom: 65px; position: fixed; transition: all 0s ease; transform: scale(0.96); z-index: 999999;}
 #btne0{transition: all 0.4s; padding: 27px 27px; font-size: 15px; left: 1px; bottom: 9px; position: fixed; transition: all 0s ease; transform: scale(0.96); z-index: 999999;}
 #btne0:active{
@@ -264,7 +305,7 @@ img{
 }
 .efe{
 	transition: all 0.4s;
-	background: transparent; border: none; outline: none; color: lime; font-size: 20px; cursor: pointer; animation: ian 1s ease-in-out infinite;
+	background: transparent; border: none; outline: none; color: lime; font-size: 20px; cursor: pointer; animation: iane 1s ease-in-out infinite;
 }
 .efe:active{
 	transform: scale(0.80);
@@ -272,16 +313,17 @@ img{
 .pop{
 	background: rgba(255,255,255,0.8);
 	width: 150px;
-	color: orange;
+	 color: aqua;
 	padding: 15px;
 	bottom: 10px;
 	position: fixed;
 	left: 5px;
 	border-radius: 5px; z-index: 999999;
 	display: none;
+	animation: ian 1s ease-in-out infinite;
 }
 @keyframes ian{0%{color: yellow;}20%{color: fuchsia;}40%{color: aqua;}50%{color: yellow;}}
-#close{position: absolute; top: 0; background: transparent; border: none; outline: none; color: aqua; font-size: 25px; cursor: pointer; transition: all 0.2s ease;}
+#close{position: absolute; top: 0; background: transparent; border: none; outline: none; color: aqua; font-size: 30px; cursor: pointer; transition: all 0.2s ease;}
 #close:hover{color: fuchsia;}
 #close:active{transform: scale(0.50);}
 .bb{
@@ -370,6 +412,7 @@ td{
 .inpute{width: 100%;}
 .inputee{width: 100%;}
 .inputeee{width: 100%;}
+#btne2{padding: 25px 25px; font-size: 5px; right: 1px; bottom: px; position: fixed; transform: scale(0.99); transition: all 0.4s;}
 #btne1{padding: 25px 25px; font-size: 5px; left: 1px; bottom: 62px; position: fixed; transform: scale(0.99); transition: all 0.4s;}
 #btne0{padding: 25px 25px; font-size: 5px; left: 1px; bottom: 9px; position: fixed; transform: scale(0.99); transition: all 0.4s;}
 }
@@ -377,10 +420,11 @@ td{
 </head>
 <body>
 <div class="pop">
-<button id="close" style="right: 10px;" onclick="audio.play()">&times;</button>
+<button id="close" style="right: 10px;">&times;</button>
 Boas vindas.
 </div>
 
+<!--<a href="#modalbox4" title="Chate." class="btne2" id="btne2" onclick="audio.play()"><!--<img src="ori.png" class="chate">--><!--</a><br>-->
 <a href="#modalbox3" title="1" class="btn" id="btne1" onclick="audio.play()"></a><br>
 <a href="#" title="0" class="btn" id="btne0" onclick="audio.play()"></a><br>
 
@@ -575,6 +619,35 @@ Info: <a href="mailto:p1335614@gmail.com" style="padding: 0px; text-transform: n
 </div>
 </div>
 
+<!--modal 1/4-->
+<!--<div id="modalbox4" class="modal4">
+<div class="modalcontent4" style="background: #444;">
+<a href="#"><button id="close" style="right: 10px; font-size: 35px; margin-top: 10px; margin-right: 10px; font-weight: bold;">&times;</button></a>
+<center><p style="background: orange; width: 50%; color: white; padding: 8px;" title="Título.">Chat</p></center><br/>
+
+<center>
+<div class="box">
+<form method="post" action="Akwanzas.php#modalbox4" enctype="multipart/form-data">
+<input type="texto" placeholder="" id="text" name="text" autocomplete="off" maxlength="50" class="beb"/><button type="submit" name="upload" class="bb">Publicar</button>
+</form>
+<div id="contentl">
+		<?php
+		//$db = mysqli_connect("localhost", "root", "", "wbw");
+		//$sql = "SELECT * FROM wb ORDER BY id DESC";
+		//$result = mysqli_query($db, $sql);
+		//while ($row = mysqli_fetch_array($result)){
+			//echo "<div id='img_div'>";
+			//echo "<p style='text-align: center; color: white;'>".$row['text']."</p>";
+			//echo "</div>";
+		//}
+		?>
+</div>
+</div>
+</center><br/>
+
+</div>
+</div>-->
+
 <script type="text/javascript">
 //inteligência artificial.
 var know = {
@@ -656,4 +729,4 @@ document.querySelector("#close").addEventListener ("click", function(){
 </script>
 <a href="https://www.webcontadores.com" id="alt" title="Contador de visitantes."><img src="https://counter10.optistats.ovh/private/webcontadores.php?c=8t3zb7hqsthz6tdz8lnp4tkrw8htkc2n" border="0" title="contador de visitas tumblr" alt="contador de visitas tumblr"></a>
 </body>
-</ht
+</html>
