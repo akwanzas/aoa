@@ -1,13 +1,7 @@
-<?php
-//if (isset($_POST['upload'])){
-	//$db = mysqli_connect("localhost", "root", "", "wbw");
-	//$text = $_POST['text'];
-	//$sql = "INSERT INTO wb (text) VALUES ('$text')";
-	//mysqli_query($db, $sql);
-//}	
-?>
 <!DOCTYPE html>
-<html lang="pt"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Akwanzas</title>
@@ -109,31 +103,12 @@ width: 100%; padding: 10px;}
 	visibility: hidden;
 	opacity: 0;
 }
-.modal4{overflow: auto; height: 100vh;
-	position: fixed;
-	top: 0px;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background: rgba(8,255,9,0.9);
-	transition: all 0.9s;
-	visibility: hidden;
-	opacity: 0;
-}
 .modal1:target{
 	visibility: visible;
 	opacity: 1;
 	z-index: 999;
 }
 .modal3:target{
-	visibility: visible;
-	opacity: 1;
-	z-index: 99999;
-}
-.modal4:target{
 	visibility: visible;
 	opacity: 1;
 	z-index: 99999;
@@ -152,19 +127,6 @@ width: 100%; padding: 10px;}
 	border-bottom: 15px solid white;
 }
 .modalcontent2{
-	overflow: auto;
-	top: 0px;
-	position: relative;
-	background: white;
-	width: 90%;
-	height: 93vh;
-	padding: 1em 2em;
-	border-radius: 5px;
-	border: 1px solid white;
-	border-top: 15px solid white; 
-	border-bottom: 15px solid white;
-}
-.modalcontent4{
 	overflow: auto;
 	top: 0px;
 	position: relative;
@@ -419,10 +381,10 @@ td{
 </style>
 </head>
 <body>
-<!--<div class="pop">
+<div class="pop">
 <button id="close" style="right: 10px;">&times;</button>
 Boas vindas.
-</div>-->
+</div>
 
 <!--<a href="#modalbox4" title="Chate." class="btne2" id="btne2" onclick="audio.play()"><!--<img src="ori.png" class="chate">--><!--</a><br>-->
 <a href="#modalbox3" title="1" class="btn" id="btne1" onclick="audio.play()"></a><br>
@@ -618,35 +580,6 @@ Info: <a href="mailto:p1335614@gmail.com" style="padding: 0px; text-transform: n
 </div>
 </div>
 </div>
-
-<!--modal 1/4-->
-<!--<div id="modalbox4" class="modal4">
-<div class="modalcontent4" style="background: #444;">
-<a href="#"><button id="close" style="right: 10px; font-size: 35px; margin-top: 10px; margin-right: 10px; font-weight: bold;">&times;</button></a>
-<center><p style="background: orange; width: 50%; color: white; padding: 8px;" title="Título.">Chat</p></center><br/>
-
-<center>
-<div class="box">
-<form method="post" action="Akwanzas.php#modalbox4" enctype="multipart/form-data">
-<input type="texto" placeholder="" id="text" name="text" autocomplete="off" maxlength="50" class="beb"/><button type="submit" name="upload" class="bb">Publicar</button>
-</form>
-<div id="contentl">
-		<?php
-		//$db = mysqli_connect("localhost", "root", "", "wbw");
-		//$sql = "SELECT * FROM wb ORDER BY id DESC";
-		//$result = mysqli_query($db, $sql);
-		//while ($row = mysqli_fetch_array($result)){
-			//echo "<div id='img_div'>";
-			//echo "<p style='text-align: center; color: white;'>".$row['text']."</p>";
-			//echo "</div>";
-		//}
-		?>
-</div>
-</div>
-</center><br/>
-
-</div>
-</div>-->
 
 <script type="text/javascript">
 //inteligência artificial.
