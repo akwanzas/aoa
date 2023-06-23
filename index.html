@@ -51,7 +51,9 @@ td{border: 1px solid #dddddd; padding: 2px;}
 #alt{
 	font-size: 20px;
 	left: 1px; 
-	bottom: 0px;
+	margin-bottom: 0px;
+	position: fixed;
+	z-index: 11;
 }
 ::-webkit-scrollbar{
 	width: 15px;
@@ -206,6 +208,7 @@ a:active{
 	border: 1px solid #333;
 	z-index: 999;
 	cursor: pointer;
+	text-align: left;
 }
 .copy{
 	background: #222;
@@ -366,8 +369,8 @@ table{
 </head>
 <body>
 <nav onclick="audio.play()">
-<center>
 <div class="pop" id="clos" title="Mensagem de boas vindas.">Boas vindas.</div>
+<center>
 <a href="#modalbox4" title="1" class="btn" id="btne1" onclick="audio.play()"></a>
 <a href="#" title="0" class="btn" id="btne0" onclick="audio.play()"></a>
 <hr color="silver" size="1" width="55%" style="color: silver; background: silver;"/>
