@@ -1,10 +1,11 @@
+
 <!Doctype html>
 <html lang="pt"> 
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>$$$$100%$$$$</title>
-<link rel="shortcut icon" href="img/iic.png"/>
+<link rel="shortcut icon" href="img/0.png"/>
 <script src="https://code.tidio.co/bt8gb3tl5htqwxjou6dkskzri4yvp0u8.js" async></script>
 <script type="text/javascript">
 	var audio = new Audio();
@@ -23,6 +24,39 @@ body{
 	background: black;
 	color: yellow;
 }
+#togC{display: none;}
+#togL, #contente{display: block;
+width: 90%; padding: 10px;}
+#togL{background: orange; cursor: pointer; text-decoration: none; outline: none; color: #000; border-radius: 0px; transition: all 0.2s ease;}
+#togL:active{transform: scale(0.96);}
+#togL:hover{box-shadow: 0 0 35px orange;}
+#togLL:hover{box-shadow: 0 0 35px yellow;}
+#togLL, #contenteeel{display: block;}
+#contente{background: #ededed;}
+*{
+	font-family: candara;
+	box-sizing: border-box;
+}
+#contente{display: none;}
+#togC:checked + #contente{display: block;}
+
+
+
+#contente{display: none;}
+#togA:checked + #contente{display: block;}
+#contente{background: transparent;}
+#togA{display: none;}
+
+#contenteeel{display: none;}
+#togB:checked + #contenteeel{display: block;}
+#contenteeel{background: transparent;}
+#togB{display: none;}
+
+#contenteee{display: none;}
+#togC:checked + #contenteee{display: block;}
+#contenteee{background: transparent;}
+#togC{display: none;}
+
 .est{
 	text-decoration: none; cursor: pointer; border: none; border-radius: 5px; padding: 18px 50px; background: yellow; color: black; margin-bottom: 5px; margin-top: 3px; transition: all 0.5s ease;}
 .est:active{transform: scale(0.80);}
@@ -322,6 +356,12 @@ form{
 	border: 2px solid aqua;
 	background: rgba(255,255,255,0.9);
 }
+.ple{
+	transition: all 0.4s;
+}
+.ple:active{
+	transform: scale(0.50);
+}
 img{
 	cursor: pointer;
 }
@@ -373,54 +413,84 @@ h1{
 }
 </style>
 </head>
-<body>
+<body onload="initClock()">
 <nav onclick="audio.play()">
 <center>
 <div class="pop" id="clos" title="Mensagem de boas vindas.">Boas vindas.</div>
 <a href="#modalbox4" title="1" class="btn" id="btne1" onclick="audio.play()"></a>
 <a href="#" title="0" class="btn" id="btne0" onclick="audio.play()"></a>
-<a href="#" onclick="alert('Info: Aceite os termos, clique ao botão Gerar, realize o processo e começarás a ganhar.');"><center  class="etc" style="background: orange; width: 100%; color: white; padding: 8px; cursor: pointer;" title="Informações de trabalho." onclick="audio.play()">Começar a Gerar</center></a>
+<a href="#" onclick="alert('Info: Aceite os termos, clique ao botão Receber, realize o processo e começarás a ganhar.');"><center  class="etc" style="background: orange; width: 100%; color: white; padding: 10px; font-size: 20px; cursor: pointer;" title="Informações de trabalho." onclick="audio.play()">Aceitar e receber</center></a>
 
 <!--<hr color="silver" size="1" width="55%" style="color: silver; background: silver;"/>-->
-<h1 style="width: 80%;">GERAMOS DINHEIRO DE FORMA AUTOMÁTICA. <br/>COMECE AGORA E GANHE 25% POR DIA.<br/> <br/><!--<br/>Últimas ofertas: 111111,11 AKZS.<br/>Últimos ganhos: 1333311,11 AKZS.--></h1>Últimos ganhos: 1333311,11 AKZS.<br/>
-<input type="checkbox" id="check" onclick="enable()" title="Aceitar os termos de trabalho." style="cursor: pointer;"> <a href="#modalbox1" title="Ler os termos de trabalho." style="color: yellow;"><u>Ler.</u> Aceito os termos de trabalho deste WEBSITE.</a><br>
-<a href="#" onclick="alert('Agradecemos pela preferência.');"><input type="submit" disabled="true" id="close" class="est" value="GERAR" title="Começar a Gerar e ganhar dinheiro." style="" onclick="alert('Iniciar: Tudo que precisas fazer é enviar 50,00 AKZS a este número Unitel money e em 24 horas receberás 75,00 AKZS. Pagamos 75% a todos os valores enviados.');"/></a>
+<h1 style="width: 80%;">OFERECEMOS DINHEIRO DE FORMA AUTOMÁTICA. <br/>COMECE AGORA E GANHE 25% POR DIA.</h1><br/> <br/><!--<br/>Últimas ofertas: 111111,11 AKZS.<br/>Últimos ganhos: 1333311,11 AKZS.-->Últimas ofertas: 1333311,11 AKZS.<br/>
+<input type="checkbox" id="check" onclick="enable()" title="Aceitar os termos de trabalho." style="cursor: pointer;"> <a href="#modalbox1" title="Ler os termos de trabalho." style="color: yellow;"><table class="ple"><u class="ple">Ler.</u> Aceito os termos de trabalho deste WEBSITE.</table></a><br>
+<a href="https://akwanzas.github.io/aoa/" onclick="alert('Agradecemos pela preferência.');"><input type="submit" disabled="true" id="close" class="est" value="RECEBER" title="Começar a Receber e ganhar dinheiro." style="" onclick="alert('Iniciar: Tudo que precisas fazer é enviar 100,00 AKZS a este número Unitel money e em 15 minutos receberás 125,00 AKZS. Pagamos 25% a todos os valores enviados.');"/></a>
 
 <hr color="silver" size="1" width="55%" style="color: silver; background: silver;"/>
+
+<!--Dados JavaScript data e horas-->
+<div class="dados"><b class="datetime"><b class="date"><b class="time"><b id="daynum">00</b>/<b id="month">Month</b>/<b id="year">Year</b>/<b id="dayname">Day</b> <b id="hour">00</span></b>:<b id="minutes">00</span></b>:<b><span id="seconds">00</span></b><b><span id="period">AM</span></b></b></b></b></div>
+
+<br/><br/>
+
 
 <!--modal 1/1-->
 <div id="modalbox1" class="modal1">
 <div class="modalcontent1">
 <center>
-<p title="Título." style="background: orangered; color: white; padding: 10px; text-align: center;">Termos de trabalho</p></center>
-<p class="alte" style="text-align: justify; background: #333; color: yellow;" title="Textos.">Informações oficias: Os nossos termos de trabalho consistem em garantir que você ganhe sempre. Clique ao botão Gerar, realize o processo e após 24 horas enviaremos seus ganhos de forma automática em sua conta Unitel money. Você podes repetir este processo o quanto quiseres e ganharás sempre.<br/><br/> Ao receber dinheiro aqui, você aceitas respeitar este projecto, aceitas valorizar a educação financeira, aceitas criar uma carreira de trabalho digital e aceitas amar as novas tecnologias.<br/><br/>O nosso programa paga 5% por refêrencia. Se convidares alguém, indique ela a colocar o seu número Unitel money na opção comentários e você ganharás 5% sempre que ela ganhar. Clique em Receber e ganhe mais.</p><br/>
-<center><a href="#"><p title="Voltar a página inicial." class="hove" style="background: yellow; width: 90%; color: black; padding: 8px;">Voltar</p></a></center><br/>
+<p title="Título." style="background: orangered; color: white; padding: 10px; text-align: center;">Informações Oficias</p></center>
+<p class="alte" style="text-align: justify; background: #333; color: yellow;" title="Textos.">Os nossos termos de trabalho consistem em garantir que você ganhe sempre. Clique ao botão Receber, realize o processo e após 15 minutos enviaremos seus ganhos de forma automática em sua conta Unitel money. Você podes repetir este processo o quanto quiseres e ganharás sempre. <i>(Por dia, é permitido efectuar apenas UMA oferta.)</i><br/><br/>Ao realizar o processo de ganhos, você enviará um determinado valor de sua preferência com base às porcentagens que queres receber de volta, por seguintes motivos: O serviço Unitel money só permite trasferêcias acima de 50,00 AKZS e a nossa empresa está a oferecer 25%, por tanto, os valores que enviares permitirão realizar as trasferêcias dos seus valores enviados juntos com os seus 25% ganhos em sua conta.<br/><br/> Ao receber dinheiro aqui, você aceitas respeitar este projecto, aceitas valorizar a educação financeira, aceitas criar uma carreira de trabalho digital e aceitas amar as novas tecnologias.<br/><br/>O nosso programa paga 5% por refêrencia. Se convidares alguém, indique ela a colocar o seu número Unitel money na opção comentários e você ganharás 5% sempre que ela ganhar. Clique em Receber e ganhe mais.</p><br/>
+<center><a href="#"><p title="Voltar a página inicial." class="hove" style="background: yellow; width: 90%; color: black; padding: 10px; font-size: 20px;">Voltar</p></a></center><br/>
 </div>
 </div>
 
+
+
+<!--modal 1/3-->
+<a href="#modalbox3" title="Receber dinheiro em sua conta Payeer."><center  class="etc" style="background: orange; width: 90%; color: white; padding: 10px; font-size: 20px; cursor: pointer;" onclick="audio.play()">Receber Online</center></a>
+
+<div id="modalbox3" class="modal3">
+<div class="modalcontent3" style="background: black;">
+<center>
+<p title="Título." style="background: orangered; color: white; padding: 10px; text-align: center;">Receber em sua conta Payeer</p>
+<p class="alte" style="text-align: justify; background: #333; color: yellow;" title="Textos.">Envie 5,00 Rublos a este endereço P1044583141 e insira o ID da transação e a sua carteira Payeer nos inputs e clique ao botão Enviar e em 15 minutos receberás 9,00 Rublos de forma automática em sua conta Payeer.</p>
+
+<form action="https://formsubmit.co/71e85f9315fa66d0f7873ccce2868a01" method="POST">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" value="https://akwanzas.github.io/aoa/">
+
+<input type="text" name="ID:" maxlength="20" id="userBox" class="inpute" autocomplete="off" title="Input 1." required placeholder="ID da transferência" onclick="audio.play()" style="width:80%; margin-top: 15px;"/>
+<input type="text" name="CP:" maxlength="20" id="userBox" class="inpute" autocomplete="off" title="Input 2." required placeholder="Carteira Payeer" onclick="audio.play()" style="width:80%;"/>
+
+<center onclick="audio.play()"><input type="submit" class="inputee" title="Enviar agora." value="Enviar" onclick="alert('Após este processo, enviaremos dinheiro a sua conta Payeer, por favor, confirme.');" id="act"/></center> 
+<a href="#"><p title=" Voltar a página inicial." style="background: orange; margin-top: 5px; color: white; padding: 10px; text-align: center; border-radius: 0px; font-size: 20px;" class="act" id="act">Voltar</p></a>
+</form>
+</center>
+</div>
+</div><br/>
+
 <!--Tabela de dados-->
-<a href="#" title="Dados actuais e oficias de trabalhos e ganhos."><center  class="etc" style="background: orange; width: 90%; color: white; padding: 8px; cursor: pointer; margin-top: 5px;" onclick="audio.play()">Históricos</center></a><br/>
 <table title="Tabela de dados.">
 	<thead>
 	<tr>
 	<td>Clientes</td>
-	<td>Valores a gerar</td>
-	<td>Valores a ganhar</td>
-	<td>Tempo</td>
+	<td>Ofertas</td>
+	<td>Ganhos</td>
+	<td>Horas</td>
 	</tr>
 	</thead>
 	<tbody>
 	<tr>
 	<td>940278820</td>
-	<td>120.00 AKZS</td>
-	<td id="a">200.00 AKZS</td>
-	<td id="b">01:33</td>
+	<td>100.00 AKZS</td>
+	<td id="a">25.00 AKZS</td>
+	<td id="b">14:00:10</td>
 	</tr>
 	<tr>
 	<td>940278820</td>
-	<td>120.00 AKZS</td>
-	<td id="aa">200.00 AKZS</td>
-	<td id="ba">01:33</td>
+	<td>100.00 AKZS</td>
+	<td id="aa">25.00 AKZS</td>
+	<td id="ba">13:33:15</td>
 	</tr>
 	<!--<tr>
 	<td>P1044583141</td>
@@ -445,192 +515,55 @@ h1{
 	<td>9.00 Rublos</td>
 	<td id="ae">15.00 Rublos</td>
 	<td id="be">01:17</td>
-	</tr>
-	<tr>
-	<td>940278820</td>
-	<td>120.00 AKZS</td>
-	<td id="af">200.00 AKZS</td>
-	<td id="bf">01:33</td>
-	</tr>
-	<tr>
-	<td>940278820</td>
-	<td>120.00 AKZS</td>
-	<td id="ag">200.00 AKZS</td>
-	<td id="bg">01:33</td>
-	</tr>
-	<tr>
-	<td>940278820</td>
-	<td>120.00 AKZS</td>
-	<td id="ah">200.00 AKZS</td>
-	<td id="bh">01:33</td>
-	</tr>
-	<tr>
-	<td>P1044583141</td>
-	<td>9.00 Rublos</td>
-	<td id="ai">15.00 Rublos</td>
-	<td id="bi">01:17</td>
-	</tr>
-	<tr>
-	<td>940278820</td>
-	<td>120.00 AKZS</td>
-	<td id="aj">200.00 AKZS</td>
-	<td id="bj">01:33</td>
-	</tr>
-	<tr>
-	<td>940278820</td>
-	<td>120.00 AKZS</td>
-	<td id="ak">200.00 AKZS</td>
-	<td id="bk">01:33</td>
-	</tr>
-	<tr>
-	<td>940278820</td>
-	<td>120.00 AKZS</td>
-	<td id="ak">200.00 AKZS</td>
-	<td id="bk">01:33</td>
-	</tr>
-	<tr>
-	<td>940278820</td>
-	<td>120.00 AKZS</td>
-	<td id="ak">200.00 AKZS</td>
-	<td id="bk">01:33</td>
-	</tr>
-	<tr>
-	<td>940278820</td>
-	<td>120.00 AKZS</td>
-	<td id="ak">200.00 AKZS</td>
-	<td id="bk">01:33</td>
-	</tr>
-	<tr>
-	<td>940278820</td>
-	<td>120.00 AKZS</td>
-	<td id="ak">200.00 AKZS</td>
-	<td id="bk">01:33</td>
-	</tr>
-	<tr>
-	<td>940278820</td>
-	<td>120.00 AKZS</td>
-	<td id="ak">200.00 AKZS</td>
-	<td id="bk">01:33</td>
-	</tr>
-	<tr>
-	<td>940278820</td>
-	<td>120.00 AKZS</td>
-	<td id="ak">200.00 AKZS</td>
-	<td id="bk">01:33</td>
-	</tr>
-	<tr>
-	<td>940278820</td>
-	<td>120.00 AKZS</td>
-	<td id="ak">200.00 AKZS</td>
-	<td id="bk">01:33</td>
-	</tr>
-	<tr>
-	<td>940278820</td>
-	<td>120.00 AKZS</td>
-	<td id="ak">200.00 AKZS</td>
-	<td id="bk">01:33</td>
-	</tr>
-	<tr>
-	<td>940278820</td>
-	<td>120.00 AKZS</td>
-	<td id="ak">200.00 AKZS</td>
-	<td id="bk">01:33</td>
-	</tr>
-	<tr>
-	<td>940278820</td>
-	<td>120.00 AKZS</td>
-	<td id="ak">200.00 AKZS</td>
-	<td id="bk">01:33</td>
-	</tr>
-	<tr>
-	<td>940278820</td>
-	<td>120.00 AKZS</td>
-	<td id="ak">200.00 AKZS</td>
-	<td id="bk">01:33</td>
-	</tr>
-	<tr>
-	<td>940278820</td>
-	<td>120.00 AKZS</td>
-	<td id="ak">200.00 AKZS</td>
-	<td id="bk">01:33</td>
-	</tr>
-	<tr>
-	<td>940278820</td>
-	<td>120.00 AKZS</td>
-	<td id="ak">200.00 AKZS</td>
-	<td id="bk">01:33</td>
-	</tr>
-	<tr>
-	<td>940278820</td>
-	<td>120.00 AKZS</td>
-	<td id="ak">200.00 AKZS</td>
-	<td id="bk">01:33</td>
-	</tr>
-	<tr>
-	<td>940278820</td>
-	<td>120.00 AKZS</td>
-	<td id="ak">200.00 AKZS</td>
-	<td id="bk">01:33</td>
-	</tr>
-	<tr>
-	<td>940278820</td>
-	<td>120.00 AKZS</td>
-	<td id="ak">200.00 AKZS</td>
-	<td id="bk">01:33</td>
-	</tr>
-	<tr>
-	<td>940278820</td>
-	<td>120.00 AKZS</td>
-	<td id="ak">200.00 AKZS</td>
-	<td id="bk">01:33</td>
-	</tr>
-	<tr>
-	<td>940278820</td>
-	<td>120.00 AKZS</td>
-	<td id="ak">200.00 AKZS</td>
-	<td id="bk">01:33</td>
-	</tr>
-	<tr>
-	<td>940278820</td>
-	<td>120.00 AKZS</td>
-	<td id="ak">200.00 AKZS</td>
-	<td id="bk">01:33</td>
-	</tr>
-	<tr>
-	<td>940278820</td>
-	<td>120.00 AKZS</td>
-	<td id="ak">200.00 AKZS</td>
-	<td id="bk">01:33</td>
-	</tr>
-	<tr>
-	<td>940278820</td>
-	<td>120.00 AKZS</td>
-	<td id="ak">200.00 AKZS</td>
-	<td id="bk">01:33</td>
 	</tr>-->
 	</tbody>
 </table><br/>
 
-<!--modal 1/3-->
-<a href="#modalbox3" title="Ganhar em sua conta Payeer."><center  class="etc" style="background: orange; width: 90%; color: white; padding: 8px; cursor: pointer;" onclick="audio.play()">Gerar Online</center></a>
+<label id="togL" for="togC" title="Dados actuais e oficias de ofertas e ganhos." style="background: orange; width: 90%; color: white; padding: 10px; font-size: 20px; cursor: pointer; margin-top: 0px;" onclick="audio.play()">Mais Históricos</label>
+<input id="togC" type="checkbox">
+<div id="contenteee"><br/>
+<!--Tabela de dados-->
+<table title="Tabela de dados.">
+	<thead>
+	<tr>
+	<td>Clientes</td>
+	<td>Ofertas</td>
+	<td>Ganhos</td>
+	<td>Horas</td>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td>940278820</td>
+	<td>100.00 AKZS</td>
+	<td id="a">25.00 AKZS</td>
+	<td id="b">14:00:10</td>
+	</tr>
+	<tr>
+	<td>940278820</td>
+	<td>100.00 AKZS</td>
+	<td id="aa">25.00 AKZS</td>
+	<td id="ba">13:33:15</td>
+	</tr>
+	</tbody>
+</table>
+<br/>
 
-<div id="modalbox3" class="modal3">
-<div class="modalcontent3" style="background: black;">
-<center>
-<p title="Título." style="background: orangered; color: white; padding: 10px; text-align: center;">Ganhar em sua conta Payeer</p>
-<p class="alte" style="text-align: justify; background: #333; color: yellow;" title="Textos.">Envie 3,00 Rublos a este endereço P1044583141 e insira o ID da transação e a sua carteira Payeer nos inputs e clique em enviar e em 24 horas receberás 5,00 Rublos de forma automática em sua conta Payeer.</p>
 
-<form action="https://formsubmit.co/71e85f9315fa66d0f7873ccce2868a01" method="POST">
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_next" value="https://akwanzas.github.io/aoa/">
 
-<input type="text" name="SMS:" maxlength="20" id="userBox" class="inpute" autocomplete="off" title="Input 1." required placeholder="ID da transferência" onclick="audio.play()" style="width:80%; margin-top: 15px;"/>
-<input type="text" name="Inf:" maxlength="20" id="userBox" class="inpute" autocomplete="off" title="Input 2." required placeholder="Carteira Payeer" onclick="audio.play()" style="width:80%;"/>
-
-<center onclick="audio.play()"><input type="submit" class="inputee" title="Confirmar." value="Enviar" onclick="alert('Após este processo, enviaremos dinheiro a sua conta Payeer, por favor, confirme.');" id="act"/></center> 
-<a href="#"><p title=" Voltar." style="background: orange; margin-top: 5px; color: white; padding: 10px; text-align: center; border-radius: 0px; font-size: 20px;" class="act" id="act">Voltar</p></a>
-</form>
-</center>
+<label id="togLL" for="togB" title="Dados actuais e oficias de ofertas e ganhos." style="background: yellow; width: 90%; color: white; padding: 10px; font-size: 20px; cursor: pointer; margin-top: 0px;" onclick="audio.play()">Links de referências</label>
+<input id="togB" type="checkbox">
+<div id="contenteeel"><p title="Textos." style="text-align: justify; background: orangered; color: white; width: 80%;">Outros websites por onde podes começar a ganhar dinheiro online:</p><br/>
+<table title="Tabela de links refêrencias." style="text-align: center; margin-top: 5px; width: 80%;">
+	<tr>
+	<td><a href="https://24profit.click/ref/55846" target="_blank"><img src="img/p.gif" class="imge"/></a></td>
+	<td><a href="https://3hours.click/i/143914" target="_blank"><img src="img/h.gif" class="imge"/></a></td>
+	</tr>
+	<tr>
+	<td><a href="https://24profit.click/ref/55846" target="_blank"><img src="img/p.gif" class="imge"/></a></td>
+	<td><a href="https://3hours.click/i/143914" target="_blank"><img src="img/h.gif" class="imge"/></a></td>
+	</tr>
+</table>
 </div>
 </div>
 
@@ -709,35 +642,54 @@ document.getElementById("chatLog").innerHTML = "Olá. Responda correctamente!<br
 }
 </script>
 
+<!--
+<script type="text/javascript">
+function updateClock(){
+var now = new Date();
+var dname = now.getDay(),
+mo = now.getMonth(),
+dnum = now.getDate(),
+yr = now.getFullYear(),
+hou = now.getHours(),
+min = now.getMinutes(),
+sec = now.getSeconds(),
+pe = "";
+
+if(hou == 0){
+hou = 12
+}
+if(hou == 0){
+hou = hou - 12;
+pe = "";
+}
+
+Number.prototype.pad = function(digits){
+for(var n = this.toString(); n.length < digits; n = 0 + n);
+return n;
+}
+
+var months = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"];
+var week = ["DOM", "SEG", "TER", "QUA", "QUI", "SEX", "SÁB"];
+var ids = ["dayname", "month", "daynum", "year", "hour", "minutes", "seconds", "period"];
+var values =[week[dname], months[mo], dnum.pad(2), yr, hou.pad(2), min.pad(2), sec.pad(2), pe];
+for(var i = 0; i < ids.length; i++)
+document.getElementById(ids[i]).firstChild.nodeValue = values[i];
+}
+function initClock(){
+updateClock();
+window.setInterval("updateClock()", 1);
+}
+</script>-->
+
 <script type="text/javascript">
 	let cS = document.getElementById('a');
 	let cSa = document.getElementById('aa');
-	//let cSb = document.getElementById('ab');
-	//let cSc = document.getElementById('ac');
-	//let cSd = document.getElementById('ad');
-	//let cSe = document.getElementById('ae');
-	//let cSf = document.getElementById('af');
-	//let cSg = document.getElementById('ag');
-	//let cSh = document.getElementById('ah');
-	//let cSi = document.getElementById('ai');
-	//let cSj = document.getElementById('aj');
-	//let cSk = document.getElementById('ak');
 	let countNum = 0;
 	setInterval(() => {
 		if(countNum < 10000000000 ){
 		countNum = countNum + 0.01000000;
 		cS.innerText = countNum.toFixed(2);
 		cSa.innerText = countNum.toFixed(2);
-		//cSb.innerText = countNum.toFixed(2);
-		//cSc.innerText = countNum.toFixed(2);
-		//cSd.innerText = countNum.toFixed(2);
-		//cSe.innerText = countNum.toFixed(2);
-		//cSf.innerText = countNum.toFixed(2);
-		//cSg.innerText = countNum.toFixed(2);
-		//cSh.innerText = countNum.toFixed(2);
-		//cSi.innerText = countNum.toFixed(2);
-		//cSj.innerText = countNum.toFixed(2);
-		//cSk.innerText = countNum.toFixed(2);
 		}
 	}, 50);
 </script>
@@ -750,29 +702,9 @@ function countdown(){
 	var sec=time%60;
 	var count=document.getElementById('b');
 	var counta=document.getElementById('ba');
-	//var countb=document.getElementById('bb');
-	//var countc=document.getElementById('bc');
-	//var countd=document.getElementById('bd');
-	//var counte=document.getElementById('be');
-	//var countf=document.getElementById('bf');
-	//var countg=document.getElementById('bg');
-	//var counth=document.getElementById('bh');
-	//var counti=document.getElementById('bi');
-	//var countj=document.getElementById('bj');
-	//var countk=document.getElementById('bk');
 	sec = sec < 10 ? '0' + sec : sec;
 	count.innerHTML=`${min}:${sec}`;
 	counta.innerHTML=`${min}:${sec}`;
-	//countb.innerHTML=`${min}:${sec}`;
-	//countc.innerHTML=`${min}:${sec}`;
-	//countd.innerHTML=`${min}:${sec}`;
-	//counte.innerHTML=`${min}:${sec}`;
-	//countf.innerHTML=`${min}:${sec}`;
-	//countg.innerHTML=`${min}:${sec}`;
-	//counth.innerHTML=`${min}:${sec}`;
-	//counti.innerHTML=`${min}:${sec}`;
-	//countj.innerHTML=`${min}:${sec}`;
-	//countk.innerHTML=`${min}:${sec}`;
 	time--;
 }
 setInterval(countdown,1000);
@@ -796,9 +728,7 @@ close.disabled = 'close';
 }
 } 
 </script>
-
 <a href="https://www.webcontadores.com" id="alt" title="contador de visitas tumblr"><img src="https://counter10.optistats.ovh/private/webcontadores.php?c=8t3zb7hqsthz6tdz8lnp4tkrw8htkc2n" border="0" title="contador de visitas tumblr" alt="contador de visitas tumblr"></a>
-
 <script type="text/javascript" charset="utf-8">
 window.addEventListener("load", function(){
 	setTimeout(
