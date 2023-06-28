@@ -1,119 +1,100 @@
-
-<!Doctype html>
-<html lang="pt"> 
-<meta charset="utf-8"/>
+<!DOCTYPE html>
+<html lang="pt"/>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>$$$$100%$$$$</title>
+<title>Akwanzas</title>
 <link rel="shortcut icon" href="img/iic.png"/>
 <script src="https://code.tidio.co/bt8gb3tl5htqwxjou6dkskzri4yvp0u8.js" async></script>
-<script type="text/javascript">
-	var audio = new Audio();
-	audio.src = "audio/i.mp3";
-</script>
-<style>
+<style type="text/css">
 *{
 	margin: 0;
 	padding: 0;
-	font-family: candara;
-	font-size: 18px;
-	outline: none;
 	box-sizing: border-box;
+	font-family: candara;
+	zoom: 100%;
+	outline: none;
+	font-family: candara;
 }
 body{
-	background: black;
-	color: yellow;
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;	
+	outline: none;
+	color: black;
+	background: linear-gradient(180deg,
+	#fd004c 20%,
+	#fe9000 20%,
+	#ff9000 40%,
+	#fff020 40%,
+	#fff020 60%,
+	#3edf4b 60%,
+	#3edf4b 80%,
+	#3363ff 80%
+);
 }
 #togC{display: none;}
-#togL, #contente{display: block;
-width: 90%; padding: 10px;}
-#togL{background: orange; cursor: pointer; text-decoration: none; outline: none; color: #000; border-radius: 0px; transition: all 0.2s ease;}
-#togL:active{transform: scale(0.96);}
-#togL:hover{box-shadow: 0 0 35px orange;}
-#togLL:hover{box-shadow: 0 0 35px yellow;}
-#togLL, #contenteeel{display: block;}
-#contente{background: #ededed;}
-*{
-	font-family: candara;
-	box-sizing: border-box;
-}
-#contente{display: none;}
-#togC:checked + #contente{display: block;}
-
-
+#togL, #content{display: block;
+width: 100%; padding: 10px;}
+#togL{background: #d0e3ff; cursor: pointer; text-decoration: none; outline: none; color: #000; border-radius: 5px; transition: all 0.4s ease;}
+#togL:active{transform: scale(0.50);}
+#content{background: #ededed;}
+#content{display: none;}
+#togC:checked + #content{display: block;}
 
 #contente{display: none;}
 #togA:checked + #contente{display: block;}
-#contente{background: transparent;}
+#contente{background: #ededed;}
 #togA{display: none;}
 
-#contenteeel{display: none;}
-#togB:checked + #contenteeel{display: block;}
-#contenteeel{background: transparent;}
+#contentee{display: none;}
+#togB:checked + #contentee{display: block;}
+#contentee{background: #ededed;}
 #togB{display: none;}
 
-#contenteee{display: none;}
-#togC:checked + #contenteee{display: block;}
-#contenteee{background: transparent;}
-#togC{display: none;}
-
-.est{
-	text-decoration: none; cursor: pointer; border: none; border-radius: 5px; padding: 18px 50px; background: yellow; color: black; margin-bottom: 5px; margin-top: 3px; transition: all 0.5s ease;}
-.est:active{transform: scale(0.80);}
-.est:hover{
-		box-shadow: 0 0 55px yellow;
+#es{background: #ededed;}
+.bola{
+	width: 100px;
+	height: 100px;
+	background:  linear-gradient(130deg, yellow, red, orange);
+	border-radius: 100px;
+	position: fixed; margin-top: 5%;
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+	margin-left: 900px;
+	top: 300px;
+	z-index: 99999999;
 }
-table{
-	width: 55%; border-collapse: collapse; color: yellow; background: transparent;
-}
-table tbody tr:nth-child(even){
-	background: #555;
-}
-thead{
-  background: yellow;
-  color: black;
-  font-weight: bold;
-  text-align: center;
-}
-td:hover{
-  background: orange;
-  color: black;
-  cursor: pointer;
-  font-weight: bold;
-}
-td{border: 1px solid #dddddd; padding: 2px;}
-#alt{
-	font-size: 20px;
-	left: 1px; 
-	bottom: 0px;
+#total{
+	top: 10px;
+	right: 0px;
+	margin-bottom: 0px;
+	font-size: 44px;
 	position: fixed;
-	z-index: 11;
+	cursor: pointer;
+	z-index: 99999999;
 }
-::-webkit-scrollbar{
-	width: 15px;
-	height: 15vh;
-}
-::-webkit-scrollbar-track{
-	background: #dddddd;
-	border-radius: 5px;
-}
-::-webkit-scrollbar-thumb{
-	background: yellow;
-	border-radius: 5px;
-}
-a{
-	text-decoration: none; outline: none; transition: all 0.2s ease;
-}
-a:active{
-	transform: scale(0.96);
-}
-.hove:hover{
-	box-shadow: 0 0 35px yellow;
-} 
-.hove{transition: all 0.4s ease;}
-.hove:active{transform: scale(0.50);}
-#ess{
-	color: #999fff; font-size: 15px;
+
+#modalbox2:active{transform: scale(0.99);}
+#modalbox1:active{transform: scale(0.99);}
+
+.modal0{overflow: auto; height: 100vh;
+	position: fixed;
+	top: 0px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(8,255,255,0.7);
+	transition: all 0.4s;
+	visibility: none;
+	opacity: 1;
 }
 .modal1{overflow: auto; height: 100vh;
 	position: fixed;
@@ -124,7 +105,7 @@ a:active{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: rgba(0,0,9,0.9);
+	background: rgba(255,255,8,0.7);
 	transition: all 0.4s;
 	visibility: hidden;
 	opacity: 0;
@@ -138,26 +119,13 @@ a:active{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: rgba(0,0,9,0.9);
-	transition: all 0.4s;
-	visibility: hidden;
-	opacity: 0;
+	/*background: rgba(8,255,255,0.7);*/
+	background: rgba(8,255,255,0.7);
+	transition: all 0.9s;
+	visibility: none;
+	opacity: 1;
 }
 .modal3{overflow: auto; height: 100vh;
-	position: fixed;
-	top: 0px;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background: rgba(0,0,9,0.9);
-	transition: all 0.4s;
-	visibility: hidden;
-	opacity: 0;
-}
-.modal4{overflow: auto; height: 100vh;
 	position: fixed;
 	bottom: 0;
 	right: 0;
@@ -169,33 +137,42 @@ a:active{
 	visibility: hidden;
 	opacity: 0;
 }
+.modal4{overflow: auto; height: 100vh;
+	position: fixed;
+	top: 0px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(8,255,9,0.9);
+	transition: all 0.9s;
+	visibility: hidden;
+	opacity: 0;
+}
 .modal1:target{
 	visibility: visible;
 	opacity: 1;
-	z-index: 99;
-}
-.modal2:target{
-	visibility: visible;
-	opacity: 1;
-	z-index: 99;
+	z-index: 9999;
 }
 .modal3:target{
 	visibility: visible;
-	opacity: 3;
-	z-index: 99;
+	opacity: 1;
+	z-index: 99999;
 }
 .modal4:target{
 	visibility: visible;
 	opacity: 1;
-	z-index: 99;
+	z-index: 99999;
 }
 .modalcontent1{
 	overflow: auto;
 	top: 0px;
 	position: relative;
-	background: black;
-	width: 80%;
-	height: 90vh;
+	background: white;
+	width: 90%;
+	height: 93vh;
 	padding: 1em 2em;
 	border-radius: 5px;
 	border: 1px solid white;
@@ -206,77 +183,191 @@ a:active{
 	overflow: auto;
 	top: 0px;
 	position: relative;
-	background: black;
-	width: 80%;
-	height: 90vh;
+	background: white;
+	width: 90%;
+	height: 93vh;
 	padding: 1em 2em;
 	border-radius: 5px;
 	border: 1px solid white;
 	border-top: 15px solid white; 
 	border-bottom: 15px solid white;
 }
-.modalcontent3{
+.modalcontent4{
 	overflow: auto;
 	top: 0px;
 	position: relative;
-	background: black;
-	width: 80%;
-	height: 90vh;
+	background: white;
+	width: 90%;
+	height: 93vh;
 	padding: 1em 2em;
 	border-radius: 5px;
 	border: 1px solid white;
 	border-top: 15px solid white; 
 	border-bottom: 15px solid white;
 }
-.pop{
-	width: 100%;
-	display: none;
-	background: #222;
-	position: fixed;
-	color: #999;
-	font-size:15px;
-	margin-bottom: 0px;
-	bottom: 0px;
-	box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
-	padding: 1px;
-	border: 1px solid #333;
-	z-index: 999;
+#ess{
+	color: #999fff; font-size: 15px;
+}
+a{
+	text-decoration: none; color: lime; outline: none; transition: all 0.4s ease;
+}
+a:active{
+	transform: scale(0.50);
+}
+table{
+	width: 100%; border-collapse: collapse; color: black; background: #f5f5f5;
+}
+table tbody tr:nth-child(even){
+	background: #ffff99;
+}
+thead{
+	background: darkblue;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+td:hover{
+	background: yellow;
+	color: white;
 	cursor: pointer;
-	text-align: left;
 }
-.copy{
-	background: #222;
+td{border: 1px solid #dddddd; padding: 2px;}
+#alt{
+	visibility: visible;
+	opacity: 1;
+	z-index: 9999999;
+	left: 1px; bottom: 118px; position: fixed;
+}
+#alte{
+	visibility: visible;
+	opacity: 1;
+	z-index: 9999999;
 	position: fixed;
-	color: #999;
-	font-size:15px;
-	/*position: sticky;*/
-	margin-bottom: 0px;
-	bottom: 0px;
-	box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
-	padding: 1px;
-	border: 1px solid #333;
-	/*z-index: 9;*/
-	width: 100%;
+	right: 0;
 }
+img{
+	cursor: pointer;
+}
+.chate{
+	width: 5%;
+}
+.ia{
+	width: 70px;
+}
+::-webkit-scrollbar{
+	width: 15px;
+	height: 15vh;
+}
+::-webkit-scrollbar-track{
+	background: #dddddd;
+	border-radius: 5px;
+}
+::-webkit-scrollbar-thumb{
+	background: yellow;
+	border-radius: 5px;
+}
+.inpute{
+	border: 1px solid lime;
+	border-radius: 3px;
+	width: 35%;
+	font-size: 21px;
+	padding: 10px;
+	margin-top: 3px;
+	color: lime;
+	outline: none;
+}
+.inputee{
+	border: 1px solid lime;
+	border: 0px;
+	border-radius: 3px;
+	width: 35%;
+	font-size: 21px;
+	padding: 10px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	background: lime;
+	color: white;
+	cursor: pointer;
+	outline: none;
+	transition: all 0.4s;
+}
+.inputee:active{
+	transform: scale(0.50);
+}
+.inputeee{
+	transition: all 0.4s;
+	background: yellow; width: 35%; margin-bottom: 5px; outline: none; color: white; padding: 10px; text-align: center; margin-top: 3px; border: 1px solid yellow; border: 0px; border-radius: 3px; font-size: 21px;
+}
+.inputeee:active{
+	transform: scale(0.50);
+}
+.in{
+	background: orange; width: 10%; outline: none; color: white; text-align: center; border: 1px solid orange; border: 0px; font-size: 21px; animation: ine 1s ease-in-out infinite;
+}
+@keyframes ine{0%{background: yellow;}20%{background: lime;}40%{background: white;}}
+#btne2{transition: all 0.4s; padding: 27px 27px; font-size: 15px; right: 3px; bottom: 160px; position: fixed; transition: all 0s ease; transform: scale(0.96); z-index: 999999;}
+#btne1{transition: all 0.4s; padding: 27px 27px; font-size: 15px; left: 1px; bottom: 65px; position: fixed; transition: all 0s ease; transform: scale(0.96); z-index: 999999;}
+#btne0{transition: all 0.4s; padding: 27px 27px; font-size: 15px; left: 1px; bottom: 9px; position: fixed; transition: all 0s ease; transform: scale(0.96); z-index: 999999;}
+#btne0:active{
+	transform: scale(0.50);
+}
+#btne1:active{
+	transform: scale(0.50);
+}
+.btn{
+	border: 2px solid transparent;
+	background: transparent;
+	border-radius: 5px;
+}
+.active, .btn:hover{
+	border: 2px solid aqua;
+	background: rgba(255,255,255,0.9);
+}
+.btne2{
+	border: 2px solid fuchsia;
+	background: rgba(255,255,255,0.7);
+	border-radius: 50px 50px;
+}
+#btne2:active{
+	transform: scale(0.50);
+}
+.efe{
+	transition: all 0.4s;
+	background: transparent; border: none; outline: none; color: lime; font-size: 20px; cursor: pointer; animation: iane 1s ease-in-out infinite;
+}
+.efe:active{
+	transform: scale(0.80);
+}
+.pop{
+	background: rgba(255,255,255,0.8);
+	width: 150px;
+	 color: aqua;
+	padding: 15px;
+	bottom: 10px;
+	position: fixed;
+	left: 5px;
+	border-radius: 5px; z-index: 999999;
+	display: none;
+	animation: ian## 1s ease-in-out infinite;
+}
+@keyframes ian{0%{color: yellow;}20%{color: fuchsia;}40%{color: aqua;}50%{color: yellow;}}
+#close{position: absolute; top: 0; background: transparent; border: none; outline: none; color: aqua; font-size: 30px; cursor: pointer; transition: all 0.2s ease;}
+#close:hover{color: fuchsia;}
+#close:active{transform: scale(0.50);}
 .bb{
 	border: none;
 	outline: none;
 	font-size: 1rem;
 	padding: .3rem;
 	color: white;
-	width: 80px;
-	margin-bottom: 5px;
 	background: orangered; cursor: pointer;
-	transition: all 0.3s ease;
 }
-.bb:active{transform: scale(0.90);}
 .beb{
 	border: none;
 	font-size: 1rem;
-	border: 1px solid white;
 	padding: .3rem;
 	outline: none;
-	color: white;
+	color: yellow;
 	width: 25%;
 	background: rgba(255,255,255,0.2);
 }
@@ -309,273 +400,248 @@ form{
 	border: 1px solid rgba(255,255,255,0.3);
 	 font-size: 11px;
 }
-#togLLL:hover{box-shadow: 0 0 35px yellow; transition: all 0.5s ease;}
-#togLLL:active{transform: scale(0.90);}
-.inpute{
-	border: none;
-	border-bottom: 5px solid yellow;
-	border-radius: .5rem;
-	padding:  .5rem;
-	outline: none;
-	background-color: transparent;
-	color: #999;
-	width: 100%;
-}
-.inputee{
-	border: 1px solid yellow;
-	border: 0px;
-	border-radius: 0px;
-	width: 100%;
-	font-size: 21px;
-	padding: 10px;
-	margin-top: 3px;
-	margin-bottom: 3px;
-	background: yellow;
-	color: black;
-	cursor: pointer;
-	outline: none;
-	transition: all 0.3s;
-}
-.inputee:hover{
-	box-shadow: 0 0 35px yellow; transition: all 0.4s;
-} 
-#btne1{transition: all 0.4s; padding: 27px 27px; font-size: 15px; left: 1px; bottom: 65px; position: fixed; transition: all 0s ease; transform: scale(0.96); z-index: 999999;}
-#btne0{transition: all 0.4s; padding: 27px 27px; font-size: 15px; left: 1px; bottom: 9px; position: fixed; transition: all 0s ease; transform: scale(0.96); z-index: 999999;}
-#btne0:active{
-	transform: scale(0.50);
-}
-#btne1:active{
-	transform: scale(0.50);
-}
-.btn{
-	border: 2px solid transparent;
-	background: transparent;
-	border-radius: 5px;
-}
-.active, .btn:hover{
-	border: 2px solid aqua;
-	background: rgba(255,255,255,0.9);
-}
-.ple{
-	transition: all 0.4s;
-}
-.ple:active{
-	transform: scale(0.50);
-}
-img{
-	cursor: pointer;
-}
-.chate{
-	width: 5%;
-}
-.ia{
-	width: 80px; height: 45px;
-}
 
-.etc:hover{
-	box-shadow: 0 0 25px orange; orange; transition: all 0.4s;
-}
-.etc:active{
-	transform: scale(0.50);
-} 
-#act{transition: all 0.4s;}#act:active{transform: scale(0.50);}
-.act:hover{
-	box-shadow: 0 0 35px orange; transition: all 0.4s;
-} 
-h1{
-	font-size: 30px;
-}
 @media only screen and (max-width: 800px){
-img{
-	cursor: pointer; width: 100%; height: 45px;
+body{
+	font-size: 18px;
+	background: linear-gradient( to bottom,
+	#fd004c 20%,
+	#fe9000 20%,
+	#ff9000 40%,
+	#fff020 40%,
+	#fff020 60%,
+	#3edf4b 60%,
+	#3edf4b 80%,
+	#3363ff 80%
+);
 }
-#btne1{padding: 25px 25px; font-size: 5px; left: 1px; bottom: 62px; position: fixed; transform: scale(0.99); transition: all 0.4s;}
-#btne0{padding: 25px 25px; font-size: 5px; left: 1px; bottom: 9px; position: fixed; transform: scale(0.99); transition: all 0.4s;}
-.iage{
-	width: 10%; 
-	border-radius: 100px;
+.modal2{
+	background: rgba(255,255,255,0.2);
 }
-.imge{
-	cursor: pointer; width: 100%; height: 45px; border-radius: 0px;
-}
-td{
-	display: block;
-}
-table{
-	width: 80%; 
+.menu{
+	background: red;
+	width: 46%;
 }
 #ess{
 	color: #999fff; font-size: 13px;
 }
-h1{
-	font-size: 18px;
+img{
+	cursor: pointer; width: 100%; height: 45px;
 }
+.ia{
+	width: 30%;
+}
+td{
+	display: block;
+}
+.chate{width:100%; argin-top: 10px;}
+.pop{}
+.efe{font-size: 18px;}
+.inpute{width: 100%;}
+.inputee{width: 100%;}
+.inputeee{width: 100%;}
+#btne2{padding: 25px 25px; font-size: 5px; right: 1px; bottom: px; position: fixed; transform: scale(0.99); transition: all 0.4s;}
+#btne1{padding: 25px 25px; font-size: 5px; left: 1px; bottom: 62px; position: fixed; transform: scale(0.99); transition: all 0.4s;}
+#btne0{padding: 25px 25px; font-size: 5px; left: 1px; bottom: 9px; position: fixed; transform: scale(0.99); transition: all 0.4s;}
 }
 </style>
 </head>
-<body onload="initClock()">
-<nav onclick="audio.play()">
-<center>
-<div class="pop" id="clos" title="Mensagem de boas vindas.">Boas vindas.</div>
-<a href="#modalbox4" title="1" class="btn" id="btne1" onclick="audio.play()"></a>
-<a href="#" title="0" class="btn" id="btne0" onclick="audio.play()"></a>
-<a href="#" onclick="alert('Info: Aceite os termos, clique ao botão Receber, realize o processo e começarás a ganhar.');"><center  class="etc" style="background: orange; width: 100%; color: white; padding: 10px; font-size: 20px; cursor: pointer;" title="Informações de trabalho." onclick="audio.play()">Aceitar e receber</center></a>
+<body>
+<div class="pop">
+<button id="close" style="right: 10px;">&times;</button>
+Boas vindas.
+</div>
 
-<!--<hr color="silver" size="1" width="55%" style="color: silver; background: silver;"/>-->
-<h1 style="width: 80%;">OFERECEMOS DINHEIRO DE FORMA AUTOMÁTICA. <br/>COMECE AGORA E GANHE 25% POR DIA.</h1><br/> <br/><!--<br/>Últimas ofertas: 111111,11 AKZS.<br/>Últimos ganhos: 1333311,11 AKZS.-->Últimas ofertas: 1333311,11 AKZS.<br/>
-<input type="checkbox" id="check" onclick="enable()" title="Aceitar os termos de trabalho." style="cursor: pointer;"> <a href="#modalbox1" title="Ler os termos de trabalho." style="color: yellow;"><table class="ple"><u class="ple">Ler.</u> Aceito os termos de trabalho deste WEBSITE.</table></a><br>
-<a href="https://akwanzas.github.io/aoa/" onclick="alert('Agradecemos pela preferência.');"><input type="submit" disabled="true" id="close" class="est" value="RECEBER" title="Começar a Receber e ganhar dinheiro." style="" onclick="alert('Iniciar: Tudo que precisas fazer é enviar 100,00 AKZS a este número Unitel money e em 15 minutos receberás 125,00 AKZS. Pagamos 25% a todos os valores enviados.');"/></a>
+<!--modal 1/0-->
+<div id="modalbox0" class="modal0">
+</div>
 
-<hr color="silver" size="1" width="55%" style="color: silver; background: silver;"/>
+<!--<a href="#modalbox4" title="Chate." class="btne2" id="btne2" onclick="audio.play()"><!--<img src="ori.png" class="chate">--><!--</a><br>-->
+<a href="#modalbox3" title="1" class="btn" id="btne1" onclick="audio.play()"></a><br>
+<a href="#" title="0" class="btn" id="btne0" onclick="audio.play()"></a><br>
 
-<!--Dados JavaScript data e horas-->
-<div class="dados"><b class="datetime"><b class="date"><b class="time"><b id="daynum">00</b>/<b id="month">Month</b>/<b id="year">Year</b>/<b id="dayname">Day</b> <b id="hour">00</span></b>:<b id="minutes">00</span></b>:<b><span id="seconds">00</span></b><b><span id="period">AM</span></b></b></b></b></div>
+<!--modal 1/2-->
+<div title="Info." id="modalbox2" class="modal2">
+<div class="modalcontent2">
+<center onclick="audio.play()"><a href="https://akwanzas.github.io/aoa/#" id="togL" for="togC" style="background-color: lime; color: white; text-align: center; font-weight: bold;" onclick="alert('Envie 100,00 AKZS a este número 940278820 Unitel money e em 25 minutos receberás 125,00 AKZS.');" title="Iniciar a ganhar.">Comercializar</a></center>
 
-<br/><br/>
+<br>
+<label id="togL" for="togA" title="Termos de trabalho." onclick="audio.play()"style="color: #333;">Termos de trabalho</label>
+<input id="togA" type="checkbox">
+<div id="contente"><center style="background: orange; width: 100%; color: white; padding: 8px;" title="Título.">Termos de trabalho</center><br>
+<p title="Textos.">Os nossos termos de trabalho consistem em garantir que você ganhe sempre. Clique ao botão verde acima <a href="#" onclick="alert('Envie 100,00 AKZS a este número 940278820 Unitel money e em 25 minutos receberás 125,00 AKZS.');" title="Ganhar mais." onclick="audio.play()"><button class="efe">e comece a ganhar.</button></a> Ganhe o quanto quiseres.<br/><br/> Ao ganhar dinheiro aqui, você aceitas respeitar este projecto, aceitas que todas as comercializações podem ser resetadas, aceitas amar as novas tecnologias, aceitas valorizar a educação financeira e aceitas criar uma carreira de trabalho Online. 
+<br><br>O nosso programa, paga 5% por refêrencia. Se convidares alguém, indique ela a colocar o seu número <a href="https://unitelmoney.ao/carteira/" title="Criar conta Unitel money." target="_blank" style="color: lime;" onclick="audio.play()"><button class="efe">Unitel money</button></a> na opção comentários e você ganharás 5% sempre que ela ganhar. Clique em <a href="#" onclick="alert('Envie 100,00 AKZS a este número 940278820 Unitel money e em 25 minutos receberás 125,00 AKZS.');" title="Ganhar mais." onclick="audio.play()"><button class="efe">Comercializar</button></a> e comece a ganhar agora.</p></p>
+<br>
+Info: <a href="mailto:p1335614@gmail.com" style="padding: 0px; text-transform: none; width: 0px;" title="Gmail de contactos." onclick="audio.play()"><button class="efe">p1335614@gmail.com.</button></a>
+<!--<br><br><p title="Textos." style="color: orangered;">Pagamos as 2ªs comercializações. Agradecemos pela compreensão.</p>-->
+</div>
+<br>
 
+<label id="togL" for="togB" title="Históricos de ganhos." onclick="audio.play()" style="color: #333;">Históricos de ganhos</label>
+<input id="togB" type="checkbox">
+<div id="contentee"><center style="background: orange; width: 100%; color: white; padding: 8px;" title="Título.">Históricos de ganhos</center><br>
+<p title="Textos.">Estes são os dados actuais de todas as pessoas que estão ganhando com este projecto, clique em <a href="#" onclick="alert('Envie 50,00 AKZS a este número 940278820 Unitel money e em 25 minutos receberás 125,00 AKZS.');" title="Ganhar mais." onclick="audio.play()"><button class="efe">Comercializar,</button></a> realize o processo e seja destaque neste quadro de honra:</p>
+<br>
+<table title="Tabela de dados.">
+	<thead>
+	<tr>
+	<td>Clientes</td>
+	<td>Valores ganhos</td>
+	<td>Horas</td>
+	<td>Datas</td>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td>940278820</td>
+	<td>125,00 AKZS</td>
+	<td>01:33</td>
+	<td>29/06/2023</td>
+	</tr>
+	<tr>
+	<td>940278820</td>
+	<td>125,00 AKZS</td>
+	<td>01:29</td>
+	<td>29/06/2023</td>
+	</tr>
+	<tr>
+	<td>P1044583141</td>
+	<td>9,00 Rublos</td>
+	<td>01:17</td>
+	<td>29/06/2023</td>
+	</tr>
+	<tr>
+	<td>940278820</td>
+	<td>125,00 AKZS</td>
+	<td>01:03</td>
+	<td>29/06/2023</td>
+	</tr>
+	<tr>
+	<td>P1044583141</td>
+	<td>9,00 Rublos</td>
+	<td>00:59</td>
+	<td>29/06/2023</td>
+	</tr>
+	<tr>
+	<td>P1044583141</td>
+	<td>9,00 Rublos</td>
+	<td>00:36</td>
+	<td>29/06/2023</td>
+	</tr>
+	<tr>
+	<td>940278820</td>
+	<td>125,00 AKZS</td>
+	<td>00:35</td>
+	<td>29/06/2023</td>
+	</tr>
+	<tr>
+	<td>940278820</td>
+	<td>125,00 AKZS</td>
+	<td>00:31</td>
+	<td>29/06/2023</td>
+	</tr>
+	<tr>
+	<td>940278820</td>
+	<td>125,00 AKZS</td>
+	<td>00:27</td>
+	<td>29/06/2023</td>
+	</tr>
+	<tr>
+	<td>P1044583141</td>
+	<td>9,00 Rublos</td>
+	<td>00:19</td>
+	<td>29/06/2023</td>
+	</tr>
+	<tr>
+	<td>940278820</td>
+	<td>125,00 AKZS</td>
+	<td>00:15</td>
+	<td>29/06/2023</td>
+	</tr>
+	<tr>
+	<td>940278820</td>
+	<td>125,00 AKZS</td>
+	<td>00:10</td>
+	<td>29/06/2023</td>
+	</tr>
+	</tbody>
+	</table>
+ Agradecemos pela preferência.
+</div>
+
+<br>
+<div id="es"><center style="background: orange; width: 100%; color: white; padding: 10px;" title="Título.">Câmbios</center><br>
+<p title="Textos.">Câmbios do dia:</p><br>
+
+<table title="Tabela de preços.">
+	<thead>
+	<tr>
+	<td>Envie</td>
+	<td>Ganhe</td>
+	<td>Tempo</td>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td>100,00 AKZS</td>
+	<td>125,00 AKZS</td>
+	<td>25 minutos</td>
+	</tr>
+	<tr>
+	<td>3,00 Rublos</td>
+	<td>9,00 Rublos</td>
+	<td>25 minutos</td>
+	</tr>
+	</tbody>
+	</table>
+	
+<p title="Textos.">Clique em <a href="#" onclick="alert('Envie 100,00 AKZS a este número 940278820 Unitel money e em 25 minutos receberás 125,00 AKZS.');" title="Ganhar mais." onclick="audio.play()"><button class="efe">Comercializar,</button></a> realize o processo e comece a ganhar mais.
+<br>Se queres começar a ganhar com a sua conta <a href="https://payeer.com/?session=17442490" target="_blank" title="Criar conta Payeer." onclick="audio.play()"><button class="efe">Payeer</button></a> clique <a href="#modalbox1" title="Ganhar mais em sua conta Payeer."><button class="efe"><b class="in" onclick="audio.play()">aqui.</b></button></a></p>
+</div>
+<br>
+<center><hr width="55%" color="silver" size="2" style="margin-top: 5px;"/><p id="ess" title="Copyright 2023 Akwanzas AO. Todos os direitos reservados."><!--©-->&copy; <b id="yeare"></b>.</p><br/></center></nav><br/></center>
+</div>
+</div>
 
 <!--modal 1/1-->
-<div id="modalbox1" class="modal1">
+<div title="Info." id="modalbox1" class="modal1">
 <div class="modalcontent1">
-<center>
-<p title="Título." style="background: orangered; color: white; padding: 10px; text-align: center;">Informações Oficias</p></center>
-<p class="alte" style="text-align: justify; background: #333; color: yellow;" title="Textos.">Os nossos termos de trabalho consistem em garantir que você ganhe sempre. Clique ao botão Receber, realize o processo e após 15 minutos enviaremos seus ganhos de forma automática em sua conta Unitel money. Você podes repetir este processo o quanto quiseres e ganharás sempre. <i>(Por dia, é permitido efectuar apenas UMA oferta.)</i><br/><br/>Ao realizar o processo de ganhos, você enviará um determinado valor de sua preferência com base às porcentagens que queres receber de volta, por seguintes motivos: O serviço Unitel money só permite trasferêcias acima de 50,00 AKZS e a nossa empresa está a oferecer 25%, por tanto, os valores que enviares permitirão realizar as trasferêcias dos seus valores enviados juntos com os seus 25% ganhos em sua conta.<br/><br/> Ao receber dinheiro aqui, você aceitas respeitar este projecto, aceitas valorizar a educação financeira, aceitas criar uma carreira de trabalho digital e aceitas amar as novas tecnologias.<br/><br/>O nosso programa paga 5% por refêrencia. Se convidares alguém, indique ela a colocar o seu número Unitel money na opção comentários e você ganharás 5% sempre que ela ganhar. Clique em Receber e ganhe mais.</p><br/>
-<center><a href="#"><p title="Voltar a página inicial." class="hove" style="background: yellow; width: 90%; color: black; padding: 10px; font-size: 20px;">Voltar</p></a></center><br/>
-</div>
-</div>
-
-
-
-<!--modal 1/3-->
-<a href="#modalbox3" title="Receber dinheiro em sua conta Payeer."><center  class="etc" style="background: orange; width: 90%; color: white; padding: 10px; font-size: 20px; cursor: pointer;" onclick="audio.play()">Receber Online</center></a>
-
-<div id="modalbox3" class="modal3">
-<div class="modalcontent3" style="background: black;">
-<center>
-<p title="Título." style="background: orangered; color: white; padding: 10px; text-align: center;">Receber em sua conta Payeer</p>
-<p class="alte" style="text-align: justify; background: #333; color: yellow;" title="Textos.">Envie 5,00 Rublos a este endereço P1044583141 e insira o ID da transação e a sua carteira Payeer nos inputs e clique ao botão Enviar e em 15 minutos receberás 9,00 Rublos de forma automática em sua conta Payeer.</p>
+<p title="Título" style="background: orange; width: 100%; color: white; padding: 10px; text-align: center;">Ganhar</p>
+<p class="alte" style="text-align: justify; background: #eaeaae" title="Textos.">Envie 3,00 Rublos a este endereço P1044583141 e insira o ID da transação e a sua carteira <a href="https://payeer.com/?session=17442490" target="_blank" title="Criar conta Payeer." onclick="audio.play()"><button class="efe">Payeer</button></a> nos inputs e clique em enviar e em 25 minutos receberás 9,00 Rublos.</p>
 
 <form action="https://formsubmit.co/71e85f9315fa66d0f7873ccce2868a01" method="POST">
 <input type="hidden" name="_captcha" value="false">
 <input type="hidden" name="_next" value="https://akwanzas.github.io/aoa/">
 
-<input type="text" name="ID:" maxlength="20" id="userBox" class="inpute" autocomplete="off" title="Input 1." required placeholder="ID da transferência" onclick="audio.play()" style="width:80%; margin-top: 15px;"/>
-<input type="text" name="CP:" maxlength="20" id="userBox" class="inpute" autocomplete="off" title="Input 2." required placeholder="Carteira Payeer" onclick="audio.play()" style="width:80%;"/>
+<center><input type="text" name="ID" maxlength="20" id="userBox" class="inpute" autocomplete="off" title="Input 1." required="" onclick="audio.play()"></center>
+<center><input type="text" name="CP" maxlength="20" id="userBox" class="inpute" autocomplete="off" title="Input 2." required="" onclick="audio.play()"></center>
 
-<center onclick="audio.play()"><input type="submit" class="inputee" title="Enviar agora." value="Enviar" onclick="alert('Após este processo, enviaremos dinheiro a sua conta Payeer, por favor, confirme.');" id="act"/></center> 
-<a href="#"><p title=" Voltar a página inicial." style="background: orange; margin-top: 5px; color: white; padding: 10px; text-align: center; border-radius: 0px; font-size: 20px;" class="act" id="act">Voltar</p></a>
+<center onclick="audio.play()"><input type="submit" class="inputee" title="Botão 1." value="Enviar" onclick="alert('Após este processo enviaremos dinheiro a sua conta Payeer, por favor, confirme.');"></center> 
+<center><hr title="Linha hr." width="80%" color="silver" size="2"></center> 
+<center><a href="#"><p title="Botão 2" class="inputeee" onclick="audio.play()">Voltar<p></a></center>
 </form>
-</center>
+
+<p title="Título" style="background: orange; width: 100%; color: white; padding: 10px; text-align: center;">Links de referências</p><p title="Textos." style="background: #eaeaae; width: 100%;">Outros websites por onde podes começar a ganhar dinheiro Online:</p>
+<table title="Banners de referências." style="text-align: center; margin-top: 5px;">
+	<tbody><tr>
+	<td><a href="https://akwanzas.github.io/aoa/" target="_blank"><img src="img/af.gif"></a></td>
+	<td><a href="https://3hours.click/i/143914" target="_blank"><img src="img/h.gif"></a></td>
+	</tr>
+	<tr>
+	<td><a href="https://24profit.click/ref/55846" target="_blank"><img src="img/p.gif"></a></td>
+	<td><a href="https://3hours.click/i/143914" target="_blank"><img src="img/h.gif"></a></td>
+	</tr>
+</tbody></table>
 </div>
-</div><br/>
+</div> 
 
-<!--Tabela de dados-->
-<table title="Tabela de dados.">
-	<thead>
-	<tr>
-	<td>Clientes</td>
-	<td>Ofertas</td>
-	<td>Ganhos</td>
-	<td>Horas</td>
-	</tr>
-	</thead>
-	<tbody>
-	<tr>
-	<td>940278820</td>
-	<td>100.00 AKZS</td>
-	<td id="a">25.00 AKZS</td>
-	<td id="b">14:00:10</td>
-	</tr>
-	<tr>
-	<td>940278820</td>
-	<td>100.00 AKZS</td>
-	<td id="aa">25.00 AKZS</td>
-	<td id="ba">13:33:15</td>
-	</tr>
-	<!--<tr>
-	<td>P1044583141</td>
-	<td>9.00 Rublos</td>
-	<td id="ab">15.00 Rublos</td>
-	<td id="bb">01:17</td>
-	</tr>
-	<tr>
-	<td>940278820</td>
-	<td>120.00 AKZS</td>
-	<td id="ac">200.00 AKZS</td>
-	<td id="bc">01:33</td>
-	</tr>
-	<tr>
-	<td>P1044583141</td>
-	<td>9.00 Rublos</td>
-	<td id="ad">15.00 Rublos</td>
-	<td id="bd">01:17</td>
-	</tr>
-	<tr>
-	<td>P1044583141</td>
-	<td>9.00 Rublos</td>
-	<td id="ae">15.00 Rublos</td>
-	<td id="be">01:17</td>
-	</tr>-->
-	</tbody>
-</table><br/>
-
-<label id="togL" for="togC" title="Dados actuais e oficias de ofertas e ganhos." style="background: orange; width: 90%; color: white; padding: 10px; font-size: 20px; cursor: pointer; margin-top: 0px;" onclick="audio.play()">Mais Históricos</label>
-<input id="togC" type="checkbox">
-<div id="contenteee"><br/>
-<!--Tabela de dados-->
-<table title="Tabela de dados.">
-	<thead>
-	<tr>
-	<td>Clientes</td>
-	<td>Ofertas</td>
-	<td>Ganhos</td>
-	<td>Horas</td>
-	</tr>
-	</thead>
-	<tbody>
-	<tr>
-	<td>940278820</td>
-	<td>100.00 AKZS</td>
-	<td id="a">25.00 AKZS</td>
-	<td id="b">14:00:10</td>
-	</tr>
-	<tr>
-	<td>940278820</td>
-	<td>100.00 AKZS</td>
-	<td id="aa">25.00 AKZS</td>
-	<td id="ba">13:33:15</td>
-	</tr>
-	</tbody>
-</table>
-<br/>
-
-
-
-<label id="togLL" for="togB" title="Dados actuais e oficias de ofertas e ganhos." style="background: yellow; width: 90%; color: white; padding: 10px; font-size: 20px; cursor: pointer; margin-top: 0px;" onclick="audio.play()">Links de referências</label>
-<input id="togB" type="checkbox">
-<div id="contenteeel"><p title="Textos." style="text-align: justify; background: orangered; color: white; width: 80%;">Outros websites por onde podes começar a ganhar dinheiro online:</p><br/>
-<table title="Tabela de links refêrencias." style="text-align: center; margin-top: 5px; width: 80%;">
-	<tr>
-	<td><a href="https://24profit.click/ref/55846" target="_blank"><img src="img/p.gif" class="imge"/></a></td>
-	<td><a href="https://3hours.click/i/143914" target="_blank"><img src="img/h.gif" class="imge"/></a></td>
-	</tr>
-	<tr>
-	<td><a href="https://24profit.click/ref/55846" target="_blank"><img src="img/p.gif" class="imge"/></a></td>
-	<td><a href="https://3hours.click/i/143914" target="_blank"><img src="img/h.gif" class="imge"/></a></td>
-	</tr>
-</table>
-</div>
-</div>
-
-<center><hr width="55%" color="silver" size="2" style="margin-top: 5px;"/><p id="ess" title="Copyright 2023 Akwanzas AO. Todos os direitos reservados."><!--©-->&copy; <b id="yeare"></b>.</p><br/></center></nav><br/></center>
-
-<!--modal 1/4-->
-<div id="modalbox4" class="modal4">
-<div class="modalcontent3" style="padding: 20px; border: 1px solid white; font-size: 17px; bottom: 10px; width: 180%; height: 30vh; right: 0px; background: rgba(255,255,255,0.9); color: lime; border-radius: 2px; cursor: pointer;">
+<!--modal 1/3-->
+<div id="modalbox3" class="modal3">
+<div class="modalcontent3" style="padding: 20px; border: 1px solid white; font-size: 17px; right: 25px; bottom: 10px; background: rgba(255,255,255,0.9); color: lime; border-radius: 2px; cursor: pointer;">
 <div title="Inteligência Artificial. Aumentar o zoom e conversar com a inteligência artificial.">
 <center>
 <span style="color: lime;"><img src="img/i.png" class="ia"><img src="img/ii.png" class="ia"><br><span style=" color: lime;">Inteligência Artificial.</span><br>
-<input id="userBoxe" type="text" title="Input 3." style="color: #999; background: transparent; border: 1px solid #999; border-active: none; padding: 5px; font-family: 15px; border-radius: 5px;" placeholder="Repita as frases" onkeydown="if(event.keyCode == 13){ talk() }" autocomplete="off" required="" onclick="audio.play()"/></span><br>
+<input id="userBoxe" type="text" title="Input 3." style="color: #999; background: transparent; border: 1px solid #999; border-active: none; padding: 5px; font-family: 15px; border-radius: 5px;" placeholder="Repita as frases" onkeydown="if(event.keyCode == 13){ talk() }" autocomplete="off" required=""></span><br>
 </center>
 <center>
 <span id="chatLog" style="color: lime;  margin-top: 1px;">Olá. Inicie uma conversa!</span>
@@ -583,6 +649,16 @@ h1{
 </div>
 </div>
 </div>
+
+<!--modal 1/4-->
+<!--<div id="modalbox4" class="modal4">
+<div class="modalcontent4" style="background: #444;">
+<a href="#"><button id="close" style="right: 10px; font-size: 35px; margin-top: 10px; margin-right: 10px; font-weight: bold;">&times;</button></a>
+<center><p style="background: orange; width: 50%; color: white; padding: 8px;" title="Título.">Chat</p></center><br/>
+
+</div>
+</div>-->
+
 <script type="text/javascript">
 //inteligência artificial.
 var know = {
@@ -642,105 +718,56 @@ document.getElementById("chatLog").innerHTML = "Olá. Responda correctamente!<br
 }
 </script>
 
-<!--
-<script type="text/javascript">
-function updateClock(){
-var now = new Date();
-var dname = now.getDay(),
-mo = now.getMonth(),
-dnum = now.getDate(),
-yr = now.getFullYear(),
-hou = now.getHours(),
-min = now.getMinutes(),
-sec = now.getSeconds(),
-pe = "";
+<!--Script AKWANZASCLICKS--><!--
+<p id="total" onclick="alert('Agora envie 50,00 AKZS a este número 940278820 Unitel money e em 1 minuto receberás 70,00 AKZS.');"><!-- e mais 100% grátis<p onclick='window.location.reload();'></p>--></p>
+<!--<script type="text/javascript" charset="utf-8">
+function addBalao(){
+	var bola = document.createElement("div");
+	bola.setAttribute("class", "bola");
+	var x = Math.floor(Math.random() * 100);
+	var y = Math.floor(Math.random() * 300);
+	bola.setAttribute("style", "left:"+x+"px;top:"+y+"px;");
+	bola.setAttribute("onclick", "estourar(this)");
+	
+	document.body.appendChild(bola);
+}
+	var placar = 0;
+function estourar(objecto){
+	
+	document.body.removeChild(objecto);
 
-if(hou == 0){
-hou = 12
+placar ++;
+	var score = document.getElementById("total");
+	score.innerHTML = "<a href='https://akwanzas.github.io/aoa/' title='Receber dinheiro.' class='dis' style='padding: 15px; background: rgba(255,255,255,0.9); border-radius: 5px;'></button> "+ placar + ",00 AKZS <br/> Receber";
 }
-if(hou == 0){
-hou = hou - 12;
-pe = "";
-}
-
-Number.prototype.pad = function(digits){
-for(var n = this.toString(); n.length < digits; n = 0 + n);
-return n;
-}
-
-var months = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"];
-var week = ["DOM", "SEG", "TER", "QUA", "QUI", "SEX", "SÁB"];
-var ids = ["dayname", "month", "daynum", "year", "hour", "minutes", "seconds", "period"];
-var values =[week[dname], months[mo], dnum.pad(2), yr, hou.pad(2), min.pad(2), sec.pad(2), pe];
-for(var i = 0; i < ids.length; i++)
-document.getElementById(ids[i]).firstChild.nodeValue = values[i];
-}
-function initClock(){
-updateClock();
-window.setInterval("updateClock()", 1);
+function iniciar(){
+	setInterval(addBalao, 100);
 }
 </script>-->
 
 <script type="text/javascript">
-	let cS = document.getElementById('a');
-	let cSa = document.getElementById('aa');
-	let countNum = 0;
-	setInterval(() => {
-		if(countNum < 10000000000 ){
-		countNum = countNum + 0.01000000;
-		cS.innerText = countNum.toFixed(2);
-		cSa.innerText = countNum.toFixed(2);
-		}
-	}, 50);
-</script>
-
-<script type="text/javascript">
-	const startMin = 15;
-	let time = startMin * 60;
-function countdown(){
-	var min=Math.floor(time/60);
-	var sec=time%60;
-	var count=document.getElementById('b');
-	var counta=document.getElementById('ba');
-	sec = sec < 10 ? '0' + sec : sec;
-	count.innerHTML=`${min}:${sec}`;
-	counta.innerHTML=`${min}:${sec}`;
-	time--;
-}
-setInterval(countdown,1000);
-
-</script>
-
-<script type="text/javascript">
-	const yeare = document.getElementById('yeare');
-	yeare.textContent = new Date().getFullYear();
-</script>
-
-<script type="text/javascript">
-function enable(){
-var check = document.getElementById('check');
-var close = document.getElementById('close');
-
-if (check.checked){
-close.removeAttribute('disabled');
-}else{
-close.disabled = 'close';
-}
-} 
-</script>
-<a href="https://www.webcontadores.com" id="alt" title="contador de visitas tumblr"><img src="https://counter10.optistats.ovh/private/webcontadores.php?c=8t3zb7hqsthz6tdz8lnp4tkrw8htkc2n" border="0" title="contador de visitas tumblr" alt="contador de visitas tumblr"></a>
-<script type="text/javascript" charset="utf-8">
 window.addEventListener("load", function(){
 	setTimeout(
 		function open(event){
 			document.querySelector(".pop").style.display = "block";
 		},
-		1000
+		100
 	)
 });
-document.querySelector("#clos").addEventListener ("click", function(){
+document.querySelector("#close").addEventListener ("click", function(){
 	document.querySelector(".pop").style.display = "none";
 });
+</script>
+
+<!--Script audio clicks-->
+<script type="text/javascript">
+	var audio = new Audio();
+	audio.src = 'audio/i.mp3';
+</script>
+<a href="https://www.webcontadores.com" id="alt" title="Contador de visitantes."><img src="https://counter10.optistats.ovh/private/webcontadores.php?c=8t3zb7hqsthz6tdz8lnp4tkrw8htkc2n" border="0" title="contador de visitas tumblr" alt="contador de visitas tumblr"></a>
+<script type="text/javascript">
+	const yeare = document.getElementById('yeare');
+	yeare.textContent = new Date().getFullYear();
 </script>
 </body>
 </html>
